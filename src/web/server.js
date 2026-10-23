@@ -608,6 +608,28 @@ const BASE_URL =
     return res.json(guilds);
   });
 
+  // 2c-2. API Check if bot has joined a specific guild (used by 1-click add popup)
+  app.get("/api/guilds/check-bot/:guildId", async (req, res) => {
+    const { guildId } = req.params;
+    const client = getClient();
+    if (!client || !client.isReady()) {
+      return res.json({ present: false, ready: false });
+    }
+    const guild = client.guilds.cache.get(guildId) || await client.guilds.fetch(guildId).catch(() => null);
+    if (!guild) {
+      return res.json({ present: false });
+    }
+    return res.json({
+      present: true,
+      guild: {
+        id: guild.id,
+        name: guild.name,
+        icon: guild.iconURL({ dynamic: true, size: 128 }) || "",
+        memberCount: guild.memberCount
+      }
+    });
+  });
+
   // 2d-0. Protected API routes authorization middleware for all /api/dashboard/:guildId/* routes
   app.use("/api/dashboard/:guildId", (req, res, next) => {
     const { guildId } = req.params;
