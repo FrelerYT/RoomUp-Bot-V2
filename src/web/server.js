@@ -748,6 +748,92 @@ const BASE_URL =
     }
   });
 
+  // 5a-3. API Send Custom Universal Embed to Discord
+  app.post("/api/dashboard/:guildId/send-embed", async (req, res) => {
+    const { guildId } = req.params;
+    const { channelId, content, embed, pingRole } = req.body;
+    const client = getClient();
+    if (!client || !client.isReady()) return res.status(500).json({ success: false, message: "Bot offline o non pronto" });
+
+    try {
+      const guild = client.guilds.cache.get(guildId) || await client.guilds.fetch(guildId).catch(() => null);
+      if (!guild) return res.status(404).json({ success: false, message: "Server Discord non trovato" });
+
+      if (!channelId) return res.status(400).json({ success: false, message: "Seleziona un canale di destinazione valido" });
+      const channel = guild.channels.cache.get(channelId) || await guild.channels.fetch(channelId).catch(() => null);
+      if (!channel || !channel.isTextBased()) return res.status(400).json({ success: false, message: "Canale non valido o non testuale" });
+
+      const { EmbedBuilder } = require("discord.js");
+      const dEmbed = new EmbedBuilder();
+
+      if (embed) {
+        if (embed.title && embed.title.trim()) dEmbed.setTitle(embed.title.trim().slice(0, 256));
+        if (embed.url && embed.url.trim().startsWith("http")) dEmbed.setURL(embed.url.trim());
+        if (embed.description && embed.description.trim()) dEmbed.setDescription(embed.description.trim().slice(0, 4096));
+        if (embed.color) {
+          try { dEmbed.setColor(embed.color); } catch (e) { dEmbed.setColor("#5865F2"); }
+        }
+
+        if (embed.author && embed.author.name && embed.author.name.trim()) {
+          const authObj = { name: embed.author.name.trim().slice(0, 256) };
+          if (embed.author.iconURL && embed.author.iconURL.trim().startsWith("http")) authObj.iconURL = embed.author.iconURL.trim();
+          if (embed.author.url && embed.author.url.trim().startsWith("http")) authObj.url = embed.author.url.trim();
+          dEmbed.setAuthor(authObj);
+        }
+
+        if (embed.thumbnail && typeof embed.thumbnail === "string" && embed.thumbnail.trim().startsWith("http")) {
+          dEmbed.setThumbnail(embed.thumbnail.trim());
+        }
+
+        if (embed.image && typeof embed.image === "string" && embed.image.trim().startsWith("http")) {
+          dEmbed.setImage(embed.image.trim());
+        }
+
+        if (embed.footer && embed.footer.text && embed.footer.text.trim()) {
+          const footObj = { text: embed.footer.text.trim().slice(0, 2048) };
+          if (embed.footer.iconURL && embed.footer.iconURL.trim().startsWith("http")) footObj.iconURL = embed.footer.iconURL.trim();
+          dEmbed.setFooter(footObj);
+        }
+
+        if (embed.timestamp) {
+          dEmbed.setTimestamp();
+        }
+
+        if (Array.isArray(embed.fields)) {
+          embed.fields.forEach(f => {
+            if (f && f.name && f.value && f.name.trim() && f.value.trim()) {
+              dEmbed.addFields({
+                name: f.name.trim().slice(0, 256),
+                value: f.value.trim().slice(0, 1024),
+                inline: Boolean(f.inline)
+              });
+            }
+          });
+        }
+      }
+
+      let messageContent = (content || "").trim();
+      if (pingRole && pingRole !== "@none") {
+        const pingTag = pingRole === "@everyone" || pingRole === "@here" ? pingRole : `<@&${pingRole}>`;
+        messageContent = pingTag + (messageContent ? ` ${messageContent}` : "");
+      }
+
+      const payload = {};
+      if (messageContent) payload.content = messageContent;
+      if (dEmbed.data && Object.keys(dEmbed.data).length > 0) payload.embeds = [dEmbed];
+
+      if (!payload.content && !payload.embeds) {
+        return res.status(400).json({ success: false, message: "L'embed non contiene testo o campi validi da inviare." });
+      }
+
+      await channel.send(payload);
+      return res.json({ success: true, message: `Embed inviato con successo nel canale #${channel.name}!` });
+    } catch (err) {
+      console.error("[SendEmbed] Errore invio:", err);
+      return res.status(500).json({ success: false, message: err.message || "Errore durante l'invio dell'embed su Discord" });
+    }
+  });
+
   // 5b. API Apply Verification Channel Isolation
   app.post("/api/dashboard/:guildId/verification/isolate-channels", async (req, res) => {
     const { guildId } = req.params;

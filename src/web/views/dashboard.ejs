@@ -1803,7 +1803,390 @@
       text-transform: uppercase;
     }
 
-  </style>
+  
+    /* ================= DISCORD LIVE EMBED PREVIEW SYSTEM ================= */
+    .discord-editor-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+    @media (max-width: 1100px) {
+      .discord-editor-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .discord-preview-sticky {
+      position: sticky;
+      top: 80px;
+    }
+    .discord-preview-card {
+      background: #1e1f22;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--card-radius);
+      padding: 1.25rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    }
+    .discord-preview-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .discord-preview-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .discord-preview-badge i { color: #5865F2; }
+
+    /* Discord Message Container */
+    .discord-msg-wrap {
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+      background: #313338;
+      border-radius: 8px;
+      padding: 1rem;
+      color: #dbdee1;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .discord-msg-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 22%;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+    .discord-msg-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .discord-msg-author-line {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      line-height: 1.25;
+      margin-bottom: 0.35rem;
+    }
+    .discord-msg-botname {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f2f3f5;
+    }
+    .discord-app-tag {
+      background: #5865F2;
+      color: #fff;
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 0.12rem 0.35rem;
+      border-radius: 3px;
+      letter-spacing: 0.2px;
+      line-height: 1;
+    }
+    .discord-msg-timestamp {
+      font-size: 0.72rem;
+      color: #949ba4;
+      font-weight: 500;
+      margin-left: 0.2rem;
+    }
+    .discord-chat-text {
+      font-size: 0.92rem;
+      color: #dbdee1;
+      line-height: 1.4;
+      margin-bottom: 0.65rem;
+      word-break: break-word;
+    }
+    .discord-mention {
+      background: rgba(88, 101, 242, 0.25);
+      color: #c9cdfb;
+      border-radius: 3px;
+      padding: 0.1rem 0.35rem;
+      font-weight: 600;
+      cursor: default;
+    }
+
+    /* Discord Embed Box */
+    .discord-embed-box {
+      background: #2b2d31;
+      border-left: 4px solid #5865F2;
+      border-radius: 4px;
+      padding: 0.85rem 1rem 1rem 1rem;
+      max-width: 520px;
+      position: relative;
+      transition: border-left-color 0.15s ease;
+    }
+    .discord-embed-top-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .discord-embed-main-col {
+      flex: 1;
+      min-width: 0;
+    }
+    .discord-embed-author {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #f2f3f5;
+      margin-bottom: 0.4rem;
+    }
+    .discord-embed-author img {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .discord-embed-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #f2f3f5;
+      margin-bottom: 0.45rem;
+      line-height: 1.3;
+    }
+    .discord-embed-title a {
+      color: #00a8fc;
+      text-decoration: none;
+    }
+    .discord-embed-title a:hover {
+      text-decoration: underline;
+    }
+    .discord-embed-desc {
+      font-size: 0.875rem;
+      color: #dbdee1;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+    .discord-embed-thumb {
+      width: 75px;
+      height: 75px;
+      border-radius: 4px;
+      object-fit: cover;
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-left: 0.5rem;
+      background: #1e1f22;
+    }
+    .discord-embed-fields-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      margin-top: 0.75rem;
+    }
+    .discord-embed-field {
+      min-width: 0;
+    }
+    .discord-embed-field.col-full {
+      grid-column: span 3;
+    }
+    .discord-embed-field-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #949ba4;
+      margin-bottom: 0.2rem;
+    }
+    .discord-embed-field-val {
+      font-size: 0.85rem;
+      color: #dbdee1;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+    .discord-embed-banner-img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-top: 0.85rem;
+      background: #1e1f22;
+    }
+    .discord-embed-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.74rem;
+      color: #949ba4;
+      margin-top: 0.85rem;
+      line-height: 1.25;
+    }
+    .discord-embed-footer img {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .discord-embed-footer-time {
+      position: relative;
+      padding-left: 0.5rem;
+    }
+    .discord-embed-footer-time::before {
+      content: "•";
+      position: absolute;
+      left: 0.15rem;
+    }
+
+    /* Discord Components */
+    .discord-components-row {
+      margin-top: 0.85rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .discord-btn-preview {
+      height: 34px;
+      padding: 0 1rem;
+      border-radius: 4px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border: none;
+      cursor: default;
+      user-select: none;
+    }
+    .discord-btn-preview.blurple { background: #5865F2; color: #fff; }
+    .discord-btn-preview.green { background: #23a55a; color: #fff; }
+    .discord-btn-preview.red { background: #f23f43; color: #fff; }
+    .discord-btn-preview.gray { background: #4e5058; color: #fff; }
+
+    .discord-select-preview {
+      background: #1e1f22;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      padding: 0.55rem 0.85rem;
+      color: #949ba4;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 520px;
+      margin-top: 0.85rem;
+      cursor: default;
+      user-select: none;
+    }
+
+    /* Quick Color Chips */
+    .quick-colors-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .color-preset-pill {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      cursor: pointer;
+      transition: transform 0.12s ease, border-color 0.12s ease;
+    }
+    .color-preset-pill:hover {
+      transform: scale(1.15);
+      border-color: #fff;
+    }
+
+    /* Variable Chips */
+    .var-chips-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-top: 0.45rem;
+    }
+    .var-chip {
+      background: #18191f;
+      border: 1px solid var(--border);
+      color: #8ea1e1;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.18rem 0.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+    .var-chip:hover {
+      background: rgba(88, 101, 242, 0.15);
+      border-color: #5865F2;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .discord-code-block {
+      background: #1e1f22;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 4px;
+      padding: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: #dbdee1;
+      margin: 0.4rem 0;
+      overflow-x: auto;
+    }
+    .discord-inline-code {
+      background: #1e1f22;
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: #dbdee1;
+    }
+    .discord-quote {
+      border-left: 3px solid #4e5058;
+      padding-left: 0.65rem;
+      margin: 0.35rem 0;
+      color: #949ba4;
+    }
+
+    /* Custom Fields Manager */
+    .fields-builder-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .field-builder-row {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr auto auto;
+      gap: 0.75rem;
+      align-items: center;
+      background: #141720;
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+    }
+    .btn-field-del {
+      background: rgba(242, 63, 67, 0.12);
+      border: 1px solid rgba(242, 63, 67, 0.25);
+      color: #f23f43;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-field-del:hover {
+      background: #f23f43;
+      color: #fff;
+    }
+</style>
 </head>
 <body>
 
@@ -1989,6 +2372,11 @@
             <li class="nav-item">
               <button type="button" class="nav-btn" data-tab="tab-welcome" onclick="switchTab('tab-welcome')">
                 <i class="fa-solid fa-door-open"></i> Benvenuto & Addio
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-btn" data-tab="tab-embed-builder" onclick="switchTab('tab-embed-builder')">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Costruttore Embed Studio
               </button>
             </li>
             <li class="nav-item">
@@ -3513,7 +3901,10 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Embed & Annunci Giveaway</div>
               <div class="card-desc">Personalizza titoli, colori ed ogni messaggio di notifica vincita.</div>
             </div>
-          </div>
+          <
+        <div class="discord-editor-grid">
+          <div>
+            /div>
 
           <div class="grid-2">
             <div class="form-group">
@@ -3577,7 +3968,52 @@
               <input type="text" id="givBannerImage" class="form-control" placeholder="https://i.imgur.com/... o vuoto" value="<%= config.giveaways?.bannerImage || '' %>" oninput="markUnsavedChanges()">
             </div>
           </div>
+        
+          </div>
+          
+          <!-- Right Column: Live Discord Giveaway Preview -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Annuncio Giveaway
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Canale Giveaway
+                </div>
+              </div>
+
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <div id="givLiveEmbed" class="discord-embed-box">
+                    <div id="givLiveTitle" class="discord-embed-title">🎉 GIVEAWAY IN CORSO</div>
+                    <div id="givLiveDesc" class="discord-embed-desc">Premio in palio: **Discord Nitro (1 Mese)**<br>Reagisci con 🎉 per partecipare!</div>
+                    <div id="givLiveFooter" class="discord-embed-footer">
+                      <span>Reagisci o clicca per partecipare! • Termina tra 2 giorni</span>
+                    </div>
+                  </div>
+
+                  <div class="discord-components-row">
+                    <button type="button" class="discord-btn-preview blurple">
+                      🎉 Partecipa al Giveaway (12 partecipanti)
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
+      </div>
+
+        
 
         <!-- Active Giveaways List -->
         <div class="dashboard-card">
@@ -3980,7 +4416,10 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Embed & Notifica Level Up</div>
               <div class="card-desc">Personalizza titolo, colori, footer e il testo di congratulazioni.</div>
             </div>
-          </div>
+          <
+        <div class="discord-editor-grid">
+          <div>
+            /div>
 
           <div class="grid-3">
             <div class="form-group">
@@ -4019,8 +4458,50 @@
               <span style="font-size: 0.85rem; color: var(--text-muted);">Invia istantaneamente la card grafica di level up personalizzata (esagoni + avatar) nel canale configurato.</span>
             </div>
           </div>
+        
+          </div>
+          
+          <!-- Right Column: Live Discord Level Up Preview -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Annuncio Level Up
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Canale Livelli
+                </div>
+              </div>
+
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <div id="levLiveChat" class="discord-chat-text"></div>
+
+                  <div id="levLiveEmbed" class="discord-embed-box">
+                    <div id="levLiveTitle" class="discord-embed-title">Level Up!</div>
+                    <div id="levLiveDesc" class="discord-embed-desc">Complimenti per il traguardo raggiunto nella community!</div>
+                    <div id="levLiveFooter" class="discord-embed-footer">
+                      <span>Continua a chattare per salire di rango!</span>
+                      <span class="discord-embed-footer-time">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
       </div>
+      </div>
+
+      
 
       <!-- ================= TAB: REACTION ROLES ================= -->
       <div id="tab-reaction-roles" class="tab-pane">
@@ -4453,7 +4934,10 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Annuncio & Embed Partnership</div>
               <div class="card-desc">Personalizza titolo, colori, descrizione, thumbnail e banner pubblicati nel canale partnership.</div>
             </div>
-          </div>
+          <
+        <div class="discord-editor-grid">
+          <div>
+            /div>
 
           <div class="grid-2">
             <div class="form-group">
@@ -4487,7 +4971,7 @@
 
           <div class="form-group" style="margin-top: 1rem;">
             <label class="form-label">Template Descrizione Annuncio Partnership:</label>
-            <textarea id="partDescTemplate" class="form-control" style="min-height: 80px;" oninput="markUnsavedChanges()"><%= config.partnerships?.descriptionTemplate || 'Siamo felici di annunciare una nuova partnership con **{partnerGuild}**!\n\n{adText}\n\nUnisciti qui: {invite}' %></textarea>
+            <textarea id="partDescTemplate" class="form-control" style="min-height: 80px;" oninput="syncPartnershipLivePreview(); markUnsavedChanges();"><%= config.partnerships?.descriptionTemplate || 'Siamo felici di annunciare una nuova partnership con **{partnerGuild}**!\n\n{adText}\n\nUnisciti qui: {invite}' %></textarea>
             <div style="margin-top: 0.4rem;">
               <span class="var-chip" onclick="insertVar('partDescTemplate', '{partnerGuild}')">{partnerGuild}</span>
               <span class="var-chip" onclick="insertVar('partDescTemplate', '{invite}')">{invite}</span>
@@ -4495,11 +4979,53 @@
               <span class="var-chip" onclick="insertVar('partDescTemplate', '{user}')">{user}</span>
             </div>
           </div>
+        
+          </div>
+          
+          <!-- Right Column: Live Discord Partnership Preview -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Annuncio Partnership
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Canale Partnership
+                </div>
+              </div>
+
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <div class="discord-chat-text"><span class="discord-mention">@everyone</span> Nuova affiliazione ufficiale!</div>
+
+                  <div id="partLiveEmbed" class="discord-embed-box">
+                    <div id="partLiveTitle" class="discord-embed-title">🤝 Nuova Partnership Ufficiale!</div>
+                    <div id="partLiveDesc" class="discord-embed-desc">Siamo fieri di presentare la nuova collaborazione con il server partner!</div>
+                    <div id="partLiveFooter" class="discord-embed-footer">
+                      <span>RoomUp! Network • Partnership System</span>
+                      <span class="discord-embed-footer-time">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
+      </div>
 
         <!-- ================= RETE SERVER PARTNER & COLLABORAZIONI ================= -->
         <% const safeCollabs = (typeof collabs !== 'undefined' && collabs) ? collabs : { connected: [], incoming: [], outgoing: [] }; %>
         <% const safeAllBotGuilds = (typeof allBotGuilds !== 'undefined' && allBotGuilds) ? allBotGuilds : []; %>
+        
+
         <div class="dashboard-card" style="border: 1px solid rgba(88, 101, 242, 0.35); box-shadow: 0 4px 20px rgba(88, 101, 242, 0.08);">
           <div class="card-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
             <div>
@@ -4909,7 +5435,10 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Embed di Benvenuto & Chiusura</div>
               <div class="card-desc">Modifica i titoli, i colori, i footer e i messaggi inviati nei ticket e nei DM.</div>
             </div>
-          </div>
+          <
+        <div class="discord-editor-grid">
+          <div>
+            /div>
 
           <div class="grid-3">
             <div class="form-group">
@@ -4921,7 +5450,15 @@
               <label class="form-label">Colore Embed Benvenuto:</label>
               <div class="color-picker-group">
                 <input type="color" id="tickWelcomeColor" value="<%= config.tickets?.welcomeEmbedColor || '#5865F2' %>" class="color-picker-input" onchange="document.getElementById('tickWelcomeColorHex').value = this.value; markUnsavedChanges();">
-                <input type="text" id="tickWelcomeColorHex" class="form-control" value="<%= config.tickets?.welcomeEmbedColor || '#5865F2' %>" class="form-control form-control-mono" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('tickWelcomeColor').value = this.value;} markUnsavedChanges();">
+                <input type="text" id="tickWelcomeColorHex" class="form-control" value="<%= config.tickets?.welcomeEmbedColor || '#5865F2' %>" class="form-control form-control-mono" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('tickWelcomeColor').value = this.value;} syncTicketPanelLivePreview(); markUnsavedChanges();">
+              </div>
+              <div class="quick-colors-row">
+                <div class="color-preset-pill" style="background: #5865F2;" title="Discord Blurple" onclick="applyColorPreset('tickWelcomeColor', 'tickWelcomeColorHex', '#5865F2', syncTicketPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #23a55a;" title="Emerald Green" onclick="applyColorPreset('tickWelcomeColor', 'tickWelcomeColorHex', '#23a55a', syncTicketPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #f23f43;" title="Crimson Red" onclick="applyColorPreset('tickWelcomeColor', 'tickWelcomeColorHex', '#f23f43', syncTicketPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #f0b232;" title="Amber Gold" onclick="applyColorPreset('tickWelcomeColor', 'tickWelcomeColorHex', '#f0b232', syncTicketPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #9b59b6;" title="Royal Purple" onclick="applyColorPreset('tickWelcomeColor', 'tickWelcomeColorHex', '#9b59b6', syncTicketPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #2b2d31;" title="Dark Slate" onclick="applyColorPreset('tickWelcomeColor', 'tickWelcomeColorHex', '#2b2d31', syncTicketPanelLivePreview)"></div>
               </div>
             </div>
 
@@ -4954,9 +5491,51 @@
               </div>
             </div>
           </div>
-        </div>
+        
+          </div>
+          
+          <!-- Right Column: Live Discord Ticket Preview -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Ticket di Supporto
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Canale Ticket
+                </div>
+              </div>
 
-        <!-- Dispatch Panel Box -->
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <div id="tickLiveEmbed" class="discord-embed-box">
+                    <div id="tickLiveTitle" class="discord-embed-title">Supporto RoomUp</div>
+                    <div id="tickLiveDesc" class="discord-embed-desc">Un operatore o Sentinel AI risponderà a breve per assisterti.</div>
+                    <div id="tickLiveFooter" class="discord-embed-footer"></div>
+                  </div>
+
+                  <div class="discord-select-preview">
+                    <span><i class="fa-solid fa-ticket"></i> Seleziona categoria di assistenza...</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+        
+
+<!-- Dispatch Panel Box -->
         <div class="dashboard-card" style="border: 1px dashed var(--primary);">
           <div class="card-header">
             <div>
@@ -5083,7 +5662,10 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Design Visivo & Personalizzazione Embed</div>
               <div class="card-desc">Personalizza titolo, descrizione, colori, icone, banner e pulsanti dell'embed di verifica.</div>
             </div>
-          </div>
+          <
+        <div class="discord-editor-grid">
+          <div>
+            /div>
 
           <div class="grid-2">
             <div class="form-group">
@@ -5095,7 +5677,15 @@
               <label class="form-label">Colore Barra Laterale Embed:</label>
               <div class="color-picker-group">
                 <input type="color" id="verColor" value="<%= config.verification?.embedColor || '#5865F2' %>" class="color-picker-input" onchange="document.getElementById('verColorHex').value = this.value; markUnsavedChanges();">
-                <input type="text" id="verColorHex" class="form-control form-control-mono" value="<%= config.verification?.embedColor || '#5865F2' %>" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('verColor').value = this.value;} markUnsavedChanges();">
+                <input type="text" id="verColorHex" class="form-control form-control-mono" value="<%= config.verification?.embedColor || '#5865F2' %>" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('verColor').value = this.value;} syncVerificationPanelLivePreview(); markUnsavedChanges();">
+              </div>
+              <div class="quick-colors-row">
+                <div class="color-preset-pill" style="background: #5865F2;" title="Discord Blurple" onclick="applyColorPreset('verColor', 'verColorHex', '#5865F2', syncVerificationPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #23a55a;" title="Emerald Green" onclick="applyColorPreset('verColor', 'verColorHex', '#23a55a', syncVerificationPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #f23f43;" title="Crimson Red" onclick="applyColorPreset('verColor', 'verColorHex', '#f23f43', syncVerificationPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #f0b232;" title="Amber Gold" onclick="applyColorPreset('verColor', 'verColorHex', '#f0b232', syncVerificationPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #9b59b6;" title="Royal Purple" onclick="applyColorPreset('verColor', 'verColorHex', '#9b59b6', syncVerificationPanelLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #2b2d31;" title="Dark Slate" onclick="applyColorPreset('verColor', 'verColorHex', '#2b2d31', syncVerificationPanelLivePreview)"></div>
               </div>
             </div>
 
@@ -5106,7 +5696,7 @@
 
             <div class="form-group">
               <label class="form-label">Colore / Stile Pulsante Discord:</label>
-              <select id="verButtonColor" class="form-control" onchange="markUnsavedChanges()">
+              <select id="verButtonColor" class="form-control" onchange="syncVerificationPanelLivePreview(); markUnsavedChanges();">
                 <option value="success" <%= (!config.verification?.buttonColor || config.verification?.buttonColor === 'success') ? 'selected' : '' %>>🟢 Verde (Success)</option>
                 <option value="primary" <%= config.verification?.buttonColor === 'primary' ? 'selected' : '' %>>🔵 Blu Discord (Primary)</option>
                 <option value="secondary" <%= config.verification?.buttonColor === 'secondary' ? 'selected' : '' %>>⚪ Grigio Scuro (Secondary)</option>
@@ -5127,7 +5717,7 @@
 
           <div class="form-group" style="margin-top: 1rem;">
             <label class="form-label">Descrizione / Testo dell'Embed di Verifica:</label>
-            <textarea id="verEmbedDesc" class="form-control" style="min-height: 90px;" oninput="markUnsavedChanges()"><%= config.verification?.embedDescription || config.verification?.description || 'Clicca sul pulsante sottostante per verificare il tuo account e sbloccare tutti i canali del server!' %></textarea>
+            <textarea id="verEmbedDesc" class="form-control" style="min-height: 90px;" oninput="syncVerificationPanelLivePreview(); markUnsavedChanges();"><%= config.verification?.embedDescription || config.verification?.description || 'Clicca sul pulsante sottostante per verificare il tuo account e sbloccare tutti i canali del server!' %></textarea>
             <div style="margin-top: 0.4rem;">
               <span class="var-chip" onclick="insertVar('verEmbedDesc', '{user}')">{user}</span>
               <span class="var-chip" onclick="insertVar('verEmbedDesc', '{username}')">{username}</span>
@@ -5135,7 +5725,52 @@
               <span class="var-chip" onclick="insertVar('verEmbedDesc', '{memberCount}')">{memberCount}</span>
             </div>
           </div>
+        
+          </div>
+          
+          <!-- Right Column: Live Discord Verification Preview -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Pannello Verifica
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Canale: <strong>#verifica</strong>
+                </div>
+              </div>
+
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <div id="verLiveEmbed" class="discord-embed-box">
+                    <div id="verLiveTitle" class="discord-embed-title">Verifica del Server</div>
+                    <div id="verLiveDesc" class="discord-embed-desc">Clicca sul pulsante sottostante per verificare il tuo account e sbloccare tutti i canali del server!</div>
+                    <div id="verLiveFooter" class="discord-embed-footer">
+                      <span>Sistema di Protezione RoomUp!</span>
+                    </div>
+                  </div>
+
+                  <div class="discord-components-row">
+                    <button type="button" id="verLiveButton" class="discord-btn-preview green">
+                      <i class="fa-solid fa-shield-halved"></i> Verificati Ora
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
+      </div>
+
+        
 
         <!-- VERIFICATION RESPONSE MESSAGES & NOTIFICATIONS -->
         <div class="dashboard-card">
@@ -5368,7 +6003,10 @@
             </label>
           </div>
 
-          <!-- Toggles Grid -->
+          
+        <div class="discord-editor-grid">
+          <div>
+            <!-- Toggles Grid -->
           <div class="grid-3" style="margin-bottom: 1.25rem;">
             <div class="setting-item-box">
               <div>
@@ -5455,7 +6093,7 @@
 
             <div class="form-group">
               <label class="form-label">Soggetto Miniatura (Thumbnail):</label>
-              <select id="welThumbMode" class="form-control" onchange="markUnsavedChanges()">
+              <select id="welThumbMode" class="form-control" onchange="syncWelcomeLivePreview(); markUnsavedChanges();">
                 <option value="guild" <%= (config.welcome?.thumbnailMode || 'guild') === 'guild' ? 'selected' : '' %>>Icona del Server (Consigliato - come screenshot)</option>
                 <option value="user" <%= config.welcome?.thumbnailMode === 'user' ? 'selected' : '' %>>Avatar Profilo Utente Discord</option>
               </select>
@@ -5470,7 +6108,15 @@
               <label class="form-label">Colore Barra Embed:</label>
               <div class="color-picker-group">
                 <input type="color" id="welColor" value="<%= config.welcome?.embedColor || '#731FC3' %>" class="color-picker-input" onchange="document.getElementById('welColorHex').value = this.value; markUnsavedChanges();">
-                <input type="text" id="welColorHex" class="form-control" value="<%= config.welcome?.embedColor || '#731FC3' %>" class="form-control form-control-mono" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('welColor').value = this.value;} markUnsavedChanges();">
+                <input type="text" id="welColorHex" class="form-control" value="<%= config.welcome?.embedColor || '#731FC3' %>" class="form-control form-control-mono" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('welColor').value = this.value;} syncWelcomeLivePreview(); markUnsavedChanges();">
+              </div>
+              <div class="quick-colors-row">
+                <div class="color-preset-pill" style="background: #5865F2;" title="Discord Blurple" onclick="applyColorPreset('welColor', 'welColorHex', '#5865F2', syncWelcomeLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #23a55a;" title="Emerald Green" onclick="applyColorPreset('welColor', 'welColorHex', '#23a55a', syncWelcomeLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #f23f43;" title="Crimson Red" onclick="applyColorPreset('welColor', 'welColorHex', '#f23f43', syncWelcomeLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #f0b232;" title="Amber Gold" onclick="applyColorPreset('welColor', 'welColorHex', '#f0b232', syncWelcomeLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #9b59b6;" title="Royal Purple" onclick="applyColorPreset('welColor', 'welColorHex', '#9b59b6', syncWelcomeLivePreview)"></div>
+                <div class="color-preset-pill" style="background: #2b2d31;" title="Dark Slate" onclick="applyColorPreset('welColor', 'welColorHex', '#2b2d31', syncWelcomeLivePreview)"></div>
               </div>
             </div>
 
@@ -5487,7 +6133,7 @@
 
           <div class="form-group" style="margin-top: 1rem;">
             <label class="form-label">Descrizione Interna Embed:</label>
-            <textarea id="welEmbedDesc" class="form-control" rows="5" oninput="markUnsavedChanges()"><%= config.welcome?.embedDescription || '**Siamo felicissimi di averti qui con noi!**\n\nTi invitiamo a leggere il regolamento e a presentarti nella chat generale.\n\n*Divertiti e buona permanenza!*' %></textarea>
+            <textarea id="welEmbedDesc" class="form-control" rows="5" oninput="syncWelcomeLivePreview(); markUnsavedChanges();"><%= config.welcome?.embedDescription || '**Siamo felicissimi di averti qui con noi!**\n\nTi invitiamo a leggere il regolamento e a presentarti nella chat generale.\n\n*Divertiti e buona permanenza!*' %></textarea>
             <div style="margin-top: 0.4rem;">
               <span class="var-chip" onclick="insertVar('welEmbedDesc', '{user}')">{user}</span>
               <span class="var-chip" onclick="insertVar('welEmbedDesc', '{username}')">{username}</span>
@@ -5495,9 +6141,53 @@
               <span class="var-chip" onclick="insertVar('welEmbedDesc', '{memberCount}')">{memberCount}</span>
             </div>
           </div>
-        </div>
+        
+          </div>
+          
+          <!-- Right Column: Live Discord Embed Preview -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Canale di Benvenuto
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Target: <strong>Canale Chat</strong>
+                </div>
+              </div>
 
-        <!-- DM WELCOME CARD -->
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <div id="welLiveChat" class="discord-chat-text"></div>
+
+                  <div id="welLiveEmbed" class="discord-embed-box">
+                    <div class="discord-embed-top-row">
+                      <div class="discord-embed-main-col">
+                        <div id="welLiveTitle" class="discord-embed-title"></div>
+                        <div id="welLiveDesc" class="discord-embed-desc"></div>
+                      </div>
+                      <img id="welLiveThumb" class="discord-embed-thumb" src="" alt="Thumbnail" style="display: none;">
+                    </div>
+                    <div id="welLiveFooter" class="discord-embed-footer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+        
+
+<!-- DM WELCOME CARD -->
         <div class="dashboard-card">
           <div class="card-header">
             <div>
@@ -5643,7 +6333,281 @@
       </div>
 
       <!-- ================= TAB: AUTOMOD ================= -->
-      <div id="tab-automod" class="tab-pane">
+      
+      <!-- ================= 41. COSTRUTTORE EMBED UNIVERSALE & STUDIO ================= -->
+      <div id="tab-embed-builder" class="tab-pane">
+        <div class="sub-header">
+          <div class="sub-header-left">
+            <div class="header-icon supercircle">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div>
+              <h2 class="sub-title">Costruttore Embed Universale & Studio</h2>
+              <p class="sub-desc">Componi annunci ed embed avanzati con formattazione Discord in tempo reale, immagini, campi multipli e invio istantaneo.</p>
+            </div>
+          </div>
+          <div class="sub-header-actions">
+            <button type="button" class="btn-refresh" onclick="resetEmbedBuilder()">
+              <i class="fa-solid fa-rotate-left"></i> Reset
+            </button>
+            <button type="button" class="btn-action" onclick="copyEmbedJson()">
+              <i class="fa-solid fa-copy"></i> Copia JSON
+            </button>
+            <button type="button" class="btn-save" onclick="sendCustomEmbed()">
+              <i class="fa-solid fa-paper-plane"></i> Invia nel Canale
+            </button>
+          </div>
+        </div>
+
+        <div class="discord-editor-grid">
+          <!-- Left Column: Form Controls -->
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+
+            <!-- Destination & Mention -->
+            <div class="dashboard-card" style="margin-bottom: 0;">
+              <div class="card-header">
+                <div class="card-title"><i class="fa-solid fa-bullhorn"></i> Destinazione & Menzione</div>
+              </div>
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Canale di Invio Discord:</label>
+                  <select id="ebChannelId" class="form-control" onchange="syncEbPreview()">
+                    <option value="">-- Seleziona canale --</option>
+                    <% for (const [groupName, channels] of Object.entries(groupedChannels)) { %>
+                      <optgroup label="<%= groupName %>">
+                        <% channels.forEach(ch => { %>
+                          <option value="<%= ch.id %>"># <%= ch.name %></option>
+                        <% }) %>
+                      </optgroup>
+                    <% } %>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Menzione Ruolo (Ping):</label>
+                  <select id="ebPingRole" class="form-control" onchange="syncEbPreview()">
+                    <option value="@none">Nessuna menzione</option>
+                    <option value="@everyone">@everyone</option>
+                    <option value="@here">@here</option>
+                    <% (roles || []).forEach(r => { %>
+                      <option value="<%= r.id %>">@<%= r.name %></option>
+                    <% }) %>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group" style="margin-top: 1rem;">
+                <label class="form-label">Messaggio Chat Esterno (Sopra l'embed):</label>
+                <input type="text" id="ebChatMessage" class="form-control" placeholder="es. Attenzione a tutti i membri di {guild}!" oninput="syncEbPreview()">
+                <div class="var-chips-wrap">
+                  <span class="var-chip" onclick="insertVar('ebChatMessage', '{user}'); syncEbPreview();">{user}</span>
+                  <span class="var-chip" onclick="insertVar('ebChatMessage', '{guild}'); syncEbPreview();">{guild}</span>
+                  <span class="var-chip" onclick="insertVar('ebChatMessage', '{memberCount}'); syncEbPreview();">{memberCount}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Embed Content -->
+            <div class="dashboard-card" style="margin-bottom: 0;">
+              <div class="card-header">
+                <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Corpo & Colore Embed</div>
+              </div>
+
+              <!-- Author -->
+              <div class="grid-3" style="margin-bottom: 1rem;">
+                <div class="form-group">
+                  <label class="form-label">Nome Autore:</label>
+                  <input type="text" id="ebAuthorName" class="form-control" placeholder="es. Staff Ufficiale RoomUp" oninput="syncEbPreview()">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Icona Autore (URL):</label>
+                  <input type="text" id="ebAuthorIcon" class="form-control" placeholder="https://..." oninput="syncEbPreview()">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Link Autore (URL):</label>
+                  <input type="text" id="ebAuthorUrl" class="form-control" placeholder="https://..." oninput="syncEbPreview()">
+                </div>
+              </div>
+
+              <!-- Title & URL -->
+              <div class="grid-2" style="margin-bottom: 1rem;">
+                <div class="form-group">
+                  <label class="form-label">Titolo Embed:</label>
+                  <input type="text" id="ebTitle" class="form-control" value="Annuncio Ufficiale • {guild}" oninput="syncEbPreview()">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Link Titolo (URL):</label>
+                  <input type="text" id="ebTitleUrl" class="form-control" placeholder="https://..." oninput="syncEbPreview()">
+                </div>
+              </div>
+
+              <!-- Color Picker + Presets -->
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label class="form-label">Colore Barra Laterale Embed:</label>
+                <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+                  <div class="color-picker-group">
+                    <input type="color" id="ebColor" value="#5865F2" class="color-picker-input" onchange="document.getElementById('ebColorHex').value = this.value; syncEbPreview();">
+                    <input type="text" id="ebColorHex" class="form-control form-control-mono" value="#5865F2" oninput="if(/^#[0-9A-F]{6}$/i.test(this.value)){document.getElementById('ebColor').value = this.value;} syncEbPreview();">
+                  </div>
+                  <div class="quick-colors-row">
+                    <div class="color-preset-pill" style="background: #5865F2;" title="Discord Blurple" onclick="applyColorPreset('ebColor', 'ebColorHex', '#5865F2', syncEbPreview)"></div>
+                    <div class="color-preset-pill" style="background: #23a55a;" title="Emerald Green" onclick="applyColorPreset('ebColor', 'ebColorHex', '#23a55a', syncEbPreview)"></div>
+                    <div class="color-preset-pill" style="background: #f23f43;" title="Crimson Red" onclick="applyColorPreset('ebColor', 'ebColorHex', '#f23f43', syncEbPreview)"></div>
+                    <div class="color-preset-pill" style="background: #f0b232;" title="Amber Gold" onclick="applyColorPreset('ebColor', 'ebColorHex', '#f0b232', syncEbPreview)"></div>
+                    <div class="color-preset-pill" style="background: #9b59b6;" title="Royal Purple" onclick="applyColorPreset('ebColor', 'ebColorHex', '#9b59b6', syncEbPreview)"></div>
+                    <div class="color-preset-pill" style="background: #2b2d31;" title="Dark Slate" onclick="applyColorPreset('ebColor', 'ebColorHex', '#2b2d31', syncEbPreview)"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <div class="form-group">
+                <label class="form-label">Descrizione Embed (Markdown supportato):</label>
+                <textarea id="ebDesc" class="form-control" rows="6" oninput="syncEbPreview()">Siamo felici di annunciare un grande aggiornamento per la community di **{guild}**!
+
+> Leggi con attenzione le novità e facci sapere cosa ne pensi.
+
+Per qualsiasi richiesta o assistenza, apri pure un ticket!</textarea>
+                <div class="var-chips-wrap">
+                  <span class="var-chip" onclick="insertVar('ebDesc', '{user}'); syncEbPreview();">{user}</span>
+                  <span class="var-chip" onclick="insertVar('ebDesc', '{username}'); syncEbPreview();">{username}</span>
+                  <span class="var-chip" onclick="insertVar('ebDesc', '{guild}'); syncEbPreview();">{guild}</span>
+                  <span class="var-chip" onclick="insertVar('ebDesc', '{memberCount}'); syncEbPreview();">{memberCount}</span>
+                  <span class="var-chip" onclick="insertVar('ebDesc', '{channel}'); syncEbPreview();">{channel}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom Dynamic Fields -->
+            <div class="dashboard-card" style="margin-bottom: 0;">
+              <div class="card-header">
+                <div>
+                  <div class="card-title"><i class="fa-solid fa-table-columns"></i> Campi Personalizzati (Fields)</div>
+                  <div class="card-desc">Aggiungi fino a 25 campi organizzati in colonna o affiancati.</div>
+                </div>
+                <button type="button" class="btn-refresh" onclick="addEbField()">
+                  <i class="fa-solid fa-plus"></i> Aggiungi Campo
+                </button>
+              </div>
+              <div id="ebFieldsList" class="fields-builder-list"></div>
+            </div>
+
+            <!-- Images & Media -->
+            <div class="dashboard-card" style="margin-bottom: 0;">
+              <div class="card-header">
+                <div class="card-title"><i class="fa-solid fa-image"></i> Immagini & Media</div>
+              </div>
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Miniatura in alto a destra (Thumbnail URL):</label>
+                  <input type="text" id="ebThumbnail" class="form-control" placeholder="https://... o lascia vuoto" oninput="syncEbPreview()">
+                  <div style="margin-top: 0.35rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button type="button" class="btn-refresh" style="height: 28px; font-size: 0.74rem;" onclick="document.getElementById('ebThumbnail').value = '<%= guildIcon || '' %>'; syncEbPreview();">Icona Server</button>
+                    <button type="button" class="btn-refresh" style="height: 28px; font-size: 0.74rem;" onclick="document.getElementById('ebThumbnail').value = '/img/butterfly_avatar.jpg'; syncEbPreview();">Logo RoomUp</button>
+                    <button type="button" class="btn-refresh" style="height: 28px; font-size: 0.74rem;" onclick="document.getElementById('ebThumbnail').value = ''; syncEbPreview();">Rimuovi</button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Banner Grande Principale (Image URL):</label>
+                  <input type="text" id="ebImage" class="form-control" placeholder="https://... o lascia vuoto" oninput="syncEbPreview()">
+                  <div style="margin-top: 0.35rem; display: flex; gap: 0.5rem;">
+                    <button type="button" class="btn-refresh" style="height: 28px; font-size: 0.74rem;" onclick="document.getElementById('ebImage').value = ''; syncEbPreview();">Rimuovi Immagine</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer & Timestamp -->
+            <div class="dashboard-card" style="margin-bottom: 0;">
+              <div class="card-header">
+                <div class="card-title"><i class="fa-solid fa-clock"></i> Piè di Pagina (Footer) & Timestamp</div>
+              </div>
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Testo Footer:</label>
+                  <input type="text" id="ebFooterText" class="form-control" value="RoomUp! Community System • {guild}" oninput="syncEbPreview()">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Icona Footer (URL):</label>
+                  <input type="text" id="ebFooterIcon" class="form-control" placeholder="https://..." oninput="syncEbPreview()">
+                </div>
+              </div>
+              <div class="setting-item-box" style="margin-top: 1rem;">
+                <div>
+                  <div class="setting-title">Includi Data & Ora (Timestamp Discord)</div>
+                  <div class="setting-desc">Mostra l'ora corrente a fianco del footer</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="ebTimestamp" checked onchange="syncEbPreview()">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Live Discord Embed Preview (Sticky) -->
+          <div class="discord-preview-sticky">
+            <div class="discord-preview-card">
+              <div class="discord-preview-header-bar">
+                <div class="discord-preview-badge">
+                  <i class="fa-solid fa-eye"></i> Anteprima Discord in Tempo Reale
+                </div>
+                <div style="font-size: 0.74rem; color: #949ba4;">
+                  Destinazione: <strong id="ebPreviewChannelName">#generale</strong>
+                </div>
+              </div>
+
+              <!-- Discord Message -->
+              <div class="discord-msg-wrap">
+                <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="discord-msg-avatar">
+                <div class="discord-msg-content">
+                  <div class="discord-msg-author-line">
+                    <span class="discord-msg-botname">RoomUp!</span>
+                    <span class="discord-app-tag">APP</span>
+                    <span class="discord-msg-timestamp">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                  </div>
+
+                  <!-- Chat Text -->
+                  <div id="ebPreviewChat" class="discord-chat-text" style="display: none;"></div>
+
+                  <!-- The Embed Box -->
+                  <div id="ebPreviewEmbed" class="discord-embed-box">
+                    <div class="discord-embed-top-row">
+                      <div class="discord-embed-main-col">
+                        <div id="ebPreviewAuthor" class="discord-embed-author" style="display: none;"></div>
+                        <div id="ebPreviewTitle" class="discord-embed-title">Annuncio Ufficiale • <%= guildName %></div>
+                        <div id="ebPreviewDesc" class="discord-embed-desc"></div>
+                      </div>
+                      <img id="ebPreviewThumb" class="discord-embed-thumb" src="" alt="Thumbnail" style="display: none;">
+                    </div>
+
+                    <!-- Fields Grid -->
+                    <div id="ebPreviewFields" class="discord-embed-fields-grid" style="display: none;"></div>
+
+                    <!-- Banner Image -->
+                    <img id="ebPreviewImage" class="discord-embed-banner-img" src="" alt="Banner" style="display: none;">
+
+                    <!-- Footer -->
+                    <div id="ebPreviewFooter" class="discord-embed-footer">
+                      <span>RoomUp! Community System • <%= guildName %></span>
+                      <span class="discord-embed-footer-time">Oggi alle <%= new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' }) %></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Dispatch Action -->
+              <div style="margin-top: 1rem; display: flex; gap: 0.75rem;">
+                <button type="button" class="btn-save" style="width: 100%; height: 42px;" onclick="sendCustomEmbed()">
+                  <i class="fa-solid fa-paper-plane"></i> Invia Subito su Discord
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div id="tab-automod" class="tab-pane">
         <div class="sub-header">
           <div class="sub-header-left">
             <div class="header-icon supercircle">
@@ -10574,7 +11538,494 @@
       }
     }
 
-  </script>
+  
+
+
+    /* ================= DISCORD LIVE EMBED PREVIEW & STUDIO CONTROLLER ================= */
+    const GUILD_REAL_NAME = "<%= (guildName || 'RoomUp').replace(/"/g, '&quot;') %>";
+    const GUILD_REAL_MEMBERS = "<%= memberCount || '1,420' %>";
+    const GUILD_REAL_ICON = "<%= guildIcon || '/img/butterfly_avatar.jpg' %>";
+
+    // Markdown Parser per Discord Live Preview
+    function parseDiscordMarkdown(text, gName, mCount) {
+      if (!text) return "";
+      let str = String(text);
+
+      // Variabili Discord
+      str = str.replace(/\{user\}/gi, '<span class="discord-mention">@Mario</span>');
+      str = str.replace(/\{username\}/gi, 'Mario');
+      str = str.replace(/\{guild\}/gi, '<strong>' + (gName || 'RoomUp') + '</strong>');
+      str = str.replace(/\{memberCount\}/gi, '<strong>' + (mCount || '1,420') + '</strong>');
+      str = str.replace(/\{channel\}/gi, '<span class="discord-mention">#generale</span>');
+      str = str.replace(/\{ticketId\}/gi, '<strong>#0042</strong>');
+      str = str.replace(/\{level\}/gi, '<strong>15</strong>');
+      str = str.replace(/\{xp\}/gi, '<strong>4,250</strong>');
+
+      // Protezione caratteri speciali preservando i tag
+      str = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      str = str.replace(/&lt;span class="discord-mention"&gt;@Mario&lt;\/span&gt;/g, '<span class="discord-mention">@Mario</span>');
+      str = str.replace(/&lt;span class="discord-mention"&gt;#generale&lt;\/span&gt;/g, '<span class="discord-mention">#generale</span>');
+      str = str.replace(/&lt;strong&gt;/g, '<strong>').replace(/&lt;\/strong&gt;/g, '</strong>');
+
+      // Code blocks & inline code
+      str = str.replace(/```(?:[a-z]*)\n?([\s\S]*?)```/g, '<div class="discord-code-block"><code>$1</code></div>');
+      str = str.replace(/`([^`]+)`/g, '<code class="discord-inline-code">$1</code>');
+
+      // Grassetto e corsivo
+      str = str.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>');
+      str = str.replace(/\*([^\*]+)\*/g, '<em>$1</em>');
+
+      // Citazioni >
+      str = str.replace(/^&gt;\s?(.*)$/gm, '<div class="discord-quote">$1</div>');
+
+      // A capo
+      str = str.replace(/\n/g, '<br>');
+
+      return str;
+    }
+
+    // 1. Sync Live Preview per il Costruttore Embed Studio
+    let ebCustomFields = [];
+
+    function addEbField() {
+      if (ebCustomFields.length >= 25) {
+        showToast("Massimo 25 campi consentiti per embed.");
+        return;
+      }
+      ebCustomFields.push({ name: "Nome Campo", value: "Valore campo...", inline: false });
+      renderEbFieldsForm();
+      syncEbPreview();
+    }
+
+    function removeEbField(idx) {
+      ebCustomFields.splice(idx, 1);
+      renderEbFieldsForm();
+      syncEbPreview();
+    }
+
+    function renderEbFieldsForm() {
+      const container = document.getElementById('ebFieldsList');
+      if (!container) return;
+      if (ebCustomFields.length === 0) {
+        container.innerHTML = '<div style="font-size: 0.84rem; color: var(--text-muted); padding: 0.75rem 0;">Nessun campo personalizzato aggiunto. Clicca su "+ Aggiungi Campo" per inserire colonne o righe.</div>';
+        return;
+      }
+      container.innerHTML = ebCustomFields.map((f, idx) => `
+        <div class="field-builder-row">
+          <input type="text" class="form-control" placeholder="Titolo Campo" value="${f.name.replace(/"/g, '&quot;')}" oninput="ebCustomFields[${idx}].name = this.value; syncEbPreview();">
+          <input type="text" class="form-control" placeholder="Valore del campo" value="${f.value.replace(/"/g, '&quot;')}" oninput="ebCustomFields[${idx}].value = this.value; syncEbPreview();">
+          <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--text-muted); cursor: pointer;">
+            <input type="checkbox" ${f.inline ? 'checked' : ''} onchange="ebCustomFields[${idx}].inline = this.checked; syncEbPreview();"> In-linea
+          </label>
+          <button type="button" class="btn-field-del" onclick="removeEbField(${idx})" title="Rimuovi campo"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      `).join('');
+    }
+
+    function syncEbPreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      // Channel Name
+      const chSel = document.getElementById('ebChannelId');
+      const pChName = document.getElementById('ebPreviewChannelName');
+      if (chSel && pChName) {
+        pChName.textContent = chSel.selectedOptions[0]?.text || '#generale';
+      }
+
+      // Ping & Chat Message
+      const pingRole = document.getElementById('ebPingRole')?.value;
+      const chatInput = document.getElementById('ebChatMessage')?.value || '';
+      const chatPreview = document.getElementById('ebPreviewChat');
+      if (chatPreview) {
+        let chatHtml = '';
+        if (pingRole && pingRole !== '@none') {
+          chatHtml += `<span class="discord-mention">${pingRole === '@everyone' ? '@everyone' : pingRole === '@here' ? '@here' : '@Ruolo'}</span> `;
+        }
+        if (chatInput.trim()) {
+          chatHtml += parseDiscordMarkdown(chatInput, gName, mCount);
+        }
+        chatPreview.innerHTML = chatHtml;
+        chatPreview.style.display = chatHtml ? 'block' : 'none';
+      }
+
+      // Embed Box
+      const embedBox = document.getElementById('ebPreviewEmbed');
+      const colorVal = document.getElementById('ebColor')?.value || '#5865F2';
+      if (embedBox) embedBox.style.borderLeftColor = colorVal;
+
+      // Author
+      const aName = document.getElementById('ebAuthorName')?.value || '';
+      const aIcon = document.getElementById('ebAuthorIcon')?.value || '';
+      const aUrl = document.getElementById('ebAuthorUrl')?.value || '';
+      const aPreview = document.getElementById('ebPreviewAuthor');
+      if (aPreview) {
+        if (aName.trim()) {
+          aPreview.style.display = 'flex';
+          let img = aIcon.trim().startsWith('http') ? `<img src="${aIcon.trim()}">` : '';
+          let txt = parseDiscordMarkdown(aName, gName, mCount);
+          aPreview.innerHTML = aUrl.trim().startsWith('http') ? `${img}<a href="${aUrl.trim()}" target="_blank">${txt}</a>` : `${img}<span>${txt}</span>`;
+        } else {
+          aPreview.style.display = 'none';
+        }
+      }
+
+      // Title
+      const tVal = document.getElementById('ebTitle')?.value || '';
+      const tUrl = document.getElementById('ebTitleUrl')?.value || '';
+      const tPreview = document.getElementById('ebPreviewTitle');
+      if (tPreview) {
+        if (tVal.trim()) {
+          tPreview.style.display = 'block';
+          const txt = parseDiscordMarkdown(tVal, gName, mCount);
+          tPreview.innerHTML = tUrl.trim().startsWith('http') ? `<a href="${tUrl.trim()}" target="_blank">${txt}</a>` : txt;
+        } else {
+          tPreview.style.display = 'none';
+        }
+      }
+
+      // Description
+      const dVal = document.getElementById('ebDesc')?.value || '';
+      const dPreview = document.getElementById('ebPreviewDesc');
+      if (dPreview) {
+        dPreview.innerHTML = parseDiscordMarkdown(dVal, gName, mCount);
+      }
+
+      // Fields
+      const fieldsPreview = document.getElementById('ebPreviewFields');
+      if (fieldsPreview) {
+        if (ebCustomFields.length > 0) {
+          fieldsPreview.style.display = 'grid';
+          fieldsPreview.innerHTML = ebCustomFields.map(f => `
+            <div class="discord-embed-field ${f.inline ? '' : 'col-full'}">
+              <div class="discord-embed-field-name">${parseDiscordMarkdown(f.name, gName, mCount)}</div>
+              <div class="discord-embed-field-val">${parseDiscordMarkdown(f.value, gName, mCount)}</div>
+            </div>
+          `).join('');
+        } else {
+          fieldsPreview.style.display = 'none';
+        }
+      }
+
+      // Thumbnail
+      const thumbVal = document.getElementById('ebThumbnail')?.value || '';
+      const thumbPreview = document.getElementById('ebPreviewThumb');
+      if (thumbPreview) {
+        if (thumbVal.trim().startsWith('http') || thumbVal.trim().startsWith('/')) {
+          thumbPreview.src = thumbVal.trim();
+          thumbPreview.style.display = 'block';
+        } else {
+          thumbPreview.style.display = 'none';
+        }
+      }
+
+      // Image
+      const imgVal = document.getElementById('ebImage')?.value || '';
+      const imgPreview = document.getElementById('ebPreviewImage');
+      if (imgPreview) {
+        if (imgVal.trim().startsWith('http')) {
+          imgPreview.src = imgVal.trim();
+          imgPreview.style.display = 'block';
+        } else {
+          imgPreview.style.display = 'none';
+        }
+      }
+
+      // Footer & Timestamp
+      const fText = document.getElementById('ebFooterText')?.value || '';
+      const fIcon = document.getElementById('ebFooterIcon')?.value || '';
+      const hasTime = document.getElementById('ebTimestamp')?.checked !== false;
+      const fPreview = document.getElementById('ebPreviewFooter');
+      if (fPreview) {
+        if (fText.trim() || hasTime) {
+          fPreview.style.display = 'flex';
+          let out = '';
+          if (fIcon.trim().startsWith('http')) out += `<img src="${fIcon.trim()}">`;
+          if (fText.trim()) out += `<span>${parseDiscordMarkdown(fText, gName, mCount)}</span>`;
+          if (hasTime) out += `<span class="discord-embed-footer-time">Oggi alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>`;
+          fPreview.innerHTML = out;
+        } else {
+          fPreview.style.display = 'none';
+        }
+      }
+    }
+
+    // Invia Custom Embed via API
+    async function sendCustomEmbed() {
+      const channelId = document.getElementById('ebChannelId')?.value;
+      if (!channelId) {
+        showToast("⚠️ Seleziona prima un canale di destinazione valido!");
+        return;
+      }
+
+      const payload = {
+        channelId,
+        content: document.getElementById('ebChatMessage')?.value || '',
+        pingRole: document.getElementById('ebPingRole')?.value || '@none',
+        embed: {
+          title: document.getElementById('ebTitle')?.value || '',
+          url: document.getElementById('ebTitleUrl')?.value || '',
+          description: document.getElementById('ebDesc')?.value || '',
+          color: document.getElementById('ebColor')?.value || '#5865F2',
+          author: {
+            name: document.getElementById('ebAuthorName')?.value || '',
+            iconURL: document.getElementById('ebAuthorIcon')?.value || '',
+            url: document.getElementById('ebAuthorUrl')?.value || ''
+          },
+          thumbnail: document.getElementById('ebThumbnail')?.value || '',
+          image: document.getElementById('ebImage')?.value || '',
+          footer: {
+            text: document.getElementById('ebFooterText')?.value || '',
+            iconURL: document.getElementById('ebFooterIcon')?.value || ''
+          },
+          timestamp: document.getElementById('ebTimestamp')?.checked !== false,
+          fields: ebCustomFields
+        }
+      };
+
+      try {
+        showToast("⏳ Invio dell'embed in corso su Discord...");
+        const res = await fetch(`/api/dashboard/<%= guildId %>/send-embed`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          showToast(`🎉 ${data.message}`);
+        } else {
+          showToast(`❌ Errore: ${data.message || 'Invio fallito'}`);
+        }
+      } catch (err) {
+        showToast(`❌ Errore di rete: ${err.message}`);
+      }
+    }
+
+    function resetEmbedBuilder() {
+      if (!confirm("Vuoi ripristinare i valori predefiniti del costruttore embed?")) return;
+      document.getElementById('ebChatMessage').value = '';
+      document.getElementById('ebAuthorName').value = '';
+      document.getElementById('ebAuthorIcon').value = '';
+      document.getElementById('ebAuthorUrl').value = '';
+      document.getElementById('ebTitle').value = 'Annuncio Ufficiale • {guild}';
+      document.getElementById('ebTitleUrl').value = '';
+      document.getElementById('ebDesc').value = 'Siamo felici di annunciare un grande aggiornamento per la community di **{guild}**!\n\n> Leggi con attenzione le novità e facci sapere cosa ne pensi.\n\nPer qualsiasi richiesta o assistenza, apri pure un ticket!';
+      document.getElementById('ebColor').value = '#5865F2';
+      document.getElementById('ebColorHex').value = '#5865F2';
+      document.getElementById('ebThumbnail').value = '';
+      document.getElementById('ebImage').value = '';
+      document.getElementById('ebFooterText').value = 'RoomUp! Community System • {guild}';
+      document.getElementById('ebFooterIcon').value = '';
+      document.getElementById('ebTimestamp').checked = true;
+      ebCustomFields = [];
+      renderEbFieldsForm();
+      syncEbPreview();
+      showToast("Costruttore embed ripristinato.");
+    }
+
+    function copyEmbedJson() {
+      const payload = {
+        content: document.getElementById('ebChatMessage')?.value || '',
+        embed: {
+          title: document.getElementById('ebTitle')?.value || '',
+          description: document.getElementById('ebDesc')?.value || '',
+          color: parseInt((document.getElementById('ebColor')?.value || '#5865F2').replace('#', ''), 16),
+          fields: ebCustomFields
+        }
+      };
+      navigator.clipboard.writeText(JSON.stringify(payload, null, 2)).then(() => {
+        showToast("📋 Codice JSON dell'embed copiato negli appunti!");
+      });
+    }
+
+    // 2. Sync Live Preview per Welcome & Leave
+    function syncWelcomeLivePreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      const chatText = document.getElementById('welChatMessage')?.value || '';
+      const chatPreview = document.getElementById('welLiveChat');
+      if (chatPreview) {
+        chatPreview.innerHTML = parseDiscordMarkdown(chatText, gName, mCount);
+        chatPreview.style.display = chatText.trim() ? 'block' : 'none';
+      }
+
+      const useEmbed = document.getElementById('welUseEmbed')?.checked !== false;
+      const embedBox = document.getElementById('welLiveEmbed');
+      if (embedBox) {
+        embedBox.style.display = useEmbed ? 'block' : 'none';
+        const col = document.getElementById('welColor')?.value || '#5865F2';
+        embedBox.style.borderLeftColor = col;
+      }
+
+      const titleVal = document.getElementById('welEmbedTitle')?.value || '';
+      const titlePreview = document.getElementById('welLiveTitle');
+      if (titlePreview) titlePreview.innerHTML = parseDiscordMarkdown(titleVal, gName, mCount);
+
+      const descVal = document.getElementById('welEmbedDesc')?.value || '';
+      const descPreview = document.getElementById('welLiveDesc');
+      if (descPreview) descPreview.innerHTML = parseDiscordMarkdown(descVal, gName, mCount);
+
+      const showThumb = document.getElementById('welThumb')?.checked !== false;
+      const thumbMode = document.getElementById('welThumbMode')?.value || 'guild';
+      const thumbPreview = document.getElementById('welLiveThumb');
+      if (thumbPreview) {
+        if (showThumb) {
+          thumbPreview.style.display = 'block';
+          thumbPreview.src = thumbMode === 'guild' ? GUILD_REAL_ICON : '/img/butterfly_avatar.jpg';
+        } else {
+          thumbPreview.style.display = 'none';
+        }
+      }
+
+      const footerVal = document.getElementById('welFooterText')?.value || '';
+      const footerPreview = document.getElementById('welLiveFooter');
+      if (footerPreview) {
+        footerPreview.innerHTML = `<span>${parseDiscordMarkdown(footerVal, gName, mCount)}</span><span class="discord-embed-footer-time">Oggi alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>`;
+      }
+    }
+
+    // 3. Sync Live Preview per Tickets
+    function syncTicketPanelLivePreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      const titleVal = document.getElementById('tickTitle')?.value || document.getElementById('tickWelcomeTitle')?.value || 'SUPPORTO';
+      const descVal = document.getElementById('tickDesc')?.value || 'Crea un ticket per richiedere assistenza privata con lo staff.';
+      const colorVal = document.getElementById('tickColor')?.value || document.getElementById('tickWelcomeColor')?.value || '#5865F2';
+      const footerVal = document.getElementById('tickFooter')?.value || document.getElementById('tickWelcomeFooter')?.value || 'RoomUp! Support System';
+
+      const embedBox = document.getElementById('tickLiveEmbed');
+      if (embedBox) embedBox.style.borderLeftColor = colorVal;
+
+      const tPreview = document.getElementById('tickLiveTitle');
+      if (tPreview) tPreview.innerHTML = parseDiscordMarkdown(titleVal, gName, mCount);
+
+      const dPreview = document.getElementById('tickLiveDesc');
+      if (dPreview) dPreview.innerHTML = parseDiscordMarkdown(descVal, gName, mCount);
+
+      const fPreview = document.getElementById('tickLiveFooter');
+      if (fPreview) fPreview.innerHTML = `<span>${parseDiscordMarkdown(footerVal, gName, mCount)}</span><span class="discord-embed-footer-time">Oggi alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>`;
+    }
+
+    // 4. Sync Live Preview per Verifica
+    function syncVerificationPanelLivePreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      const titleVal = document.getElementById('verEmbedTitle')?.value || 'Verifica del Server';
+      const descVal = document.getElementById('verEmbedDesc')?.value || 'Clicca sul pulsante qui sotto per completare la verifica del tuo account.';
+      const colorVal = document.getElementById('verColor')?.value || '#5865F2';
+      const footerVal = document.getElementById('verFooterText')?.value || 'Sistema di Protezione RoomUp!';
+      const btnLabel = document.getElementById('verButtonLabel')?.value || 'Verificati Ora';
+      const btnColor = document.getElementById('verButtonColor')?.value || 'success';
+
+      const embedBox = document.getElementById('verLiveEmbed');
+      if (embedBox) embedBox.style.borderLeftColor = colorVal;
+
+      const tPreview = document.getElementById('verLiveTitle');
+      if (tPreview) tPreview.innerHTML = parseDiscordMarkdown(titleVal, gName, mCount);
+
+      const dPreview = document.getElementById('verLiveDesc');
+      if (dPreview) dPreview.innerHTML = parseDiscordMarkdown(descVal, gName, mCount);
+
+      const fPreview = document.getElementById('verLiveFooter');
+      if (fPreview) fPreview.innerHTML = `<span>${parseDiscordMarkdown(footerVal, gName, mCount)}</span><span class="discord-embed-footer-time">Oggi alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>`;
+
+      const btnPreview = document.getElementById('verLiveButton');
+      if (btnPreview) {
+        btnPreview.textContent = btnLabel;
+        btnPreview.className = 'discord-btn-preview ' + (btnColor === 'success' ? 'green' : btnColor === 'danger' ? 'red' : btnColor === 'secondary' ? 'gray' : 'blurple');
+      }
+    }
+
+
+
+    // Auto-init all Discord Embed Previews on load
+    document.addEventListener("DOMContentLoaded", () => {
+      try {
+        renderEbFieldsForm();
+        syncEbPreview();
+        syncWelcomeLivePreview();
+        syncTicketPanelLivePreview();
+        syncVerificationPanelLivePreview();
+        if (typeof syncPartnershipLivePreview === 'function') syncPartnershipLivePreview();
+        if (typeof syncLevelsLivePreview === 'function') syncLevelsLivePreview();
+        if (typeof syncGiveawaysLivePreview === 'function') syncGiveawaysLivePreview();
+      } catch (e) {
+        console.warn("Embed preview auto-init warning:", e);
+      }
+    });
+
+
+
+    function syncPartnershipLivePreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      const titleVal = document.getElementById('partEmbedTitle')?.value || '🤝 Nuova Partnership Ufficiale!';
+      const descVal = document.getElementById('partDescTemplate')?.value || 'Siamo fieri di presentare la nuova collaborazione con il server partner!';
+      const colorVal = document.getElementById('partColor')?.value || '#5865F2';
+      const footerVal = document.getElementById('partFooterText')?.value || 'RoomUp! Network • Partnership System';
+
+      const embedBox = document.getElementById('partLiveEmbed');
+      if (embedBox) embedBox.style.borderLeftColor = colorVal;
+
+      const tPreview = document.getElementById('partLiveTitle');
+      if (tPreview) tPreview.innerHTML = parseDiscordMarkdown(titleVal, gName, mCount);
+
+      const dPreview = document.getElementById('partLiveDesc');
+      if (dPreview) dPreview.innerHTML = parseDiscordMarkdown(descVal, gName, mCount);
+
+      const fPreview = document.getElementById('partLiveFooter');
+      if (fPreview) fPreview.innerHTML = `<span>${parseDiscordMarkdown(footerVal, gName, mCount)}</span><span class="discord-embed-footer-time">Oggi alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>`;
+    }
+
+
+
+    function syncLevelsLivePreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      const titleVal = document.getElementById('levEmbedTitle')?.value || 'Level Up!';
+      const msgVal = document.getElementById('levMessage')?.value || 'Congratulazioni {user}! Sei salito al **Livello {level}**!';
+      const colorVal = document.getElementById('levColor')?.value || '#f1c40f';
+      const footerVal = document.getElementById('levFooterText')?.value || 'Continua a chattare per salire di rango!';
+
+      const embedBox = document.getElementById('levLiveEmbed');
+      if (embedBox) embedBox.style.borderLeftColor = colorVal;
+
+      const tPreview = document.getElementById('levLiveTitle');
+      if (tPreview) tPreview.innerHTML = parseDiscordMarkdown(titleVal, gName, mCount);
+
+      const cPreview = document.getElementById('levLiveChat');
+      if (cPreview) cPreview.innerHTML = parseDiscordMarkdown(msgVal, gName, mCount);
+
+      const fPreview = document.getElementById('levLiveFooter');
+      if (fPreview) fPreview.innerHTML = `<span>${parseDiscordMarkdown(footerVal, gName, mCount)}</span><span class="discord-embed-footer-time">Oggi alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>`;
+    }
+    
+
+
+    function syncGiveawaysLivePreview() {
+      const gName = GUILD_REAL_NAME;
+      const mCount = GUILD_REAL_MEMBERS;
+
+      const titleVal = document.getElementById('givStartTitle')?.value || '🎉 GIVEAWAY IN CORSO';
+      const colorVal = document.getElementById('givStartColor')?.value || '#5865F2';
+      const footerVal = document.getElementById('givStartFooter')?.value || 'Reagisci o clicca per partecipare! • Termina tra 2 giorni';
+
+      const embedBox = document.getElementById('givLiveEmbed');
+      if (embedBox) embedBox.style.borderLeftColor = colorVal;
+
+      const tPreview = document.getElementById('givLiveTitle');
+      if (tPreview) tPreview.innerHTML = parseDiscordMarkdown(titleVal, gName, mCount);
+
+      const fPreview = document.getElementById('givLiveFooter');
+      if (fPreview) fPreview.innerHTML = `<span>${parseDiscordMarkdown(footerVal, gName, mCount)}</span>`;
+    }
+    
+</script>
 
   <!-- ================= COMMAND PALETTE (CTRL+K) ================= -->
   <div id="cmdPaletteModal" class="modal-overlay" onclick="handlePaletteBackdrop(event)">
