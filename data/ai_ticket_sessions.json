@@ -1,0 +1,53 @@
+{
+  "1550945694481907872": {
+    "state": "awaiting_manual",
+    "guildId": "1429445691452948524",
+    "userId": "1007620938700959784",
+    "categoryKey": "partnership",
+    "memberCount": "6767",
+    "conversationHistory": [
+      {
+        "role": "user",
+        "text": "un server nel chill creato per stare al contato della gente"
+      },
+      {
+        "role": "bot",
+        "text": "Interessante, e quanto è attiva la community di solito?"
+      },
+      {
+        "role": "user",
+        "text": "tanto"
+      },
+      {
+        "role": "user",
+        "text": ""
+      }
+    ]
+  },
+  "1429445691452948999": {
+    "guildId": "1429445691452948524",
+    "userId": "987654321098765432",
+    "categoryKey": "partnership",
+    "state": "completed",
+    "approvedPartnerNumber": 5,
+    "status": "autonomous",
+    "conversationHistory": [
+      {
+        "role": "user",
+        "text": "non hai inviato sul canale partnership perche?"
+      },
+      {
+        "role": "bot",
+        "text": "La tua richiesta di partnership #5 è stata verificata ed è già stata pubblicata nel canale partnership. Se non la visualizzi nel canale, potrebbe essere dovuto ai permessi di visualizzazione o a un ritardo di aggiornamento di Discord. Ti confermo che è registrata correttamente nei nostri sistemi."
+      },
+      {
+        "role": "staff",
+        "text": "Roomup\n@RoomUp!\n@RoomUp! che succede"
+      },
+      {
+        "role": "bot",
+        "text": "Ciao Frè, ecco la situazione: la procedura di partnership con <@987654321098765432> è completata e la partnership è già stata registrata e pubblicata ufficialmente (Partnership #5). Sto monitorando la conversazione e rimango pronto a eseguire le tue direttive."
+      }
+    ]
+  }
+}

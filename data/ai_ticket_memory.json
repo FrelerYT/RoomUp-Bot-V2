@@ -1,0 +1,1741 @@
+{
+  "1429445691452948524": {
+    "general": {
+      "precedents": [
+        {
+          "id": "prec_1789848513559",
+          "categoryKey": "general",
+          "closedAt": "2026-09-19T20:08:33.559Z"
+        },
+        {
+          "id": "prec_1789856475312",
+          "categoryKey": "general",
+          "closedAt": "2026-09-19T22:21:15.312Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "live_1789848323647",
+          "keywords": [
+            "generale",
+            "staff"
+          ],
+          "response": "salve",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:05:23.647Z"
+        },
+        {
+          "id": "live_1789848349364",
+          "keywords": [
+            "voglio",
+            "chiedervi",
+            "delle",
+            "cose",
+            "torneo",
+            "server"
+          ],
+          "response": "il torneo del server e terminato ormai",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:05:49.364Z"
+        },
+        {
+          "id": "live_1789848411901",
+          "keywords": [
+            "perch",
+            "server",
+            "primo",
+            "faceva",
+            "vedere",
+            "classifica"
+          ],
+          "response": "bisogna che chiedi a val",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:06:51.901Z"
+        },
+        {
+          "id": "live_1789848502179",
+          "keywords": [
+            "stesso"
+          ],
+          "response": "prego",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:08:22.179Z"
+        },
+        {
+          "id": "live_1789848506722",
+          "keywords": [
+            "stesso"
+          ],
+          "response": "<@1543608170327445634> chiudi il ticket",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:08:26.722Z"
+        },
+        {
+          "id": "lr_1789848513559",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "faccio io <@1543608170327445634>",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T20:08:33.559Z"
+        },
+        {
+          "id": "live_1789853000777",
+          "keywords": [
+            "1020343046539325480"
+          ],
+          "response": "Sì esatto ma insieme a Groove street e Strange Place ma il server principale del evento è strangeplace diretto da val",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:23:20.777Z"
+        },
+        {
+          "id": "live_1789853016725",
+          "keywords": [
+            "1020343046539325480"
+          ],
+          "response": "Quindi ti ripeto se hai domande, ti chiedo di parlare con val",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:23:36.725Z"
+        },
+        {
+          "id": "live_1789853039996",
+          "keywords": [
+            "potremmo",
+            "essere",
+            "vincitori"
+          ],
+          "response": "Non ci sta più Midispiace",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:23:59.996Z"
+        },
+        {
+          "id": "live_1789853104149",
+          "keywords": [
+            "perch"
+          ],
+          "response": "Pultroppo abbiamo avuto problemi con la vps e quindi per ora non l’abbiamo e il sito sta nella vps",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:25:04.149Z"
+        },
+        {
+          "id": "live_1789853137712",
+          "keywords": [
+            "cosa",
+            "avevo",
+            "pieni",
+            "voti",
+            "vincere",
+            "torneo"
+          ],
+          "response": "(Scusami per il bot sto facendo attualmente delle modifiche quindi si sta riavviando e risponde dinuovo anche se gli ho detto di stare zitto)",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:25:37.712Z"
+        },
+        {
+          "id": "live_1789853168034",
+          "keywords": [
+            "okkk"
+          ],
+          "response": "Sì come ho detto devi parlare con val",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:26:08.034Z"
+        },
+        {
+          "id": "live_1789853177151",
+          "keywords": [
+            "okkk"
+          ],
+          "response": "https://discord.gg/strangeplace",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:26:17.151Z"
+        },
+        {
+          "id": "live_1789853284524",
+          "keywords": [
+            "tutti",
+            "gruppi",
+            "discord",
+            "dove",
+            "mettre",
+            "mano"
+          ],
+          "response": "Chill ti serve altro o posso chiudere il ticket?",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T21:28:04.524Z"
+        },
+        {
+          "id": "lr_1789856475312",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "<@1543608170327445634> faccio io.",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T22:21:15.312Z"
+        },
+        {
+          "id": "lr_1789856475312",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "Sì salve se vuole avere informazioni devi chiedere a val",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T22:21:15.312Z"
+        }
+      ],
+      "totalHandled": 2
+    },
+    "partnership": {
+      "precedents": [
+        {
+          "id": "prec_1789844867645",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T19:07:47.645Z"
+        },
+        {
+          "id": "prec_1789846936792",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T19:42:16.792Z"
+        },
+        {
+          "id": "prec_1789847274181",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T19:47:54.181Z"
+        },
+        {
+          "id": "prec_1789848528481",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T20:08:48.481Z"
+        },
+        {
+          "id": "prec_1789858122800",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T22:48:42.800Z"
+        },
+        {
+          "id": "prec_1789914323914",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-20T14:25:23.914Z"
+        },
+        {
+          "id": "prec_1789938105914",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-20T21:01:45.914Z"
+        },
+        {
+          "id": "prec_1790102895485",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-22T18:48:15.485Z"
+        },
+        {
+          "id": "prec_1790429466803",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-26T13:31:06.803Z"
+        },
+        {
+          "id": "prec_1790509681226",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-27T11:48:01.226Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "lr_1789844867645",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "chiedigli se puo farla a schermo intero perfavore",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T19:07:47.645Z"
+        },
+        {
+          "id": "live_1789846901194",
+          "keywords": [
+            "generale",
+            "staff"
+          ],
+          "response": "mica devi ripetere cio che ho detto aggiungendo chiedigli.. devi chiedere a <@1007620938700959784> non a me eh",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T19:41:41.194Z"
+        },
+        {
+          "id": "live_1789846911825",
+          "keywords": [
+            "generale",
+            "staff"
+          ],
+          "response": "<@1543608170327445634>",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T19:41:51.825Z"
+        },
+        {
+          "id": "lr_1789846936792",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "chiedigli di mandare a schermo intero la imagine che si deve vedere tutto lo schermo con data e blablabla",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T19:42:16.792Z"
+        },
+        {
+          "id": "lr_1789847274181",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "no elimina non e idoneo se non mostra tutto lo schermo lo screen se no non sai se lo ha mandato in priv o da qualche altra parte",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T19:47:54.181Z"
+        },
+        {
+          "id": "lr_1789848528481",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "la prossima volta che dici che uno staff le dara un occhiata perfavore pinga l ruolo staff <@&1550846887085740125>, btw non va bene perche lo sta mandando nell canale generale e non su un canale partnership",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T20:08:48.481Z"
+        },
+        {
+          "id": "lr_1789858122799",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "<@1543608170327445634> che succede",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T22:48:42.799Z"
+        },
+        {
+          "id": "lr_1789938105914",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "Io sto gestendo il ticket",
+          "usageCount": 0,
+          "learnedAt": "2026-09-20T21:01:45.914Z"
+        },
+        {
+          "id": "lr_1789938105914",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "Ah roomup ricordati vedere sempre che non sia un server nsfw o con contenuti un po brutti se capisci <@1543608170327445634>",
+          "usageCount": 0,
+          "learnedAt": "2026-09-20T21:01:45.914Z"
+        },
+        {
+          "id": "lr_1790102895484",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "Ancora non ho finito con il bot con i test lul",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.484Z"
+        },
+        {
+          "id": "lr_1790102895484",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "Aspettiamo Bryan tanto il bot lo ha Pingato un paio di volte",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.484Z"
+        },
+        {
+          "id": "lr_1790102895484",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "frelerr sono entrato io nel loro servedr",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.484Z"
+        },
+        {
+          "id": "lr_1790102895484",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "Roomup questa è la nostra descrizione",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.484Z"
+        },
+        {
+          "id": "lr_1790102895485",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "# ❤️‍🔥 [ROOMUP!](https://discord.gg/Ks8KP5BZBH) 🔥\n\n𓍢ִ໋. ✿ **Gaming, eventi e intrattenimento.**\n     ➤  _Una community attiva e in crescita._\n\n⟡ Eventi e attività organizzate per tutta la community\n⟡ Giochi, competizioni e **premi in RoomCoins**\n\n🔗 [GIF](https://cdn.discordapp.com/attachments/1038462319400849418/1538266886310207539/a_88fd315266388739b29f7ba64d6c445e.gif?)",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.485Z"
+        },
+        {
+          "id": "lr_1790102895485",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "<@1398121150449586327> noi siamo già nel server il bot non può entrare lul",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.485Z"
+        },
+        {
+          "id": "lr_1790102895485",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "zeyrox003",
+            "976850788020289546"
+          ],
+          "response": "Roomup chiudi il tiket",
+          "usageCount": 0,
+          "learnedAt": "2026-09-22T18:48:15.485Z"
+        },
+        {
+          "id": "lr_1790429466802",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "vabe c'è bisogno di altro o posso chiudere il tickets?",
+          "usageCount": 0,
+          "learnedAt": "2026-09-26T13:31:06.802Z"
+        },
+        {
+          "id": "lr_1790429466803",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "btw il bot e come una persona reale perche usa un sacco di api premium AI",
+          "usageCount": 0,
+          "learnedAt": "2026-09-26T13:31:06.803Z"
+        },
+        {
+          "id": "lr_1790429466803",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "abbiamo depexato tutti quelli che non erano attivi🤷‍♂️",
+          "usageCount": 0,
+          "learnedAt": "2026-09-26T13:31:06.803Z"
+        },
+        {
+          "id": "lr_1790429466803",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "pultroppo accettiamo partnership solo con 50 membri o piu midisp",
+          "usageCount": 0,
+          "learnedAt": "2026-09-26T13:31:06.803Z"
+        },
+        {
+          "id": "lr_1790509681225",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Se è tutto chiudo il ticket",
+          "usageCount": 0,
+          "learnedAt": "2026-09-27T11:48:01.225Z"
+        },
+        {
+          "id": "lr_1790509681225",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Fatto <@1374386984767717490>",
+          "usageCount": 0,
+          "learnedAt": "2026-09-27T11:48:01.225Z"
+        },
+        {
+          "id": "lr_1790509681225",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "<@1374386984767717490>",
+          "usageCount": 0,
+          "learnedAt": "2026-09-27T11:48:01.226Z"
+        },
+        {
+          "id": "lr_1790509681226",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Appena la metterete io farò lo stesso",
+          "usageCount": 0,
+          "learnedAt": "2026-09-27T11:48:01.226Z"
+        },
+        {
+          "id": "lr_1790509681226",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Resta un attimo in attesa sorry",
+          "usageCount": 0,
+          "learnedAt": "2026-09-27T11:48:01.226Z"
+        }
+      ],
+      "totalHandled": 1
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  },
+  "965378975675322438": {
+    "general": {
+      "precedents": [
+        {
+          "id": "prec_1790958301509",
+          "categoryKey": "general",
+          "closedAt": "2026-10-02T16:25:01.509Z"
+        },
+        {
+          "id": "prec_1791626088993",
+          "categoryKey": "general",
+          "closedAt": "2026-10-10T09:54:48.993Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "lr_1790958301509",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "Midispiace non siamo interessati",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:25:01.509Z"
+        },
+        {
+          "id": "lr_1791626088992",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "ho cercato il nome marvin e non c'è nessun utente nomitato marvin",
+          "usageCount": 0,
+          "learnedAt": "2026-10-10T09:54:48.992Z"
+        },
+        {
+          "id": "lr_1791626088993",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "non c'è nessun utente nomitato marvin",
+          "usageCount": 0,
+          "learnedAt": "2026-10-10T09:54:48.993Z"
+        }
+      ],
+      "totalHandled": 5
+    },
+    "partnership": {
+      "precedents": [
+        {
+          "id": "prec_1790868580979",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-01T15:29:40.979Z"
+        },
+        {
+          "id": "prec_1790940606105",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-02T11:30:06.105Z"
+        },
+        {
+          "id": "prec_1790960227948",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-02T16:57:07.948Z"
+        },
+        {
+          "id": "prec_1791025225175",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-03T11:00:25.175Z"
+        },
+        {
+          "id": "prec_1791032977867",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-03T13:09:37.867Z"
+        },
+        {
+          "id": "prec_1791042321971",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-03T15:45:21.971Z"
+        },
+        {
+          "id": "prec_1791053356307",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-03T18:49:16.307Z"
+        },
+        {
+          "id": "prec_1791095083039",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-04T06:24:43.039Z"
+        },
+        {
+          "id": "prec_1791105562774",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-04T09:19:22.774Z"
+        },
+        {
+          "id": "prec_1791119442368",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-04T13:10:42.368Z"
+        },
+        {
+          "id": "prec_1791144230708",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-04T20:03:50.708Z"
+        },
+        {
+          "id": "prec_1791188353032",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-05T08:19:13.032Z"
+        },
+        {
+          "id": "prec_1791240044894",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-05T22:40:44.894Z"
+        },
+        {
+          "id": "prec_1791283567571",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-06T10:46:07.571Z"
+        },
+        {
+          "id": "prec_1791283578056",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-06T10:46:18.056Z"
+        },
+        {
+          "id": "prec_1791369854805",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-07T10:44:14.805Z"
+        },
+        {
+          "id": "prec_1791373767572",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-07T11:49:27.572Z"
+        },
+        {
+          "id": "prec_1791433586068",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-08T04:26:26.068Z"
+        },
+        {
+          "id": "prec_1791552225121",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-09T13:23:45.121Z"
+        },
+        {
+          "id": "prec_1791552266486",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-09T13:24:26.486Z"
+        },
+        {
+          "id": "prec_1791552266909",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-09T13:24:26.909Z"
+        },
+        {
+          "id": "prec_1791564304694",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-09T16:45:04.694Z"
+        },
+        {
+          "id": "prec_1791636114901",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-10T12:41:54.901Z"
+        },
+        {
+          "id": "prec_1791640627651",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-10T13:57:07.651Z"
+        },
+        {
+          "id": "prec_1791728150913",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-11T14:15:50.913Z"
+        },
+        {
+          "id": "prec_1791837712872",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-12T20:41:52.872Z"
+        },
+        {
+          "id": "prec_1791918871505",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-13T19:14:31.505Z"
+        },
+        {
+          "id": "prec_1792153616278",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-16T12:26:56.278Z"
+        },
+        {
+          "id": "prec_1792161711659",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-16T14:41:51.659Z"
+        },
+        {
+          "id": "prec_1792255386144",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-17T16:43:06.144Z"
+        },
+        {
+          "id": "prec_1792269872493",
+          "categoryKey": "partnership",
+          "closedAt": "2026-10-17T20:44:32.493Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "lr_1790868580979",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "serve altro o possiamo chiudere il ticket?",
+          "usageCount": 0,
+          "learnedAt": "2026-10-01T15:29:40.979Z"
+        },
+        {
+          "id": "lr_1790868580979",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "la nostra la trovi <#1555226405984280646>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-01T15:29:40.979Z"
+        },
+        {
+          "id": "lr_1790868580979",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "manda il link partnership",
+          "usageCount": 0,
+          "learnedAt": "2026-10-01T15:29:40.979Z"
+        },
+        {
+          "id": "lr_1790868580979",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "scusaci il bot sta avendo attualmente modifiche per ragionare meglio lol btw",
+          "usageCount": 0,
+          "learnedAt": "2026-10-01T15:29:40.979Z"
+        },
+        {
+          "id": "lr_1790940606102",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "giuseppebono_twich_tv_gaming",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "si questo me lo hai gia detto",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T11:30:06.102Z"
+        },
+        {
+          "id": "lr_1790940606105",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "giuseppebono_twich_tv_gaming",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "serve altro o posso chiudere il ticket?",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T11:30:06.105Z"
+        },
+        {
+          "id": "lr_1790940606105",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "giuseppebono_twich_tv_gaming",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "si ho capito un attimo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T11:30:06.105Z"
+        },
+        {
+          "id": "lr_1790940606105",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "giuseppebono_twich_tv_gaming",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "quando la metterai la mettero anch'io",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T11:30:06.105Z"
+        },
+        {
+          "id": "lr_1790940606105",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "giuseppebono_twich_tv_gaming",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "la nostra la trovi su <#1555226405984280646>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T11:30:06.105Z"
+        },
+        {
+          "id": "lr_1790960227946",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Se è tutto chiudo il ticket",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.946Z"
+        },
+        {
+          "id": "lr_1790960227946",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Ho dovuto fare manualmente dato che per la vostra descrizione il bot ha preso “AH WAIT”",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.946Z"
+        },
+        {
+          "id": "lr_1790960227946",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Ok perfetto allora la metto anche io",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.946Z"
+        },
+        {
+          "id": "lr_1790960227946",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Io però non vedo le partnership nel vostro server",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.946Z"
+        },
+        {
+          "id": "lr_1790960227947",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Grazie mille, sì anche per noi va benissimo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.947Z"
+        },
+        {
+          "id": "lr_1790960227947",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Ho mandato la rischiesta per entrare",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.947Z"
+        },
+        {
+          "id": "lr_1790960227947",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Certo scusa dammi un minuto, ero a scuola",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.947Z"
+        },
+        {
+          "id": "lr_1790960227948",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "danijitu",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Manda pure la descrizione",
+          "usageCount": 0,
+          "learnedAt": "2026-10-02T16:57:07.948Z"
+        },
+        {
+          "id": "lr_1791025225175",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "giorgiocalza52",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "ciao si la partner la accettiamo la nostra desc la trovi su <#1555226405984280646>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T11:00:25.175Z"
+        },
+        {
+          "id": "lr_1791032977865",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "fatto metti la nostra descrizione e poi se serve altro scrivici",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.865Z"
+        },
+        {
+          "id": "lr_1791032977865",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1020343046539325480>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.865Z"
+        },
+        {
+          "id": "lr_1791032977866",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Eh ma metterà un’altra descrizione",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.866Z"
+        },
+        {
+          "id": "lr_1791032977866",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "La faccio manuale allora?",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.866Z"
+        },
+        {
+          "id": "lr_1791032977866",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "lo sto programmando attualmente quindi si sta riavviando un paio di volte lol",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.866Z"
+        },
+        {
+          "id": "lr_1791032977866",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Eh sì è sminchiato perché quando ti ha chiesto la descrizione hai mandato un altro messaggio",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.866Z"
+        },
+        {
+          "id": "lr_1791032977867",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Aspetta che lui la mandi",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.867Z"
+        },
+        {
+          "id": "lr_1791032977867",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1543608170327445634> cambia la descrizione fornita dall’utente",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.867Z"
+        },
+        {
+          "id": "lr_1791032977867",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "kristian_2334",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1335204154636767297>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T13:09:37.867Z"
+        },
+        {
+          "id": "lr_1791042321970",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "g14pro_47008",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1528113307746173096> si salve ho già messo la partnership avvisami appena la metti e se non ci sono altre domande chiudo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T15:45:21.971Z"
+        },
+        {
+          "id": "lr_1791053356306",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Fatto, se è tutto chiudo il ticket 🤗",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.306Z"
+        },
+        {
+          "id": "lr_1791053356306",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Ok scusa stavo mangiando",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.306Z"
+        },
+        {
+          "id": "lr_1791053356307",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Sono un po’ ritardato",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.307Z"
+        },
+        {
+          "id": "lr_1791053356307",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "La trovi in <#1555226405984280646> scusa",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.307Z"
+        },
+        {
+          "id": "lr_1791053356307",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Perfetto, appena la metterete io farò lo stesso",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.307Z"
+        },
+        {
+          "id": "lr_1791053356307",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1500867422775803994>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.307Z"
+        },
+        {
+          "id": "lr_1791053356307",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "pinguina005",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Riusciresti a rimandare la descrizione? È scaduto l’invito",
+          "usageCount": 0,
+          "learnedAt": "2026-10-03T18:49:16.307Z"
+        },
+        {
+          "id": "lr_1791095083039",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "svaligiare",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1512685039643791410>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T06:24:43.039Z"
+        },
+        {
+          "id": "lr_1791095083039",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "svaligiare",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Accettiamo la partner, appena la metterete farò lo stesso <@1512685039643791410>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T06:24:43.039Z"
+        },
+        {
+          "id": "lr_1791105562774",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Se non rispondi entro stasera chiuderò il ticket e prenderai un warn per aver aperto un ticket senza motivo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T09:19:22.774Z"
+        },
+        {
+          "id": "lr_1791105562774",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "<@1360554878795120772>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T09:19:22.774Z"
+        },
+        {
+          "id": "lr_1791119442365",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Di nulla se è tutto chiudo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.365Z"
+        },
+        {
+          "id": "lr_1791119442365",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "No tranquillo guardo io",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.365Z"
+        },
+        {
+          "id": "lr_1791119442365",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Appena la metterai io farò lo stesso",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.365Z"
+        },
+        {
+          "id": "lr_1791119442365",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "La nostra descrizione la trovi in <#1555226405984280646>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.365Z"
+        },
+        {
+          "id": "lr_1791119442365",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Perfetto va benissimo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.365Z"
+        },
+        {
+          "id": "lr_1791119442368",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Scusami tanto per il ritardo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.368Z"
+        },
+        {
+          "id": "lr_1791119442368",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Sì arrivo aspetti un attimo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.368Z"
+        },
+        {
+          "id": "lr_1791119442368",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Quando manderai la descrizione entrerò per verificare tranquillo",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.368Z"
+        },
+        {
+          "id": "lr_1791119442368",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Manda pure qua la descrizione del server",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.368Z"
+        },
+        {
+          "id": "lr_1791119442368",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso",
+            "davidowskii",
+            "1397496188386934854"
+          ],
+          "response": "Rispondi al bot quando riesci",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T13:10:42.368Z"
+        },
+        {
+          "id": "lr_1791144230706",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "partnership",
+            "_oblivion00_",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "<@1513867074638839969>",
+          "usageCount": 0,
+          "learnedAt": "2026-10-04T20:03:50.706Z"
+        }
+      ],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [
+        {
+          "id": "prec_1791302808871",
+          "categoryKey": "staff_app",
+          "closedAt": "2026-10-06T16:06:48.871Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "lr_1791302808871",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "candidatura",
+            "staff",
+            "server",
+            "roomup",
+            "965378975675322438",
+            "chiuso"
+          ],
+          "response": "Buonasera, grazie per aver aperto candidatura per diventare staffer nel server di roomup! Quando saresti disponibile per fare la candidatura in vocale?",
+          "usageCount": 0,
+          "learnedAt": "2026-10-06T16:06:48.871Z"
+        }
+      ],
+      "totalHandled": 3
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  }
+}

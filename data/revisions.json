@@ -1,0 +1,681 @@
+[
+  {
+    "id": "rev_1789759065706_t48b2",
+    "timestamp": "2026-09-18T19:17:45.706Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789759074836_j61u9",
+    "timestamp": "2026-09-18T19:17:54.837Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789759083229_o8uqg",
+    "timestamp": "2026-09-18T19:18:03.229Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789759083648_43qnr",
+    "timestamp": "2026-09-18T19:18:03.648Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789759808003_nya4j",
+    "timestamp": "2026-09-18T19:30:08.003Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789759808430_ndsp0",
+    "timestamp": "2026-09-18T19:30:08.430Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789759820344_z1y4h",
+    "timestamp": "2026-09-18T19:30:20.344Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789759820757_ppe3v",
+    "timestamp": "2026-09-18T19:30:20.757Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789759828917_20ez9",
+    "timestamp": "2026-09-18T19:30:28.917Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789759829355_7dhj2",
+    "timestamp": "2026-09-18T19:30:29.355Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789764197317_h6vl6",
+    "timestamp": "2026-09-18T20:43:17.317Z",
+    "file": "test_storage",
+    "actor": "TestRunner",
+    "summary": "Modifica a test_storage da parte di TestRunner"
+  },
+  {
+    "id": "rev_1789764197763_dwj9j",
+    "timestamp": "2026-09-18T20:43:17.763Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789818370444_nz85y",
+    "timestamp": "2026-09-19T11:46:10.444Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789818383425_9i94u",
+    "timestamp": "2026-09-19T11:46:23.425Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789818409312_znt14",
+    "timestamp": "2026-09-19T11:46:49.312Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789818536812_n4ns0",
+    "timestamp": "2026-09-19T11:48:56.812Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789820460923_7cuxq",
+    "timestamp": "2026-09-19T12:21:00.923Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789820900870_b8eal",
+    "timestamp": "2026-09-19T12:28:20.870Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789820931813_hfg2a",
+    "timestamp": "2026-09-19T12:28:51.813Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789821937219_0nfmc",
+    "timestamp": "2026-09-19T12:45:37.219Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789822012714_v3vzq",
+    "timestamp": "2026-09-19T12:46:52.714Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789822564890_umfdt",
+    "timestamp": "2026-09-19T12:56:04.890Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789826771196_9qzdd",
+    "timestamp": "2026-09-19T14:06:11.196Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789826948071_kmy8a",
+    "timestamp": "2026-09-19T14:09:08.071Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789827024690_drlgv",
+    "timestamp": "2026-09-19T14:10:24.690Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789827302905_vlxue",
+    "timestamp": "2026-09-19T14:15:02.905Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789827501321_cwrw4",
+    "timestamp": "2026-09-19T14:18:21.321Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789827543594_g1rfo",
+    "timestamp": "2026-09-19T14:19:03.594Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789827703608_90mka",
+    "timestamp": "2026-09-19T14:21:43.608Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789827888146_q0jo3",
+    "timestamp": "2026-09-19T14:24:48.146Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789828063650_v2z4k",
+    "timestamp": "2026-09-19T14:27:43.650Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789828426869_2whbp",
+    "timestamp": "2026-09-19T14:33:46.869Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789828746166_hbstl",
+    "timestamp": "2026-09-19T14:39:06.166Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789828960990_twsv9",
+    "timestamp": "2026-09-19T14:42:40.990Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789829190079_t0n7x",
+    "timestamp": "2026-09-19T14:46:30.079Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789829430888_1gari",
+    "timestamp": "2026-09-19T14:50:30.889Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789829741218_a0566",
+    "timestamp": "2026-09-19T14:55:41.218Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789830010473_vhblv",
+    "timestamp": "2026-09-19T15:00:10.473Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789830510683_ylgyr",
+    "timestamp": "2026-09-19T15:08:30.683Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789830567378_7nm6t",
+    "timestamp": "2026-09-19T15:09:27.378Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789831003560_5h2uj",
+    "timestamp": "2026-09-19T15:16:43.560Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789831025542_n62h3",
+    "timestamp": "2026-09-19T15:17:05.542Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789831159255_duejl",
+    "timestamp": "2026-09-19T15:19:19.255Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789834321769_00jgk",
+    "timestamp": "2026-09-19T16:12:01.769Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789849998073_a7u54",
+    "timestamp": "2026-09-19T20:33:18.073Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789850180498_gr5n0",
+    "timestamp": "2026-09-19T20:36:20.498Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789850214832_q2ii3",
+    "timestamp": "2026-09-19T20:36:54.832Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789850378949_x2nmy",
+    "timestamp": "2026-09-19T20:39:38.949Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789850503018_pe1uw",
+    "timestamp": "2026-09-19T20:41:43.018Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789850882220_yuj9b",
+    "timestamp": "2026-09-19T20:48:02.220Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789850944735_7a8t3",
+    "timestamp": "2026-09-19T20:49:04.735Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789851916036_gokz0",
+    "timestamp": "2026-09-19T21:05:16.036Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789852287746_ly28p",
+    "timestamp": "2026-09-19T21:11:27.746Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789852504115_cqu7f",
+    "timestamp": "2026-09-19T21:15:04.115Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789852565668_p5odw",
+    "timestamp": "2026-09-19T21:16:05.668Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789853275121_93mfn",
+    "timestamp": "2026-09-19T21:27:55.121Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789853366055_nhyf4",
+    "timestamp": "2026-09-19T21:29:26.055Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789853460338_s9sqs",
+    "timestamp": "2026-09-19T21:31:00.338Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789853508456_m2khw",
+    "timestamp": "2026-09-19T21:31:48.456Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789856841758_eyg73",
+    "timestamp": "2026-09-19T22:27:21.758Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789858619748_i3swq",
+    "timestamp": "2026-09-19T22:56:59.748Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789858674155_x63k0",
+    "timestamp": "2026-09-19T22:57:54.155Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789859091340_lfwnm",
+    "timestamp": "2026-09-19T23:04:51.340Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789859337500_i9vq0",
+    "timestamp": "2026-09-19T23:08:57.500Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789859615745_l1v91",
+    "timestamp": "2026-09-19T23:13:35.745Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789898416296_zz5dz",
+    "timestamp": "2026-09-20T10:00:16.296Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789898670834_ifzzt",
+    "timestamp": "2026-09-20T10:04:30.834Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789898867566_rdbk0",
+    "timestamp": "2026-09-20T10:07:47.566Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789898983352_uh525",
+    "timestamp": "2026-09-20T10:09:43.352Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789899688965_cjlse",
+    "timestamp": "2026-09-20T10:21:28.965Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789901793696_znjoj",
+    "timestamp": "2026-09-20T10:56:33.696Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789901793701_5vxt0",
+    "timestamp": "2026-09-20T10:56:33.701Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789901793703_k3lws",
+    "timestamp": "2026-09-20T10:56:33.703Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902074405_khml5",
+    "timestamp": "2026-09-20T11:01:14.405Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902074410_0cbf0",
+    "timestamp": "2026-09-20T11:01:14.410Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902116199_s3yw2",
+    "timestamp": "2026-09-20T11:01:56.199Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902116213_wqyax",
+    "timestamp": "2026-09-20T11:01:56.213Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902116215_g6550",
+    "timestamp": "2026-09-20T11:01:56.215Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902237000_e5yve",
+    "timestamp": "2026-09-20T11:03:57.000Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902237015_wzn5v",
+    "timestamp": "2026-09-20T11:03:57.015Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902237017_pivms",
+    "timestamp": "2026-09-20T11:03:57.017Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902294488_u2ysu",
+    "timestamp": "2026-09-20T11:04:54.488Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902294503_uercn",
+    "timestamp": "2026-09-20T11:04:54.503Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789902294505_lprvn",
+    "timestamp": "2026-09-20T11:04:54.505Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789938034883_6zzof",
+    "timestamp": "2026-09-20T21:00:34.883Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789999873263_rehbb",
+    "timestamp": "2026-09-21T14:11:13.263Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1789999960036_ipp9u",
+    "timestamp": "2026-09-21T14:12:40.036Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790002666455_bwu7f",
+    "timestamp": "2026-09-21T14:57:46.455Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790003008875_a3qyg",
+    "timestamp": "2026-09-21T15:03:28.875Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790004737654_mgng0",
+    "timestamp": "2026-09-21T15:32:17.654Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790007403692_39b0j",
+    "timestamp": "2026-09-21T16:16:43.692Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790805632927_q1r02",
+    "timestamp": "2026-09-30T22:00:32.927Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790807127314_548vb",
+    "timestamp": "2026-09-30T22:25:27.314Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790808326920_rqowk",
+    "timestamp": "2026-09-30T22:45:26.920Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790813938289_bxt8b",
+    "timestamp": "2026-10-01T00:18:58.289Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790847300870_c1915",
+    "timestamp": "2026-10-01T09:35:00.870Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  },
+  {
+    "id": "rev_1790847505524_p11e4",
+    "timestamp": "2026-10-01T09:38:25.524Z",
+    "file": "cases",
+    "actor": "CaseManager",
+    "summary": "Modifica a cases da parte di CaseManager"
+  }
+]

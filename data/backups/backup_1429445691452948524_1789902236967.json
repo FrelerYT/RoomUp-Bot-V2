@@ -1,0 +1,872 @@
+{
+  "guildId": "1429445691452948524",
+  "guildName": "RoomUp!",
+  "createdAt": "2026-09-20T11:03:56.967Z",
+  "id": "backup_1789902236967",
+  "channels": [
+    {
+      "id": "1550847072494948492",
+      "name": "🏠・canali",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 5
+    },
+    {
+      "id": "1550847039750021121",
+      "name": "🔐〢Staff",
+      "type": 2,
+      "parentId": "1550847020665798729",
+      "position": 0
+    },
+    {
+      "id": "1550847078270504991",
+      "name": "🎭・automod",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 9
+    },
+    {
+      "id": "1550847023048163328",
+      "name": "⛺〢Room 1",
+      "type": 2,
+      "parentId": "1550847017004044388",
+      "position": 0
+    },
+    {
+      "id": "1550847066358423592",
+      "name": "〽️・uscite-entrate",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 0
+    },
+    {
+      "id": "1550847060276813965",
+      "name": "🔰・staff",
+      "type": 0,
+      "parentId": "1550847020665798729",
+      "position": 1
+    },
+    {
+      "id": "1550847017004044388",
+      "name": "🏘️ ʀᴏᴏᴍ ᴠᴏᴄꜱ 🏘️",
+      "type": 4,
+      "parentId": null,
+      "position": 6
+    },
+    {
+      "id": "1551154507906424855",
+      "name": "ticket-0012",
+      "type": 0,
+      "parentId": null,
+      "position": 1
+    },
+    {
+      "id": "1550847032078508124",
+      "name": "🔍・informazioni",
+      "type": 0,
+      "parentId": "1550847011454980170",
+      "position": 1
+    },
+    {
+      "id": "1550847012931506294",
+      "name": "🌎 ᴄᴏᴍᴍᴜɴɪᴛʏ 🌍",
+      "type": 4,
+      "parentId": null,
+      "position": 3
+    },
+    {
+      "id": "1550847063946829834",
+      "name": "🗳️・richieste",
+      "type": 0,
+      "parentId": "1550847020665798729",
+      "position": 4
+    },
+    {
+      "id": "1550847030392389666",
+      "name": "🏡〢Room 4",
+      "type": 2,
+      "parentId": "1550847017004044388",
+      "position": 3
+    },
+    {
+      "id": "1550847069810327582",
+      "name": "📁・transcript",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 3
+    },
+    {
+      "id": "1550847054836924509",
+      "name": "🤖・comandi",
+      "type": 0,
+      "parentId": "1550847015876042752",
+      "position": 2
+    },
+    {
+      "id": "1550847025694900278",
+      "name": "⛺〢Room 2",
+      "type": 2,
+      "parentId": "1550847017004044388",
+      "position": 1
+    },
+    {
+      "id": "1550847043788869753",
+      "name": "💭・presentazioni",
+      "type": 15,
+      "parentId": "1550847014386798783",
+      "position": 0
+    },
+    {
+      "id": "1529462024319537284",
+      "name": "📃・regole",
+      "type": 0,
+      "parentId": null,
+      "position": 0
+    },
+    {
+      "id": "1550847042195038269",
+      "name": "🤝・partnership",
+      "type": 0,
+      "parentId": "1550847012931506294",
+      "position": 2
+    },
+    {
+      "id": "1550847038412034128",
+      "name": "📽️・community",
+      "type": 0,
+      "parentId": "1550847012931506294",
+      "position": 1
+    },
+    {
+      "id": "1550847010570117231",
+      "name": "📑 ʀᴇɢᴏʟᴀᴍᴇɴᴛᴏ 📑",
+      "type": 4,
+      "parentId": null,
+      "position": 1
+    },
+    {
+      "id": "1550847049988313178",
+      "name": "🧮・counting",
+      "type": 0,
+      "parentId": "1550847015876042752",
+      "position": 1
+    },
+    {
+      "id": "1550847062235418647",
+      "name": "🩸・sanzioni",
+      "type": 0,
+      "parentId": "1550847020665798729",
+      "position": 3
+    },
+    {
+      "id": "1550847018094698657",
+      "name": "🔒 ᴘʀɪᴠᴀᴛᴇ ᴠᴏᴄꜱ 🔒",
+      "type": 4,
+      "parentId": null,
+      "position": 7
+    },
+    {
+      "id": "1550847061560135811",
+      "name": "🖥️・cmd",
+      "type": 0,
+      "parentId": "1550847020665798729",
+      "position": 2
+    },
+    {
+      "id": "1550847011454980170",
+      "name": "ℹ️ ɪɴꜰᴏʀᴍᴀᴢɪᴏɴɪ ℹ️",
+      "type": 4,
+      "parentId": null,
+      "position": 2
+    },
+    {
+      "id": "1550847044858679326",
+      "name": "🛋️・salotto",
+      "type": 0,
+      "parentId": "1550847014386798783",
+      "position": 1
+    },
+    {
+      "id": "1550847024285487177",
+      "name": "☑️・verifica",
+      "type": 0,
+      "parentId": "1550847009571864696",
+      "position": 0
+    },
+    {
+      "id": "1550847021819240468",
+      "name": "🕵️ ʟᴏɢɪꜱᴛɪᴄ ᴢᴏɴᴇ 🕵️",
+      "type": 4,
+      "parentId": null,
+      "position": 11
+    },
+    {
+      "id": "1550847014386798783",
+      "name": "💬 ɢᴇɴᴇʀᴀʟᴇ 💬",
+      "type": 4,
+      "parentId": null,
+      "position": 4
+    },
+    {
+      "id": "1551184343433748530",
+      "name": "🛖〢Room 5",
+      "type": 2,
+      "parentId": "1550847017004044388",
+      "position": 4
+    },
+    {
+      "id": "1550847036780314625",
+      "name": "🛖〢Room 6",
+      "type": 2,
+      "parentId": "1550847017004044388",
+      "position": 5
+    },
+    {
+      "id": "1550847068510101514",
+      "name": "🤝・partnership",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 2
+    },
+    {
+      "id": "1550847070984863804",
+      "name": "💬・messaggi",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 4
+    },
+    {
+      "id": "1550847075434893463",
+      "name": "🧑‍🤝‍🧑・membri",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 7
+    },
+    {
+      "id": "1550847055998746679",
+      "name": "🎫・ticket",
+      "type": 0,
+      "parentId": "1550847019306979328",
+      "position": 0
+    },
+    {
+      "id": "1550944801665585515",
+      "name": "val",
+      "type": 4,
+      "parentId": null,
+      "position": 8
+    },
+    {
+      "id": "1550847077083385868",
+      "name": "🧢・ruoli",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 8
+    },
+    {
+      "id": "1550847034276446378",
+      "name": "💎・boosts",
+      "type": 0,
+      "parentId": "1550847011454980170",
+      "position": 2
+    },
+    {
+      "id": "1550944889468887180",
+      "name": "info",
+      "type": 0,
+      "parentId": "1550944801665585515",
+      "position": 0
+    },
+    {
+      "id": "1550847009571864696",
+      "name": "☑️ ᴠᴇʀɪꜰɪᴄᴀ ☑️",
+      "type": 4,
+      "parentId": null,
+      "position": 0
+    },
+    {
+      "id": "1550847015876042752",
+      "name": "💾 ʀᴏᴏᴍ ᴄᴍᴅ 💾",
+      "type": 4,
+      "parentId": null,
+      "position": 5
+    },
+    {
+      "id": "1550847046351585351",
+      "name": "📸・media",
+      "type": 0,
+      "parentId": "1550847014386798783",
+      "position": 2
+    },
+    {
+      "id": "1550847035370901614",
+      "name": "🛜・social",
+      "type": 0,
+      "parentId": "1550847012931506294",
+      "position": 0
+    },
+    {
+      "id": "1550847067432161350",
+      "name": "🛅・moderazione",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 1
+    },
+    {
+      "id": "1550847019306979328",
+      "name": "🎫 ᴀꜱꜱɪꜱᴛᴇɴᴢᴀ 🎫",
+      "type": 4,
+      "parentId": null,
+      "position": 9
+    },
+    {
+      "id": "1550847073622958123",
+      "name": "🔊・vocali",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 6
+    },
+    {
+      "id": "1550847027263438968",
+      "name": "📃・regole",
+      "type": 0,
+      "parentId": "1550847010570117231",
+      "position": 0
+    },
+    {
+      "id": "1550847048151081010",
+      "name": "🌠・livello",
+      "type": 0,
+      "parentId": "1550847015876042752",
+      "position": 0
+    },
+    {
+      "id": "1550847065284808804",
+      "name": "🫂・info-partnership",
+      "type": 0,
+      "parentId": "1550847020665798729",
+      "position": 5
+    },
+    {
+      "id": "1550847081311248474",
+      "name": "🗄️・altro",
+      "type": 0,
+      "parentId": "1550847021819240468",
+      "position": 10
+    },
+    {
+      "id": "1550847058963992706",
+      "name": "❓・infostaff",
+      "type": 15,
+      "parentId": "1550847020665798729",
+      "position": 0
+    },
+    {
+      "id": "1550847020665798729",
+      "name": "👮‍♀️ꜱᴛᴀꜰꜰ ᴢᴏɴᴇ👮‍♂️",
+      "type": 4,
+      "parentId": null,
+      "position": 10
+    },
+    {
+      "id": "1550847057802043392",
+      "name": "🧧・unban",
+      "type": 0,
+      "parentId": "1550847019306979328",
+      "position": 1
+    },
+    {
+      "id": "1550847028337057795",
+      "name": "📢・annunci",
+      "type": 5,
+      "parentId": "1550847011454980170",
+      "position": 0
+    },
+    {
+      "id": "1550847029498875965",
+      "name": "🏡〢Room 3",
+      "type": 2,
+      "parentId": "1550847017004044388",
+      "position": 2
+    },
+    {
+      "id": "1550847041243054100",
+      "name": "🏗️〢Crea Privata",
+      "type": 2,
+      "parentId": "1550847018094698657",
+      "position": 0
+    },
+    {
+      "id": "1550936708541972542",
+      "name": "ORGANIZZAZIONE STAFF",
+      "type": 11,
+      "parentId": "1550847058963992706"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1550846898850631730",
+      "name": "Partnership",
+      "color": 11704375,
+      "hoist": false,
+      "position": 33,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846919537070112",
+      "name": "Non Binario",
+      "color": 16623467,
+      "hoist": false,
+      "position": 16,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846917192196146",
+      "name": "Maschio",
+      "color": 7105533,
+      "hoist": false,
+      "position": 18,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846899865653319",
+      "name": "Discord",
+      "color": 7572187,
+      "hoist": false,
+      "position": 32,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846909818867775",
+      "name": "bannat*",
+      "color": 16608107,
+      "hoist": false,
+      "position": 23,
+      "permissions": "1096043478765121"
+    },
+    {
+      "id": "1550846924318580836",
+      "name": "16/17",
+      "color": 6652377,
+      "hoist": false,
+      "position": 12,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846875328848004",
+      "name": "Founder",
+      "color": 13785690,
+      "hoist": true,
+      "position": 55,
+      "permissions": "1721835208572927"
+    },
+    {
+      "id": "1550846893918134282",
+      "name": "Consulente PR",
+      "color": 15959237,
+      "hoist": true,
+      "position": 37,
+      "permissions": "1032"
+    },
+    {
+      "id": "1530174987384918156",
+      "name": "Booster",
+      "color": 15956961,
+      "hoist": true,
+      "position": 30,
+      "permissions": "2221941238124097"
+    },
+    {
+      "id": "1550846917976793100",
+      "name": "Femmina",
+      "color": 16608163,
+      "hoist": false,
+      "position": 17,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846913702535178",
+      "name": "3° Warn",
+      "color": 10883113,
+      "hoist": false,
+      "position": 20,
+      "permissions": "104187457"
+    },
+    {
+      "id": "1550846927661301820",
+      "name": "Annunci",
+      "color": 8674002,
+      "hoist": false,
+      "position": 9,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846935596802068",
+      "name": "Amici",
+      "color": 14247341,
+      "hoist": false,
+      "position": 2,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846888708804759",
+      "name": "Head Staff",
+      "color": 8137258,
+      "hoist": true,
+      "position": 42,
+      "permissions": "1101360647899"
+    },
+    {
+      "id": "1550846931184652348",
+      "name": "Community",
+      "color": 15691925,
+      "hoist": false,
+      "position": 6,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846897621835911",
+      "name": "Minecraft",
+      "color": 7385655,
+      "hoist": false,
+      "position": 34,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846912238850246",
+      "name": "2° Warn",
+      "color": 11010051,
+      "hoist": false,
+      "position": 21,
+      "permissions": "104189505"
+    },
+    {
+      "id": "1550846882681720972",
+      "name": "Youtube",
+      "color": 13375518,
+      "hoist": false,
+      "position": 47,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846881377296546",
+      "name": "║  ⠀⠀⠀⠀⠀⠀ ⠀⠀⠀CANALI ⠀⠀⠀⠀ ⠀⠀⠀⠀⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 48,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846921445474315",
+      "name": "Età reale",
+      "color": 7077337,
+      "hoist": false,
+      "position": 14,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846906895437824",
+      "name": "║⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀UTENTI⠀⠀⠀⠀ ⠀⠀⠀ ⠀ ⠀║",
+      "color": 0,
+      "hoist": false,
+      "position": 26,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846874687242253",
+      "name": "║  ⠀   ⠀ ⠀⠀⠀ ⠀ ⠀ ⠀OWNER⠀⠀⠀⠀⠀⠀ ⠀⠀⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 56,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846908011122688",
+      "name": "Utenti",
+      "color": 5952092,
+      "hoist": true,
+      "position": 25,
+      "permissions": "4949986610689"
+    },
+    {
+      "id": "1550846886368518276",
+      "name": "Tiktok",
+      "color": 16711760,
+      "hoist": false,
+      "position": 44,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846877833109604",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀⠀CREATOR⠀⠀⠀⠀⠀⠀⠀⠀⠀║",
+      "color": 0,
+      "hoist": false,
+      "position": 51,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846916206530650",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀SESSUALITÀ⠀⠀⠀⠀⠀⠀⠀⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 19,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846925316821083",
+      "name": "18+",
+      "color": 8674002,
+      "hoist": false,
+      "position": 11,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846928496107542",
+      "name": "Generale",
+      "color": 11099337,
+      "hoist": false,
+      "position": 8,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846903044939799",
+      "name": "Vip",
+      "color": 10246866,
+      "hoist": true,
+      "position": 29,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846883889553509",
+      "name": "Twitch",
+      "color": 6570405,
+      "hoist": false,
+      "position": 46,
+      "permissions": "0"
+    },
+    {
+      "id": "1546534140214771724",
+      "name": "Linea Temporale",
+      "color": 0,
+      "hoist": false,
+      "position": 52,
+      "permissions": "8"
+    },
+    {
+      "id": "1550846879359836171",
+      "name": "Content Creator",
+      "color": 12497786,
+      "hoist": true,
+      "position": 50,
+      "permissions": "2146959351"
+    },
+    {
+      "id": "1550846926126321747",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ PING ⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 10,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846937186439198",
+      "name": "altro (server)",
+      "color": 8674002,
+      "hoist": false,
+      "position": 1,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846896497623142",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀STAFF⠀ZONE⠀⠀⠀⠀⠀ ⠀⠀║",
+      "color": 0,
+      "hoist": false,
+      "position": 35,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846890017300480",
+      "name": "Administration",
+      "color": 11156283,
+      "hoist": true,
+      "position": 41,
+      "permissions": "1101360647899"
+    },
+    {
+      "id": "1550846922401783850",
+      "name": "14/15",
+      "color": 7077297,
+      "hoist": false,
+      "position": 13,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846910871642155",
+      "name": "1° Warn",
+      "color": 16711722,
+      "hoist": false,
+      "position": 22,
+      "permissions": "104189505"
+    },
+    {
+      "id": "1550846892588404827",
+      "name": "Trial Staff",
+      "color": 11328751,
+      "hoist": true,
+      "position": 38,
+      "permissions": "1101306261201"
+    },
+    {
+      "id": "1550846892017975378",
+      "name": "Moderation",
+      "color": 5025232,
+      "hoist": true,
+      "position": 39,
+      "permissions": "1101390147287"
+    },
+    {
+      "id": "1550846885403820182",
+      "name": "Kick",
+      "color": 59137,
+      "hoist": false,
+      "position": 45,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846930136072252",
+      "name": "Social",
+      "color": 14247341,
+      "hoist": false,
+      "position": 7,
+      "permissions": "0"
+    },
+    {
+      "id": "1550843474180579442",
+      "name": "RoomUp! V2",
+      "color": 0,
+      "hoist": false,
+      "position": 53,
+      "permissions": "8"
+    },
+    {
+      "id": "1550846891007148042",
+      "name": "Supervisor",
+      "color": 2909047,
+      "hoist": true,
+      "position": 40,
+      "permissions": "1101377433303"
+    },
+    {
+      "id": "1550846920510021733",
+      "name": "║⠀⠀⠀ ⠀⠀⠀⠀⠀ ⠀ ⠀ETÀ⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀║",
+      "color": 0,
+      "hoist": false,
+      "position": 15,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846934397362357",
+      "name": "Social",
+      "color": 16613995,
+      "hoist": false,
+      "position": 3,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846931826122783",
+      "name": "Sponsor",
+      "color": 16613995,
+      "hoist": false,
+      "position": 5,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846903892181034",
+      "name": "║⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀EVENTI⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀║",
+      "color": 0,
+      "hoist": false,
+      "position": 28,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846894652137518",
+      "name": "RoomUp!",
+      "color": 6083325,
+      "hoist": true,
+      "position": 36,
+      "permissions": "1849163467"
+    },
+    {
+      "id": "1550846900696260684",
+      "name": "║ ⠀ ⠀⠀⠀ ⠀ ⠀⠀SUPPORTER⠀ ⠀⠀⠀⠀⠀ ⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 31,
+      "permissions": "0"
+    },
+    {
+      "id": "1550846933403181056",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀⠀ SERVER ⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 4,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846905284820997",
+      "name": "VINCITORE EVENTO",
+      "color": 4950587,
+      "hoist": true,
+      "position": 27,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846876624887868",
+      "name": "Owner",
+      "color": 10959161,
+      "hoist": true,
+      "position": 54,
+      "permissions": "2117594879"
+    },
+    {
+      "id": "1550846880802541598",
+      "name": "Media",
+      "color": 10195298,
+      "hoist": true,
+      "position": 49,
+      "permissions": "2146959351"
+    },
+    {
+      "id": "1550846908891922433",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀WARN⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 24,
+      "permissions": "37211713"
+    },
+    {
+      "id": "1550846873110184035",
+      "name": "Super Role",
+      "color": 0,
+      "hoist": false,
+      "position": 57,
+      "permissions": "8"
+    },
+    {
+      "id": "1429445691452948524",
+      "name": "@everyone",
+      "color": 0,
+      "hoist": false,
+      "position": 0,
+      "permissions": "1096043478765121"
+    },
+    {
+      "id": "1550846887085740125",
+      "name": "║ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀STAFF⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ║",
+      "color": 0,
+      "hoist": false,
+      "position": 43,
+      "permissions": "37211713"
+    }
+  ]
+}

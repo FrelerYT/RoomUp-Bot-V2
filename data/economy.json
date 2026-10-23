@@ -1,0 +1,82 @@
+{
+  "users": {
+    "guild_test_123_user_test_456": {
+      "wallet": 198,
+      "bank": 0,
+      "lastDaily": 1789759083654,
+      "lastWork": 1789759083662,
+      "streak": 1
+    },
+    "guild_test_123_user_test_1789759820759": {
+      "wallet": 206,
+      "bank": 0,
+      "lastDaily": 1789759820762,
+      "lastWork": 1789759820764,
+      "streak": 1
+    },
+    "guild_test_123_user_test_1789759829356": {
+      "wallet": 204,
+      "bank": 0,
+      "lastDaily": 1789759829360,
+      "lastWork": 1789759829362,
+      "streak": 1
+    },
+    "guild_test_123_user_test_1789764197764": {
+      "wallet": 193,
+      "bank": 0,
+      "lastDaily": 1789764197768,
+      "lastWork": 1789764197770,
+      "streak": 1
+    },
+    "123456789012345678_eco_user_1": {
+      "wallet": 34600,
+      "bank": 0,
+      "lastDaily": 0,
+      "lastWork": 0,
+      "streak": 0
+    },
+    "1429445691452948524_1397496188386934854": {
+      "wallet": 291,
+      "bank": 0,
+      "lastDaily": 1789898700845,
+      "lastWork": 1789923095882,
+      "streak": 1
+    },
+    "1429445691452948524_1072191114938945717": {
+      "wallet": 150,
+      "bank": 0,
+      "lastDaily": 1789899023227,
+      "lastWork": 0,
+      "streak": 1
+    },
+    "1429445691452948524_1543608170327445634": {
+      "wallet": 500,
+      "bank": 0,
+      "lastDaily": 0,
+      "lastWork": 0,
+      "streak": 0
+    },
+    "1429445691452948524_1531932260033495171": {
+      "wallet": 272,
+      "bank": 0,
+      "lastDaily": 1789902447147,
+      "lastWork": 1789918083984,
+      "streak": 1
+    },
+    "1429445691452948524_976850788020289546": {
+      "wallet": 196,
+      "bank": 0,
+      "lastDaily": 1789902906991,
+      "lastWork": 1789902934946,
+      "streak": 1
+    },
+    "1429445691452948524_1222604009999695973": {
+      "wallet": 150,
+      "bank": 0,
+      "lastDaily": 1789915948396,
+      "lastWork": 0,
+      "streak": 1
+    }
+  },
+  "shop": {}
+}

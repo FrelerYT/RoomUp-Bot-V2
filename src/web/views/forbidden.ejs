@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesso Negato • RoomUp!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg-base: #0e0e11;
+      --bg-card: #18191f;
+      --border: rgba(255, 255, 255, 0.06);
+      --border-hover: rgba(255, 255, 255, 0.13);
+      --gradient-brand: linear-gradient(135deg, #5865F2 0%, #8b5cf6 50%, #ec4899 100%);
+      --gradient-btn: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+      --primary-glow: rgba(88, 101, 242, 0.28);
+      --accent-red: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --squircle-radius: 28%;
+      --card-radius: 14px;
+      --control-radius: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    body {
+      background: var(--bg-base);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .error-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--card-radius);
+      max-width: 480px;
+      width: 100%;
+      padding: 2.85rem 2.25rem;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      animation: enter 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes enter {
+      from { opacity: 0; transform: translateY(10px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .icon-box {
+      width: 68px;
+      height: 68px;
+      border-radius: var(--squircle-radius);
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      color: var(--accent-red);
+      font-size: 1.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.35rem;
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+    }
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 900;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .btn {
+      height: 44px;
+      border-radius: var(--control-radius);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--gradient-btn);
+      color: #fff;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px var(--primary-glow);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-card">
+    <div class="icon-box">
+      <i class="fa-solid fa-shield-halved"></i>
+    </div>
+    <h1>Accesso Negato</h1>
+    <p>Ti serve il permesso di <strong>Amministratore</strong> o <strong>Gestisci Server</strong> per aprire questo pannello.</p>
+    <div class="actions">
+      <a href="/" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> I Miei Server</a>
+      <a href="/logout" class="btn btn-secondary"><i class="fa-solid fa-right-from-bracket"></i> Cambia Account</a>
+    </div>
+  </div>
+</body>
+</html>

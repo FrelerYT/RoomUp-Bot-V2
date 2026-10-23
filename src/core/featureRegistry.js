@@ -1,0 +1,32 @@
+const FEATURE_REGISTRY = [
+  { id: "welcome", name: "Benvenuto & Addio", category: "COMMUNITY", tab: "tab-welcome", icon: "fa-solid fa-door-open" },
+  { id: "automod", name: "AutoMod Intelligente", category: "MODERATION", tab: "tab-automod", icon: "fa-solid fa-shield-virus" },
+  { id: "cases", name: "Case Management & Sanzioni", category: "MODERATION", tab: "tab-cases", icon: "fa-solid fa-gavel" },
+  { id: "reports", name: "Segnalazioni & Ricorsi", category: "MODERATION", tab: "tab-reports", icon: "fa-solid fa-flag" },
+  { id: "antiraid", name: "Anti-Raid & Screening", category: "SECURITY", tab: "tab-antiraid", icon: "fa-solid fa-shield-cat" },
+  { id: "antinuke", name: "Anti-Nuke & Protezione Server", category: "SECURITY", tab: "tab-antinuke", icon: "fa-solid fa-triangle-exclamation" },
+  { id: "quarantine", name: "Quarantena & Emergenza", category: "SECURITY", tab: "tab-quarantine", icon: "fa-solid fa-biohazard" },
+  { id: "levels", name: "Livelli & Punti XP", category: "COMMUNITY", tab: "tab-levels", icon: "fa-solid fa-trophy" },
+  { id: "economy", name: "Economia Virtuale & Negozio", category: "ENGAGEMENT", tab: "tab-economy", icon: "fa-solid fa-coins" },
+  { id: "quests", name: "Missioni & Achievement", category: "ENGAGEMENT", tab: "tab-quests", icon: "fa-solid fa-scroll" },
+  { id: "reputation", name: "Sistema di Reputazione", category: "COMMUNITY", tab: "tab-reputation", icon: "fa-solid fa-thumbs-up" },
+  { id: "tickets", name: "Ticket di Supporto 2.0", category: "SUPPORT", tab: "tab-tickets", icon: "fa-solid fa-ticket" },
+  { id: "modmail", name: "Modmail Privato", category: "SUPPORT", tab: "tab-modmail", icon: "fa-solid fa-envelope" },
+  { id: "forms", name: "Form Builder & Candidature", category: "SUPPORT", tab: "tab-forms", icon: "fa-solid fa-file-pen" },
+  { id: "knowledge", name: "Knowledge Base & FAQ", category: "SUPPORT", tab: "tab-knowledge", icon: "fa-solid fa-book-open" },
+  { id: "giveaways", name: "Giveaway & Estrazioni", category: "COMMUNITY", tab: "tab-giveaways", icon: "fa-solid fa-gift" },
+  { id: "suggestions", name: "Suggerimenti & Sondaggi", category: "COMMUNITY", tab: "tab-suggestions", icon: "fa-solid fa-lightbulb" },
+  { id: "counting", name: "Gioco del Conteggio", category: "COMMUNITY", tab: "tab-counting", icon: "fa-solid fa-arrow-down-1-9" },
+  { id: "starboard", name: "Starboard & Hall of Fame", category: "COMMUNITY", tab: "tab-starboard", icon: "fa-solid fa-star" },
+  { id: "voice", name: "Vocali Temporanei (Hubs)", category: "COMMUNITY", tab: "tab-voice", icon: "fa-solid fa-microphone-lines" },
+  { id: "roles", name: "Role Manager & Reaction Roles", category: "GENERAL", tab: "tab-reaction-roles", icon: "fa-solid fa-user-tag" },
+  { id: "serverBuilder", name: "Server Builder & Backup", category: "GENERAL", tab: "tab-server-builder", icon: "fa-solid fa-server" },
+  { id: "automations", name: "Visual Workflow & Automazioni", category: "AUTOMATION", tab: "tab-automations", icon: "fa-solid fa-diagram-project" },
+  { id: "entertainment", name: "Suite Minigiochi (15 Giochi)", category: "ENGAGEMENT", tab: "tab-entertainment", icon: "fa-solid fa-gamepad" },
+  { id: "utilities", name: "Utility Operative & Embed Builder", category: "GENERAL", tab: "tab-utilities", icon: "fa-solid fa-screwdriver-wrench" },
+  { id: "integrations", name: "Integrazioni Minecraft & GitHub", category: "INTEGRATIONS", tab: "tab-integrations", icon: "fa-solid fa-cube" },
+  { id: "ai", name: "Sentinel AI & Agenti Intelligenti", category: "AI", tab: "tab-aimod", icon: "fa-solid fa-brain" },
+  { id: "analytics", name: "Analytics & Statistiche Live", category: "ANALYTICS", tab: "tab-server-stats", icon: "fa-solid fa-chart-line" }
+];
+
+module.exports = { FEATURE_REGISTRY };

@@ -1,0 +1,55 @@
+{
+  "templates": [
+    {
+      "id": "staff_app",
+      "title": "Candidatura Staff RoomUp!",
+      "description": "Compila il questionario per candidarti come Moderatore o Helper.",
+      "fields": [
+        {
+          "customId": "age",
+          "label": "Quanti anni hai?",
+          "style": "SHORT",
+          "required": true
+        },
+        {
+          "customId": "experience",
+          "label": "Esperienze passate come moderatore:",
+          "style": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "customId": "why",
+          "label": "Perché dovremmo scegliere te?",
+          "style": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "unban_appeal",
+      "title": "Richiesta di Sban / Ricorso",
+      "description": "Modulo ufficiale per richiedere la revisione di una sanzione.",
+      "fields": [
+        {
+          "customId": "case_id",
+          "label": "ID Sanzione o Data Ban:",
+          "style": "SHORT",
+          "required": false
+        },
+        {
+          "customId": "reason",
+          "label": "Perché ritieni ingiusta la sanzione?",
+          "style": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "customId": "commitment",
+          "label": "Cosa farai per non ripetere l'errore?",
+          "style": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "submissions": []
+}

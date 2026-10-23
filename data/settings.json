@@ -1,0 +1,3498 @@
+{
+  "1429445691452948524": {
+    "guildId": "1429445691452948524",
+    "guildName": "RoomUp!",
+    "prefix": "!",
+    "logs": {
+      "enabled": false,
+      "globalChannelId": "1550847067432161350",
+      "embedColor": "#5865F2",
+      "categories": {
+        "messages": {
+          "enabled": true,
+          "channelId": "1550847070984863804"
+        },
+        "channels": {
+          "enabled": true,
+          "channelId": "1550847072494948492"
+        },
+        "voice": {
+          "enabled": true,
+          "channelId": "1550847073622958123"
+        },
+        "members": {
+          "enabled": true,
+          "channelId": "1550847075434893463"
+        },
+        "roles": {
+          "enabled": true,
+          "channelId": "1550847077083385868"
+        },
+        "automod": {
+          "enabled": true,
+          "channelId": "1550847078270504991"
+        },
+        "server": {
+          "enabled": true,
+          "channelId": "1550847081311248474"
+        },
+        "moderation": {
+          "enabled": true,
+          "channelId": "1550847067432161350"
+        },
+        "emojis": {
+          "enabled": false,
+          "channelId": ""
+        },
+        "threads": {
+          "enabled": false,
+          "channelId": ""
+        }
+      },
+      "events": {
+        "memberJoin": {
+          "channelId": "1550847066358423592",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberLeave": {
+          "channelId": "1550847066358423592",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "messageCreate": {
+          "channelId": "1550847070984863804"
+        },
+        "messageDelete": {
+          "channelId": "1550847070984863804",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "messageUpdate": {
+          "channelId": "1550847070984863804",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "channelCreate": {
+          "channelId": "1550847072494948492",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "channelDelete": {
+          "channelId": "1550847072494948492",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "channelUpdate": {
+          "channelId": "1550847072494948492",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "voiceJoin": {
+          "channelId": "1550847073622958123",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "voiceLeave": {
+          "channelId": "1550847073622958123",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "voiceSwitch": {
+          "channelId": "1550847073622958123",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberVerify": {
+          "channelId": "1550847075434893463"
+        },
+        "roleCreate": {
+          "channelId": "1550847077083385868",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "roleDelete": {
+          "channelId": "1550847077083385868",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "roleUpdate": {
+          "channelId": "1550847077083385868",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberRoleAdd": {
+          "channelId": "1550847077083385868",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberRoleRemove": {
+          "channelId": "1550847077083385868",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "inviteCreate": {
+          "channelId": "1550847081311248474"
+        },
+        "inviteDelete": {
+          "channelId": "1550847081311248474"
+        },
+        "serverUpdate": {
+          "channelId": "1550847081311248474",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "emojiCreate": {
+          "channelId": "1550847081311248474",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "emojiDelete": {
+          "channelId": "1550847081311248474",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberKick": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberTimeout": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "banAdd": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "banRemove": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "threadCreate": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "threadDelete": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        }
+      },
+      "channelId": ""
+    },
+    "partnerships": {
+      "enabled": false,
+      "partnerChannelId": "1550847042195038269",
+      "logChannelId": "1550847065284808804",
+      "staffRoleIds": [
+        "1550846898850631730"
+      ],
+      "pingRole": "1550846931826122783",
+      "autoDeleteOnLeave": false,
+      "embedTitle": "🤝 Nuova Partnership Ufficiale!",
+      "embedColor": "#5865f2",
+      "embedFooter": "RoomUp! Network • Partnership System",
+      "descriptionTemplate": "Siamo felici di annunciare una nuova partnership con **{partnerGuild}**!\n\n{adText}\n\nUnisciti qui: {invite}",
+      "thumbnail": "",
+      "bannerImage": ""
+    },
+    "tickets": {
+      "enabled": false,
+      "logChannelId": "1550847067432161350",
+      "transcriptChannelId": "1550847069810327582",
+      "allowClaim": true,
+      "allowClose": true,
+      "requireCloseConfirmation": true,
+      "generateTranscript": true,
+      "sendDmTranscript": true,
+      "sendRatingSurvey": false,
+      "sendLog": true,
+      "welcomeEmbedTitle": "🎫 Assistenza #{ticketNumber}",
+      "welcomeEmbedColor": "#5865f2",
+      "welcomeEmbedFooter": "RoomUp! Support System",
+      "showThumbnail": true,
+      "closeEmbedTitle": "🔒 Ticket Chiuso",
+      "closeEmbedColor": "#e74c3c",
+      "closeDmMessage": "Il tuo ticket **#{ticketNumber}** su **{guild}** è stato archiviato.",
+      "panels": [
+        {
+          "id": "panel_default",
+          "title": "SUPPORTO",
+          "description": "Crea un ticket per:\n\n• Problemi con il tuo **account**\n• Problemi riguardanti lo **shop**\n• **Segnalazioni**\n• Candidature **Staff**\n• Candidature **Content Creator**\n• Altre richieste o necessità\n\nClicca qui sotto per scegliere una sezione\ne creare il tuo ticket.",
+          "color": "#731FC3",
+          "channelId": "1550847055998746679",
+          "placeholder": "Seleziona una categoria di ticket...",
+          "footer": "RoomUp! Support System",
+          "showThumbnail": true,
+          "useDividerBar": true,
+          "categories": [
+            {
+              "key": "general",
+              "label": "Supporto generale",
+              "icon": "🛠️",
+              "desc": "Domande, bug, shop e segnalazioni.",
+              "staffRoleIds": [
+                "1550846888708804759",
+                "1550846890017300480",
+                "1550846892017975378",
+                "1550846887085740125"
+              ],
+              "categoryId": "1550847019306979328",
+              "questions": [
+                {
+                  "label": "📝 Descrivi il problema o la tua richiesta",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Spiega nel dettaglio cosa è successo o di cosa hai bisogno..."
+                },
+                {
+                  "label": "⏰ Quando è successo? (data/ora approssimativa)",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: oggi pomeriggio, ieri sera, 3 giorni fa..."
+                },
+                {
+                  "label": "🔁 Hai già provato qualcosa per risolvere?",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: ho già contattato uno staff, ho riletto le regole..."
+                }
+              ],
+              "viewRoles": [
+                "1550846887085740125"
+              ]
+            },
+            {
+              "key": "partnership",
+              "label": "Partnership",
+              "icon": "🤝",
+              "desc": "Richiedi una partnership con il server.",
+              "staffRoleIds": [
+                "1550846888708804759",
+                "1550846898850631730",
+                "1550846887085740125"
+              ],
+              "categoryId": "1550847019306979328",
+              "questions": [
+                {
+                  "label": "🏷️ Nome del server / progetto",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: Server XYZ, Progetto ABC..."
+                },
+                {
+                  "label": "🔗 Link di invito permanente al server",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: discord.gg/..."
+                },
+                {
+                  "label": "👥 Numero di membri attivi",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: 500 membri, 1.2k membri..."
+                },
+                {
+                  "label": "🤝 Cosa offri in cambio della partnership?",
+                  "style": "Paragraph",
+                  "required": false,
+                  "placeholder": "Es: post nel nostro canale, ruolo dedicato, menzione..."
+                }
+              ],
+              "viewRoles": [
+                "1550846887085740125"
+              ]
+            },
+            {
+              "key": "staff_app",
+              "label": "Candidature Staff",
+              "icon": "📄",
+              "desc": "Candidati come Staff su Discord, Minecraft o entrambi.",
+              "staffRoleIds": [
+                "1550846888708804759",
+                "1550846876624887868",
+                "1550846887085740125"
+              ],
+              "categoryId": "1550847019306979328",
+              "questions": [
+                {
+                  "label": "🎂 Quanti anni hai?",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Devi avere almeno 14 anni..."
+                },
+                {
+                  "label": "💼 Esperienza precedente da Staff",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Descrivi server/progetti in cui hai già ricoperto un ruolo Staff..."
+                },
+                {
+                  "label": "🖥️ Per quale piattaforma ti candidi?",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Discord / Minecraft / Entrambi"
+                },
+                {
+                  "label": "❓ Perché vuoi entrare nello Staff di RoomUp?",
+                  "style": "Paragraph",
+                  "required": false,
+                  "placeholder": "Motivati! Cosa ti spinge a candidarti?"
+                },
+                {
+                  "label": "🕐 Disponibilità settimanale (ore/giorni)",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: lunedì-venerdì, 2-3 ore al giorno..."
+                }
+              ],
+              "viewRoles": [
+                "1550846887085740125"
+              ]
+            },
+            {
+              "key": "media_app",
+              "label": "Candidatura Content Creator o Media",
+              "icon": "🎥",
+              "desc": "Candidati come Media o Content Creator.",
+              "staffRoleIds": [
+                "1550846888708804759",
+                "1550846898850631730",
+                "1550846887085740125"
+              ],
+              "categoryId": "1550847019306979328",
+              "questions": [
+                {
+                  "label": "🔗 Link al tuo canale / profilo social principale",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: youtube.com/..., twitch.tv/..., tiktok.com/..."
+                },
+                {
+                  "label": "📊 Numero di iscritti / follower",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: 500 iscritti YouTube, 1k follower TikTok..."
+                },
+                {
+                  "label": "🎬 Tipo di contenuto che produci",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: gaming, vlog, tutorial Minecraft, clip Discord..."
+                },
+                {
+                  "label": "🤝 Perché vuoi collaborare con RoomUp?",
+                  "style": "Paragraph",
+                  "required": false,
+                  "placeholder": "Spiegaci la tua proposta e cosa puoi portare alla community..."
+                }
+              ],
+              "viewRoles": [
+                "1550846887085740125"
+              ]
+            }
+          ],
+          "categoryId": "1550847019306979328",
+          "viewRoles": [
+            "1550846887085740125"
+          ]
+        }
+      ],
+      "staffRoleIds": [
+        "1550846887085740125"
+      ]
+    },
+    "verification": {
+      "enabled": false,
+      "channelId": "1550847024285487177",
+      "verifiedRoleId": "1550846908011122688",
+      "unverifiedRoleId": null,
+      "assignUnverifiedRole": false,
+      "hideChannelAfterVerify": true,
+      "mode": "math",
+      "embedTitle": "Effettua una Autenticazione",
+      "embedDescription": "Benvenuto su **RoomUp!**\nPer sbloccare tutti i canali sul server e iniziare a\nchattare, clicca sul pulsante sottostante per\nverificare il tuo account e ottenere il ruolo\n**@Utenti**.",
+      "embedColor": "#8525e5",
+      "embedFooter": "Sistema di Protezione RoomUp!",
+      "thumbnail": "https://media.discordapp.net/attachments/1529455300011360468/1550854936831729734/utenti.png?ex=6aafd9b6&is=6aae8836&hm=a88dc6a0d2dc802844eb93a9a32f02bbb35b003c66525d4cb63b293f3d55cb22&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1529455300011360468/1550854072670883931/s.png?ex=6aafd8e8&is=6aae8768&hm=fea06f09f1a5acc7e0352f9fe94ba87ab929a6a1758295df1dcd0c15b60451d8&=&format=webp&quality=lossless",
+      "buttonLabel": "Clicca qui per verificarti",
+      "buttonColor": "secondary",
+      "dmNotification": false,
+      "dmMessage": "Ciao {username}! Hai completato con successo la verifica in **{guild}** {roles}\nBuona permanenza!",
+      "sendChannelLog": false,
+      "logChannelId": "1550847075434893463",
+      "roleToAddId": "1550846908011122688",
+      "hideAllChannelsUntilVerified": false,
+      "isolateMemberOnJoin": true,
+      "stats": {
+        "totalVerified": 10,
+        "totalFailed": 0,
+        "recentLogs": [
+          {
+            "userId": "1553447435274031168",
+            "userTag": "mattana8101",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1553447435274031168/573ca29c9281b90c18278eb8badb761e.webp",
+            "timestamp": "2026-09-30T09:01:25.884Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1321583954947739781",
+            "userTag": ".xkxnx_.",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1321583954947739781/a_e3d036b562fdcdbe3f51b8b81fbdebea.gif",
+            "timestamp": "2026-09-24T16:46:14.427Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1481262445296353401",
+            "userTag": "microsoft_gamer",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1481262445296353401/ac0a8fd5badbf18649f4a74c44933843.webp",
+            "timestamp": "2026-09-22T19:22:35.010Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1551939220497629268",
+            "userTag": "synix_93218",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1551939220497629268/e37cfa30e8b31c148e5c017c58713f7b.webp",
+            "timestamp": "2026-09-22T18:15:53.792Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1188826851192348706",
+            "userTag": "codic3g",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1188826851192348706/11822947665e79bcd82e1c14ecb4c274.webp",
+            "timestamp": "2026-09-21T20:47:36.868Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1007620938700959784",
+            "userTag": "lolshut",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1007620938700959784/d75533211338c90ad9e67ef3a5e8ee7f.webp",
+            "timestamp": "2026-09-21T16:30:59.233Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1531932260033495171",
+            "userTag": "lev_nbg",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1531932260033495171/01fcb4a226b82e492712ac817f4396ad.webp",
+            "timestamp": "2026-09-20T08:23:20.003Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1529192217787240478",
+            "userTag": "crazydabu",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1529192217787240478/80c439bc79056ca65bc5aa7123e5746c.webp",
+            "timestamp": "2026-09-19T13:33:29.360Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1020343046539325480",
+            "userTag": "frelerr",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1020343046539325480/c55ed8ee40db2034f1f245c1c9b8d1b7.webp",
+            "timestamp": "2026-09-19T13:04:49.519Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1124332033854930985",
+            "userTag": "kimo05868",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1124332033854930985/b552ffbf7cbf133403c16bc12a04d17b.webp",
+            "timestamp": "2026-09-19T12:57:23.122Z",
+            "mode": "code",
+            "status": "success",
+            "reason": "Superato Captcha code"
+          }
+        ]
+      },
+      "successMessage": "Hai completato la verifica con successo! Benvenuto in **{guild}**.{roles}",
+      "failMessage": "Risposta non corretta! (Tentativo {attempt}/{maxAttempts}). Riprova cliccando nuovamente sul pulsante.",
+      "alreadyVerifiedMessage": "Sei già verificato in questo server!",
+      "sessionExpiredMessage": "La sessione di verifica è scaduta. Riprova cliccando nuovamente sul pulsante.",
+      "disabledMessage": "Il sistema di verifica è temporaneamente disattivato dall'amministratore.",
+      "maxFailedAttempts": 5,
+      "failedAction": "kick",
+      "punishmentMessage": "Hai superato il limite di tentativi consentiti ({maxAttempts}). Sei stato {action}.",
+      "minAccountAgeDays": 0,
+      "minAgeMessage": "Accesso negato: Il tuo account è troppo recente ({age} giorni). Il server richiede almeno {minDays} giorni di anzianità.",
+      "requireAvatar": false,
+      "requireAvatarMessage": "Accesso negato: Il server richiede un account con un'immagine del profilo personalizzata.",
+      "roleToRemoveId": "1551607664574865589"
+    },
+    "welcome": {
+      "enabled": false,
+      "channelId": "1550847044858679326",
+      "sendChannelMessage": true,
+      "autoDeleteOnLeave": true,
+      "chatMessage": "Benvenuto {user} nella nostra community {guild}!",
+      "useEmbed": true,
+      "embedTitle": "Benvenuto su {guild}!",
+      "embedColor": "#731fc3",
+      "embedDescription": "**Siamo felicissimi di averti qui con noi!**\n\nTi invitiamo a leggere il regolamento e a presentarti nella chat generale.\n\n*Divertiti e buona permanenza!*",
+      "embedFooterText": "Membro #{memberCount}",
+      "thumbnailMode": "user",
+      "useDividerBar": true,
+      "showThumbnail": true,
+      "pingUser": true,
+      "sendBanner": false,
+      "sendDm": false,
+      "message": "Benvenuto {user} nella nostra community {guild}!",
+      "dmEnabled": false,
+      "dmUseEmbed": false,
+      "dmEmbedTitle": "Benvenuto nella nostra Community!",
+      "dmEmbedColor": "#5865f2",
+      "dmMessage": "Benvenuto su **{guild}**! Leggi il regolamento per iniziare al meglio la tua avventura."
+    },
+    "leave": {
+      "enabled": false,
+      "channelId": "1550847066358423592",
+      "message": "👋 **{username}** ha lasciato il server. Ora siamo in **{memberCount}** membri.",
+      "embedTitle": "👋 Arrivederci!",
+      "embedColor": "#e74c3c",
+      "embedFooter": "RoomUp! Community",
+      "sendChannelMessage": false,
+      "useEmbed": false,
+      "embedFooterText": "Ci mancherai! • {guild}",
+      "showThumbnail": false
+    },
+    "automod": {
+      "enabled": false,
+      "antiSpam": true,
+      "antiInvites": true,
+      "antiLinks": false,
+      "antiBadWords": true,
+      "antiMassCaps": true,
+      "antiMassMentions": true,
+      "logChannelId": "1550847078270504991",
+      "ignoredRoleIds": [
+        "1550846875328848004",
+        "1550846876624887868",
+        "1550846888708804759",
+        "1550846890017300480"
+      ],
+      "antiInvite": false,
+      "badWordsEnabled": false,
+      "antiCapsEnabled": false,
+      "maxMentionsEnabled": false,
+      "maxMentions": 5,
+      "badWordsList": [
+        "scam",
+        "free nitro",
+        "discord.gg/malware"
+      ],
+      "actionDeleteMessage": false,
+      "actionSendChatWarning": false,
+      "actionSendDmWarning": false,
+      "actionTimeoutUser": false,
+      "actionSendLog": false,
+      "timeoutDurationMinutes": 10,
+      "chatWarningMessage": "⚠️ <@{user}>, il tuo messaggio è stato rimosso da **AutoMod** ({reason}).",
+      "dmWarningMessage": "⚠️ Attenzione: un tuo messaggio su **{guild}** è stato rimosso per: **{reason}**.",
+      "logEmbedTitle": "🛡️ Intervento AutoMod",
+      "logEmbedColor": "#f23f43"
+    },
+    "voice": {
+      "enabled": false,
+      "generatorChannelId": "1550847041243054100",
+      "categoryId": "1550847018094698657",
+      "channelNameTemplate": "🔒・Stanza di {username}",
+      "userLimit": 0,
+      "autoDeleteOnEmpty": true,
+      "hubChannelId": "1550847041243054100"
+    },
+    "aiModerator": {
+      "enabled": false,
+      "confidenceThreshold": 85,
+      "logChannelId": "1550847078270504991",
+      "consultationChannelId": "1550847060276813965",
+      "mode": "autonomous",
+      "sensitivity": "medium"
+    },
+    "giveaways": {
+      "enabled": false,
+      "defaultChannelId": "",
+      "pingRole": "@everyone",
+      "pingRoleEnabled": false,
+      "sendDmToWinners": false,
+      "showParticipantsCount": false,
+      "startEmbedTitle": "🎉 GIVEAWAY DELLA COMMUNITY 🎉",
+      "startEmbedColor": "#5865f2",
+      "endEmbedTitle": "🎉 GIVEAWAY TERMINATO 🎉",
+      "winEmbedColor": "#23a55a",
+      "loseEmbedColor": "#f23f43",
+      "winMessage": "🎊 Congratulazioni {winners}! Hai vinto **{prize}**!",
+      "dmWinnerMessage": "🎉 Complimenti! Hai vinto il giveaway per **{prize}** su **{guild}**!",
+      "startEmbedFooter": "Reagisci o clicca per partecipare! • Termina",
+      "thumbnail": "",
+      "bannerImage": "",
+      "endEmbedColor": "#5865f2"
+    },
+    "suggestions": {
+      "enabled": false,
+      "channelId": "1550847063946829834",
+      "allowUpvoteDownvote": true,
+      "autoCreateThread": true,
+      "sendDmOnStatusChange": true,
+      "embedTitle": "💡 Nuova Proposta della Community",
+      "embedColor": "#f1c40f",
+      "embedFooter": "RoomUp! Suggerimenti • Vota con le reazioni!",
+      "submissionTemplate": "💡 **Proposta inviata da {user}:**{suggestion}*Usa le reazioni qui sotto per votare!*",
+      "approvedColor": "#2ecc71",
+      "rejectedColor": "#e74c3c",
+      "inProgressColor": "#3498db"
+    },
+    "levels": {
+      "enabled": true,
+      "gainXpText": true,
+      "gainXpVoice": true,
+      "xpPerMessageMin": 15,
+      "xpPerMessageMax": 25,
+      "announceLevelUp": true,
+      "announceMode": "channel",
+      "levelUpChannelId": "1550847048151081010",
+      "useCardBanner": true,
+      "useEmbed": false,
+      "message": "Complimenti {user}, sei salito al livello **{level}**!",
+      "embedTitle": "🆙 Level Up!",
+      "embedColor": "#731fc3",
+      "embedFooterText": "RoomUp! • Classifica XP",
+      "showThumbnail": true,
+      "roleRewardsEnabled": false,
+      "roleRewards": {},
+      "gainXpMuted": true,
+      "voiceMinMembers": 1
+    },
+    "reactionRoles": {
+      "panels": []
+    },
+    "customCommands": {
+      "triggers": [
+        {
+          "trigger": "!ip",
+          "response": "L'indirizzo del nostro server è: **play.roomup.it**",
+          "useEmbed": true,
+          "title": "Indirizzo Server",
+          "color": "#5865F2"
+        },
+        {
+          "trigger": "!regole",
+          "response": "Consulta il regolamento completo del server nel canale dedicato!",
+          "useEmbed": true,
+          "title": "Regolamento",
+          "color": "#f0b232"
+        }
+      ]
+    },
+    "counting": {
+      "enabled": false,
+      "channelId": "1550847049988313178",
+      "resetOnFail": true,
+      "allowConsecutive": false,
+      "reactionsEnabled": true,
+      "milestoneCelebration": true,
+      "embedTitle": "🔢 Minigioco del Conteggio",
+      "embedColor": "#5865f2",
+      "embedFooter": "Regola: Conta un numero alla volta senza sbagliare!",
+      "failMessage": "{user} ha rovinato la sequenza! Il prossimo numero era {correctNumber}. Si riparte da 1!",
+      "milestoneMessage": "🎉 Traguardo raggiunto: **{count}** numeri contati consecutivamente!",
+      "currentCount": 15,
+      "lastUserId": "1531932260033495171",
+      "highestScore": 113
+    },
+    "starboard": {
+      "enabled": false,
+      "channelId": "1550847046351585351",
+      "threshold": 3,
+      "emoji": "⭐",
+      "starEmoji": "⭐",
+      "allowSelfStar": false,
+      "includeAttachments": false,
+      "showJumpUrl": false,
+      "embedColor": "#f0b232",
+      "embedFooterText": "ID: {messageId} • ⭐ {count}"
+    },
+    "serverStats": {
+      "enabled": false,
+      "membersChannelId": "",
+      "boostChannelId": "",
+      "membersFormat": "Membri: {count}",
+      "boostFormat": "Boost: {count}"
+    },
+    "antiNuke": {
+      "enabled": false,
+      "alertChannelId": "1550847067432161350",
+      "maxChannelDeletions": 2,
+      "maxRoleDeletions": 2,
+      "maxKicksBans": 4,
+      "emergencyEmbedDescription": "🚨 Intervento Anti-Nuke attivo: bloccate modifiche massive ai canali o ruoli.",
+      "emergencyEmbedFooter": "RoomUp! Emergency Defense",
+      "maxChannelDeletes": 3,
+      "maxRoleDeletes": 3,
+      "logChannelId": "",
+      "protectChannels": false,
+      "protectRoles": false,
+      "stripRolesAction": false,
+      "timeoutAttackerAction": false,
+      "pingEveryoneOnPanic": false,
+      "emergencyEmbedTitle": "🚨 [ANTI-NUKE & PANIC MODE ATTIVATO]",
+      "emergencyEmbedColor": "#f23f43"
+    },
+    "antiRaid": {
+      "enabled": false,
+      "logChannelId": "1550847067432161350",
+      "lockdownChannelId": "1550847044858679326",
+      "joinThreshold": 6,
+      "windowSeconds": 10,
+      "raidEmbedTitle": "🚨 ALLERTA RAID RILEVATA",
+      "lockdownMessage": "🚨 Il server è temporaneamente in Lockdown di sicurezza a causa di accessi sospetti.",
+      "raidEmbedFooter": "RoomUp! Security Defense",
+      "maxJoinsPer10s": 5,
+      "minAccountAgeDays": 3,
+      "accountAgeScreening": false,
+      "avatarScreening": false,
+      "kickNoAvatar": false,
+      "joinSpikeProtection": false,
+      "autoLockdownOnSpike": false,
+      "antiMassMention": false,
+      "antiEveryonePing": false,
+      "sendKickDm": false,
+      "kickDmRecentAccount": "Sei stato espulso da **{guild}**: il tuo account è troppo recente (minimo {minDays} giorni).",
+      "raidLogColor": "#f23f43"
+    },
+    "warns": {
+      "enabled": false,
+      "logChannelId": "1550847062235418647",
+      "warnEmbedTitle": "⚠️ Notifica Disciplinare",
+      "warnEmbedFooter": "RoomUp! Moderation System",
+      "kickDmMessage": "Sei stato espulso da **{guild}** per violazione del regolamento: {reason}",
+      "banDmMessage": "Sei stato bannato permanentemente da **{guild}**: {reason}",
+      "timeoutDmMessage": "Sei stato messo in timeout su **{guild}** per {duration}: {reason}",
+      "levels": {
+        "1": {
+          "action": "role",
+          "roleId": "1550846910871642155",
+          "duration": 0
+        },
+        "2": {
+          "action": "role",
+          "roleId": "1550846912238850246",
+          "duration": 0
+        },
+        "3": {
+          "action": "role",
+          "roleId": "1550846913702535178",
+          "duration": 0
+        },
+        "4": {
+          "action": "timeout",
+          "duration": 86400000,
+          "roleId": "1550846909818867775"
+        },
+        "5": {
+          "action": "ban",
+          "duration": 0
+        }
+      },
+      "timeoutAt3": false,
+      "kickAt5": false,
+      "banAt7": false,
+      "timeoutAtWarns": 3,
+      "kickAtWarns": 5,
+      "banAtWarns": 7,
+      "timeoutDurationMinutes": 60,
+      "sendDmOnWarn": false,
+      "autoEscalate": false,
+      "warnDmTemplate": "Hai ricevuto un avvertimento in **{guild}** per: **{reason}**. Warn totali: **{warnCount}**.",
+      "embedColor": "#f39c12"
+    },
+    "entertainment": {
+      "enabled": false,
+      "games": {
+        "trivia": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "math": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "rps": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "slots": {
+          "enabled": false,
+          "embedColor": "#f1c40f"
+        },
+        "blackjack": {
+          "enabled": false,
+          "embedColor": "#2c3e50"
+        },
+        "piualto": {
+          "enabled": false,
+          "embedColor": "#3498db"
+        },
+        "mysterybox": {
+          "enabled": false,
+          "embedColor": "#9b59b6"
+        },
+        "grattaevinci": {
+          "enabled": false,
+          "embedColor": "#e67e22"
+        },
+        "ruotafortuna": {
+          "enabled": false,
+          "embedColor": "#e74c3c"
+        },
+        "indovina": {
+          "enabled": false,
+          "embedColor": "#1abc9c"
+        },
+        "dadi": {
+          "enabled": false,
+          "embedColor": "#34495e"
+        },
+        "tris": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "coinflip": {
+          "enabled": false,
+          "embedColor": "#f0b232"
+        },
+        "meme": {
+          "enabled": false,
+          "embedColor": "#ec4899"
+        },
+        "roulette": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "eightball": {
+          "enabled": false,
+          "embedColor": "#9b59b6"
+        }
+      }
+    },
+    "utilities": {
+      "enabled": false
+    },
+    "integrations": {
+      "enabled": false,
+      "mcDefaultServer": "mc.roomup.it",
+      "githubLogChannelId": ""
+    },
+    "aiAgent": {
+      "enabled": false,
+      "autoMentionReply": true
+    },
+    "roles": {
+      "autoRoles": [],
+      "delayedRoles": [],
+      "stickyRolesEnabled": false
+    },
+    "security": {
+      "lockdown": false,
+      "lockdownReason": "",
+      "quarantineRoleId": "",
+      "quarantineChannelId": "",
+      "panicMode": false
+    },
+    "modmail": {
+      "enabled": false,
+      "staffRoleId": "",
+      "categoryId": "",
+      "logChannelId": ""
+    },
+    "forms": {
+      "enabled": false
+    },
+    "knowledgeBase": {
+      "enabled": false,
+      "autoResponder": false,
+      "faqChannelId": ""
+    },
+    "economy": {
+      "enabled": false,
+      "currencyName": "Monete",
+      "currencySymbol": "🪙",
+      "startingBalance": 100,
+      "dailyAmount": 50,
+      "workMin": 20,
+      "workMax": 80,
+      "shopItems": []
+    },
+    "reputation": {
+      "enabled": false,
+      "cooldownHours": 24,
+      "logChannelId": ""
+    },
+    "quests": {
+      "enabled": false
+    },
+    "social": {
+      "birthdayChannelId": "",
+      "birthdayRoleId": "",
+      "confessionChannelId": "",
+      "requireReview": false
+    },
+    "automations": [],
+    "music": {
+      "enabled": false,
+      "allowedTextChannelId": "1550847054836924509",
+      "djRoleId": "1550846888708804759",
+      "coexistenceMode": "duck",
+      "duckVolume": 20,
+      "defaultVolume": 80,
+      "maxQueueSize": 50,
+      "autoLeaveTimeout": 60,
+      "allowedVoiceChannels": [],
+      "allowedTextChannels": [],
+      "ttsCoexistenceMode": "duck",
+      "ttsDuckingVolume": 20,
+      "embedColor": "#5865f2",
+      "nowPlayingTemplate": "🎵 Ora in onda: **{title}** [{duration}] - Richiesto da <@{user}>",
+      "playMessageTemplate": "🎶 In riproduzione: **{title}** [{duration}]",
+      "queueMessageTemplate": "📜 Coda attuale ({count} brani)"
+    },
+    "embedColor": "#5865F2",
+    "isLockdownActive": false,
+    "ticketCounter": 20,
+    "ai": {
+      "enabled": false,
+      "autonomyLevel": 4,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "fallbackModel": "gemini-1.5-flash",
+      "temperature": 0.2,
+      "maxTokens": 1200,
+      "learningApproval": "AUTO_LEARN_LOW_RISK",
+      "maxAutonomousRisk": "LOW",
+      "requireStaffConfirmHighRisk": true,
+      "confidenceThresholds": {
+        "escalate": 0.49,
+        "ask": 0.69,
+        "respond": 0.89
+      },
+      "personality": {
+        "tone": "friendly",
+        "formality": "professional-but-human",
+        "verbosity": "concise",
+        "humor": "subtle",
+        "emoji": false,
+        "greetingStyle": "direct",
+        "language": "it"
+      },
+      "tools": {
+        "timeout": true,
+        "warn": true,
+        "renameTicket": true,
+        "closeTicket": true,
+        "ban": false,
+        "kick": false
+      },
+      "maxRisk": "LOW"
+    },
+    "dashboard": {
+      "hiddenTabs": [
+        "tab-economy",
+        "tab-entertainment"
+      ]
+    }
+  },
+  "1540661437821620235": {
+    "guildId": "1540661437821620235",
+    "guildName": "RoomUp! TEST",
+    "prefix": "!",
+    "logs": {
+      "enabled": false,
+      "globalChannelId": "",
+      "embedColor": "#5865F2",
+      "categories": {
+        "channels": {
+          "name": "Canali",
+          "enabled": false,
+          "channelId": ""
+        },
+        "members": {
+          "name": "Membri & Utenti",
+          "enabled": false,
+          "channelId": ""
+        },
+        "roles": {
+          "name": "Ruoli",
+          "enabled": false,
+          "channelId": ""
+        },
+        "messages": {
+          "name": "Messaggi",
+          "enabled": false,
+          "channelId": ""
+        },
+        "voice": {
+          "name": "Canali Vocali",
+          "enabled": false,
+          "channelId": ""
+        },
+        "server": {
+          "name": "Server",
+          "enabled": false,
+          "channelId": ""
+        },
+        "moderation": {
+          "name": "Moderazione & AutoMod",
+          "enabled": false,
+          "channelId": ""
+        },
+        "emojis": {
+          "name": "Emoji & Sticker",
+          "enabled": false,
+          "channelId": ""
+        },
+        "threads": {
+          "name": "Thread",
+          "enabled": false,
+          "channelId": ""
+        },
+        "webhooks": {
+          "name": "Webhook",
+          "enabled": false,
+          "channelId": ""
+        }
+      },
+      "events": {}
+    },
+    "partnerships": {
+      "enabled": false,
+      "partnerChannelId": "",
+      "logChannelId": "",
+      "staffRoleIds": [],
+      "pingRole": "@everyone",
+      "autoDeleteOnLeave": false
+    },
+    "tickets": {
+      "enabled": false,
+      "logChannelId": "",
+      "transcriptChannelId": "1234567890",
+      "allowClaim": false,
+      "allowClose": false,
+      "requireCloseConfirmation": false,
+      "generateTranscript": false,
+      "sendDmTranscript": false,
+      "sendRatingSurvey": false,
+      "sendLog": false,
+      "welcomeEmbedTitle": "{icon} Ticket #{ticketNumber} • {category}",
+      "welcomeEmbedColor": "#5865F2",
+      "welcomeEmbedFooter": "RoomUp! Support System • Canale: {channel}",
+      "showThumbnail": false,
+      "closeEmbedTitle": "🔒 Ticket Chiuso",
+      "closeEmbedColor": "#e74c3c",
+      "closeDmMessage": "Il tuo ticket **#{ticketNumber}** su **{guild}** è stato chiuso da **{moderator}**.",
+      "panels": [
+        {
+          "id": "panel_support",
+          "title": "RoomUp! - Assistenza & Supporto",
+          "description": "Seleziona una categoria dal menu sottostante per aprire un ticket privato con lo Staff.",
+          "color": "#5865F2",
+          "channelId": "",
+          "categories": [
+            {
+              "key": "general",
+              "label": "Assistenza Generale",
+              "icon": "fa-screwdriver-wrench",
+              "desc": "Problemi tecnici, ruoli o domande generali",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Descrivi dettagliatamente la tua richiesta:",
+                "Hai screenshot o prove da allegare?"
+              ]
+            },
+            {
+              "key": "partnership",
+              "label": "Richiesta Partnership",
+              "icon": "fa-handshake",
+              "desc": "Richieste di affiliazione con la nostra community",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Nome del tuo server/progetto:",
+                "Link invito Discord:",
+                "Numero di membri attivi:"
+              ]
+            },
+            {
+              "key": "report",
+              "label": "Segnalazione Utente",
+              "icon": "fa-triangle-exclamation",
+              "desc": "Segnala violazioni del regolamento o comportamenti scorretti",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Tag o ID dell'utente segnalato:",
+                "Regola infranta:",
+                "Prove / Screenshot:"
+              ]
+            },
+            {
+              "key": "staff_app",
+              "label": "Candidatura Staff",
+              "icon": "fa-briefcase",
+              "desc": "Invia la tua candidatura per entrare nel team",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Età anagrafica:",
+                "Esperienze pregresse come Staff:",
+                "Perché dovremmo scegliere te?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "verification": {
+      "enabled": false,
+      "channelId": "",
+      "verifiedRoleId": "",
+      "unverifiedRoleId": "",
+      "assignUnverifiedRole": false,
+      "hideChannelAfterVerify": false,
+      "mode": "code",
+      "embedTitle": "Verifica del Server",
+      "embedDescription": "Clicca sul pulsante sottostante per verificare il tuo account e sbloccare tutti i canali del server!",
+      "embedColor": "#5865F2",
+      "embedFooter": "Sistema di Protezione RoomUp!",
+      "thumbnail": "",
+      "image": "",
+      "buttonLabel": "Verificati Ora",
+      "buttonColor": "success",
+      "dmNotification": false,
+      "dmMessage": "Ciao {username}! Hai completato con successo la verifica in **{guild}**.{roles}\nBuona permanenza!",
+      "sendChannelLog": false,
+      "logChannelId": ""
+    },
+    "welcome": {
+      "enabled": false,
+      "channelId": "",
+      "sendChannelMessage": false,
+      "message": "Benvenuto {user} in **{guild}**! Membri attuali: **{memberCount}**.",
+      "useEmbed": false,
+      "embedTitle": "🎉 Nuovo Membro!",
+      "embedColor": "#23a55a",
+      "embedFooterText": "{guild} • Membro #{memberCount}",
+      "pingUser": false,
+      "sendBanner": false,
+      "showThumbnail": false,
+      "dmMessageEnabled": false,
+      "dmMessage": "Benvenuto su **{guild}**! Leggi il regolamento per iniziare al meglio la tua avventura.",
+      "dmUseEmbed": false,
+      "dmEmbedTitle": "Benvenuto nella nostra Community!",
+      "dmEmbedColor": "#5865F2"
+    },
+    "leave": {
+      "enabled": false,
+      "channelId": "",
+      "sendChannelMessage": false,
+      "message": "🚪 **{username}** ha lasciato il server.",
+      "useEmbed": false,
+      "embedTitle": "Membro Uscito",
+      "embedColor": "#f23f43",
+      "embedFooterText": "Ci mancherai! • {guild}",
+      "showThumbnail": false
+    },
+    "automod": {
+      "enabled": false,
+      "logChannelId": "",
+      "antiInvite": false,
+      "antiLinks": false,
+      "badWordsEnabled": false,
+      "badWordsList": [
+        "scam",
+        "free nitro",
+        "discord.gg/malware"
+      ],
+      "maxMentionsEnabled": false,
+      "maxMentions": 5,
+      "antiSpamEnabled": false,
+      "antiCapsEnabled": false,
+      "actionDeleteMessage": false,
+      "actionSendChatWarning": false,
+      "actionSendDmWarning": false,
+      "actionTimeoutUser": false,
+      "timeoutDurationMinutes": 10,
+      "actionSendLog": false,
+      "chatWarningMessage": "⚠️ <@{user}>, il tuo messaggio è stato rimosso da **AutoMod** ({reason}).",
+      "dmWarningMessage": "⚠️ Attenzione: un tuo messaggio su **{guild}** è stato rimosso per: **{reason}**.",
+      "logEmbedTitle": "🛡️ Intervento AutoMod",
+      "logEmbedColor": "#f23f43"
+    },
+    "voice": {
+      "enabled": false,
+      "hubChannelId": "",
+      "categoryId": "",
+      "controlPanelChannelId": "",
+      "defaultLimit": 0,
+      "autoDeleteEmpty": false,
+      "allowUserRename": false,
+      "allowUserLimit": false,
+      "allowUserLock": false
+    },
+    "aiModerator": {
+      "enabled": false,
+      "mode": "autonomous",
+      "sensitivity": "medium",
+      "consultationChannelId": "",
+      "staffRoleIds": []
+    },
+    "giveaways": {
+      "enabled": false,
+      "defaultChannelId": "",
+      "pingRole": "@everyone",
+      "pingRoleEnabled": false,
+      "sendDmToWinners": false,
+      "showParticipantsCount": false,
+      "startEmbedTitle": "🎉 GIVEAWAY DELLA COMMUNITY 🎉",
+      "startEmbedColor": "#5865F2",
+      "endEmbedTitle": "🎉 GIVEAWAY TERMINATO 🎉",
+      "winEmbedColor": "#23a55a",
+      "loseEmbedColor": "#f23f43",
+      "winMessage": "🎊 Congratulazioni {winners}! Hai vinto **{prize}**!",
+      "dmWinnerMessage": "🎉 Complimenti! Hai vinto il giveaway per **{prize}** su **{guild}**!"
+    },
+    "suggestions": {
+      "enabled": false,
+      "channelId": "",
+      "approvedChannelId": "",
+      "rejectedChannelId": "",
+      "staffRoleIds": [],
+      "autoCreateThread": false,
+      "sendDmOnStatusChange": false,
+      "allowUpvoteDownvote": false,
+      "embedTitle": "💡 Nuovo Suggerimento della Community",
+      "embedColor": "#5865F2",
+      "approvedColor": "#23a55a",
+      "rejectedColor": "#f23f43",
+      "inProgressColor": "#f0b232"
+    },
+    "levels": {
+      "enabled": false,
+      "xpPerMessageMin": 15,
+      "xpPerMessageMax": 25,
+      "gainXpText": false,
+      "gainXpVoice": false,
+      "announceLevelUp": false,
+      "announceMode": "channel",
+      "levelUpChannelId": "",
+      "useEmbed": false,
+      "embedTitle": "🆙 Level Up!",
+      "message": "🎉 Congratulazioni {user}! Sei appena salito al **Livello {level}**!",
+      "embedColor": "#f0b232",
+      "embedFooterText": "{guild} • Classifica XP",
+      "showThumbnail": false,
+      "roleRewardsEnabled": false,
+      "roleRewards": {},
+      "levelUpChannel": "1540661437821620238"
+    },
+    "reactionRoles": {
+      "panels": []
+    },
+    "customCommands": {
+      "triggers": [
+        {
+          "trigger": "!ip",
+          "response": "L'indirizzo del nostro server è: **play.roomup.it**",
+          "useEmbed": true,
+          "title": "Indirizzo Server",
+          "color": "#5865F2"
+        },
+        {
+          "trigger": "!regole",
+          "response": "Consulta il regolamento completo del server nel canale dedicato!",
+          "useEmbed": true,
+          "title": "Regolamento",
+          "color": "#f0b232"
+        }
+      ]
+    },
+    "counting": {
+      "enabled": false,
+      "channelId": "",
+      "currentCount": 0,
+      "highestScore": 0,
+      "lastUserId": "",
+      "resetOnFail": false,
+      "allowConsecutive": false,
+      "milestoneCelebration": false,
+      "reactionsEnabled": false,
+      "failMessageSameUser": "❌ <@{user}>, non puoi contare due volte di seguito! Il conteggio si azzera a **0**. Record del server: **{highestScore}**.",
+      "failMessageWrongNumber": "❌ <@{user}> ha sbagliato! Il numero corretto doveva essere **{expected}** (invece di `{input}`). Il conteggio si azzera a **0**. Record del server: **{highestScore}**!",
+      "milestoneMessage": "🎉 Traguardo raggiunto: **{count}** numeri contati consecutivamente!"
+    },
+    "starboard": {
+      "enabled": false,
+      "channelId": "",
+      "threshold": 3,
+      "starEmoji": "⭐",
+      "allowSelfStar": false,
+      "includeAttachments": false,
+      "showJumpUrl": false,
+      "embedColor": "#f0b232",
+      "embedFooterText": "ID: {messageId} • ⭐ {count}"
+    },
+    "serverStats": {
+      "enabled": false,
+      "membersChannelId": "",
+      "boostChannelId": "",
+      "membersFormat": "Membri: {count}",
+      "boostFormat": "Boost: {count}"
+    },
+    "antiNuke": {
+      "enabled": false,
+      "maxChannelDeletes": 3,
+      "maxRoleDeletes": 3,
+      "protectChannels": false,
+      "protectRoles": false,
+      "stripRolesAction": false,
+      "timeoutAttackerAction": false,
+      "pingEveryoneOnPanic": false,
+      "logChannelId": "",
+      "emergencyEmbedTitle": "🚨 [ANTI-NUKE & PANIC MODE ATTIVATO]",
+      "emergencyEmbedColor": "#f23f43"
+    },
+    "antiRaid": {
+      "enabled": false,
+      "maxJoinsPer10s": 5,
+      "minAccountAgeDays": 3,
+      "accountAgeScreening": false,
+      "kickNoAvatar": false,
+      "avatarScreening": false,
+      "joinSpikeProtection": false,
+      "autoLockdownOnSpike": false,
+      "antiMassMention": false,
+      "antiEveryonePing": false,
+      "sendKickDm": false,
+      "customAgeKickDm": "⚠️ Sei stato espulso da **{guild}**: il tuo account Discord è troppo recente ({age} giorni). Riprova tra qualche giorno!",
+      "customAvatarKickDm": "⚠️ Sei stato espulso da **{guild}**: è richiesta un'immagine profilo personalizzata per accedere.",
+      "logChannelId": "",
+      "logEmbedColor": "#f23f43"
+    },
+    "warns": {
+      "enabled": false,
+      "timeoutAt3": false,
+      "kickAt5": false,
+      "banAt7": false,
+      "timeoutAtWarns": 3,
+      "kickAtWarns": 5,
+      "banAtWarns": 7,
+      "timeoutDurationMinutes": 60,
+      "sendDmOnWarn": false,
+      "sendDmOnKick": false,
+      "sendDmOnBan": false,
+      "sendDmOnTimeout": false,
+      "autoEscalation": false,
+      "customWarnDmMessage": "⚠️ Hai ricevuto un avvertimento su **{guild}** per: **{reason}** (Avvertimenti totali: **{totalWarns}**).",
+      "logChannelId": "",
+      "warnEmbedColor": "#f0b232"
+    },
+    "entertainment": {
+      "enabled": false,
+      "games": {
+        "trivia": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "math": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "rps": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "slots": {
+          "enabled": false,
+          "embedColor": "#f1c40f"
+        },
+        "blackjack": {
+          "enabled": false,
+          "embedColor": "#2c3e50"
+        },
+        "piualto": {
+          "enabled": false,
+          "embedColor": "#3498db"
+        },
+        "mysterybox": {
+          "enabled": false,
+          "embedColor": "#9b59b6"
+        },
+        "grattaevinci": {
+          "enabled": false,
+          "embedColor": "#e67e22"
+        },
+        "ruotafortuna": {
+          "enabled": false,
+          "embedColor": "#e74c3c"
+        },
+        "indovina": {
+          "enabled": false,
+          "embedColor": "#1abc9c"
+        },
+        "dadi": {
+          "enabled": false,
+          "embedColor": "#34495e"
+        },
+        "tris": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "coinflip": {
+          "enabled": false,
+          "embedColor": "#f0b232"
+        },
+        "meme": {
+          "enabled": false,
+          "embedColor": "#ec4899"
+        }
+      }
+    },
+    "utilities": {
+      "enabled": false
+    },
+    "integrations": {
+      "enabled": false,
+      "mcDefaultServer": "mc.roomup.it",
+      "githubLogChannelId": ""
+    },
+    "aiAgent": {
+      "enabled": false,
+      "autoMentionReply": false
+    },
+    "roles": {
+      "autoRoles": [],
+      "delayedRoles": [],
+      "stickyRolesEnabled": false
+    },
+    "security": {
+      "lockdown": false,
+      "lockdownReason": "",
+      "quarantineRoleId": "",
+      "quarantineChannelId": "",
+      "panicMode": false
+    },
+    "modmail": {
+      "enabled": false,
+      "staffRoleId": "",
+      "categoryId": "",
+      "logChannelId": ""
+    },
+    "forms": {
+      "enabled": false
+    },
+    "knowledgeBase": {
+      "enabled": false,
+      "autoResponder": false,
+      "faqChannelId": ""
+    },
+    "economy": {
+      "enabled": false,
+      "currencyName": "Monete",
+      "currencySymbol": "🪙",
+      "startingBalance": 100,
+      "dailyAmount": 50,
+      "workMin": 20,
+      "workMax": 80,
+      "shopItems": []
+    },
+    "reputation": {
+      "enabled": false,
+      "cooldownHours": 24,
+      "logChannelId": ""
+    },
+    "quests": {
+      "enabled": false
+    },
+    "social": {
+      "birthdayChannelId": "",
+      "birthdayRoleId": "",
+      "confessionChannelId": "",
+      "requireReview": false
+    },
+    "automations": [],
+    "ticketCounter": 1
+  },
+  "123456789012345678": {
+    "guildId": "123456789012345678",
+    "guildName": "Server 123456789012345678",
+    "prefix": "?",
+    "logs": {
+      "enabled": false,
+      "globalChannelId": "",
+      "embedColor": "#5865F2",
+      "categories": {
+        "channels": {
+          "name": "Canali",
+          "enabled": false,
+          "channelId": ""
+        },
+        "members": {
+          "name": "Membri & Utenti",
+          "enabled": false,
+          "channelId": ""
+        },
+        "roles": {
+          "name": "Ruoli",
+          "enabled": false,
+          "channelId": ""
+        },
+        "messages": {
+          "name": "Messaggi",
+          "enabled": false,
+          "channelId": ""
+        },
+        "voice": {
+          "name": "Canali Vocali",
+          "enabled": false,
+          "channelId": ""
+        },
+        "server": {
+          "name": "Server",
+          "enabled": false,
+          "channelId": ""
+        },
+        "moderation": {
+          "name": "Moderazione & AutoMod",
+          "enabled": false,
+          "channelId": ""
+        },
+        "emojis": {
+          "name": "Emoji & Sticker",
+          "enabled": false,
+          "channelId": ""
+        },
+        "threads": {
+          "name": "Thread",
+          "enabled": false,
+          "channelId": ""
+        },
+        "webhooks": {
+          "name": "Webhook",
+          "enabled": false,
+          "channelId": ""
+        }
+      },
+      "events": {}
+    },
+    "partnerships": {
+      "enabled": true,
+      "partnerChannelId": "",
+      "logChannelId": "",
+      "staffRoleIds": [],
+      "pingRole": "@everyone",
+      "autoDeleteOnLeave": false,
+      "embedTitle": "Partnership Ufficiale",
+      "embedColor": "#9b59b6",
+      "embedFooter": "Network Affiliazioni",
+      "descriptionTemplate": "Nuovo partner {partnerGuild}!",
+      "thumbnail": "",
+      "bannerImage": ""
+    },
+    "tickets": {
+      "enabled": false,
+      "logChannelId": "",
+      "transcriptChannelId": "",
+      "allowClaim": false,
+      "allowClose": false,
+      "requireCloseConfirmation": false,
+      "generateTranscript": false,
+      "sendDmTranscript": false,
+      "sendRatingSurvey": false,
+      "sendLog": false,
+      "welcomeEmbedTitle": "{icon} Ticket #{ticketNumber} • {category}",
+      "welcomeEmbedColor": "#5865F2",
+      "welcomeEmbedFooter": "RoomUp! Support System • Canale: {channel}",
+      "showThumbnail": false,
+      "closeEmbedTitle": "🔒 Ticket Chiuso",
+      "closeEmbedColor": "#e74c3c",
+      "closeDmMessage": "Il tuo ticket **#{ticketNumber}** su **{guild}** è stato chiuso da **{moderator}**.",
+      "panels": [
+        {
+          "id": "panel_support",
+          "title": "RoomUp! - Assistenza & Supporto",
+          "description": "Seleziona una categoria dal menu sottostante per aprire un ticket privato con lo Staff.",
+          "color": "#5865F2",
+          "channelId": "",
+          "categories": [
+            {
+              "key": "general",
+              "label": "Assistenza Generale",
+              "icon": "fa-screwdriver-wrench",
+              "desc": "Problemi tecnici, ruoli o domande generali",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Descrivi dettagliatamente la tua richiesta:",
+                "Hai screenshot o prove da allegare?"
+              ]
+            },
+            {
+              "key": "partnership",
+              "label": "Richiesta Partnership",
+              "icon": "fa-handshake",
+              "desc": "Richieste di affiliazione con la nostra community",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Nome del tuo server/progetto:",
+                "Link invito Discord:",
+                "Numero di membri attivi:"
+              ]
+            },
+            {
+              "key": "report",
+              "label": "Segnalazione Utente",
+              "icon": "fa-triangle-exclamation",
+              "desc": "Segnala violazioni del regolamento o comportamenti scorretti",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Tag o ID dell'utente segnalato:",
+                "Regola infranta:",
+                "Prove / Screenshot:"
+              ]
+            },
+            {
+              "key": "staff_app",
+              "label": "Candidatura Staff",
+              "icon": "fa-briefcase",
+              "desc": "Invia la tua candidatura per entrare nel team",
+              "staffRoleIds": [],
+              "categoryId": "",
+              "questions": [
+                "Età anagrafica:",
+                "Esperienze pregresse come Staff:",
+                "Perché dovremmo scegliere te?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "verification": {
+      "enabled": true,
+      "channelId": "",
+      "verifiedRoleId": "",
+      "unverifiedRoleId": "",
+      "assignUnverifiedRole": false,
+      "hideChannelAfterVerify": false,
+      "hideAllChannelsUntilVerified": false,
+      "mode": "button",
+      "embedTitle": "Verifica Personalizzata 100%",
+      "embedDescription": "Benvenuto {user}! Clicca sotto per accedere.",
+      "embedColor": "#ff007f",
+      "embedFooter": "Protezione Totale",
+      "thumbnail": "https://example.com/thumb.png",
+      "image": "https://example.com/banner.png",
+      "buttonLabel": "Verificati Ora!",
+      "buttonColor": "primary",
+      "dmNotification": true,
+      "dmMessage": "Benvenuto {username}!",
+      "sendChannelLog": false,
+      "logChannelId": "",
+      "successMessage": "Benvenuto {user} in {guild}!",
+      "failMessage": "Errore tentativo {attempt}/{maxAttempts}",
+      "punishmentMessage": "Hai superato il limite di tentativi consentiti ({maxAttempts}). Sei stato {action}.",
+      "alreadyVerifiedMessage": "✅ Sei già verificato in questo server!",
+      "disabledMessage": "⚠️ Il sistema di verifica è temporaneamente disattivato dall'amministratore.",
+      "sessionExpiredMessage": "La sessione di verifica è scaduta. Riprova cliccando nuovamente sul pulsante.",
+      "minAgeMessage": "Accesso negato: Il tuo account è troppo recente ({age} giorni). Il server richiede almeno {minDays} giorni di anzianità.",
+      "requireAvatarMessage": "Accesso negato: Il server richiede un account con un'immagine del profilo personalizzata.",
+      "maxFailedAttempts": 3,
+      "failedAction": "kick",
+      "minAccountAgeDays": 0,
+      "requireAvatar": false
+    },
+    "welcome": {
+      "enabled": true,
+      "channelId": "",
+      "sendChannelMessage": false,
+      "autoDeleteOnLeave": true,
+      "chatMessage": "Benvenuto {user} nella nostra community {guild}!",
+      "message": "Ciao {user}!",
+      "useEmbed": false,
+      "embedTitle": "Benvenuto Personalizzato!",
+      "embedColor": "#123456",
+      "embedDescription": "**Siamo felicissimi di averti qui con noi!**\n\nTi invitiamo a leggere il regolamento e a presentarti nella chat generale.\n\n*Divertiti e buona permanenza!*",
+      "embedFooterText": "Membro #{memberCount}",
+      "thumbnailMode": "guild",
+      "useDividerBar": true,
+      "pingUser": false,
+      "sendBanner": false,
+      "showThumbnail": false,
+      "dmMessageEnabled": false,
+      "dmMessage": "Benvenuto su **{guild}**! Leggi il regolamento per iniziare al meglio la tua avventura.",
+      "dmUseEmbed": false,
+      "dmEmbedTitle": "Benvenuto nella nostra Community!",
+      "dmEmbedColor": "#5865F2"
+    },
+    "leave": {
+      "enabled": false,
+      "channelId": "",
+      "sendChannelMessage": false,
+      "message": "🚪 **{username}** ha lasciato il server.",
+      "useEmbed": false,
+      "embedTitle": "Membro Uscito",
+      "embedColor": "#f23f43",
+      "embedFooterText": "Ci mancherai! • {guild}",
+      "showThumbnail": false
+    },
+    "automod": {
+      "enabled": true,
+      "logChannelId": "",
+      "antiInvite": true,
+      "antiLinks": false,
+      "badWordsEnabled": true,
+      "badWordsList": [
+        "scam",
+        "spam"
+      ],
+      "maxMentionsEnabled": false,
+      "maxMentions": 5,
+      "antiSpamEnabled": false,
+      "antiCapsEnabled": false,
+      "actionDeleteMessage": false,
+      "actionSendChatWarning": false,
+      "actionSendDmWarning": false,
+      "actionTimeoutUser": false,
+      "timeoutDurationMinutes": 10,
+      "actionSendLog": false,
+      "chatWarningMessage": "⚠️ <@{user}>, il tuo messaggio è stato rimosso da **AutoMod** ({reason}).",
+      "dmWarningMessage": "⚠️ Attenzione: un tuo messaggio su **{guild}** è stato rimosso per: **{reason}**.",
+      "logEmbedTitle": "🛡️ Intervento AutoMod",
+      "logEmbedColor": "#f23f43"
+    },
+    "voice": {
+      "enabled": false,
+      "hubChannelId": "",
+      "categoryId": "",
+      "controlPanelChannelId": "",
+      "defaultLimit": 0,
+      "autoDeleteEmpty": false,
+      "allowUserRename": false,
+      "allowUserLimit": false,
+      "allowUserLock": false
+    },
+    "aiModerator": {
+      "enabled": false,
+      "mode": "autonomous",
+      "sensitivity": "medium",
+      "consultationChannelId": "",
+      "staffRoleIds": []
+    },
+    "giveaways": {
+      "enabled": false,
+      "defaultChannelId": "",
+      "pingRole": "@everyone",
+      "pingRoleEnabled": false,
+      "sendDmToWinners": false,
+      "showParticipantsCount": false,
+      "startEmbedTitle": "🎉 GIVEAWAY DELLA COMMUNITY 🎉",
+      "startEmbedColor": "#5865F2",
+      "startEmbedFooter": "Reagisci o clicca per partecipare! • Termina",
+      "endEmbedTitle": "🎉 GIVEAWAY TERMINATO 🎉",
+      "winEmbedColor": "#23a55a",
+      "loseEmbedColor": "#f23f43",
+      "winMessage": "🎊 Congratulazioni {winners}! Hai vinto **{prize}**!",
+      "dmWinnerMessage": "🎉 Complimenti! Hai vinto il giveaway per **{prize}** su **{guild}**!",
+      "bannerImage": "",
+      "thumbnail": ""
+    },
+    "suggestions": {
+      "enabled": false,
+      "channelId": "",
+      "approvedChannelId": "",
+      "rejectedChannelId": "",
+      "staffRoleIds": [],
+      "autoCreateThread": false,
+      "sendDmOnStatusChange": false,
+      "allowUpvoteDownvote": false,
+      "embedTitle": "💡 Nuovo Suggerimento della Community",
+      "embedColor": "#5865F2",
+      "embedFooter": "RoomUp! Community Suggestions • ID: {suggestionId}",
+      "submissionTemplate": "💡 **Suggerimento:**\n{suggestion}\n\n*Vota qui sotto con le reazioni!*",
+      "approvedColor": "#23a55a",
+      "rejectedColor": "#f23f43",
+      "inProgressColor": "#f0b232"
+    },
+    "levels": {
+      "enabled": false,
+      "xpPerMessageMin": 15,
+      "xpPerMessageMax": 25,
+      "gainXpText": false,
+      "gainXpVoice": false,
+      "announceLevelUp": false,
+      "announceMode": "channel",
+      "levelUpChannelId": "",
+      "useCardBanner": true,
+      "useEmbed": false,
+      "embedTitle": "🆙 Level Up!",
+      "message": "Complimenti {user}, sei salito al livello **{level}**!",
+      "embedColor": "#731fc3",
+      "embedFooterText": "{guild} • Classifica XP",
+      "showThumbnail": false,
+      "roleRewardsEnabled": false,
+      "roleRewards": {}
+    },
+    "reactionRoles": {
+      "panels": []
+    },
+    "customCommands": {
+      "triggers": [
+        {
+          "id": "cmd_1789938034840",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1789999873231",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1789999960004",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790002666420",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790003008843",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790004737591",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790007403635",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790805632840",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790807127216",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790808326834",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790813938241",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790847300778",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        },
+        {
+          "id": "cmd_1790847505453",
+          "trigger": "!testcmd",
+          "response": "Risposta test personalizzata",
+          "useEmbed": false,
+          "title": "!testcmd"
+        }
+      ]
+    },
+    "counting": {
+      "enabled": true,
+      "channelId": "",
+      "currentCount": 0,
+      "highestScore": 0,
+      "lastUserId": "",
+      "resetOnFail": false,
+      "allowConsecutive": false,
+      "milestoneCelebration": false,
+      "reactionsEnabled": false,
+      "embedTitle": "Numeri del Server",
+      "embedColor": "#3498db",
+      "embedFooter": "Record: {highestScore}",
+      "failMessageSameUser": "❌ <@{user}>, non puoi contare due volte di seguito! Il conteggio si azzera a **0**. Record del server: **{highestScore}**.",
+      "failMessageWrongNumber": "❌ <@{user}> ha sbagliato! Il numero corretto doveva essere **{expected}** (invece di `{input}`). Il conteggio si azzera a **0**. Record del server: **{highestScore}**!",
+      "milestoneMessage": "🎉 Traguardo raggiunto: **{count}** numeri contati consecutivamente!"
+    },
+    "starboard": {
+      "enabled": false,
+      "channelId": "",
+      "threshold": 3,
+      "starEmoji": "⭐",
+      "allowSelfStar": false,
+      "includeAttachments": false,
+      "showJumpUrl": false,
+      "embedColor": "#f0b232",
+      "embedFooterText": "ID: {messageId} • ⭐ {count}"
+    },
+    "serverStats": {
+      "enabled": false,
+      "membersChannelId": "",
+      "boostChannelId": "",
+      "membersFormat": "Membri: {count}",
+      "boostFormat": "Boost: {count}"
+    },
+    "antiNuke": {
+      "enabled": false,
+      "maxChannelDeletes": 3,
+      "maxRoleDeletes": 3,
+      "protectChannels": false,
+      "protectRoles": false,
+      "stripRolesAction": false,
+      "timeoutAttackerAction": false,
+      "pingEveryoneOnPanic": false,
+      "logChannelId": "",
+      "emergencyEmbedTitle": "🚨 [ANTI-NUKE & PANIC MODE ATTIVATO]",
+      "emergencyEmbedDescription": "🚨 **Allarme di Sicurezza**: Rilevate azioni anomale non autorizzate. Attivata modalità di protezione e isolamento.",
+      "emergencyEmbedColor": "#f23f43",
+      "emergencyEmbedFooter": "RoomUp! Sentinel Anti-Nuke"
+    },
+    "antiRaid": {
+      "enabled": false,
+      "maxJoinsPer10s": 5,
+      "minAccountAgeDays": 3,
+      "accountAgeScreening": false,
+      "kickNoAvatar": false,
+      "avatarScreening": false,
+      "joinSpikeProtection": false,
+      "autoLockdownOnSpike": false,
+      "antiMassMention": false,
+      "antiEveryonePing": false,
+      "sendKickDm": false,
+      "raidEmbedTitle": "🛡️ Allerta Raid & Lockdown",
+      "lockdownMessage": "🚨 Il server è stato temporaneamente bloccato a causa di un afflusso anomalo di nuovi utenti. Vi preghiamo di attendere.",
+      "raidEmbedFooter": "RoomUp! Anti-Raid Defense",
+      "customAgeKickDm": "⚠️ Sei stato espulso da **{guild}**: il tuo account Discord è troppo recente ({age} giorni). Riprova tra qualche giorno!",
+      "customAvatarKickDm": "⚠️ Sei stato espulso da **{guild}**: è richiesta un'immagine profilo personalizzata per accedere.",
+      "logChannelId": "",
+      "logEmbedColor": "#f23f43"
+    },
+    "warns": {
+      "enabled": false,
+      "timeoutAt3": false,
+      "kickAt5": false,
+      "banAt7": false,
+      "timeoutAtWarns": 3,
+      "kickAtWarns": 5,
+      "banAtWarns": 7,
+      "timeoutDurationMinutes": 60,
+      "sendDmOnWarn": false,
+      "sendDmOnKick": false,
+      "sendDmOnBan": false,
+      "sendDmOnTimeout": false,
+      "autoEscalation": false,
+      "warnEmbedTitle": "⚠️ Sanzione Disciplinare",
+      "warnEmbedFooter": "RoomUp! Moderation Suite",
+      "customWarnDmMessage": "⚠️ Hai ricevuto un avvertimento su **{guild}** per: **{reason}** (Avvertimenti totali: **{totalWarns}**).",
+      "kickDmMessage": "👞 Sei stato espulso da **{guild}** per: **{reason}**.",
+      "banDmMessage": "🔨 Sei stato bandito da **{guild}** per: **{reason}**.",
+      "timeoutDmMessage": "⏳ Sei stato messo in timeout su **{guild}** per **{duration} minuti** per: **{reason}**.",
+      "logChannelId": "",
+      "warnEmbedColor": "#f0b232"
+    },
+    "entertainment": {
+      "enabled": false,
+      "games": {
+        "trivia": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "math": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "rps": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "slots": {
+          "enabled": false,
+          "embedColor": "#f1c40f"
+        },
+        "blackjack": {
+          "enabled": false,
+          "embedColor": "#2c3e50"
+        },
+        "piualto": {
+          "enabled": false,
+          "embedColor": "#3498db"
+        },
+        "mysterybox": {
+          "enabled": false,
+          "embedColor": "#9b59b6"
+        },
+        "grattaevinci": {
+          "enabled": false,
+          "embedColor": "#e67e22"
+        },
+        "ruotafortuna": {
+          "enabled": false,
+          "embedColor": "#e74c3c"
+        },
+        "indovina": {
+          "enabled": false,
+          "embedColor": "#1abc9c"
+        },
+        "dadi": {
+          "enabled": false,
+          "embedColor": "#34495e"
+        },
+        "tris": {
+          "enabled": false,
+          "embedColor": "#5865F2"
+        },
+        "coinflip": {
+          "enabled": false,
+          "embedColor": "#f0b232"
+        },
+        "meme": {
+          "enabled": false,
+          "embedColor": "#ec4899"
+        }
+      }
+    },
+    "utilities": {
+      "enabled": false
+    },
+    "integrations": {
+      "enabled": false,
+      "mcDefaultServer": "mc.roomup.it",
+      "githubLogChannelId": ""
+    },
+    "aiAgent": {
+      "enabled": false,
+      "autoMentionReply": false
+    },
+    "roles": {
+      "autoRoles": [],
+      "delayedRoles": [],
+      "stickyRolesEnabled": false
+    },
+    "security": {
+      "lockdown": false,
+      "lockdownReason": "",
+      "quarantineRoleId": "",
+      "quarantineChannelId": "",
+      "panicMode": false
+    },
+    "modmail": {
+      "enabled": false,
+      "staffRoleId": "",
+      "categoryId": "",
+      "logChannelId": ""
+    },
+    "forms": {
+      "enabled": false
+    },
+    "knowledgeBase": {
+      "enabled": false,
+      "autoResponder": false,
+      "faqChannelId": ""
+    },
+    "economy": {
+      "enabled": false,
+      "currencyName": "Monete",
+      "currencySymbol": "🪙",
+      "startingBalance": 100,
+      "dailyAmount": 50,
+      "workMin": 20,
+      "workMax": 80,
+      "shopItems": []
+    },
+    "reputation": {
+      "enabled": false,
+      "cooldownHours": 24,
+      "logChannelId": ""
+    },
+    "quests": {
+      "enabled": false
+    },
+    "social": {
+      "birthdayChannelId": "",
+      "birthdayRoleId": "",
+      "confessionChannelId": "",
+      "requireReview": false
+    },
+    "automations": [],
+    "music": {
+      "enabled": true,
+      "djRoleId": "dj_role_123",
+      "defaultVolume": 75,
+      "maxQueueSize": 60,
+      "autoLeaveTimeout": 120,
+      "allowedVoiceChannels": [],
+      "allowedTextChannels": [],
+      "ttsCoexistenceMode": "duck",
+      "ttsDuckingVolume": 20,
+      "embedColor": "#5865F2",
+      "playMessageTemplate": "🎶 Riproduco {title}",
+      "queueMessageTemplate": "📜 Coda: {count}",
+      "nowPlayingTemplate": "🎵 Brano In Corso"
+    },
+    "ai": {
+      "enabled": true,
+      "autonomyLevel": 4,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "fallbackModel": "gemini-1.5-flash",
+      "temperature": 0.2,
+      "maxTokens": 1200,
+      "learningApproval": "AUTO_LEARN_LOW_RISK",
+      "maxAutonomousRisk": "LOW",
+      "requireStaffConfirmHighRisk": true,
+      "confidenceThresholds": {
+        "escalate": 0.49,
+        "ask": 0.69,
+        "respond": 0.89
+      },
+      "personality": {
+        "tone": "friendly",
+        "formality": "professional-but-human",
+        "verbosity": "concise",
+        "humor": "subtle",
+        "emoji": false,
+        "greetingStyle": "direct",
+        "language": "it"
+      },
+      "tools": {
+        "timeout": true,
+        "warn": true,
+        "renameTicket": true,
+        "closeTicket": true,
+        "ban": false,
+        "kick": false
+      }
+    },
+    "isLockdownActive": false
+  },
+  "965378975675322438": {
+    "guildId": "965378975675322438",
+    "guildName": "RoomUp! 2",
+    "prefix": "!",
+    "logs": {
+      "enabled": true,
+      "globalChannelId": "1554969799858327673",
+      "embedColor": "#5865F2",
+      "categories": {
+        "messages": {
+          "enabled": true,
+          "channelId": "1554969803691663520"
+        },
+        "channels": {
+          "enabled": true,
+          "channelId": "1554969804971184320"
+        },
+        "voice": {
+          "enabled": true,
+          "channelId": "1554969806606827580"
+        },
+        "members": {
+          "enabled": true,
+          "channelId": "1554969807391039501"
+        },
+        "roles": {
+          "enabled": true,
+          "channelId": "1554969809048047686"
+        },
+        "automod": {
+          "enabled": true,
+          "channelId": "1554969810310402069"
+        },
+        "server": {
+          "enabled": true,
+          "channelId": "1554969814097985628"
+        },
+        "moderation": {
+          "enabled": true,
+          "channelId": "1554969799858327673"
+        },
+        "emojis": {
+          "enabled": false,
+          "channelId": ""
+        },
+        "threads": {
+          "enabled": false,
+          "channelId": ""
+        }
+      },
+      "events": {
+        "memberJoin": {
+          "channelId": "1554969798327402636",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberLeave": {
+          "channelId": "1554969798327402636",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "messageCreate": {
+          "channelId": "1554969803691663520"
+        },
+        "messageDelete": {
+          "channelId": "1554969803691663520",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "messageUpdate": {
+          "channelId": "1554969803691663520",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "channelCreate": {
+          "channelId": "1554969804971184320",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "channelDelete": {
+          "channelId": "1554969804971184320",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "channelUpdate": {
+          "channelId": "1554969804971184320",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "voiceJoin": {
+          "channelId": "1554969806606827580",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "voiceLeave": {
+          "channelId": "1554969806606827580",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "voiceSwitch": {
+          "channelId": "1554969806606827580",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberVerify": {
+          "channelId": "1554969807391039501"
+        },
+        "roleCreate": {
+          "channelId": "1554969809048047686",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "roleDelete": {
+          "channelId": "1554969809048047686",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "roleUpdate": {
+          "channelId": "1554969809048047686",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberRoleAdd": {
+          "channelId": "1554969809048047686",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberRoleRemove": {
+          "channelId": "1554969809048047686",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "inviteCreate": {
+          "channelId": "1554969814097985628"
+        },
+        "inviteDelete": {
+          "channelId": "1554969814097985628"
+        },
+        "serverUpdate": {
+          "channelId": "1554969814097985628",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "emojiCreate": {
+          "channelId": "1554969814097985628",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "emojiDelete": {
+          "channelId": "1554969814097985628",
+          "enabled": false,
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberKick": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "memberTimeout": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "banAdd": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "banRemove": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "threadCreate": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        },
+        "threadDelete": {
+          "enabled": false,
+          "channelId": "",
+          "customTitle": "",
+          "customColor": "#5865f2"
+        }
+      },
+      "channelId": ""
+    },
+    "partnerships": {
+      "enabled": true,
+      "partnerChannelId": "1554969756614926488",
+      "logChannelId": "1554969797022846986",
+      "staffRoleIds": [
+        "1554969581011996682"
+      ],
+      "pingRole": "1554969619964362794",
+      "autoDeleteOnLeave": false,
+      "embedTitle": "🤝 Nuova Partnership Ufficiale!",
+      "embedColor": "#5865f2",
+      "embedFooter": "RoomUp! Network • Partnership System",
+      "descriptionTemplate": "Siamo felici di annunciare una nuova partnership con **{partnerGuild}**!\n\n{adText}\n\nUnisciti qui: {invite}",
+      "thumbnail": "",
+      "bannerImage": ""
+    },
+    "tickets": {
+      "enabled": true,
+      "logChannelId": "1554969799858327673",
+      "transcriptChannelId": "1554969802294956164",
+      "allowClaim": true,
+      "allowClose": true,
+      "requireCloseConfirmation": true,
+      "generateTranscript": true,
+      "sendDmTranscript": true,
+      "sendRatingSurvey": false,
+      "sendLog": true,
+      "welcomeEmbedTitle": "🎫 Assistenza #{ticketNumber}",
+      "welcomeEmbedColor": "#5865f2",
+      "welcomeEmbedFooter": "RoomUp! Support System",
+      "showThumbnail": true,
+      "closeEmbedTitle": "🔒 Ticket Chiuso",
+      "closeEmbedColor": "#e74c3c",
+      "closeDmMessage": "Il tuo ticket **#{ticketNumber}** su **{guild}** è stato archiviato.",
+      "panels": [
+        {
+          "id": "panel_default",
+          "title": "SUPPORTO",
+          "description": "Crea un ticket per:\n\n• Problemi con il tuo **account**\n• Problemi riguardanti lo **shop**\n• **Segnalazioni**\n• Candidature **Staff**\n• Candidature **Content Creator**\n• Altre richieste o necessità\n\nClicca qui sotto per scegliere una sezione\ne creare il tuo ticket.",
+          "color": "#731FC3",
+          "channelId": "1554969778811048046",
+          "placeholder": "Seleziona una categoria di ticket...",
+          "footer": "RoomUp! Support System",
+          "showThumbnail": true,
+          "useDividerBar": true,
+          "categories": [
+            {
+              "key": "general",
+              "label": "Supporto generale",
+              "icon": "🛠️",
+              "desc": "Domande, bug, shop e segnalazioni.",
+              "staffRoleIds": [
+                "1554969557071040542",
+                "1554969558618611778",
+                "1554969565761634505",
+                "1554969549076566117"
+              ],
+              "categoryId": "1554969715762536568",
+              "questions": [
+                {
+                  "label": "📝 Descrivi il problema o la tua richiesta",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Spiega nel dettaglio cosa è successo o di cosa hai bisogno..."
+                },
+                {
+                  "label": "⏰ Quando è successo? (data/ora approssimativa)",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: oggi pomeriggio, ieri sera, 3 giorni fa..."
+                },
+                {
+                  "label": "🔁 Hai già provato qualcosa per risolvere?",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: ho già contattato uno staff, ho riletto le regole..."
+                }
+              ],
+              "viewRoles": [
+                "1554969549076566117"
+              ]
+            },
+            {
+              "key": "partnership",
+              "label": "Partnership",
+              "icon": "🤝",
+              "desc": "Richiedi una partnership con il server.",
+              "staffRoleIds": [
+                "1554969557071040542",
+                "1554969581011996682",
+                "1554969549076566117"
+              ],
+              "categoryId": "1554969715762536568",
+              "questions": [
+                {
+                  "label": "🏷️ Nome del server / progetto",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: Server XYZ, Progetto ABC..."
+                },
+                {
+                  "label": "🔗 Link di invito permanente al server",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: discord.gg/..."
+                },
+                {
+                  "label": "👥 Numero di membri attivi",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: 500 membri, 1.2k membri..."
+                },
+                {
+                  "label": "🤝 Cosa offri in cambio della partnership?",
+                  "style": "Paragraph",
+                  "required": false,
+                  "placeholder": "Es: post nel nostro canale, ruolo dedicato, menzione..."
+                }
+              ],
+              "viewRoles": [
+                "1554969549076566117"
+              ]
+            },
+            {
+              "key": "staff_app",
+              "label": "Candidature Staff",
+              "icon": "📄",
+              "desc": "Candidati come Staff su Discord, Minecraft o entrambi.",
+              "staffRoleIds": [
+                "1554969557071040542",
+                "1554969539249315883",
+                "1554969549076566117"
+              ],
+              "categoryId": "1554969715762536568",
+              "questions": [
+                {
+                  "label": "🎂 Quanti anni hai?",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Devi avere almeno 14 anni..."
+                },
+                {
+                  "label": "💼 Esperienza precedente da Staff",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Descrivi server/progetti in cui hai già ricoperto un ruolo Staff..."
+                },
+                {
+                  "label": "🖥️ Per quale piattaforma ti candidi?",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Discord / Minecraft / Entrambi"
+                },
+                {
+                  "label": "❓ Perché vuoi entrare nello Staff di RoomUp?",
+                  "style": "Paragraph",
+                  "required": false,
+                  "placeholder": "Motivati! Cosa ti spinge a candidarti?"
+                },
+                {
+                  "label": "🕐 Disponibilità settimanale (ore/giorni)",
+                  "style": "Short",
+                  "required": false,
+                  "placeholder": "Es: lunedì-venerdì, 2-3 ore al giorno..."
+                }
+              ],
+              "viewRoles": [
+                "1554969549076566117"
+              ]
+            },
+            {
+              "key": "media_app",
+              "label": "Candidatura Content Creator o Media",
+              "icon": "🎥",
+              "desc": "Candidati come Media o Content Creator.",
+              "staffRoleIds": [
+                "1554969557071040542",
+                "1554969581011996682",
+                "1554969549076566117"
+              ],
+              "categoryId": "1554969715762536568",
+              "questions": [
+                {
+                  "label": "🔗 Link al tuo canale / profilo social principale",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: youtube.com/..., twitch.tv/..., tiktok.com/..."
+                },
+                {
+                  "label": "📊 Numero di iscritti / follower",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: 500 iscritti YouTube, 1k follower TikTok..."
+                },
+                {
+                  "label": "🎬 Tipo di contenuto che produci",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: gaming, vlog, tutorial Minecraft, clip Discord..."
+                },
+                {
+                  "label": "🤝 Perché vuoi collaborare con RoomUp?",
+                  "style": "Paragraph",
+                  "required": false,
+                  "placeholder": "Spiegaci la tua proposta e cosa puoi portare alla community..."
+                }
+              ],
+              "viewRoles": [
+                "1554969549076566117"
+              ]
+            }
+          ],
+          "categoryId": "1554969715762536568",
+          "viewRoles": [
+            "1554969549076566117"
+          ]
+        }
+      ],
+      "staffRoleIds": [
+        "1554969549076566117"
+      ]
+    },
+    "verification": {
+      "enabled": true,
+      "channelId": "1554969724939403274",
+      "verifiedRoleId": "1554969591086846073",
+      "unverifiedRoleId": null,
+      "assignUnverifiedRole": false,
+      "hideChannelAfterVerify": true,
+      "mode": "math",
+      "embedTitle": "Effettua una Autenticazione",
+      "embedDescription": "Benvenuto su **RoomUp!**\nPer sbloccare tutti i canali sul server e iniziare a\nchattare, clicca sul pulsante sottostante per\nverificare il tuo account e ottenere il ruolo\n**@Utenti**.",
+      "embedColor": "#8525e5",
+      "embedFooter": "Sistema di Protezione RoomUp!",
+      "thumbnail": "https://media.discordapp.net/attachments/1529455300011360468/1550854936831729734/utenti.png?ex=6aafd9b6&is=6aae8836&hm=a88dc6a0d2dc802844eb93a9a32f02bbb35b003c66525d4cb63b293f3d55cb22&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1529455300011360468/1550854072670883931/s.png?ex=6aafd8e8&is=6aae8768&hm=fea06f09f1a5acc7e0352f9fe94ba87ab929a6a1758295df1dcd0c15b60451d8&=&format=webp&quality=lossless",
+      "buttonLabel": "Clicca qui per verificarti",
+      "buttonColor": "secondary",
+      "dmNotification": false,
+      "dmMessage": "Ciao {username}! Hai completato con successo la verifica in **{guild}** {roles}\nBuona permanenza!",
+      "sendChannelLog": false,
+      "logChannelId": "1554969807391039501",
+      "roleToAddId": "1554969591086846073",
+      "hideAllChannelsUntilVerified": true,
+      "isolateMemberOnJoin": true,
+      "stats": {
+        "totalVerified": 1348,
+        "totalFailed": 10,
+        "recentLogs": [
+          {
+            "userId": "1536699046822023259",
+            "userTag": "ale.x.francy",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1536699046822023259/1cafdea6bc5bc2795138dd2ce62e0799.webp",
+            "timestamp": "2026-10-22T17:17:46.734Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "778295743341527041",
+            "userTag": "ariannatuttapanna2257",
+            "userAvatar": "https://cdn.discordapp.com/avatars/778295743341527041/7b2019f9782359aba7ea26d96d1f1f4e.webp",
+            "timestamp": "2026-10-20T13:30:48.076Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1456759906462994452",
+            "userTag": "letherbitemylips",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1456759906462994452/cba80b24f0c53176f494bb07459a421e.webp",
+            "timestamp": "2026-10-19T05:12:13.974Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "900467744363905086",
+            "userTag": "signor_keso",
+            "userAvatar": "https://cdn.discordapp.com/avatars/900467744363905086/3c59063ac389a50e91e6fd26f3737106.webp",
+            "timestamp": "2026-10-18T21:48:33.740Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1424491626121920594",
+            "userTag": "its_elii_",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1424491626121920594/6161e0f8be048e7f1d1088f6bd45c99d.webp",
+            "timestamp": "2026-10-17T16:43:31.101Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1487194859017343036",
+            "userTag": "obeykuri",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1487194859017343036/3b5b9d1fe6bb53a515c8e9f2957d8316.webp",
+            "timestamp": "2026-10-17T15:34:16.268Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1473397970652237997",
+            "userTag": "lovablw",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1473397970652237997/b8bf79229e29ee57d1bb7e7a3984f852.webp",
+            "timestamp": "2026-10-17T15:34:01.810Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1369305382702288936",
+            "userTag": "erfaina_",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1369305382702288936/e511ee8ecac8a260da5c791a0c7602c8.webp",
+            "timestamp": "2026-10-17T09:13:44.828Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1444948914259234847",
+            "userTag": "app.py3.",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1444948914259234847/110b94d8309ad330f52e8765a4db62e3.webp",
+            "timestamp": "2026-10-16T18:38:19.351Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1485974060461719652",
+            "userTag": "skillicius",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1485974060461719652/a_7c17b088cbd9f41f76e41910795b260d.gif",
+            "timestamp": "2026-10-16T16:08:01.292Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1510895649321779300",
+            "userTag": "theblokin",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1510895649321779300/11732bdf85209a3b2fe0257f4920a3fa.webp",
+            "timestamp": "2026-10-16T14:23:20.167Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1548116393910738947",
+            "userTag": "anomalia12",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1548116393910738947/fae37726efaf11520655363d610b62ca.webp",
+            "timestamp": "2026-10-16T12:47:46.176Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1240117106272505857",
+            "userTag": "lilspeedyonthebck",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1240117106272505857/75958e050dfd09aee131f5a2f9fbc73d.webp",
+            "timestamp": "2026-10-16T09:51:57.352Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1170791464939294810",
+            "userTag": ".primadonnaaa",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1170791464939294810/7e25f20679e08be874f8bd4c00d7350c.webp",
+            "timestamp": "2026-10-15T21:58:06.792Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "319166651603877898",
+            "userTag": "alcatraz__25",
+            "userAvatar": "https://cdn.discordapp.com/avatars/319166651603877898/a_148d4f3323bb2d527795dfe244ecb8da.gif",
+            "timestamp": "2026-10-15T18:01:19.422Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "889577629366239263",
+            "userTag": "pannyx2077",
+            "userAvatar": "https://cdn.discordapp.com/avatars/889577629366239263/3210feea9063eb8ec70684b392df2af4.webp",
+            "timestamp": "2026-10-14T20:43:11.466Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1303360798969696319",
+            "userTag": "_d0kja",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1303360798969696319/32bbf4b5e37ea2f7b58713227c64c718.webp",
+            "timestamp": "2026-10-14T13:05:28.889Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1142114048821960774",
+            "userTag": "dayan_19",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1142114048821960774/57b858c22cb178666ef225fac96e9d5a.webp",
+            "timestamp": "2026-10-14T12:42:56.860Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1504206598728323174",
+            "userTag": "reox1926",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1504206598728323174/f5cc742c2aebb95f1aee013e698cf9f0.webp",
+            "timestamp": "2026-10-13T18:28:07.014Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1557834040646705195",
+            "userTag": "qxt_l4isa.",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1557834040646705195/d2129703c4b3191bb55f2d668a773d73.webp",
+            "timestamp": "2026-10-13T13:19:19.601Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Verifica manuale autorizzata da staff"
+          },
+          {
+            "userId": "1469303613531881585",
+            "userTag": "k3k.swag",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1469303613531881585/d20540e71cad5f6dec5c13fc0c4489c5.webp",
+            "timestamp": "2026-10-12T20:10:38.479Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1544772251180867645",
+            "userTag": "belen.arroyo100",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1544772251180867645/ac76de3541420a61ba2618bbfc772a07.webp",
+            "timestamp": "2026-10-11T14:42:39.291Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1167152170739699782",
+            "userTag": "adammxkz",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1167152170739699782/e3b5389c94503dfe2fd1279afbdd4c33.webp",
+            "timestamp": "2026-10-11T13:54:41.948Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1167152170739699782",
+            "userTag": "adammxkz",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1167152170739699782/e3b5389c94503dfe2fd1279afbdd4c33.webp",
+            "timestamp": "2026-10-11T13:54:31.919Z",
+            "mode": "math",
+            "status": "failed",
+            "reason": "Codice o calcolo errato"
+          },
+          {
+            "userId": "1556661708704190479",
+            "userTag": "yuuyami_ds",
+            "userAvatar": "https://cdn.discordapp.com/embed/avatars/3.png",
+            "timestamp": "2026-10-10T23:02:23.088Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1228718740456341514",
+            "userTag": "cybersentinelofficial",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1228718740456341514/725b48e1186937d1a700943825dde98e.webp",
+            "timestamp": "2026-10-10T17:17:15.339Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "1228718740456341514",
+            "userTag": "cybersentinelofficial",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1228718740456341514/725b48e1186937d1a700943825dde98e.webp",
+            "timestamp": "2026-10-10T17:17:04.042Z",
+            "mode": "math",
+            "status": "failed",
+            "reason": "Codice o calcolo errato"
+          },
+          {
+            "userId": "1228718740456341514",
+            "userTag": "cybersentinelofficial",
+            "userAvatar": "https://cdn.discordapp.com/avatars/1228718740456341514/725b48e1186937d1a700943825dde98e.webp",
+            "timestamp": "2026-10-10T17:16:53.971Z",
+            "mode": "math",
+            "status": "failed",
+            "reason": "Codice o calcolo errato"
+          },
+          {
+            "userId": "945237946666188840",
+            "userTag": "ba_nanita",
+            "userAvatar": "https://cdn.discordapp.com/avatars/945237946666188840/30b325025805e41e8c2cf796a17af13a.webp",
+            "timestamp": "2026-10-10T13:48:46.511Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          },
+          {
+            "userId": "487619550569955328",
+            "userTag": "hw1m",
+            "userAvatar": "https://cdn.discordapp.com/avatars/487619550569955328/d2c1ebaf20f269a7deb64c7132f420ea.webp",
+            "timestamp": "2026-10-10T11:21:24.274Z",
+            "mode": "math",
+            "status": "success",
+            "reason": "Superato Captcha math"
+          }
+        ]
+      },
+      "successMessage": "Hai completato la verifica con successo! Benvenuto in **{guild}**.{roles}",
+      "failMessage": "Risposta non corretta! (Tentativo {attempt}/{maxAttempts}). Riprova cliccando nuovamente sul pulsante.",
+      "alreadyVerifiedMessage": "Sei già verificato in questo server!",
+      "sessionExpiredMessage": "La sessione di verifica è scaduta. Riprova cliccando nuovamente sul pulsante.",
+      "disabledMessage": "Il sistema di verifica è temporaneamente disattivato dall'amministratore.",
+      "maxFailedAttempts": 5,
+      "failedAction": "kick",
+      "punishmentMessage": "Hai superato il limite di tentativi consentiti ({maxAttempts}). Sei stato {action}.",
+      "minAccountAgeDays": 0,
+      "minAgeMessage": "Accesso negato: Il tuo account è troppo recente ({age} giorni). Il server richiede almeno {minDays} giorni di anzianità.",
+      "requireAvatar": false,
+      "requireAvatarMessage": "Accesso negato: Il server richiede un account con un'immagine del profilo personalizzata.",
+      "roleToRemoveId": "1551607664574865589",
+      "extraRoleIds": [
+        "1554969588897415288"
+      ]
+    },
+    "welcome": {
+      "enabled": true,
+      "channelId": "1554969759253012550",
+      "sendChannelMessage": true,
+      "autoDeleteOnLeave": true,
+      "chatMessage": "Benvenuto {user} nella nostra community {guild}!",
+      "useEmbed": true,
+      "embedTitle": "Benvenuto su {guild}!",
+      "embedColor": "#731fc3",
+      "embedDescription": "**Siamo felicissimi di averti qui con noi!**\n\nTi invitiamo a leggere il regolamento e a presentarti nella chat generale.\n\n*Divertiti e buona permanenza!*",
+      "embedFooterText": "Membro #{memberCount}",
+      "thumbnailMode": "user",
+      "useDividerBar": true,
+      "showThumbnail": true,
+      "pingUser": true,
+      "sendBanner": false,
+      "sendDm": false,
+      "message": "Benvenuto {user} nella nostra community {guild}!",
+      "dmEnabled": false,
+      "dmUseEmbed": false,
+      "dmEmbedTitle": "Benvenuto nella nostra Community!",
+      "dmEmbedColor": "#5865f2",
+      "dmMessage": "Benvenuto su **{guild}**! Leggi il regolamento per iniziare al meglio la tua avventura."
+    },
+    "leave": {
+      "enabled": false,
+      "channelId": "1554969798327402636",
+      "message": "👋 **{username}** ha lasciato il server. Ora siamo in **{memberCount}** membri.",
+      "embedTitle": "👋 Arrivederci!",
+      "embedColor": "#e74c3c",
+      "embedFooter": "RoomUp! Community",
+      "sendChannelMessage": false,
+      "useEmbed": false,
+      "embedFooterText": "Ci mancherai! • {guild}",
+      "showThumbnail": false
+    },
+    "automod": {
+      "enabled": true,
+      "antiSpam": true,
+      "antiInvites": true,
+      "antiLinks": false,
+      "antiBadWords": true,
+      "antiMassCaps": true,
+      "antiMassMentions": true,
+      "logChannelId": "1554969810310402069",
+      "ignoredRoleIds": [
+        "1554969536841646140",
+        "1554969539249315883",
+        "1554969557071040542",
+        "1554969558618611778"
+      ],
+      "antiInvite": false,
+      "badWordsEnabled": false,
+      "antiCapsEnabled": false,
+      "maxMentionsEnabled": false,
+      "maxMentions": 5,
+      "badWordsList": [
+        "scam",
+        "free nitro",
+        "discord.gg/malware"
+      ],
+      "actionDeleteMessage": false,
+      "actionSendChatWarning": false,
+      "actionSendDmWarning": false,
+      "actionTimeoutUser": false,
+      "actionSendLog": false,
+      "timeoutDurationMinutes": 10,
+      "chatWarningMessage": "⚠️ <@{user}>, il tuo messaggio è stato rimosso da **AutoMod** ({reason}).",
+      "dmWarningMessage": "⚠️ Attenzione: un tuo messaggio su **{guild}** è stato rimosso per: **{reason}**.",
+      "logEmbedTitle": "🛡️ Intervento AutoMod",
+      "logEmbedColor": "#f23f43"
+    },
+    "voice": {
+      "enabled": true,
+      "generatorChannelId": "1554969749543321741",
+      "categoryId": "1554969708946784398",
+      "channelNameTemplate": "🔒・Stanza di {username}",
+      "userLimit": 0,
+      "autoDeleteOnEmpty": true,
+      "hubChannelId": "1554969749543321741"
+    },
+    "aiModerator": {
+      "enabled": true,
+      "confidenceThreshold": 85,
+      "logChannelId": "1554969810310402069",
+      "consultationChannelId": "1554969789821358113",
+      "mode": "autonomous",
+      "sensitivity": "medium"
+    },
+    "giveaways": {
+      "enabled": false,
+      "defaultChannelId": "",
+      "pingRole": "@everyone",
+      "pingRoleEnabled": false,
+      "sendDmToWinners": false,
+      "showParticipantsCount": false,
+      "startEmbedTitle": "🎉 GIVEAWAY DELLA COMMUNITY 🎉",
+      "startEmbedColor": "#5865f2",
+      "endEmbedTitle": "🎉 GIVEAWAY TERMINATO 🎉",
+      "winEmbedColor": "#23a55a",
+      "loseEmbedColor": "#f23f43",
+      "winMessage": "🎊 Congratulazioni {winners}! Hai vinto **{prize}**!",
+      "dmWinnerMessage": "🎉 Complimenti! Hai vinto il giveaway per **{prize}** su **{guild}**!",
+      "startEmbedFooter": "Reagisci o clicca per partecipare! • Termina",
+      "thumbnail": "",
+      "bannerImage": "",
+      "endEmbedColor": "#5865f2"
+    },
+    "suggestions": {
+      "enabled": true,
+      "channelId": "1554969795646984312",
+      "allowUpvoteDownvote": true,
+      "autoCreateThread": true,
+      "sendDmOnStatusChange": true,
+      "embedTitle": "💡 Nuova Proposta della Community",
+      "embedColor": "#f1c40f",
+      "embedFooter": "RoomUp! Suggerimenti • Vota con le reazioni!",
+      "submissionTemplate": "💡 **Proposta inviata da {user}:**{suggestion}*Usa le reazioni qui sotto per votare!*",
+      "approvedColor": "#2ecc71",
+      "rejectedColor": "#e74c3c",
+      "inProgressColor": "#3498db"
+    },
+    "levels": {
+      "enabled": true,
+      "gainXpText": true,
+      "gainXpVoice": true,
+      "xpPerMessageMin": 15,
+      "xpPerMessageMax": 25,
+      "announceLevelUp": true,
+      "announceMode": "channel",
+      "levelUpChannelId": "1554969767578964008",
+      "useCardBanner": true,
+      "useEmbed": false,
+      "message": "Complimenti {user}, sei salito al livello **{level}**!",
+      "embedTitle": "🆙 Level Up!",
+      "embedColor": "#731fc3",
+      "embedFooterText": "RoomUp! • Classifica XP",
+      "showThumbnail": true,
+      "roleRewardsEnabled": false,
+      "roleRewards": {},
+      "gainXpMuted": true,
+      "voiceMinMembers": 1
+    },
+    "reactionRoles": {
+      "panels": []
+    },
+    "customCommands": {
+      "triggers": [
+        {
+          "trigger": "!ip",
+          "response": "L'indirizzo del nostro server è: **play.roomup.it**",
+          "useEmbed": true,
+          "title": "Indirizzo Server",
+          "color": "#5865F2"
+        },
+        {
+          "trigger": "!regole",
+          "response": "Consulta il regolamento completo del server nel canale dedicato!",
+          "useEmbed": true,
+          "title": "Regolamento",
+          "color": "#f0b232"
+        }
+      ]
+    },
+    "counting": {
+      "enabled": true,
+      "channelId": "1554969773073502309",
+      "resetOnFail": true,
+      "allowConsecutive": false,
+      "reactionsEnabled": true,
+      "milestoneCelebration": true,
+      "embedTitle": "🔢 Minigioco del Conteggio",
+      "embedColor": "#5865f2",
+      "embedFooter": "Regola: Conta un numero alla volta senza sbagliare!",
+      "failMessage": "{user} ha rovinato la sequenza! Il prossimo numero era {correctNumber}. Si riparte da 1!",
+      "milestoneMessage": "🎉 Traguardo raggiunto: **{count}** numeri contati consecutivamente!",
+      "currentCount": 4,
+      "lastUserId": "1400035092071710731",
+      "highestScore": 218
+    },
+    "starboard": {
+      "enabled": true,
+      "channelId": "1554969762302271520",
+      "threshold": 3,
+      "emoji": "⭐",
+      "starEmoji": "⭐",
+      "allowSelfStar": false,
+      "includeAttachments": false,
+      "showJumpUrl": false,
+      "embedColor": "#f0b232",
+      "embedFooterText": "ID: {messageId} • ⭐ {count}"
+    },
+    "serverStats": {
+      "enabled": false,
+      "membersChannelId": "",
+      "boostChannelId": "1554969742803083396",
+      "membersFormat": "Membri: {count}",
+      "boostFormat": "Boost: {count}"
+    },
+    "antiNuke": {
+      "enabled": true,
+      "alertChannelId": "1554969799858327673",
+      "maxChannelDeletions": 2,
+      "maxRoleDeletions": 2,
+      "maxKicksBans": 4,
+      "emergencyEmbedDescription": "🚨 Intervento Anti-Nuke attivo: bloccate modifiche massive ai canali o ruoli.",
+      "emergencyEmbedFooter": "RoomUp! Emergency Defense",
+      "maxChannelDeletes": 3,
+      "maxRoleDeletes": 3,
+      "logChannelId": "",
+      "protectChannels": false,
+      "protectRoles": false,
+      "stripRolesAction": false,
+      "timeoutAttackerAction": false,
+      "pingEveryoneOnPanic": false,
+      "emergencyEmbedTitle": "🚨 [ANTI-NUKE & PANIC MODE ATTIVATO]",
+      "emergencyEmbedColor": "#f23f43"
+    },
+    "antiRaid": {
+      "enabled": true,
+      "logChannelId": "1554969799858327673",
+      "lockdownChannelId": "1554969759253012550",
+      "joinThreshold": 6,
+      "windowSeconds": 10,
+      "raidEmbedTitle": "🚨 ALLERTA RAID RILEVATA",
+      "lockdownMessage": "🚨 Il server è temporaneamente in Lockdown di sicurezza a causa di accessi sospetti.",
+      "raidEmbedFooter": "RoomUp! Security Defense",
+      "maxJoinsPer10s": 5,
+      "minAccountAgeDays": 3,
+      "accountAgeScreening": false,
+      "avatarScreening": false,
+      "kickNoAvatar": false,
+      "joinSpikeProtection": false,
+      "autoLockdownOnSpike": false,
+      "antiMassMention": false,
+      "antiEveryonePing": false,
+      "sendKickDm": false,
+      "kickDmRecentAccount": "Sei stato espulso da **{guild}**: il tuo account è troppo recente (minimo {minDays} giorni).",
+      "raidLogColor": "#f23f43"
+    },
+    "warns": {
+      "enabled": true,
+      "logChannelId": "1554969794225246318",
+      "warnEmbedTitle": "⚠️ Notifica Disciplinare",
+      "warnEmbedFooter": "RoomUp! Moderation System",
+      "kickDmMessage": "Sei stato espulso da **{guild}** per violazione del regolamento: {reason}",
+      "banDmMessage": "Sei stato bannato permanentemente da **{guild}**: {reason}",
+      "timeoutDmMessage": "Sei stato messo in timeout su **{guild}** per {duration}: {reason}",
+      "levels": {
+        "1": {
+          "action": "role",
+          "roleId": "1554969594035445930",
+          "duration": 0
+        },
+        "2": {
+          "action": "role",
+          "roleId": "1554969594987413575",
+          "duration": 0
+        },
+        "3": {
+          "action": "role",
+          "roleId": "1554969596157497514",
+          "duration": 0
+        },
+        "4": {
+          "action": "timeout",
+          "duration": 86400000,
+          "roleId": "1554969593104175144"
+        },
+        "5": {
+          "action": "ban",
+          "duration": 0
+        }
+      },
+      "timeoutAt3": false,
+      "kickAt5": false,
+      "banAt7": false,
+      "timeoutAtWarns": 3,
+      "kickAtWarns": 5,
+      "banAtWarns": 7,
+      "timeoutDurationMinutes": 60,
+      "sendDmOnWarn": false,
+      "autoEscalate": false,
+      "warnDmTemplate": "Hai ricevuto un avvertimento in **{guild}** per: **{reason}**. Warn totali: **{warnCount}**.",
+      "embedColor": "#f39c12"
+    },
+    "entertainment": {
+      "enabled": false,
+      "games": {
+        "trivia": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "math": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "rps": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "slots": {
+          "enabled": false,
+          "embedColor": "#f1c40f"
+        },
+        "blackjack": {
+          "enabled": false,
+          "embedColor": "#2c3e50"
+        },
+        "piualto": {
+          "enabled": false,
+          "embedColor": "#3498db"
+        },
+        "mysterybox": {
+          "enabled": false,
+          "embedColor": "#9b59b6"
+        },
+        "grattaevinci": {
+          "enabled": false,
+          "embedColor": "#e67e22"
+        },
+        "ruotafortuna": {
+          "enabled": false,
+          "embedColor": "#e74c3c"
+        },
+        "indovina": {
+          "enabled": false,
+          "embedColor": "#1abc9c"
+        },
+        "dadi": {
+          "enabled": false,
+          "embedColor": "#34495e"
+        },
+        "tris": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "coinflip": {
+          "enabled": false,
+          "embedColor": "#f0b232"
+        },
+        "meme": {
+          "enabled": false,
+          "embedColor": "#ec4899"
+        },
+        "roulette": {
+          "enabled": false,
+          "embedColor": "#5865f2"
+        },
+        "eightball": {
+          "enabled": false,
+          "embedColor": "#9b59b6"
+        }
+      }
+    },
+    "utilities": {
+      "enabled": false
+    },
+    "integrations": {
+      "enabled": false,
+      "mcDefaultServer": "mc.roomup.it",
+      "githubLogChannelId": ""
+    },
+    "aiAgent": {
+      "enabled": true,
+      "autoMentionReply": true
+    },
+    "roles": {
+      "autoRoles": [],
+      "delayedRoles": [],
+      "stickyRolesEnabled": false,
+      "boosterRoleId": "965420993155858442",
+      "supporterRoleId": "1554969583432245330"
+    },
+    "security": {
+      "lockdown": false,
+      "lockdownReason": "",
+      "quarantineRoleId": "",
+      "quarantineChannelId": "",
+      "panicMode": false
+    },
+    "modmail": {
+      "enabled": false,
+      "staffRoleId": "",
+      "categoryId": "",
+      "logChannelId": ""
+    },
+    "forms": {
+      "enabled": false
+    },
+    "knowledgeBase": {
+      "enabled": false,
+      "autoResponder": false,
+      "faqChannelId": ""
+    },
+    "economy": {
+      "enabled": false,
+      "currencyName": "Monete",
+      "currencySymbol": "🪙",
+      "startingBalance": 100,
+      "dailyAmount": 50,
+      "workMin": 20,
+      "workMax": 80,
+      "shopItems": []
+    },
+    "reputation": {
+      "enabled": false,
+      "cooldownHours": 24,
+      "logChannelId": ""
+    },
+    "quests": {
+      "enabled": false
+    },
+    "social": {
+      "birthdayChannelId": "",
+      "birthdayRoleId": "",
+      "confessionChannelId": "",
+      "requireReview": false
+    },
+    "automations": [],
+    "music": {
+      "enabled": true,
+      "allowedTextChannelId": "1554969774214221927",
+      "djRoleId": "1554969557071040542",
+      "coexistenceMode": "duck",
+      "duckVolume": 20,
+      "defaultVolume": 80,
+      "maxQueueSize": 50,
+      "autoLeaveTimeout": 60,
+      "allowedVoiceChannels": [],
+      "allowedTextChannels": [],
+      "ttsCoexistenceMode": "duck",
+      "ttsDuckingVolume": 20,
+      "embedColor": "#5865f2",
+      "nowPlayingTemplate": "🎵 Ora in onda: **{title}** [{duration}] - Richiesto da <@{user}>",
+      "playMessageTemplate": "🎶 In riproduzione: **{title}** [{duration}]",
+      "queueMessageTemplate": "📜 Coda attuale ({count} brani)"
+    },
+    "embedColor": "#5865F2",
+    "isLockdownActive": false,
+    "ticketCounter": 40,
+    "ai": {
+      "enabled": true,
+      "autonomyLevel": 4,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "fallbackModel": "gemini-1.5-flash",
+      "temperature": 0.2,
+      "maxTokens": 1200,
+      "learningApproval": "AUTO_LEARN_LOW_RISK",
+      "maxAutonomousRisk": "LOW",
+      "requireStaffConfirmHighRisk": true,
+      "confidenceThresholds": {
+        "escalate": 0.49,
+        "ask": 0.69,
+        "respond": 0.89
+      },
+      "personality": {
+        "tone": "friendly",
+        "formality": "professional-but-human",
+        "verbosity": "concise",
+        "humor": "subtle",
+        "emoji": false,
+        "greetingStyle": "direct",
+        "language": "it"
+      },
+      "tools": {
+        "timeout": true,
+        "warn": true,
+        "renameTicket": true,
+        "closeTicket": true,
+        "ban": false,
+        "kick": false
+      },
+      "maxRisk": "LOW"
+    },
+    "dashboard": {
+      "hiddenTabs": [
+        "tab-economy",
+        "tab-entertainment"
+      ]
+    },
+    "booster": {
+      "enabled": true,
+      "boosterRoleId": "965420993155858442",
+      "extraRoleIds": [
+        "1554969583432245330"
+      ],
+      "boostChannelId": "",
+      "announcementEnabled": false,
+      "removeExtraRolesOnUnboost": true
+    }
+  }
+}

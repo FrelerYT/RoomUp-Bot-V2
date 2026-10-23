@@ -1,0 +1,3202 @@
+{
+  "1429445691452948524": {
+    "general": {
+      "precedents": [
+        {
+          "id": "prec_1789848513559",
+          "categoryKey": "general",
+          "closedAt": "2026-09-19T20:08:33.559Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "live_1789848323647",
+          "keywords": [
+            "generale",
+            "staff"
+          ],
+          "response": "salve",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:05:23.647Z"
+        },
+        {
+          "id": "live_1789848349364",
+          "keywords": [
+            "voglio",
+            "chiedervi",
+            "delle",
+            "cose",
+            "torneo",
+            "server"
+          ],
+          "response": "il torneo del server e terminato ormai",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:05:49.364Z"
+        },
+        {
+          "id": "live_1789848411901",
+          "keywords": [
+            "perch",
+            "server",
+            "primo",
+            "faceva",
+            "vedere",
+            "classifica"
+          ],
+          "response": "bisogna che chiedi a val",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:06:51.901Z"
+        },
+        {
+          "id": "live_1789848502179",
+          "keywords": [
+            "stesso"
+          ],
+          "response": "prego",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:08:22.179Z"
+        },
+        {
+          "id": "live_1789848506722",
+          "keywords": [
+            "stesso"
+          ],
+          "response": "<@1543608170327445634> chiudi il ticket",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T20:08:26.722Z"
+        },
+        {
+          "id": "lr_1789848513559",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "faccio io <@1543608170327445634>",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T20:08:33.559Z"
+        }
+      ],
+      "totalHandled": 1
+    },
+    "partnership": {
+      "precedents": [
+        {
+          "id": "prec_1789844867645",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T19:07:47.645Z"
+        },
+        {
+          "id": "prec_1789846936792",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T19:42:16.792Z"
+        },
+        {
+          "id": "prec_1789847274181",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T19:47:54.181Z"
+        },
+        {
+          "id": "prec_1789848528481",
+          "categoryKey": "partnership",
+          "closedAt": "2026-09-19T20:08:48.481Z"
+        }
+      ],
+      "learnedResponses": [
+        {
+          "id": "lr_1789844867645",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "chiedigli se puo farla a schermo intero perfavore",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T19:07:47.645Z"
+        },
+        {
+          "id": "live_1789846901194",
+          "keywords": [
+            "generale",
+            "staff"
+          ],
+          "response": "mica devi ripetere cio che ho detto aggiungendo chiedigli.. devi chiedere a <@1007620938700959784> non a me eh",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T19:41:41.194Z"
+        },
+        {
+          "id": "live_1789846911825",
+          "keywords": [
+            "generale",
+            "staff"
+          ],
+          "response": "<@1543608170327445634>",
+          "usageCount": 0,
+          "learnedFrom": "live_staff_action",
+          "learnedAt": "2026-09-19T19:41:51.825Z"
+        },
+        {
+          "id": "lr_1789846936792",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "chiedigli di mandare a schermo intero la imagine che si deve vedere tutto lo schermo con data e blablabla",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T19:42:16.792Z"
+        },
+        {
+          "id": "lr_1789847274181",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "no elimina non e idoneo se non mostra tutto lo schermo lo screen se no non sai se lo ha mandato in priv o da qualche altra parte",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T19:47:54.181Z"
+        },
+        {
+          "id": "lr_1789848528481",
+          "keywords": [
+            "transcript",
+            "ticket",
+            "server",
+            "roomup",
+            "1429445691452948524",
+            "chiuso",
+            "frelerr",
+            "1020343046539325480"
+          ],
+          "response": "la prossima volta che dici che uno staff le dara un occhiata perfavore pinga l ruolo staff <@&1550846887085740125>, btw non va bene perche lo sta mandando nell canale generale e non su un canale partnership",
+          "usageCount": 0,
+          "learnedAt": "2026-09-19T20:08:48.481Z"
+        }
+      ],
+      "totalHandled": 1
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "userProfiles": {
+      "user_test": {
+        "userId": "user_test",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "good_user_1": {
+        "userId": "good_user_1",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "sim_user_1": {
+        "userId": "sim_user_1",
+        "interactionCount": 2,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-03T10:37:30.323Z"
+      },
+      "user_pipeline_test": {
+        "userId": "user_pipeline_test",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-03T10:37:30.327Z"
+      },
+      "user_42": {
+        "userId": "user_42",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 3,
+        "notes": [
+          "Attenzione al flood"
+        ],
+        "lastSeenAt": "2026-10-03T10:37:19.202Z"
+      },
+      "1305957237403160576": {
+        "userId": "1305957237403160576",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1020343046539325480": {
+        "userId": "1020343046539325480",
+        "interactionCount": 20,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-30T09:23:34.173Z"
+      },
+      "1543608170327445634": {
+        "userId": "1543608170327445634",
+        "interactionCount": 34,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-30T23:37:52.132Z"
+      },
+      "1007620938700959784": {
+        "userId": "1007620938700959784",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1072191114938945717": {
+        "userId": "1072191114938945717",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-29T15:11:12.521Z"
+      },
+      "987654321098765432": {
+        "userId": "987654321098765432",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "952948731706212363": {
+        "userId": "952948731706212363",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1397496188386934854": {
+        "userId": "1397496188386934854",
+        "interactionCount": 7,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-27T11:46:15.938Z"
+      },
+      "1398121150449586327": {
+        "userId": "1398121150449586327",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1124332033854930985": {
+        "userId": "1124332033854930985",
+        "interactionCount": 2,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-23T14:51:37.516Z"
+      },
+      "1222604009999695973": {
+        "userId": "1222604009999695973",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-25T18:44:23.510Z"
+      },
+      "1531932260033495171": {
+        "userId": "1531932260033495171",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-22T10:15:41.082Z"
+      },
+      "1050336093578477588": {
+        "userId": "1050336093578477588",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "608648443245887493": {
+        "userId": "608648443245887493",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1273307282469290046": {
+        "userId": "1273307282469290046",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1459941866916151359": {
+        "userId": "1459941866916151359",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "976850788020289546": {
+        "userId": "976850788020289546",
+        "interactionCount": 3,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-26T20:02:24.239Z"
+      },
+      "1321583954947739781": {
+        "userId": "1321583954947739781",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1233810108635414624": {
+        "userId": "1233810108635414624",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1180887612345569370": {
+        "userId": "1180887612345569370",
+        "interactionCount": 2,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-26T23:18:49.421Z"
+      },
+      "1374386984767717490": {
+        "userId": "1374386984767717490",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "293078293446524928": {
+        "userId": "293078293446524928",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1409508567819616256": {
+        "userId": "1409508567819616256",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1553447435274031168": {
+        "userId": "1553447435274031168",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-30T11:15:09.691Z"
+      }
+    },
+    "categories": {
+      "general": {
+        "precedents": [
+          {
+            "id": "prec_1789848513559",
+            "categoryKey": "general",
+            "closedAt": "2026-09-19T20:08:33.559Z"
+          }
+        ],
+        "learnedResponses": [
+          {
+            "id": "live_1789848323647",
+            "keywords": [
+              "generale",
+              "staff"
+            ],
+            "response": "salve",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T20:05:23.647Z"
+          },
+          {
+            "id": "live_1789848349364",
+            "keywords": [
+              "voglio",
+              "chiedervi",
+              "delle",
+              "cose",
+              "torneo",
+              "server"
+            ],
+            "response": "il torneo del server e terminato ormai",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T20:05:49.364Z"
+          },
+          {
+            "id": "live_1789848411901",
+            "keywords": [
+              "perch",
+              "server",
+              "primo",
+              "faceva",
+              "vedere",
+              "classifica"
+            ],
+            "response": "bisogna che chiedi a val",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T20:06:51.901Z"
+          },
+          {
+            "id": "live_1789848502179",
+            "keywords": [
+              "stesso"
+            ],
+            "response": "prego",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T20:08:22.179Z"
+          },
+          {
+            "id": "live_1789848506722",
+            "keywords": [
+              "stesso"
+            ],
+            "response": "<@1543608170327445634> chiudi il ticket",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T20:08:26.722Z"
+          },
+          {
+            "id": "lr_1789848513559",
+            "keywords": [
+              "transcript",
+              "ticket",
+              "server",
+              "roomup",
+              "1429445691452948524",
+              "chiuso",
+              "frelerr",
+              "1020343046539325480"
+            ],
+            "response": "faccio io <@1543608170327445634>",
+            "usageCount": 0,
+            "learnedAt": "2026-09-19T20:08:33.559Z"
+          },
+          {
+            "id": "lrn_1789899147970",
+            "response": "sì è buggato",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T10:12:27.970Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789899177044",
+            "response": "Roomup basta",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T10:12:57.044Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789899184674",
+            "response": "<@1543608170327445634> basta fermo",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T10:13:04.674Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789899216316",
+            "response": "<@1543608170327445634> questo è il canale staff non è un ticket per le candidature",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T10:13:36.316Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789899229936",
+            "response": "Prova davide",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T10:13:49.936Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790176292163",
+            "response": "Are we fr",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-23T15:11:32.163Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790177466245",
+            "response": "sbaglia un altra volta e ti banno",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-23T15:31:06.245Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790178822474",
+            "response": "Brooo a me da 9",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-23T15:53:42.474Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790249836972",
+            "response": "# <@&1550846928496107542> COME STATE? (BTW sono in vocale se volete!)",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-24T11:37:16.972Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 1
+      },
+      "partnership": {
+        "precedents": [
+          {
+            "id": "prec_1789844867645",
+            "categoryKey": "partnership",
+            "closedAt": "2026-09-19T19:07:47.645Z"
+          },
+          {
+            "id": "prec_1789846936792",
+            "categoryKey": "partnership",
+            "closedAt": "2026-09-19T19:42:16.792Z"
+          },
+          {
+            "id": "prec_1789847274181",
+            "categoryKey": "partnership",
+            "closedAt": "2026-09-19T19:47:54.181Z"
+          },
+          {
+            "id": "prec_1789848528481",
+            "categoryKey": "partnership",
+            "closedAt": "2026-09-19T20:08:48.481Z"
+          }
+        ],
+        "learnedResponses": [
+          {
+            "id": "lr_1789844867645",
+            "keywords": [
+              "transcript",
+              "ticket",
+              "server",
+              "roomup",
+              "1429445691452948524",
+              "chiuso",
+              "frelerr",
+              "1020343046539325480"
+            ],
+            "response": "chiedigli se puo farla a schermo intero perfavore",
+            "usageCount": 0,
+            "learnedAt": "2026-09-19T19:07:47.645Z"
+          },
+          {
+            "id": "live_1789846901194",
+            "keywords": [
+              "generale",
+              "staff"
+            ],
+            "response": "mica devi ripetere cio che ho detto aggiungendo chiedigli.. devi chiedere a <@1007620938700959784> non a me eh",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T19:41:41.194Z"
+          },
+          {
+            "id": "live_1789846911825",
+            "keywords": [
+              "generale",
+              "staff"
+            ],
+            "response": "<@1543608170327445634>",
+            "usageCount": 0,
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T19:41:51.825Z"
+          },
+          {
+            "id": "lr_1789846936792",
+            "keywords": [
+              "transcript",
+              "ticket",
+              "server",
+              "roomup",
+              "1429445691452948524",
+              "chiuso",
+              "frelerr",
+              "1020343046539325480"
+            ],
+            "response": "chiedigli di mandare a schermo intero la imagine che si deve vedere tutto lo schermo con data e blablabla",
+            "usageCount": 0,
+            "learnedAt": "2026-09-19T19:42:16.792Z"
+          },
+          {
+            "id": "lr_1789847274181",
+            "keywords": [
+              "transcript",
+              "ticket",
+              "server",
+              "roomup",
+              "1429445691452948524",
+              "chiuso",
+              "frelerr",
+              "1020343046539325480"
+            ],
+            "response": "no elimina non e idoneo se non mostra tutto lo schermo lo screen se no non sai se lo ha mandato in priv o da qualche altra parte",
+            "usageCount": 0,
+            "learnedAt": "2026-09-19T19:47:54.181Z"
+          },
+          {
+            "id": "lr_1789848528481",
+            "keywords": [
+              "transcript",
+              "ticket",
+              "server",
+              "roomup",
+              "1429445691452948524",
+              "chiuso",
+              "frelerr",
+              "1020343046539325480"
+            ],
+            "response": "la prossima volta che dici che uno staff le dara un occhiata perfavore pinga l ruolo staff <@&1550846887085740125>, btw non va bene perche lo sta mandando nell canale generale e non su un canale partnership",
+            "usageCount": 0,
+            "learnedAt": "2026-09-19T20:08:48.481Z"
+          },
+          {
+            "id": "lrn_1789857968443",
+            "response": "<@1543608170327445634> che succede",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-19T22:46:08.443Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789897192474",
+            "response": "Riapri ticket",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T09:39:52.474Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789897850572",
+            "response": "frelerr sono entrato io nel loro servedr",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T09:50:50.572Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789897919626",
+            "response": "Ik stai zitto ora",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T09:51:59.626Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789914319759",
+            "response": "Roomup bot",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T14:25:19.759Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789937472566",
+            "response": "Ah roomup ricordati vedere sempre che non sia un server nsfw o con contenuti un po brutti se capisci",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T20:51:12.566Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789937499911",
+            "response": "Io sto gestendo il ticket",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-20T20:51:39.911Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1789963902258",
+            "response": "non sia un server nsfw o con contenuti un po brutti",
+            "type": "RULE",
+            "learnedFrom": "staff_directive",
+            "learnedAt": "2026-09-21T04:11:42.258Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 1
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "PARTNERSHIP": {
+        "precedents": [],
+        "learnedResponses": [
+          {
+            "id": "lrn_1789899759139",
+            "response": "i partner devono avere almeno 50 membri",
+            "type": "RULE",
+            "learnedFrom": "staff_directive",
+            "learnedAt": "2026-09-20T10:22:39.139Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790514904865",
+            "response": "scusa il bot stavo facendo ancora robette",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-09-27T13:15:04.865Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 0
+      }
+    },
+    "guildId": "1429445691452948524",
+    "goals": [
+      {
+        "id": "goal_1789859288026_q2gl",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:08:08.026Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859288030_w3mq",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:08:08.030Z",
+        "completedAt": "2026-09-19T23:08:08.030Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859303914_vqx2",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:08:23.914Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859303918_mc2g",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:08:23.918Z",
+        "completedAt": "2026-09-19T23:08:23.918Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859329064_hxtu",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:08:49.064Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859329067_w27t",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:08:49.067Z",
+        "completedAt": "2026-09-19T23:08:49.068Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859380419_aj68",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:09:40.419Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789859380423_p2ve",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:09:40.423Z",
+        "completedAt": "2026-09-19T23:09:40.424Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789860116795_sx4d",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:21:56.795Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789860116801_trzi",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:21:56.801Z",
+        "completedAt": "2026-09-19T23:21:56.802Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789860411047_qj5u",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:26:51.047Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789860411051_ob13",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:26:51.051Z",
+        "completedAt": "2026-09-19T23:26:51.052Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789861165760_qvk5",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-19T23:39:25.760Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789861165764_d14s",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-19T23:39:25.764Z",
+        "completedAt": "2026-09-19T23:39:25.765Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789899808169_jfk3",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:23:28.169Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789899865888_04oe",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:24:25.888Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789899865897_szkt",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-20T10:24:25.897Z",
+        "completedAt": "2026-09-20T10:24:25.898Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789899935986_6t81",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:25:35.986Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789899967928_x3j2",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:26:07.928Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789899967936_7747",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-20T10:26:07.936Z",
+        "completedAt": "2026-09-20T10:26:07.936Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789900053074_34uf",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:27:33.074Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789900103244_oeea",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:28:23.244Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789900165473_uitz",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:29:25.473Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789900177807_olt9",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T10:29:37.807Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789900177815_90cb",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-20T10:29:37.815Z",
+        "completedAt": "2026-09-20T10:29:37.816Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789911974913_lacd",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T13:46:14.913Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789912133360_31ex",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T13:48:53.360Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789912386302_4dkm",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T13:53:06.302Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789912457805_pfvh",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T13:54:17.805Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789912457813_y302",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-20T13:54:17.813Z",
+        "completedAt": "2026-09-20T13:54:17.814Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789912486524_br8e",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T13:54:46.524Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789912486531_18kd",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-20T13:54:46.531Z",
+        "completedAt": "2026-09-20T13:54:46.531Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789914817660_a5c6",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-20T14:33:37.660Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789914817667_x00o",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-20T14:33:37.667Z",
+        "completedAt": "2026-09-20T14:33:37.667Z",
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789964083531_i937",
+        "title": ": raggiungere 100 partnership attive",
+        "details": "Impostato da frelerr in #ticket-0010",
+        "status": "active",
+        "createdBy": "frelerr",
+        "createdAt": "2026-09-21T04:14:43.531Z",
+        "completedAt": null,
+        "targetDate": null
+      },
+      {
+        "id": "goal_1789964083542_7p7m",
+        "title": "Ottimizzare tempo di risposta ticket a <2m",
+        "details": "",
+        "status": "completed",
+        "createdBy": "Frè",
+        "createdAt": "2026-09-21T04:14:43.542Z",
+        "completedAt": "2026-09-21T04:14:43.543Z",
+        "targetDate": null
+      }
+    ],
+    "boostMode": {
+      "enabled": false,
+      "mode": "standard",
+      "setBy": "Frè",
+      "activatedAt": "2026-09-21T04:14:43.545Z",
+      "expiresAt": "2026-09-21T05:14:43.545Z",
+      "durationMinutes": 60
+    },
+    "learnedRules": [
+      {
+        "id": "rule_1789859288022_3yn3",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:08:08.022Z"
+      },
+      {
+        "id": "rule_1789859303909_m34o",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:08:23.909Z"
+      },
+      {
+        "id": "rule_1789859329060_gbzz",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:08:49.060Z"
+      },
+      {
+        "id": "rule_1789859380416_2tsv",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:09:40.416Z"
+      },
+      {
+        "id": "rule_1789860116788_qpbk",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:21:56.788Z"
+      },
+      {
+        "id": "rule_1789860411042_rahm",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:26:51.042Z"
+      },
+      {
+        "id": "rule_1789861165756_6kh6",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-19T23:39:25.756Z"
+      },
+      {
+        "id": "rule_1789899808159_2aa8",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:23:28.159Z"
+      },
+      {
+        "id": "rule_1789899865880_89rz",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:24:25.880Z"
+      },
+      {
+        "id": "rule_1789899935980_qw9r",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:25:35.980Z"
+      },
+      {
+        "id": "rule_1789899967922_6l5h",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:26:07.922Z"
+      },
+      {
+        "id": "rule_1789900053068_gzlr",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:27:33.068Z"
+      },
+      {
+        "id": "rule_1789900103239_7y0z",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:28:23.239Z"
+      },
+      {
+        "id": "rule_1789900165466_ivxs",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:29:25.466Z"
+      },
+      {
+        "id": "rule_1789900177801_aw1z",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T10:29:37.801Z"
+      },
+      {
+        "id": "rule_1789911974903_4259",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T13:46:14.903Z"
+      },
+      {
+        "id": "rule_1789912133355_xd52",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T13:48:53.355Z"
+      },
+      {
+        "id": "rule_1789912386295_kc2p",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T13:53:06.295Z"
+      },
+      {
+        "id": "rule_1789912457799_sf8g",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T13:54:17.799Z"
+      },
+      {
+        "id": "rule_1789912486518_zjwp",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T13:54:46.518Z"
+      },
+      {
+        "id": "rule_1789914817654_y7ec",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-20T14:33:37.654Z"
+      },
+      {
+        "id": "rule_1789963872733_wqu6",
+        "rule": "non sia un server nsfw o con contenuti un po brutti",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [
+          "partner",
+          "partnership",
+          "server",
+          "invito",
+          "nsfw",
+          "contenuti",
+          "approvazione",
+          "brutti",
+          "inappropriati",
+          "richiesta",
+          "partnership"
+        ],
+        "author": "frelerr",
+        "source": "ticket_ticket-0014",
+        "createdAt": "2026-09-21T04:11:12.733Z"
+      },
+      {
+        "id": "rule_1789964083519_bg1u",
+        "rule": "i partner devono avere almeno 50 membri",
+        "category": "PARTNERSHIP",
+        "triggerKeywords": [
+          "partner",
+          "partnership",
+          "server",
+          "invito",
+          "nsfw",
+          "contenuti",
+          "approvazione",
+          "brutti",
+          "inappropriati"
+        ],
+        "author": "frelerr",
+        "source": "ticket_ticket-0010",
+        "createdAt": "2026-09-21T04:14:43.519Z"
+      }
+    ],
+    "grillSessions": {
+      "1429445691452948999:987654321098765432": {
+        "sessionId": "grill_1789964083546",
+        "guildId": "1429445691452948524",
+        "channelId": "1429445691452948999",
+        "userId": "987654321098765432",
+        "topic": "Architettura Network",
+        "difficulty": "hard",
+        "currentTurn": 1,
+        "maxTurns": 5,
+        "questions": [
+          "Come gestisci un single point of failure nel database?"
+        ],
+        "answers": [
+          "Uso replica master-slave asincrona e cluster redis per cache."
+        ],
+        "feedbackHistory": [
+          "Buona risposta, ma considera i conflitti di split-brain."
+        ],
+        "score": 8,
+        "active": false,
+        "startedAt": "2026-09-21T04:14:43.546Z",
+        "completedAt": "2026-09-21T04:14:43.548Z"
+      }
+    },
+    "officialPartnershipDescription": {
+      "text": "# ❤️‍🔥 [ROOMUP!](https://discord.gg/Ks8KP5BZBH) 🔥\n\nGaming e divertimento",
+      "updatedAt": "2026-09-20T20:57:39.831Z"
+    },
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 7,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    }
+  },
+  "999888777666555444": {
+    "guildId": "999888777666555444",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {},
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 0,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "createdAt": "2026-09-19T20:37:34.439Z",
+    "general": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "partnership": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "support": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "minecraft": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "goals": [],
+    "boostMode": {
+      "enabled": false,
+      "mode": "standard"
+    },
+    "learnedRules": [],
+    "grillSessions": {}
+  },
+  "guild_mem_norm_test": {
+    "guildId": "guild_mem_norm_test",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {},
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 0,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "createdAt": "2026-09-19T21:14:19.149Z"
+  },
+  "guild_alpha_1": {
+    "guildId": "guild_alpha_1",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {
+      "user_1": {
+        "userId": "user_1",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      }
+    },
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 0,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "createdAt": "2026-09-19T21:28:46.984Z",
+    "general": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "partnership": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "support": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "minecraft": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  },
+  "111111111111111111": {
+    "guildId": "111111111111111111",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {
+      "999999999999999999": {
+        "userId": "999999999999999999",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "staff_123": {
+        "userId": "staff_123",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      }
+    },
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 0,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "goals": [],
+    "boostMode": {
+      "enabled": false,
+      "mode": "standard",
+      "activatedAt": null,
+      "expiresAt": null
+    },
+    "learnedRules": [],
+    "grillSessions": {},
+    "createdAt": "2026-09-19T23:09:07.296Z",
+    "general": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "partnership": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "support": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "minecraft": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  },
+  "222222222222222222": {
+    "guildId": "222222222222222222",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {
+      "999999999999999999": {
+        "userId": "999999999999999999",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      }
+    },
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 0,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "goals": [],
+    "boostMode": {
+      "enabled": false,
+      "mode": "standard",
+      "activatedAt": null,
+      "expiresAt": null
+    },
+    "learnedRules": [],
+    "grillSessions": {},
+    "createdAt": "2026-09-19T23:09:07.300Z",
+    "general": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "partnership": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "support": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "minecraft": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  },
+  "guild_remake_test_123": {
+    "guildId": "guild_remake_test_123",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "SUPPORT": {
+        "precedents": [],
+        "learnedResponses": [
+          {
+            "id": "lrn_1789899608291",
+            "response": "uno screenshot chiaro della schermata di errore",
+            "type": "RULE",
+            "learnedFrom": "staff_directive",
+            "learnedAt": "2026-09-20T10:20:08.291Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {},
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 19,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "goals": [],
+    "boostMode": {
+      "enabled": false,
+      "mode": "standard",
+      "activatedAt": null,
+      "expiresAt": null
+    },
+    "learnedRules": [
+      {
+        "id": "rule_1789899608288_9hzb",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T10:20:08.288Z"
+      },
+      {
+        "id": "rule_1789899617176_j9v8",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T10:20:17.176Z"
+      },
+      {
+        "id": "rule_1789899880924_0e0b",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T10:24:40.924Z"
+      },
+      {
+        "id": "rule_1789899981143_ayoy",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T10:26:21.143Z"
+      },
+      {
+        "id": "rule_1789900034351_3e4s",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T10:27:14.351Z"
+      },
+      {
+        "id": "rule_1789900188044_ahq7",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T10:29:48.044Z"
+      },
+      {
+        "id": "rule_1789911956166_foou",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T13:45:56.166Z"
+      },
+      {
+        "id": "rule_1789912469914_94xv",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T13:54:29.914Z"
+      },
+      {
+        "id": "rule_1789914806298_187x",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T14:33:26.298Z"
+      },
+      {
+        "id": "rule_1789914958822_cze2",
+        "rule": "uno screenshot chiaro della schermata di errore",
+        "category": "SUPPORT",
+        "triggerKeywords": [
+          "errore",
+          "durante",
+          "l'accesso",
+          "server",
+          "screen",
+          "screenshot",
+          "errore",
+          "problema",
+          "non va",
+          "bug"
+        ],
+        "author": "samuelecosso",
+        "source": "ticket_ticket-0042",
+        "createdAt": "2026-09-20T14:35:58.822Z"
+      }
+    ],
+    "grillSessions": {},
+    "createdAt": "2026-09-20T10:20:08.278Z",
+    "general": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "partnership": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "support": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "minecraft": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  },
+  "965378975675322438": {
+    "guildId": "965378975675322438",
+    "categories": {
+      "general": {
+        "precedents": [],
+        "learnedResponses": [
+          {
+            "id": "lrn_1790937720912",
+            "response": "Midispiace non siamo interessati",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-02T10:42:00.912Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792090550129",
+            "response": "non siamo interessati grazie, serve altro?",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-15T18:55:50.129Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792151559579",
+            "response": "<@1466174421042467010>",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-16T11:52:39.579Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 0
+      },
+      "partnership": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "staff_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "media_app": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "support": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "minecraft": {
+        "precedents": [],
+        "learnedResponses": [],
+        "totalHandled": 0
+      },
+      "GENERAL": {
+        "precedents": [],
+        "learnedResponses": [
+          {
+            "id": "lrn_1790865307387",
+            "response": "╭——————- 🌸・**ROOMUP**・🌸 -——————╮\n\n> **୨୧ Una community dove non ti sentirai mai fuori posto.**\n> `🎮` Gaming & Minecraft     `🎧` Vocali & Chill\n> `🎉` Eventi & Giveaway  　  `💬` Nuove Amicizie\n\n**✦・Community attiva & in crescita**\n**✦・Vocali sempre pronti per chillare**\n**✦・Eventi, giochi & attività**\n**✦・Staff disponibile & presente**\n\n> ✨ **Entra, conosci nuove persone e trova il tuo posto.**",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-01T14:35:07.387Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790865628509",
+            "response": "[GROOVE STREET](https://discord.gg/ytDHQGwabt)\n\nఌ chilling and joint 🌿\n  ఌ vocali personalizzate\n    ఌ community attiva\n-# (molta attività vocale)",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-01T14:40:28.509Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1790865662772",
+            "response": "[STRANGE PLACE](https://discord.gg/3vYz4VYRdQ)\n⤷ • clubs\n     • eventi\n     • amici ‽\n\n                                  × firma 🃏",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-01T14:41:02.772Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 0
+      },
+      "PARTNERSHIP": {
+        "precedents": [],
+        "learnedResponses": [
+          {
+            "id": "lrn_1790868217226",
+            "response": "scusaci il bot sta avendo attualmente modifiche per ragionare meglio lol btw",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-01T15:23:37.226Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791025067137",
+            "response": "<@1360554878795120772>",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-03T10:57:47.137Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791094902023",
+            "response": "Se non rispondi entro stasera chiuderò il ticket e prenderai un warn per aver aperto un ticket senza motivo",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T06:21:42.023Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791100538248",
+            "response": "<@1020343046539325480>",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T07:55:38.248Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791105422061",
+            "response": "Partnership?",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T09:17:02.061Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791146248808",
+            "response": "Buonasera <@1228718740456341514>\nSono il consulente di RoomUp, potresti essere più specifico nel caso in cui dovessimo scegliere una delle 2 opzioni?",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T20:37:28.808Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791146265098",
+            "response": "Aspettiamo tue risposte, buona continuazione di giornata.",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T20:37:45.098Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791152581969",
+            "response": "ma la hai appena fatta bruh.,.",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T22:23:01.969Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791152603941",
+            "response": "ce hai creato un ticket su strange place no'",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-04T22:23:23.941Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791230696456",
+            "response": "<@1360554878795120772> si certo salve volevi fare partnership? Appena ci sei manda la desc pure",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-05T20:04:56.456Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791918000082",
+            "response": "# Stanco dei soliti server??\n**Unisciti e fai parte della nostra community**\n# EVENTO MINIGAME 7-8 OTTOBREE 🎮 \nㅤ\n*Cosa offriamo?*\n|| @everyone ||\n⦁📽️ *Serate Organizzate* 📽️ \n⦁🎮 *Gaming chill*🎮 \n⦁🫡 *Un server che rispetta i ToS di Discord*🫡 \n⦁🎨 *Tanta creatività*🎨 \n⦁🔥 *Tantissimo divertimento*🔥 \n⦁🎁 *Giveaway frequenti* 🎁 \n⦁🔝 *Server in sola crescita!!*🔝 \n⦁😇 *Una community rispettos",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-13T19:00:00.082Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1791918041677",
+            "response": "<@1531996835340619839> la nostra descrizione la trovi in <#1555226405984280646> , appena la metti dimmelo che faccio lo stesso",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-13T19:00:41.677Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792092878952",
+            "response": "<@1531996835340619839>",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-15T19:34:38.952Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792255279524",
+            "response": "<@1369305382702288936> si salve voleva fare una partnership?",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T16:41:19.524Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792255287156",
+            "response": "Manda pure la desc",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T16:41:27.156Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792255299080",
+            "response": "la nostra la trovi su <#1555226405984280646>",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T16:41:39.080Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792255304824",
+            "response": "Appena mettete voi procederò io",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T16:41:44.824Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792255313469",
+            "response": "E poi se non ci saranno altre domande chiudo",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T16:41:53.469Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792255380118",
+            "response": "Buona serata e grazie mille!",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T16:43:00.118Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792258418793",
+            "response": "<@1424491626121920594> Salve scusa per il ritardo",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T17:33:38.793Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792258422666",
+            "response": "Mandi pure la desc qui",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T17:33:42.666Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792258430159",
+            "response": "La nostra la trovi su <#1555226405984280646>",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T17:33:50.159Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792258441722",
+            "response": "Appena mettete voi",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T17:34:01.722Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792258445932",
+            "response": "Inserirò anche io",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T17:34:05.932Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792258456583",
+            "response": "E poi se non ci saranno altre domande chiuderò il ticket",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T17:34:16.583Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269091351",
+            "response": "SÌ SCUSAMIII",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:31:31.351Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269121430",
+            "response": "<@1424491626121920594> MI DISPIACE TANTISSIMO PER IL RITARDO",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:32:01.430Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269128763",
+            "response": "Appena mettete voi faccio anche io",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:32:08.763Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269131404",
+            "response": "Scusa di nuovo!",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:32:11.404Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269798290",
+            "response": "Oki procedo anche io",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:43:18.290Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269850207",
+            "response": "Se non ci sono altre domande chiudo",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:44:10.207Z",
+            "usageCount": 0
+          },
+          {
+            "id": "lrn_1792269870265",
+            "response": "Anche a leiii",
+            "type": "OBSERVATION",
+            "learnedFrom": "live_staff_action",
+            "learnedAt": "2026-10-17T20:44:30.265Z",
+            "usageCount": 0
+          }
+        ],
+        "totalHandled": 0
+      }
+    },
+    "userProfiles": {
+      "1554978768936902739": {
+        "userId": "1554978768936902739",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-30T22:10:29.489Z"
+      },
+      "1554979018808492052": {
+        "userId": "1554979018808492052",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-09-30T22:11:32.749Z"
+      },
+      "1180887612345569370": {
+        "userId": "1180887612345569370",
+        "interactionCount": 16,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-21T19:39:59.419Z"
+      },
+      "1397496188386934854": {
+        "userId": "1397496188386934854",
+        "interactionCount": 65,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-17T21:09:11.058Z"
+      },
+      "1222604009999695973": {
+        "userId": "1222604009999695973",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-10T11:09:37.478Z"
+      },
+      "1543608170327445634": {
+        "userId": "1543608170327445634",
+        "interactionCount": 59,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-22T15:26:18.145Z"
+      },
+      "1509205145861361836": {
+        "userId": "1509205145861361836",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-07T13:35:54.990Z"
+      },
+      "1161302569293971516": {
+        "userId": "1161302569293971516",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1020343046539325480": {
+        "userId": "1020343046539325480",
+        "interactionCount": 49,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-22T19:25:10.858Z"
+      },
+      "1337733671389499504": {
+        "userId": "1337733671389499504",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-17T21:42:32.860Z"
+      },
+      "1514706673305129121": {
+        "userId": "1514706673305129121",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1072191114938945717": {
+        "userId": "1072191114938945717",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1459241470270902315": {
+        "userId": "1459241470270902315",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1406072800825053235": {
+        "userId": "1406072800825053235",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1459941866916151359": {
+        "userId": "1459941866916151359",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1273307282469290046": {
+        "userId": "1273307282469290046",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1124332033854930985": {
+        "userId": "1124332033854930985",
+        "interactionCount": 12,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-06T11:24:29.770Z"
+      },
+      "1447296172023615591": {
+        "userId": "1447296172023615591",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1532870002162667752": {
+        "userId": "1532870002162667752",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-02T05:42:11.147Z"
+      },
+      "608648443245887493": {
+        "userId": "608648443245887493",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "302050872383242240": {
+        "userId": "302050872383242240",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-01T23:53:38.460Z"
+      },
+      "462700670433230849": {
+        "userId": "462700670433230849",
+        "interactionCount": 15,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-02T16:57:11.631Z"
+      },
+      "1248357688170254497": {
+        "userId": "1248357688170254497",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1522522838215688193": {
+        "userId": "1522522838215688193",
+        "interactionCount": 9,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-02T11:29:16.894Z"
+      },
+      "1350439428627238912": {
+        "userId": "1350439428627238912",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "615898205351313448": {
+        "userId": "615898205351313448",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1416407311227949168": {
+        "userId": "1416407311227949168",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1500867422775803994": {
+        "userId": "1500867422775803994",
+        "interactionCount": 6,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-03T18:48:55.477Z"
+      },
+      "652180260992843786": {
+        "userId": "652180260992843786",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1512685039643791410": {
+        "userId": "1512685039643791410",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-02T16:40:22.484Z"
+      },
+      "1538770325246836817": {
+        "userId": "1538770325246836817",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "952948731706212363": {
+        "userId": "952948731706212363",
+        "interactionCount": 3,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-05T15:58:37.534Z"
+      },
+      "1531932260033495171": {
+        "userId": "1531932260033495171",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-13T12:32:44.136Z"
+      },
+      "976850788020289546": {
+        "userId": "976850788020289546",
+        "interactionCount": 7,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-17T15:02:50.992Z"
+      },
+      "1335204154636767297": {
+        "userId": "1335204154636767297",
+        "interactionCount": 12,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-03T13:09:20.138Z"
+      },
+      "1467845787215204475": {
+        "userId": "1467845787215204475",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1050336093578477588": {
+        "userId": "1050336093578477588",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1528113307746173096": {
+        "userId": "1528113307746173096",
+        "interactionCount": 2,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-03T15:44:22.124Z"
+      },
+      "1513867074638839969": {
+        "userId": "1513867074638839969",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1505890597523685397": {
+        "userId": "1505890597523685397",
+        "interactionCount": 54,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-12T20:39:16.744Z"
+      },
+      "1437553095667355708": {
+        "userId": "1437553095667355708",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-19T14:34:00.111Z"
+      },
+      "1551939220497629268": {
+        "userId": "1551939220497629268",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1524456044674289675": {
+        "userId": "1524456044674289675",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1400035092071710731": {
+        "userId": "1400035092071710731",
+        "interactionCount": 5,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-22T18:47:08.296Z"
+      },
+      "1228718740456341514": {
+        "userId": "1228718740456341514",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-05T16:27:52.647Z"
+      },
+      "1360554878795120772": {
+        "userId": "1360554878795120772",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1354557363167694868": {
+        "userId": "1354557363167694868",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1554938049190699035": {
+        "userId": "1554938049190699035",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1546192386546470963": {
+        "userId": "1546192386546470963",
+        "interactionCount": 16,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-20T21:52:58.058Z"
+      },
+      "818144104788787261": {
+        "userId": "818144104788787261",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1553680922724012106": {
+        "userId": "1553680922724012106",
+        "interactionCount": 10,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-05T21:09:58.226Z"
+      },
+      "712664771266215976": {
+        "userId": "712664771266215976",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1556320559548207125": {
+        "userId": "1556320559548207125",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "748587196876980246": {
+        "userId": "748587196876980246",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-05T18:22:49.580Z"
+      },
+      "1048214235001389056": {
+        "userId": "1048214235001389056",
+        "interactionCount": 3,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-06T10:45:43.026Z"
+      },
+      "1188826851192348706": {
+        "userId": "1188826851192348706",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1302331511907029095": {
+        "userId": "1302331511907029095",
+        "interactionCount": 2,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-17T14:24:09.078Z"
+      },
+      "826542532405755945": {
+        "userId": "826542532405755945",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1040703638852612126": {
+        "userId": "1040703638852612126",
+        "interactionCount": 6,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-07T21:52:58.874Z"
+      },
+      "754543739434958889": {
+        "userId": "754543739434958889",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1340464589191774320": {
+        "userId": "1340464589191774320",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1557107027808092316": {
+        "userId": "1557107027808092316",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1289595804151054463": {
+        "userId": "1289595804151054463",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1466174421042467010": {
+        "userId": "1466174421042467010",
+        "interactionCount": 3,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-14T16:39:36.695Z"
+      },
+      "1550666623277596685": {
+        "userId": "1550666623277596685",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1550587499762688011": {
+        "userId": "1550587499762688011",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "487619550569955328": {
+        "userId": "487619550569955328",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "945237946666188840": {
+        "userId": "945237946666188840",
+        "interactionCount": 2,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-10T13:56:39.962Z"
+      },
+      "1167152170739699782": {
+        "userId": "1167152170739699782",
+        "interactionCount": 6,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-11T14:15:54.365Z"
+      },
+      "1469303613531881585": {
+        "userId": "1469303613531881585",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-12T20:40:43.790Z"
+      },
+      "1531996835340619839": {
+        "userId": "1531996835340619839",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1504206598728323174": {
+        "userId": "1504206598728323174",
+        "interactionCount": 7,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-13T19:14:11.530Z"
+      },
+      "1004463627882991737": {
+        "userId": "1004463627882991737",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1240117106272505857": {
+        "userId": "1240117106272505857",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1170791464939294810": {
+        "userId": "1170791464939294810",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1510895649321779300": {
+        "userId": "1510895649321779300",
+        "interactionCount": 4,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-16T14:41:35.812Z"
+      },
+      "1444948914259234847": {
+        "userId": "1444948914259234847",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1296235036387053610": {
+        "userId": "1296235036387053610",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1369305382702288936": {
+        "userId": "1369305382702288936",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1424491626121920594": {
+        "userId": "1424491626121920594",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1456759906462994452": {
+        "userId": "1456759906462994452",
+        "interactionCount": 0,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": null
+      },
+      "1431551403180036197": {
+        "userId": "1431551403180036197",
+        "interactionCount": 1,
+        "trustScore": 100,
+        "warnings": 0,
+        "notes": [],
+        "lastSeenAt": "2026-10-19T15:53:27.995Z"
+      }
+    },
+    "statistics": {
+      "totalTickets": 0,
+      "resolvedTickets": 1,
+      "escalatedTickets": 0,
+      "staffInterventions": 0
+    },
+    "goals": [],
+    "boostMode": {
+      "enabled": false,
+      "mode": "standard",
+      "activatedAt": null,
+      "expiresAt": null
+    },
+    "learnedRules": [],
+    "grillSessions": {},
+    "createdAt": "2026-09-30T22:10:29.485Z",
+    "general": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "partnership": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "staff_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "media_app": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "support": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    },
+    "minecraft": {
+      "precedents": [],
+      "learnedResponses": [],
+      "totalHandled": 0
+    }
+  }
+}

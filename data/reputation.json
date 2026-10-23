@@ -1,0 +1,30 @@
+{
+  "scores": {
+    "guild_test_123_user_target_2": 1,
+    "guild_test_123_user_target_1789759829364": 1,
+    "guild_test_123_user_target_1789764197772": 1
+  },
+  "history": [
+    {
+      "guildId": "guild_test_123",
+      "fromUserId": "user_sender_1789764197772",
+      "toUserId": "user_target_1789764197772",
+      "reason": "Ottimo aiuto!",
+      "timestamp": "2026-09-18T20:43:17.773Z"
+    },
+    {
+      "guildId": "guild_test_123",
+      "fromUserId": "user_sender_1789759829364",
+      "toUserId": "user_target_1789759829364",
+      "reason": "Ottimo aiuto!",
+      "timestamp": "2026-09-18T19:30:29.365Z"
+    },
+    {
+      "guildId": "guild_test_123",
+      "fromUserId": "user_sender_1",
+      "toUserId": "user_target_2",
+      "reason": "Ottimo aiuto!",
+      "timestamp": "2026-09-18T19:18:03.664Z"
+    }
+  ]
+}

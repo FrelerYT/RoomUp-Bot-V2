@@ -1,0 +1,6025 @@
+{
+  "knw_1789850263379_wwfs8": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850263379_wwfs8",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:37:43.379Z",
+        "updatedAt": "2026-09-19T20:37:43.379Z"
+      },
+      "snapshotAt": "2026-09-19T20:37:43.379Z"
+    }
+  ],
+  "knw_1789850277796_q8gap": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850277796_q8gap",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:37:57.796Z",
+        "updatedAt": "2026-09-19T20:37:57.796Z"
+      },
+      "snapshotAt": "2026-09-19T20:37:57.796Z"
+    }
+  ],
+  "knw_1789850277797_po46t": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850277797_po46t",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:37:57.797Z",
+        "updatedAt": "2026-09-19T20:37:57.797Z"
+      },
+      "snapshotAt": "2026-09-19T20:37:57.797Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850277797_po46t",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:37:57.797Z",
+        "updatedAt": "2026-09-19T20:37:57.798Z"
+      },
+      "snapshotAt": "2026-09-19T20:37:57.798Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789850277797_po46t",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T20:37:57.797Z",
+        "updatedAt": "2026-09-19T20:37:57.799Z"
+      },
+      "snapshotAt": "2026-09-19T20:37:57.799Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850277800_ebaew": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850277800_ebaew",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T20:37:47.800Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:37:57.800Z",
+        "updatedAt": "2026-09-19T20:37:57.800Z"
+      },
+      "snapshotAt": "2026-09-19T20:37:57.800Z"
+    }
+  ],
+  "knw_1789850292007_04tuh": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850292007_04tuh",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:38:12.007Z",
+        "updatedAt": "2026-09-19T20:38:12.007Z"
+      },
+      "snapshotAt": "2026-09-19T20:38:12.007Z"
+    }
+  ],
+  "knw_1789850292009_zxc4q": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850292009_zxc4q",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:38:12.009Z",
+        "updatedAt": "2026-09-19T20:38:12.009Z"
+      },
+      "snapshotAt": "2026-09-19T20:38:12.009Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850292009_zxc4q",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:38:12.009Z",
+        "updatedAt": "2026-09-19T20:38:12.010Z"
+      },
+      "snapshotAt": "2026-09-19T20:38:12.010Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789850292009_zxc4q",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T20:38:12.009Z",
+        "updatedAt": "2026-09-19T20:38:12.011Z"
+      },
+      "snapshotAt": "2026-09-19T20:38:12.011Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850292012_r8mkg": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850292012_r8mkg",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T20:38:02.012Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:38:12.012Z",
+        "updatedAt": "2026-09-19T20:38:12.012Z"
+      },
+      "snapshotAt": "2026-09-19T20:38:12.012Z"
+    }
+  ],
+  "knw_1789850349451_1cxw4": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850349451_1cxw4",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:39:09.451Z",
+        "updatedAt": "2026-09-19T20:39:09.451Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:09.451Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850349451_1cxw4",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:39:09.451Z",
+        "updatedAt": "2026-09-19T20:39:09.456Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:09.456Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850368169_lhv7e": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850368169_lhv7e",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:39:28.169Z",
+        "updatedAt": "2026-09-19T20:39:28.169Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:28.169Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850368169_lhv7e",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:39:28.169Z",
+        "updatedAt": "2026-09-19T20:39:28.175Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:28.175Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850383653_16pdk": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850383653_16pdk",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:39:43.653Z",
+        "updatedAt": "2026-09-19T20:39:43.653Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:43.653Z"
+    }
+  ],
+  "knw_1789850383655_690bw": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850383655_690bw",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:39:43.655Z",
+        "updatedAt": "2026-09-19T20:39:43.655Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:43.655Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850383655_690bw",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:39:43.655Z",
+        "updatedAt": "2026-09-19T20:39:43.657Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:43.657Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789850383655_690bw",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T20:39:43.655Z",
+        "updatedAt": "2026-09-19T20:39:43.658Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:43.658Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850383659_d4zcg": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850383659_d4zcg",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T20:39:33.659Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:39:43.659Z",
+        "updatedAt": "2026-09-19T20:39:43.659Z"
+      },
+      "snapshotAt": "2026-09-19T20:39:43.659Z"
+    }
+  ],
+  "knw_1789850461590_aocfr": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850461590_aocfr",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:41:01.590Z",
+        "updatedAt": "2026-09-19T20:41:01.590Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:01.590Z"
+    }
+  ],
+  "knw_1789850461592_64dj6": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850461592_64dj6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:41:01.592Z",
+        "updatedAt": "2026-09-19T20:41:01.592Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:01.592Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850461592_64dj6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:41:01.592Z",
+        "updatedAt": "2026-09-19T20:41:01.593Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:01.593Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789850461592_64dj6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T20:41:01.592Z",
+        "updatedAt": "2026-09-19T20:41:01.594Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:01.594Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850461595_vq44r": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850461595_vq44r",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T20:40:51.595Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:41:01.595Z",
+        "updatedAt": "2026-09-19T20:41:01.595Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:01.595Z"
+    }
+  ],
+  "knw_1789850495045_r3p08": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850495045_r3p08",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:41:35.045Z",
+        "updatedAt": "2026-09-19T20:41:35.045Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:35.045Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850495045_r3p08",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:41:35.045Z",
+        "updatedAt": "2026-09-19T20:41:35.052Z"
+      },
+      "snapshotAt": "2026-09-19T20:41:35.052Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850849465_y19an": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850849465_y19an",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:47:29.465Z",
+        "updatedAt": "2026-09-19T20:47:29.465Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:29.465Z"
+    }
+  ],
+  "knw_1789850849467_8n0ut": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850849467_8n0ut",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:47:29.467Z",
+        "updatedAt": "2026-09-19T20:47:29.467Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:29.467Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850849467_8n0ut",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:47:29.467Z",
+        "updatedAt": "2026-09-19T20:47:29.468Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:29.468Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789850849467_8n0ut",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T20:47:29.467Z",
+        "updatedAt": "2026-09-19T20:47:29.469Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:29.469Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850849470_m6xko": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850849470_m6xko",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T20:47:19.470Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:47:29.470Z",
+        "updatedAt": "2026-09-19T20:47:29.470Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:29.470Z"
+    }
+  ],
+  "knw_1789850876545_or2ni": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850876545_or2ni",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:47:56.545Z",
+        "updatedAt": "2026-09-19T20:47:56.545Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:56.545Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850876545_or2ni",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:47:56.545Z",
+        "updatedAt": "2026-09-19T20:47:56.552Z"
+      },
+      "snapshotAt": "2026-09-19T20:47:56.552Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850906309_9yxa3": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850906309_9yxa3",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:48:26.309Z",
+        "updatedAt": "2026-09-19T20:48:26.309Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:26.309Z"
+    }
+  ],
+  "knw_1789850906310_w1qnb": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850906310_w1qnb",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:48:26.310Z",
+        "updatedAt": "2026-09-19T20:48:26.310Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:26.310Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850906310_w1qnb",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:48:26.310Z",
+        "updatedAt": "2026-09-19T20:48:26.311Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:26.311Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789850906310_w1qnb",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T20:48:26.310Z",
+        "updatedAt": "2026-09-19T20:48:26.312Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:26.312Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789850906313_lrfrf": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850906313_lrfrf",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T20:48:16.313Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:48:26.313Z",
+        "updatedAt": "2026-09-19T20:48:26.313Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:26.313Z"
+    }
+  ],
+  "knw_1789850938543_5u7lf": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789850938543_5u7lf",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T20:48:58.543Z",
+        "updatedAt": "2026-09-19T20:48:58.543Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:58.543Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789850938543_5u7lf",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T20:48:58.543Z",
+        "updatedAt": "2026-09-19T20:48:58.549Z"
+      },
+      "snapshotAt": "2026-09-19T20:48:58.549Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789851874880_22sie": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789851874880_22sie",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:04:34.880Z",
+        "updatedAt": "2026-09-19T21:04:34.880Z"
+      },
+      "snapshotAt": "2026-09-19T21:04:34.880Z"
+    }
+  ],
+  "knw_1789851874882_797ii": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789851874882_797ii",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:04:34.882Z",
+        "updatedAt": "2026-09-19T21:04:34.882Z"
+      },
+      "snapshotAt": "2026-09-19T21:04:34.882Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789851874882_797ii",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:04:34.882Z",
+        "updatedAt": "2026-09-19T21:04:34.884Z"
+      },
+      "snapshotAt": "2026-09-19T21:04:34.884Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789851874882_797ii",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T21:04:34.882Z",
+        "updatedAt": "2026-09-19T21:04:34.885Z"
+      },
+      "snapshotAt": "2026-09-19T21:04:34.885Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789851874886_idync": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789851874886_idync",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:04:24.886Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:04:34.886Z",
+        "updatedAt": "2026-09-19T21:04:34.886Z"
+      },
+      "snapshotAt": "2026-09-19T21:04:34.886Z"
+    }
+  ],
+  "knw_1789851910472_y2k03": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789851910472_y2k03",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:05:10.472Z",
+        "updatedAt": "2026-09-19T21:05:10.472Z"
+      },
+      "snapshotAt": "2026-09-19T21:05:10.472Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789851910472_y2k03",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:05:10.472Z",
+        "updatedAt": "2026-09-19T21:05:10.478Z"
+      },
+      "snapshotAt": "2026-09-19T21:05:10.478Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789852280161_tcrpu": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852280161_tcrpu",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:11:20.161Z",
+        "updatedAt": "2026-09-19T21:11:20.161Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:20.161Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789852280161_tcrpu",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:11:20.161Z",
+        "updatedAt": "2026-09-19T21:11:20.168Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:20.168Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789852292924_na6is": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852292924_na6is",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:11:32.924Z",
+        "updatedAt": "2026-09-19T21:11:32.924Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:32.924Z"
+    }
+  ],
+  "knw_1789852292927_w71pb": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852292927_w71pb",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:11:32.927Z",
+        "updatedAt": "2026-09-19T21:11:32.927Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:32.927Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789852292927_w71pb",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:11:32.927Z",
+        "updatedAt": "2026-09-19T21:11:32.928Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:32.928Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789852292927_w71pb",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T21:11:32.927Z",
+        "updatedAt": "2026-09-19T21:11:32.930Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:32.930Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789852292931_qt54k": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852292931_qt54k",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:11:22.931Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:11:32.931Z",
+        "updatedAt": "2026-09-19T21:11:32.931Z"
+      },
+      "snapshotAt": "2026-09-19T21:11:32.931Z"
+    }
+  ],
+  "knw_1789852497646_5e6w2": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852497646_5e6w2",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:14:57.646Z",
+        "updatedAt": "2026-09-19T21:14:57.646Z"
+      },
+      "snapshotAt": "2026-09-19T21:14:57.646Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789852497646_5e6w2",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:14:57.646Z",
+        "updatedAt": "2026-09-19T21:14:57.653Z"
+      },
+      "snapshotAt": "2026-09-19T21:14:57.653Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789852530162_pjuys": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852530162_pjuys",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:15:30.162Z",
+        "updatedAt": "2026-09-19T21:15:30.162Z"
+      },
+      "snapshotAt": "2026-09-19T21:15:30.162Z"
+    }
+  ],
+  "knw_1789852530164_etu37": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852530164_etu37",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:15:30.164Z",
+        "updatedAt": "2026-09-19T21:15:30.164Z"
+      },
+      "snapshotAt": "2026-09-19T21:15:30.164Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789852530164_etu37",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:15:30.164Z",
+        "updatedAt": "2026-09-19T21:15:30.166Z"
+      },
+      "snapshotAt": "2026-09-19T21:15:30.166Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789852530164_etu37",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T21:15:30.164Z",
+        "updatedAt": "2026-09-19T21:15:30.168Z"
+      },
+      "snapshotAt": "2026-09-19T21:15:30.168Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789852530171_nps8h": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852530171_nps8h",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:15:20.171Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:15:30.171Z",
+        "updatedAt": "2026-09-19T21:15:30.171Z"
+      },
+      "snapshotAt": "2026-09-19T21:15:30.171Z"
+    }
+  ],
+  "knw_1789852564297_k6g9a": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789852564297_k6g9a",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:16:04.297Z",
+        "updatedAt": "2026-09-19T21:16:04.297Z"
+      },
+      "snapshotAt": "2026-09-19T21:16:04.297Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789852564297_k6g9a",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:16:04.297Z",
+        "updatedAt": "2026-09-19T21:16:04.306Z"
+      },
+      "snapshotAt": "2026-09-19T21:16:04.306Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789853280578_66rtc": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853280578_66rtc",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:28:00.578Z",
+        "updatedAt": "2026-09-19T21:28:00.578Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:00.578Z"
+    }
+  ],
+  "knw_1789853280580_v0eor": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853280580_v0eor",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:28:00.580Z",
+        "updatedAt": "2026-09-19T21:28:00.580Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:00.580Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789853280580_v0eor",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:28:00.580Z",
+        "updatedAt": "2026-09-19T21:28:00.581Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:00.581Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789853280580_v0eor",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T21:28:00.580Z",
+        "updatedAt": "2026-09-19T21:28:00.583Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:00.583Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789853280584_5xj4h": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853280584_5xj4h",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:27:50.584Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:28:00.584Z",
+        "updatedAt": "2026-09-19T21:28:00.584Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:00.584Z"
+    }
+  ],
+  "knw_1789853311929_gfwn1": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853311929_gfwn1",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:28:31.929Z",
+        "updatedAt": "2026-09-19T21:28:31.929Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:31.929Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789853311929_gfwn1",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:28:31.929Z",
+        "updatedAt": "2026-09-19T21:28:31.936Z"
+      },
+      "snapshotAt": "2026-09-19T21:28:31.936Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789853371346_c8dv6": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853371346_c8dv6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:29:31.346Z",
+        "updatedAt": "2026-09-19T21:29:31.346Z"
+      },
+      "snapshotAt": "2026-09-19T21:29:31.346Z"
+    }
+  ],
+  "knw_1789853371348_fn93l": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853371348_fn93l",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:29:31.348Z",
+        "updatedAt": "2026-09-19T21:29:31.348Z"
+      },
+      "snapshotAt": "2026-09-19T21:29:31.348Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789853371348_fn93l",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:29:31.348Z",
+        "updatedAt": "2026-09-19T21:29:31.349Z"
+      },
+      "snapshotAt": "2026-09-19T21:29:31.349Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789853371348_fn93l",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T21:29:31.348Z",
+        "updatedAt": "2026-09-19T21:29:31.351Z"
+      },
+      "snapshotAt": "2026-09-19T21:29:31.351Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789853371352_l0mpq": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853371352_l0mpq",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:29:21.352Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:29:31.352Z",
+        "updatedAt": "2026-09-19T21:29:31.352Z"
+      },
+      "snapshotAt": "2026-09-19T21:29:31.352Z"
+    }
+  ],
+  "knw_1789853475021_crhe4": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853475021_crhe4",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:31:05.021Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:31:15.021Z",
+        "updatedAt": "2026-09-19T21:31:15.021Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:15.021Z"
+    }
+  ],
+  "knw_1789853481164_vyuoc": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853481164_vyuoc",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:31:21.164Z",
+        "updatedAt": "2026-09-19T21:31:21.164Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:21.164Z"
+    }
+  ],
+  "knw_1789853481166_ys1rt": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853481166_ys1rt",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:31:21.166Z",
+        "updatedAt": "2026-09-19T21:31:21.166Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:21.166Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789853481166_ys1rt",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:31:21.166Z",
+        "updatedAt": "2026-09-19T21:31:21.168Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:21.168Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789853481166_ys1rt",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T21:31:21.166Z",
+        "updatedAt": "2026-09-19T21:31:21.169Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:21.169Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789853481171_wxiw4": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853481171_wxiw4",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:31:11.171Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:31:21.171Z",
+        "updatedAt": "2026-09-19T21:31:21.171Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:21.171Z"
+    }
+  ],
+  "knw_1789853492520_kkyoe": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853492520_kkyoe",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:31:32.520Z",
+        "updatedAt": "2026-09-19T21:31:32.520Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:32.520Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789853492520_kkyoe",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "API Test Doc",
+        "content": "Contenuto informativo API v1",
+        "keywords": [
+          "api",
+          "test"
+        ],
+        "source": "dashboard",
+        "author": "Staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T21:31:32.520Z",
+        "updatedAt": "2026-09-19T21:31:32.531Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:32.531Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789853501000_kyb6f": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853501000_kyb6f",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:31:31.000Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:31:41.000Z",
+        "updatedAt": "2026-09-19T21:31:41.000Z"
+      },
+      "snapshotAt": "2026-09-19T21:31:41.000Z"
+    }
+  ],
+  "knw_1789853547644_hlrz9": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789853547644_hlrz9",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T21:32:17.644Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T21:32:27.644Z",
+        "updatedAt": "2026-09-19T21:32:27.644Z"
+      },
+      "snapshotAt": "2026-09-19T21:32:27.644Z"
+    }
+  ],
+  "knw_1789856776379_b0oqn": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789856776379_b0oqn",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:26:16.379Z",
+        "updatedAt": "2026-09-19T22:26:16.379Z"
+      },
+      "snapshotAt": "2026-09-19T22:26:16.379Z"
+    }
+  ],
+  "knw_1789856776382_wdkys": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789856776382_wdkys",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:26:16.382Z",
+        "updatedAt": "2026-09-19T22:26:16.382Z"
+      },
+      "snapshotAt": "2026-09-19T22:26:16.382Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789856776382_wdkys",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T22:26:16.382Z",
+        "updatedAt": "2026-09-19T22:26:16.383Z"
+      },
+      "snapshotAt": "2026-09-19T22:26:16.383Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789856776382_wdkys",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T22:26:16.382Z",
+        "updatedAt": "2026-09-19T22:26:16.384Z"
+      },
+      "snapshotAt": "2026-09-19T22:26:16.384Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789856776387_n2ciy": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789856776387_n2ciy",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T22:26:06.387Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:26:16.387Z",
+        "updatedAt": "2026-09-19T22:26:16.387Z"
+      },
+      "snapshotAt": "2026-09-19T22:26:16.387Z"
+    }
+  ],
+  "knw_1789858263502_ddfr4": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858263502_ddfr4",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T22:50:53.502Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:51:03.502Z",
+        "updatedAt": "2026-09-19T22:51:03.502Z"
+      },
+      "snapshotAt": "2026-09-19T22:51:03.502Z"
+    }
+  ],
+  "knw_1789858305062_2rflv": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858305062_2rflv",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:51:45.062Z",
+        "updatedAt": "2026-09-19T22:51:45.062Z"
+      },
+      "snapshotAt": "2026-09-19T22:51:45.062Z"
+    }
+  ],
+  "knw_1789858305065_sjlj5": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858305065_sjlj5",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:51:45.065Z",
+        "updatedAt": "2026-09-19T22:51:45.065Z"
+      },
+      "snapshotAt": "2026-09-19T22:51:45.065Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789858305065_sjlj5",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T22:51:45.065Z",
+        "updatedAt": "2026-09-19T22:51:45.067Z"
+      },
+      "snapshotAt": "2026-09-19T22:51:45.067Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789858305065_sjlj5",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T22:51:45.065Z",
+        "updatedAt": "2026-09-19T22:51:45.068Z"
+      },
+      "snapshotAt": "2026-09-19T22:51:45.068Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789858305069_q3866": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858305069_q3866",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T22:51:35.069Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:51:45.069Z",
+        "updatedAt": "2026-09-19T22:51:45.069Z"
+      },
+      "snapshotAt": "2026-09-19T22:51:45.069Z"
+    }
+  ],
+  "knw_1789858603980_jppxx": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858603980_jppxx",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T22:56:33.980Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:56:43.980Z",
+        "updatedAt": "2026-09-19T22:56:43.980Z"
+      },
+      "snapshotAt": "2026-09-19T22:56:43.980Z"
+    }
+  ],
+  "knw_1789858608182_p880t": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858608182_p880t",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:56:48.182Z",
+        "updatedAt": "2026-09-19T22:56:48.182Z"
+      },
+      "snapshotAt": "2026-09-19T22:56:48.182Z"
+    }
+  ],
+  "knw_1789858608186_n01jz": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858608186_n01jz",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:56:48.186Z",
+        "updatedAt": "2026-09-19T22:56:48.186Z"
+      },
+      "snapshotAt": "2026-09-19T22:56:48.186Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789858608186_n01jz",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T22:56:48.186Z",
+        "updatedAt": "2026-09-19T22:56:48.187Z"
+      },
+      "snapshotAt": "2026-09-19T22:56:48.187Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789858608186_n01jz",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T22:56:48.186Z",
+        "updatedAt": "2026-09-19T22:56:48.189Z"
+      },
+      "snapshotAt": "2026-09-19T22:56:48.189Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789858608191_soh66": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789858608191_soh66",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T22:56:38.191Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T22:56:48.191Z",
+        "updatedAt": "2026-09-19T22:56:48.191Z"
+      },
+      "snapshotAt": "2026-09-19T22:56:48.191Z"
+    }
+  ],
+  "knw_1789859349044_iugbe": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859349044_iugbe",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T23:08:59.044Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:09:09.044Z",
+        "updatedAt": "2026-09-19T23:09:09.044Z"
+      },
+      "snapshotAt": "2026-09-19T23:09:09.044Z"
+    }
+  ],
+  "knw_1789859389356_1wv8e": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859389356_1wv8e",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:09:49.356Z",
+        "updatedAt": "2026-09-19T23:09:49.356Z"
+      },
+      "snapshotAt": "2026-09-19T23:09:49.356Z"
+    }
+  ],
+  "knw_1789859389359_zrg18": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859389359_zrg18",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:09:49.359Z",
+        "updatedAt": "2026-09-19T23:09:49.359Z"
+      },
+      "snapshotAt": "2026-09-19T23:09:49.359Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789859389359_zrg18",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T23:09:49.359Z",
+        "updatedAt": "2026-09-19T23:09:49.360Z"
+      },
+      "snapshotAt": "2026-09-19T23:09:49.360Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789859389359_zrg18",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T23:09:49.359Z",
+        "updatedAt": "2026-09-19T23:09:49.361Z"
+      },
+      "snapshotAt": "2026-09-19T23:09:49.361Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789859389362_ds8l2": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859389362_ds8l2",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T23:09:39.362Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:09:49.362Z",
+        "updatedAt": "2026-09-19T23:09:49.362Z"
+      },
+      "snapshotAt": "2026-09-19T23:09:49.362Z"
+    }
+  ],
+  "knw_1789859621604_b8jiw": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859621604_b8jiw",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:13:41.604Z",
+        "updatedAt": "2026-09-19T23:13:41.604Z"
+      },
+      "snapshotAt": "2026-09-19T23:13:41.604Z"
+    }
+  ],
+  "knw_1789859621607_2n2nm": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859621607_2n2nm",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:13:41.607Z",
+        "updatedAt": "2026-09-19T23:13:41.607Z"
+      },
+      "snapshotAt": "2026-09-19T23:13:41.607Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789859621607_2n2nm",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T23:13:41.607Z",
+        "updatedAt": "2026-09-19T23:13:41.608Z"
+      },
+      "snapshotAt": "2026-09-19T23:13:41.608Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789859621607_2n2nm",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T23:13:41.607Z",
+        "updatedAt": "2026-09-19T23:13:41.610Z"
+      },
+      "snapshotAt": "2026-09-19T23:13:41.610Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789859621611_a04d7": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789859621611_a04d7",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T23:13:31.611Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:13:41.611Z",
+        "updatedAt": "2026-09-19T23:13:41.611Z"
+      },
+      "snapshotAt": "2026-09-19T23:13:41.611Z"
+    }
+  ],
+  "knw_1789860133499_tksqd": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789860133499_tksqd",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:22:13.499Z",
+        "updatedAt": "2026-09-19T23:22:13.499Z"
+      },
+      "snapshotAt": "2026-09-19T23:22:13.499Z"
+    }
+  ],
+  "knw_1789860133501_0lx72": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789860133501_0lx72",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:22:13.501Z",
+        "updatedAt": "2026-09-19T23:22:13.501Z"
+      },
+      "snapshotAt": "2026-09-19T23:22:13.501Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789860133501_0lx72",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-19T23:22:13.501Z",
+        "updatedAt": "2026-09-19T23:22:13.503Z"
+      },
+      "snapshotAt": "2026-09-19T23:22:13.503Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789860133501_0lx72",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-19T23:22:13.501Z",
+        "updatedAt": "2026-09-19T23:22:13.505Z"
+      },
+      "snapshotAt": "2026-09-19T23:22:13.505Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789860133507_p6xt6": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789860133507_p6xt6",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-19T23:22:03.507Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-19T23:22:13.507Z",
+        "updatedAt": "2026-09-19T23:22:13.507Z"
+      },
+      "snapshotAt": "2026-09-19T23:22:13.507Z"
+    }
+  ],
+  "knw_1789898327676_qvq1u": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898327676_qvq1u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T09:58:47.676Z",
+        "updatedAt": "2026-09-20T09:58:47.676Z"
+      },
+      "snapshotAt": "2026-09-20T09:58:47.676Z"
+    }
+  ],
+  "knw_1789898327677_cxn72": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898327677_cxn72",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T09:58:47.677Z",
+        "updatedAt": "2026-09-20T09:58:47.677Z"
+      },
+      "snapshotAt": "2026-09-20T09:58:47.677Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789898327677_cxn72",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T09:58:47.677Z",
+        "updatedAt": "2026-09-20T09:58:47.679Z"
+      },
+      "snapshotAt": "2026-09-20T09:58:47.679Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789898327677_cxn72",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T09:58:47.677Z",
+        "updatedAt": "2026-09-20T09:58:47.680Z"
+      },
+      "snapshotAt": "2026-09-20T09:58:47.680Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789898327681_qiyjr": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898327681_qiyjr",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T09:58:37.681Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T09:58:47.681Z",
+        "updatedAt": "2026-09-20T09:58:47.681Z"
+      },
+      "snapshotAt": "2026-09-20T09:58:47.681Z"
+    }
+  ],
+  "knw_1789898369110_6rglu": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898369110_6rglu",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T09:59:19.110Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T09:59:29.110Z",
+        "updatedAt": "2026-09-20T09:59:29.110Z"
+      },
+      "snapshotAt": "2026-09-20T09:59:29.110Z"
+    }
+  ],
+  "knw_1789898647117_ml4i2": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898647117_ml4i2",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:04:07.117Z",
+        "updatedAt": "2026-09-20T10:04:07.117Z"
+      },
+      "snapshotAt": "2026-09-20T10:04:07.117Z"
+    }
+  ],
+  "knw_1789898647120_8ea6x": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898647120_8ea6x",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:04:07.120Z",
+        "updatedAt": "2026-09-20T10:04:07.120Z"
+      },
+      "snapshotAt": "2026-09-20T10:04:07.120Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789898647120_8ea6x",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T10:04:07.120Z",
+        "updatedAt": "2026-09-20T10:04:07.122Z"
+      },
+      "snapshotAt": "2026-09-20T10:04:07.122Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789898647120_8ea6x",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T10:04:07.120Z",
+        "updatedAt": "2026-09-20T10:04:07.123Z"
+      },
+      "snapshotAt": "2026-09-20T10:04:07.123Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789898647125_dm5m9": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898647125_dm5m9",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:03:57.124Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:04:07.125Z",
+        "updatedAt": "2026-09-20T10:04:07.125Z"
+      },
+      "snapshotAt": "2026-09-20T10:04:07.125Z"
+    }
+  ],
+  "knw_1789898671880_j2jkg": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898671880_j2jkg",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:04:21.880Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:04:31.880Z",
+        "updatedAt": "2026-09-20T10:04:31.880Z"
+      },
+      "snapshotAt": "2026-09-20T10:04:31.880Z"
+    }
+  ],
+  "knw_1789898844935_qn8z9": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898844935_qn8z9",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:07:24.935Z",
+        "updatedAt": "2026-09-20T10:07:24.935Z"
+      },
+      "snapshotAt": "2026-09-20T10:07:24.935Z"
+    }
+  ],
+  "knw_1789898844936_jplyj": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898844936_jplyj",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:07:24.936Z",
+        "updatedAt": "2026-09-20T10:07:24.936Z"
+      },
+      "snapshotAt": "2026-09-20T10:07:24.936Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789898844936_jplyj",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T10:07:24.936Z",
+        "updatedAt": "2026-09-20T10:07:24.939Z"
+      },
+      "snapshotAt": "2026-09-20T10:07:24.939Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789898844936_jplyj",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T10:07:24.936Z",
+        "updatedAt": "2026-09-20T10:07:24.940Z"
+      },
+      "snapshotAt": "2026-09-20T10:07:24.940Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789898844941_1ch43": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898844941_1ch43",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:07:14.941Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:07:24.941Z",
+        "updatedAt": "2026-09-20T10:07:24.941Z"
+      },
+      "snapshotAt": "2026-09-20T10:07:24.941Z"
+    }
+  ],
+  "knw_1789898864401_icoxn": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898864401_icoxn",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:07:34.401Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:07:44.401Z",
+        "updatedAt": "2026-09-20T10:07:44.401Z"
+      },
+      "snapshotAt": "2026-09-20T10:07:44.401Z"
+    }
+  ],
+  "knw_1789898930355_jrmbz": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898930355_jrmbz",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:08:50.355Z",
+        "updatedAt": "2026-09-20T10:08:50.355Z"
+      },
+      "snapshotAt": "2026-09-20T10:08:50.355Z"
+    }
+  ],
+  "knw_1789898930357_h1eec": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898930357_h1eec",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:08:50.357Z",
+        "updatedAt": "2026-09-20T10:08:50.357Z"
+      },
+      "snapshotAt": "2026-09-20T10:08:50.357Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789898930357_h1eec",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T10:08:50.357Z",
+        "updatedAt": "2026-09-20T10:08:50.358Z"
+      },
+      "snapshotAt": "2026-09-20T10:08:50.358Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789898930357_h1eec",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T10:08:50.357Z",
+        "updatedAt": "2026-09-20T10:08:50.359Z"
+      },
+      "snapshotAt": "2026-09-20T10:08:50.359Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789898930361_p4kwp": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898930361_p4kwp",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:08:40.361Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:08:50.361Z",
+        "updatedAt": "2026-09-20T10:08:50.361Z"
+      },
+      "snapshotAt": "2026-09-20T10:08:50.361Z"
+    }
+  ],
+  "knw_1789898977420_2lz0r": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789898977420_2lz0r",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:09:27.420Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:09:37.420Z",
+        "updatedAt": "2026-09-20T10:09:37.420Z"
+      },
+      "snapshotAt": "2026-09-20T10:09:37.420Z"
+    }
+  ],
+  "knw_1789899608289_n6fgb": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899608289_n6fgb",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:20:08.289Z",
+        "updatedAt": "2026-09-20T10:20:08.289Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:08.289Z"
+    }
+  ],
+  "knw_1789899617177_10axm": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899617177_10axm",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:20:17.177Z",
+        "updatedAt": "2026-09-20T10:20:17.177Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:17.177Z"
+    }
+  ],
+  "knw_1789899636902_qzlzv": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899636902_qzlzv",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:20:36.902Z",
+        "updatedAt": "2026-09-20T10:20:36.902Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:36.902Z"
+    }
+  ],
+  "knw_1789899636904_7hpxs": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899636904_7hpxs",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:20:36.904Z",
+        "updatedAt": "2026-09-20T10:20:36.904Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:36.904Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789899636904_7hpxs",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T10:20:36.904Z",
+        "updatedAt": "2026-09-20T10:20:36.905Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:36.905Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789899636904_7hpxs",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T10:20:36.904Z",
+        "updatedAt": "2026-09-20T10:20:36.906Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:36.906Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789899636907_pqg0g": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899636907_pqg0g",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:20:26.907Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:20:36.907Z",
+        "updatedAt": "2026-09-20T10:20:36.907Z"
+      },
+      "snapshotAt": "2026-09-20T10:20:36.907Z"
+    }
+  ],
+  "knw_1789899683828_qancq": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899683828_qancq",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:21:13.828Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:21:23.828Z",
+        "updatedAt": "2026-09-20T10:21:23.828Z"
+      },
+      "snapshotAt": "2026-09-20T10:21:23.828Z"
+    }
+  ],
+  "knw_1789899759138_i2ech": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899759138_i2ech",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:22:39.138Z",
+        "updatedAt": "2026-09-20T10:22:39.138Z"
+      },
+      "snapshotAt": "2026-09-20T10:22:39.138Z"
+    }
+  ],
+  "knw_1789899808161_i41ht": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899808161_i41ht",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:23:28.161Z",
+        "updatedAt": "2026-09-20T10:23:28.161Z"
+      },
+      "snapshotAt": "2026-09-20T10:23:28.161Z"
+    }
+  ],
+  "knw_1789899865881_ol5xp": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899865881_ol5xp",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:24:25.881Z",
+        "updatedAt": "2026-09-20T10:24:25.881Z"
+      },
+      "snapshotAt": "2026-09-20T10:24:25.881Z"
+    }
+  ],
+  "knw_1789899880925_nayq7": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899880925_nayq7",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:24:40.925Z",
+        "updatedAt": "2026-09-20T10:24:40.925Z"
+      },
+      "snapshotAt": "2026-09-20T10:24:40.925Z"
+    }
+  ],
+  "knw_1789899902916_vyihh": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899902916_vyihh",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:25:02.916Z",
+        "updatedAt": "2026-09-20T10:25:02.916Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:02.916Z"
+    }
+  ],
+  "knw_1789899902918_osqe6": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899902918_osqe6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:25:02.918Z",
+        "updatedAt": "2026-09-20T10:25:02.918Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:02.918Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789899902918_osqe6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T10:25:02.918Z",
+        "updatedAt": "2026-09-20T10:25:02.919Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:02.919Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789899902918_osqe6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T10:25:02.918Z",
+        "updatedAt": "2026-09-20T10:25:02.920Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:02.920Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789899902922_01bps": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899902922_01bps",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:24:52.922Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:25:02.922Z",
+        "updatedAt": "2026-09-20T10:25:02.922Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:02.922Z"
+    }
+  ],
+  "knw_1789899924208_9zi3j": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899924208_9zi3j",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:25:14.208Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:25:24.208Z",
+        "updatedAt": "2026-09-20T10:25:24.208Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:24.208Z"
+    }
+  ],
+  "knw_1789899935981_tgmvg": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899935981_tgmvg",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:25:35.981Z",
+        "updatedAt": "2026-09-20T10:25:35.981Z"
+      },
+      "snapshotAt": "2026-09-20T10:25:35.981Z"
+    }
+  ],
+  "knw_1789899967923_c8kfl": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899967923_c8kfl",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:26:07.923Z",
+        "updatedAt": "2026-09-20T10:26:07.923Z"
+      },
+      "snapshotAt": "2026-09-20T10:26:07.923Z"
+    }
+  ],
+  "knw_1789899981145_0dery": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789899981145_0dery",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:26:21.145Z",
+        "updatedAt": "2026-09-20T10:26:21.145Z"
+      },
+      "snapshotAt": "2026-09-20T10:26:21.145Z"
+    }
+  ],
+  "knw_1789900034352_bv1wm": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900034352_bv1wm",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:27:14.352Z",
+        "updatedAt": "2026-09-20T10:27:14.352Z"
+      },
+      "snapshotAt": "2026-09-20T10:27:14.352Z"
+    }
+  ],
+  "knw_1789900053069_aud9l": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900053069_aud9l",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:27:33.069Z",
+        "updatedAt": "2026-09-20T10:27:33.069Z"
+      },
+      "snapshotAt": "2026-09-20T10:27:33.069Z"
+    }
+  ],
+  "knw_1789900103240_sus45": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900103240_sus45",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:28:23.240Z",
+        "updatedAt": "2026-09-20T10:28:23.240Z"
+      },
+      "snapshotAt": "2026-09-20T10:28:23.240Z"
+    }
+  ],
+  "knw_1789900165467_ip577": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900165467_ip577",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:29:25.467Z",
+        "updatedAt": "2026-09-20T10:29:25.467Z"
+      },
+      "snapshotAt": "2026-09-20T10:29:25.467Z"
+    }
+  ],
+  "knw_1789900177802_60x18": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900177802_60x18",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:29:37.802Z",
+        "updatedAt": "2026-09-20T10:29:37.802Z"
+      },
+      "snapshotAt": "2026-09-20T10:29:37.802Z"
+    }
+  ],
+  "knw_1789900188045_vb1vu": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900188045_vb1vu",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:29:48.045Z",
+        "updatedAt": "2026-09-20T10:29:48.045Z"
+      },
+      "snapshotAt": "2026-09-20T10:29:48.045Z"
+    }
+  ],
+  "knw_1789900208981_ukz8b": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900208981_ukz8b",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:30:08.981Z",
+        "updatedAt": "2026-09-20T10:30:08.981Z"
+      },
+      "snapshotAt": "2026-09-20T10:30:08.981Z"
+    }
+  ],
+  "knw_1789900208983_u9ls1": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900208983_u9ls1",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:30:08.983Z",
+        "updatedAt": "2026-09-20T10:30:08.983Z"
+      },
+      "snapshotAt": "2026-09-20T10:30:08.983Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789900208983_u9ls1",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T10:30:08.983Z",
+        "updatedAt": "2026-09-20T10:30:08.984Z"
+      },
+      "snapshotAt": "2026-09-20T10:30:08.984Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789900208983_u9ls1",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T10:30:08.983Z",
+        "updatedAt": "2026-09-20T10:30:08.985Z"
+      },
+      "snapshotAt": "2026-09-20T10:30:08.985Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789900208987_6oime": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900208987_6oime",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:29:58.987Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:30:08.987Z",
+        "updatedAt": "2026-09-20T10:30:08.987Z"
+      },
+      "snapshotAt": "2026-09-20T10:30:08.987Z"
+    }
+  ],
+  "knw_1789900222213_113oa": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789900222213_113oa",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T10:30:12.213Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:30:22.213Z",
+        "updatedAt": "2026-09-20T10:30:22.213Z"
+      },
+      "snapshotAt": "2026-09-20T10:30:22.213Z"
+    }
+  ],
+  "knw_1789901793910_xf1ek": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789901793910_xf1ek",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola Sicurezza Test",
+        "content": "Nessun raid o spam consentito.",
+        "keywords": [
+          "raid",
+          "spam",
+          "sicurezza"
+        ],
+        "source": "dashboard",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T10:56:33.910Z",
+        "updatedAt": "2026-09-20T10:56:33.910Z"
+      },
+      "snapshotAt": "2026-09-20T10:56:33.910Z"
+    }
+  ],
+  "knw_1789902116413_hbbga": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789902116413_hbbga",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola Sicurezza Test",
+        "content": "Nessun raid o spam consentito.",
+        "keywords": [
+          "raid",
+          "spam",
+          "sicurezza"
+        ],
+        "source": "dashboard",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T11:01:56.413Z",
+        "updatedAt": "2026-09-20T11:01:56.413Z"
+      },
+      "snapshotAt": "2026-09-20T11:01:56.413Z"
+    }
+  ],
+  "knw_1789902237197_35wdy": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789902237197_35wdy",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola Sicurezza Test",
+        "content": "Nessun raid o spam consentito.",
+        "keywords": [
+          "raid",
+          "spam",
+          "sicurezza"
+        ],
+        "source": "dashboard",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T11:03:57.197Z",
+        "updatedAt": "2026-09-20T11:03:57.197Z"
+      },
+      "snapshotAt": "2026-09-20T11:03:57.197Z"
+    }
+  ],
+  "knw_1789902294718_nd0dw": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789902294718_nd0dw",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola Sicurezza Test",
+        "content": "Nessun raid o spam consentito.",
+        "keywords": [
+          "raid",
+          "spam",
+          "sicurezza"
+        ],
+        "source": "dashboard",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T11:04:54.718Z",
+        "updatedAt": "2026-09-20T11:04:54.718Z"
+      },
+      "snapshotAt": "2026-09-20T11:04:54.718Z"
+    }
+  ],
+  "knw_1789911956167_3oq04": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789911956167_3oq04",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:45:56.167Z",
+        "updatedAt": "2026-09-20T13:45:56.167Z"
+      },
+      "snapshotAt": "2026-09-20T13:45:56.167Z"
+    }
+  ],
+  "knw_1789911974905_fccle": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789911974905_fccle",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:46:14.905Z",
+        "updatedAt": "2026-09-20T13:46:14.905Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:14.905Z"
+    }
+  ],
+  "knw_1789911975032_a2zgr": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789911975032_a2zgr",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:46:15.032Z",
+        "updatedAt": "2026-09-20T13:46:15.032Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:15.032Z"
+    }
+  ],
+  "knw_1789911975034_4alb3": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789911975034_4alb3",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:46:15.034Z",
+        "updatedAt": "2026-09-20T13:46:15.034Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:15.034Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789911975034_4alb3",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T13:46:15.034Z",
+        "updatedAt": "2026-09-20T13:46:15.035Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:15.035Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789911975034_4alb3",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T13:46:15.034Z",
+        "updatedAt": "2026-09-20T13:46:15.037Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:15.037Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789911975038_wqoo9": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789911975038_wqoo9",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T13:46:05.038Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:46:15.038Z",
+        "updatedAt": "2026-09-20T13:46:15.038Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:15.038Z"
+    }
+  ],
+  "knw_1789911981501_3ljfe": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789911981501_3ljfe",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T13:46:11.500Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:46:21.501Z",
+        "updatedAt": "2026-09-20T13:46:21.501Z"
+      },
+      "snapshotAt": "2026-09-20T13:46:21.501Z"
+    }
+  ],
+  "knw_1789912133356_oqb15": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912133356_oqb15",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:48:53.356Z",
+        "updatedAt": "2026-09-20T13:48:53.356Z"
+      },
+      "snapshotAt": "2026-09-20T13:48:53.356Z"
+    }
+  ],
+  "knw_1789912337044_hs4ee": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912337044_hs4ee",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:52:17.044Z",
+        "updatedAt": "2026-09-20T13:52:17.044Z"
+      },
+      "snapshotAt": "2026-09-20T13:52:17.044Z"
+    }
+  ],
+  "knw_1789912386296_jg3yz": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912386296_jg3yz",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:53:06.296Z",
+        "updatedAt": "2026-09-20T13:53:06.296Z"
+      },
+      "snapshotAt": "2026-09-20T13:53:06.296Z"
+    }
+  ],
+  "knw_1789912457800_yq5g4": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912457800_yq5g4",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:17.800Z",
+        "updatedAt": "2026-09-20T13:54:17.800Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:17.800Z"
+    }
+  ],
+  "knw_1789912469915_qq7xk": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912469915_qq7xk",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:29.915Z",
+        "updatedAt": "2026-09-20T13:54:29.915Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:29.915Z"
+    }
+  ],
+  "knw_1789912474736_cac7e": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912474736_cac7e",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:34.736Z",
+        "updatedAt": "2026-09-20T13:54:34.736Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:34.736Z"
+    }
+  ],
+  "knw_1789912474737_zzldl": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912474737_zzldl",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:34.737Z",
+        "updatedAt": "2026-09-20T13:54:34.737Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:34.737Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789912474737_zzldl",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T13:54:34.737Z",
+        "updatedAt": "2026-09-20T13:54:34.739Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:34.739Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789912474737_zzldl",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T13:54:34.737Z",
+        "updatedAt": "2026-09-20T13:54:34.740Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:34.740Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789912474741_stzsc": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912474741_stzsc",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T13:54:24.741Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:34.741Z",
+        "updatedAt": "2026-09-20T13:54:34.741Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:34.741Z"
+    }
+  ],
+  "knw_1789912482316_am3ta": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912482316_am3ta",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T13:54:32.316Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:42.316Z",
+        "updatedAt": "2026-09-20T13:54:42.316Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:42.316Z"
+    }
+  ],
+  "knw_1789912486519_kuxmx": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789912486519_kuxmx",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T13:54:46.519Z",
+        "updatedAt": "2026-09-20T13:54:46.519Z"
+      },
+      "snapshotAt": "2026-09-20T13:54:46.519Z"
+    }
+  ],
+  "knw_1789914806299_m1al4": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914806299_m1al4",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:33:26.299Z",
+        "updatedAt": "2026-09-20T14:33:26.299Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:26.299Z"
+    }
+  ],
+  "knw_1789914817655_89xqa": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914817655_89xqa",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:33:37.655Z",
+        "updatedAt": "2026-09-20T14:33:37.655Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:37.655Z"
+    }
+  ],
+  "knw_1789914820082_ayqr2": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914820082_ayqr2",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:33:40.082Z",
+        "updatedAt": "2026-09-20T14:33:40.082Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:40.082Z"
+    }
+  ],
+  "knw_1789914820083_l989u": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914820083_l989u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:33:40.083Z",
+        "updatedAt": "2026-09-20T14:33:40.083Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:40.083Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789914820083_l989u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T14:33:40.083Z",
+        "updatedAt": "2026-09-20T14:33:40.085Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:40.085Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789914820083_l989u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T14:33:40.083Z",
+        "updatedAt": "2026-09-20T14:33:40.086Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:40.086Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789914820087_0nvlo": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914820087_0nvlo",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T14:33:30.087Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:33:40.087Z",
+        "updatedAt": "2026-09-20T14:33:40.087Z"
+      },
+      "snapshotAt": "2026-09-20T14:33:40.087Z"
+    }
+  ],
+  "knw_1789914958823_9hp4u": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914958823_9hp4u",
+        "guildId": "guild_remake_test_123",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da samuelecosso",
+        "content": "uno screenshot chiaro della schermata di errore",
+        "keywords": [
+          "support",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "samuelecosso",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:35:58.823Z",
+        "updatedAt": "2026-09-20T14:35:58.823Z"
+      },
+      "snapshotAt": "2026-09-20T14:35:58.823Z"
+    }
+  ],
+  "knw_1789914963894_zj3zt": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914963894_zj3zt",
+        "guildId": "111111111111111111",
+        "category": "SERVER_FAQ",
+        "title": "Temporaneo scaduto",
+        "content": "Questo documento deve essere rimosso",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T14:35:53.894Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:36:03.894Z",
+        "updatedAt": "2026-09-20T14:36:03.894Z"
+      },
+      "snapshotAt": "2026-09-20T14:36:03.894Z"
+    }
+  ],
+  "knw_1789914964000_h03z3": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914964000_h03z3",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:36:04.000Z",
+        "updatedAt": "2026-09-20T14:36:04.000Z"
+      },
+      "snapshotAt": "2026-09-20T14:36:04.000Z"
+    }
+  ],
+  "knw_1789914964002_y1mkp": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914964002_y1mkp",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:36:04.002Z",
+        "updatedAt": "2026-09-20T14:36:04.002Z"
+      },
+      "snapshotAt": "2026-09-20T14:36:04.002Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789914964002_y1mkp",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T14:36:04.002Z",
+        "updatedAt": "2026-09-20T14:36:04.003Z"
+      },
+      "snapshotAt": "2026-09-20T14:36:04.003Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789914964002_y1mkp",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T14:36:04.002Z",
+        "updatedAt": "2026-09-20T14:36:04.004Z"
+      },
+      "snapshotAt": "2026-09-20T14:36:04.004Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789914964006_9y54v": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789914964006_9y54v",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T14:35:54.006Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T14:36:04.006Z",
+        "updatedAt": "2026-09-20T14:36:04.006Z"
+      },
+      "snapshotAt": "2026-09-20T14:36:04.006Z"
+    }
+  ],
+  "knw_1789926292202_p8zs8": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789926292202_p8zs8",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T17:44:52.202Z",
+        "updatedAt": "2026-09-20T17:44:52.202Z"
+      },
+      "snapshotAt": "2026-09-20T17:44:52.202Z"
+    }
+  ],
+  "knw_1789926292204_6cqeu": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789926292204_6cqeu",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T17:44:52.204Z",
+        "updatedAt": "2026-09-20T17:44:52.204Z"
+      },
+      "snapshotAt": "2026-09-20T17:44:52.204Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789926292204_6cqeu",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T17:44:52.204Z",
+        "updatedAt": "2026-09-20T17:44:52.206Z"
+      },
+      "snapshotAt": "2026-09-20T17:44:52.206Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789926292204_6cqeu",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T17:44:52.204Z",
+        "updatedAt": "2026-09-20T17:44:52.208Z"
+      },
+      "snapshotAt": "2026-09-20T17:44:52.208Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789926292209_c7u7o": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789926292209_c7u7o",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T17:44:42.209Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T17:44:52.209Z",
+        "updatedAt": "2026-09-20T17:44:52.209Z"
+      },
+      "snapshotAt": "2026-09-20T17:44:52.209Z"
+    }
+  ],
+  "knw_1789937190999_7xbd7": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789937190999_7xbd7",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T20:46:30.999Z",
+        "updatedAt": "2026-09-20T20:46:30.999Z"
+      },
+      "snapshotAt": "2026-09-20T20:46:30.999Z"
+    }
+  ],
+  "knw_1789937191001_vwjdm": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789937191001_vwjdm",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T20:46:31.001Z",
+        "updatedAt": "2026-09-20T20:46:31.001Z"
+      },
+      "snapshotAt": "2026-09-20T20:46:31.001Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789937191001_vwjdm",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T20:46:31.001Z",
+        "updatedAt": "2026-09-20T20:46:31.003Z"
+      },
+      "snapshotAt": "2026-09-20T20:46:31.003Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789937191001_vwjdm",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T20:46:31.001Z",
+        "updatedAt": "2026-09-20T20:46:31.004Z"
+      },
+      "snapshotAt": "2026-09-20T20:46:31.004Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789937191006_j3j72": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789937191006_j3j72",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T20:46:21.006Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T20:46:31.006Z",
+        "updatedAt": "2026-09-20T20:46:31.006Z"
+      },
+      "snapshotAt": "2026-09-20T20:46:31.006Z"
+    }
+  ],
+  "knw_1789937844480_ke827": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789937844480_ke827",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T20:57:24.480Z",
+        "updatedAt": "2026-09-20T20:57:24.480Z"
+      },
+      "snapshotAt": "2026-09-20T20:57:24.480Z"
+    }
+  ],
+  "knw_1789937844483_w8u4u": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789937844483_w8u4u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T20:57:24.483Z",
+        "updatedAt": "2026-09-20T20:57:24.483Z"
+      },
+      "snapshotAt": "2026-09-20T20:57:24.483Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789937844483_w8u4u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-20T20:57:24.483Z",
+        "updatedAt": "2026-09-20T20:57:24.485Z"
+      },
+      "snapshotAt": "2026-09-20T20:57:24.485Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789937844483_w8u4u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-20T20:57:24.483Z",
+        "updatedAt": "2026-09-20T20:57:24.486Z"
+      },
+      "snapshotAt": "2026-09-20T20:57:24.486Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789937844488_lfeys": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789937844488_lfeys",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-20T20:57:14.488Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-20T20:57:24.488Z",
+        "updatedAt": "2026-09-20T20:57:24.488Z"
+      },
+      "snapshotAt": "2026-09-20T20:57:24.488Z"
+    }
+  ],
+  "knw_1789963902256_gy5vk": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789963902256_gy5vk",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "non sia un server nsfw o con contenuti un po brutti",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:11:42.256Z",
+        "updatedAt": "2026-09-21T04:11:42.256Z"
+      },
+      "snapshotAt": "2026-09-21T04:11:42.256Z"
+    }
+  ],
+  "knw_1789963939293_etksq": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789963939293_etksq",
+        "guildId": "1429445691452948524",
+        "category": "PARTNERSHIPS",
+        "title": "Regola PARTNERSHIP: non sia un server nsfw o con contenuti u",
+        "content": "non sia un server nsfw o con contenuti un po brutti",
+        "keywords": [],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:12:19.292Z",
+        "updatedAt": "2026-09-21T04:12:19.292Z"
+      },
+      "snapshotAt": "2026-09-21T04:12:19.292Z"
+    }
+  ],
+  "knw_1789963986124_pvez5": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789963986124_pvez5",
+        "guildId": "1429445691452948524",
+        "category": "PARTNERSHIPS",
+        "title": "Regola PARTNERSHIP: non sia un server nsfw o con contenuti u",
+        "content": "non sia un server nsfw o con contenuti un po brutti",
+        "keywords": [],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:13:06.124Z",
+        "updatedAt": "2026-09-21T04:13:06.124Z"
+      },
+      "snapshotAt": "2026-09-21T04:13:06.124Z"
+    }
+  ],
+  "knw_1789964002761_rx9au": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964002761_rx9au",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:13:22.761Z",
+        "updatedAt": "2026-09-21T04:13:22.761Z"
+      },
+      "snapshotAt": "2026-09-21T04:13:22.761Z"
+    }
+  ],
+  "knw_1789964002765_r4aho": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964002765_r4aho",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:13:22.765Z",
+        "updatedAt": "2026-09-21T04:13:22.765Z"
+      },
+      "snapshotAt": "2026-09-21T04:13:22.765Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789964002765_r4aho",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-21T04:13:22.765Z",
+        "updatedAt": "2026-09-21T04:13:22.767Z"
+      },
+      "snapshotAt": "2026-09-21T04:13:22.767Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789964002765_r4aho",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-21T04:13:22.765Z",
+        "updatedAt": "2026-09-21T04:13:22.768Z"
+      },
+      "snapshotAt": "2026-09-21T04:13:22.768Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789964002770_p2ivl": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964002770_p2ivl",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-21T04:13:12.770Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:13:22.770Z",
+        "updatedAt": "2026-09-21T04:13:22.770Z"
+      },
+      "snapshotAt": "2026-09-21T04:13:22.770Z"
+    }
+  ],
+  "knw_1789964083521_8kxql": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964083521_8kxql",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:14:43.521Z",
+        "updatedAt": "2026-09-21T04:14:43.521Z"
+      },
+      "snapshotAt": "2026-09-21T04:14:43.521Z"
+    }
+  ],
+  "knw_1789964083524_ekxfc": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964083524_ekxfc",
+        "guildId": "1429445691452948524",
+        "category": "PARTNERSHIPS",
+        "title": "Regola PARTNERSHIP: i partner devono avere almeno 50 membri",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:14:43.524Z",
+        "updatedAt": "2026-09-21T04:14:43.524Z"
+      },
+      "snapshotAt": "2026-09-21T04:14:43.524Z"
+    }
+  ],
+  "knw_1789964442803_21m1h": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964442803_21m1h",
+        "guildId": "1429445691452948524",
+        "category": "PARTNERSHIPS",
+        "title": "Regola PARTNERSHIP: non sia un server nsfw o con contenuti u",
+        "content": "non sia un server nsfw o con contenuti un po brutti",
+        "keywords": [],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:20:42.803Z",
+        "updatedAt": "2026-09-21T04:20:42.803Z"
+      },
+      "snapshotAt": "2026-09-21T04:20:42.803Z"
+    }
+  ],
+  "knw_1789964510215_7oz5u": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964510215_7oz5u",
+        "guildId": "1429445691452948524",
+        "category": "PARTNERSHIPS",
+        "title": "Regola PARTNERSHIP: non sia un server nsfw o con contenuti u",
+        "content": "non sia un server nsfw o con contenuti un po brutti",
+        "keywords": [],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:21:50.215Z",
+        "updatedAt": "2026-09-21T04:21:50.215Z"
+      },
+      "snapshotAt": "2026-09-21T04:21:50.215Z"
+    }
+  ],
+  "knw_1789964530352_0f1r2": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964530352_0f1r2",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_RULES",
+        "title": "Regola appresa da frelerr",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [
+          "partnership",
+          "rule"
+        ],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:22:10.352Z",
+        "updatedAt": "2026-09-21T04:22:10.352Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:10.352Z"
+    }
+  ],
+  "knw_1789964530358_07wyw": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964530358_07wyw",
+        "guildId": "1429445691452948524",
+        "category": "PARTNERSHIPS",
+        "title": "Regola PARTNERSHIP: i partner devono avere almeno 50 membri",
+        "content": "i partner devono avere almeno 50 membri",
+        "keywords": [],
+        "source": "staff_directive",
+        "author": "frelerr",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:22:10.358Z",
+        "updatedAt": "2026-09-21T04:22:10.358Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:10.358Z"
+    }
+  ],
+  "knw_1789964539073_gg9yq": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964539073_gg9yq",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:22:19.073Z",
+        "updatedAt": "2026-09-21T04:22:19.073Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:19.073Z"
+    }
+  ],
+  "knw_1789964539077_zg38u": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964539077_zg38u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:22:19.077Z",
+        "updatedAt": "2026-09-21T04:22:19.077Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:19.077Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1789964539077_zg38u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-21T04:22:19.077Z",
+        "updatedAt": "2026-09-21T04:22:19.079Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:19.079Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1789964539077_zg38u",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-21T04:22:19.077Z",
+        "updatedAt": "2026-09-21T04:22:19.082Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:19.082Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1789964539085_ba0du": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1789964539085_ba0du",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-21T04:22:09.085Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-21T04:22:19.085Z",
+        "updatedAt": "2026-09-21T04:22:19.085Z"
+      },
+      "snapshotAt": "2026-09-21T04:22:19.085Z"
+    }
+  ],
+  "knw_1790423335723_2ijv1": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1790423335723_2ijv1",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-26T11:48:55.723Z",
+        "updatedAt": "2026-09-26T11:48:55.723Z"
+      },
+      "snapshotAt": "2026-09-26T11:48:55.723Z"
+    }
+  ],
+  "knw_1790423335728_xbw8k": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1790423335728_xbw8k",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-26T11:48:55.728Z",
+        "updatedAt": "2026-09-26T11:48:55.728Z"
+      },
+      "snapshotAt": "2026-09-26T11:48:55.728Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1790423335728_xbw8k",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-09-26T11:48:55.728Z",
+        "updatedAt": "2026-09-26T11:48:55.732Z"
+      },
+      "snapshotAt": "2026-09-26T11:48:55.732Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1790423335728_xbw8k",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-09-26T11:48:55.728Z",
+        "updatedAt": "2026-09-26T11:48:55.737Z"
+      },
+      "snapshotAt": "2026-09-26T11:48:55.737Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1790423335741_agxd3": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1790423335741_agxd3",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-09-26T11:48:45.741Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-09-26T11:48:55.741Z",
+        "updatedAt": "2026-09-26T11:48:55.741Z"
+      },
+      "snapshotAt": "2026-09-26T11:48:55.741Z"
+    }
+  ],
+  "knw_1790813951550_p8wto": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1790813951550_p8wto",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-10-01T00:19:11.550Z",
+        "updatedAt": "2026-10-01T00:19:11.550Z"
+      },
+      "snapshotAt": "2026-10-01T00:19:11.550Z"
+    }
+  ],
+  "knw_1790813951553_zzgqq": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1790813951553_zzgqq",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-10-01T00:19:11.553Z",
+        "updatedAt": "2026-10-01T00:19:11.553Z"
+      },
+      "snapshotAt": "2026-10-01T00:19:11.553Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1790813951553_zzgqq",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-10-01T00:19:11.553Z",
+        "updatedAt": "2026-10-01T00:19:11.554Z"
+      },
+      "snapshotAt": "2026-10-01T00:19:11.554Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1790813951553_zzgqq",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-10-01T00:19:11.553Z",
+        "updatedAt": "2026-10-01T00:19:11.555Z"
+      },
+      "snapshotAt": "2026-10-01T00:19:11.555Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1790813951557_94m85": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1790813951557_94m85",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-10-01T00:19:01.557Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-10-01T00:19:11.557Z",
+        "updatedAt": "2026-10-01T00:19:11.557Z"
+      },
+      "snapshotAt": "2026-10-01T00:19:11.557Z"
+    }
+  ],
+  "knw_1791023839204_houn6": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1791023839204_houn6",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_FAQ",
+        "title": "Come accedere a RoomUp Minecraft",
+        "content": "Usa l'indirizzo mc.roomup.it con versione 1.20.4 Java.",
+        "keywords": [
+          "minecraft",
+          "ip",
+          "accesso",
+          "versione"
+        ],
+        "source": "faq_ufficiale",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-10-03T10:37:19.204Z",
+        "updatedAt": "2026-10-03T10:37:19.204Z"
+      },
+      "snapshotAt": "2026-10-03T10:37:19.204Z"
+    }
+  ],
+  "knw_1791023839206_3n5ld": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1791023839206_3n5ld",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-10-03T10:37:19.206Z",
+        "updatedAt": "2026-10-03T10:37:19.206Z"
+      },
+      "snapshotAt": "2026-10-03T10:37:19.206Z"
+    },
+    {
+      "version": 2,
+      "doc": {
+        "id": "knw_1791023839206_3n5ld",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 30 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 2,
+        "createdAt": "2026-10-03T10:37:19.206Z",
+        "updatedAt": "2026-10-03T10:37:19.208Z"
+      },
+      "snapshotAt": "2026-10-03T10:37:19.208Z"
+    },
+    {
+      "version": 3,
+      "doc": {
+        "id": "knw_1791023839206_3n5ld",
+        "guildId": "1429445691452948524",
+        "category": "SERVER_PROCEDURES",
+        "title": "Procedura Ban Appeal",
+        "content": "Attendere 14 giorni prima di richiedere lo sban.",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": null,
+        "scope": "global",
+        "version": 3,
+        "createdAt": "2026-10-03T10:37:19.206Z",
+        "updatedAt": "2026-10-03T10:37:19.210Z"
+      },
+      "snapshotAt": "2026-10-03T10:37:19.210Z",
+      "note": "Rolled back to v1"
+    }
+  ],
+  "knw_1791023839212_ikx75": [
+    {
+      "version": 1,
+      "doc": {
+        "id": "knw_1791023839212_ikx75",
+        "guildId": "1429445691452948524",
+        "category": "TEMPORARY_CONTEXT",
+        "title": "Manutenzione programmata",
+        "content": "Server temporaneamente offline",
+        "keywords": [],
+        "source": "dashboard",
+        "author": "staff",
+        "confidence": 1,
+        "expiration": "2026-10-03T10:37:09.212Z",
+        "scope": "global",
+        "version": 1,
+        "createdAt": "2026-10-03T10:37:19.212Z",
+        "updatedAt": "2026-10-03T10:37:19.212Z"
+      },
+      "snapshotAt": "2026-10-03T10:37:19.212Z"
+    }
+  ]
+}

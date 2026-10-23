@@ -1,0 +1,112 @@
+{
+  "articles": [
+    {
+      "id": "kb_rules",
+      "category": "Generale",
+      "title": "Regolamento del Server",
+      "keywords": [
+        "regole",
+        "regolamento",
+        "rules",
+        "linee guida"
+      ],
+      "content": "Il regolamento completo vieta bestemmie, spam, insulti e autopromozione non autorizzata. Consulta il canale regole."
+    },
+    {
+      "id": "kb_tickets",
+      "category": "Assistenza",
+      "title": "Come aprire un Ticket di Supporto",
+      "keywords": [
+        "ticket",
+        "supporto",
+        "staff",
+        "aiuto",
+        "aprire ticket"
+      ],
+      "content": "Per richiedere supporto vai nel canale #ticket e seleziona la categoria desiderata dal menu a tendina."
+    },
+    {
+      "id": "kb_minecraft",
+      "category": "Minecraft",
+      "title": "Indirizzo e Connessione Minecraft",
+      "keywords": [
+        "ip",
+        "minecraft",
+        "server minecraft",
+        "versione",
+        "bedrock"
+      ],
+      "content": "L'indirizzo Java & Bedrock è: **play.roomup.it** (Porta Bedrock: 19132)."
+    },
+    {
+      "id": "kb_1789759083668",
+      "category": "Test",
+      "title": "Come funziona il bot",
+      "content": "Funziona perfettamente",
+      "keywords": [
+        "funziona",
+        "test"
+      ]
+    },
+    {
+      "id": "kb_1789759829368",
+      "category": "Test",
+      "title": "Come funziona il bot",
+      "content": "Funziona perfettamente",
+      "keywords": [
+        "funziona",
+        "test"
+      ]
+    },
+    {
+      "id": "kb_1789764197775",
+      "category": "Test",
+      "title": "Come funziona il bot",
+      "content": "Funziona perfettamente",
+      "keywords": [
+        "funziona",
+        "test"
+      ]
+    },
+    {
+      "id": "kb_1789901793754",
+      "category": "Test",
+      "title": "Guida Test Dashboard",
+      "content": "Istruzioni dettagliate per il test.",
+      "keywords": [
+        "test",
+        "guida"
+      ]
+    },
+    {
+      "id": "kb_1789902116273",
+      "category": "Test",
+      "title": "Guida Test Dashboard",
+      "content": "Istruzioni dettagliate per il test.",
+      "keywords": [
+        "test",
+        "guida"
+      ]
+    },
+    {
+      "id": "kb_1789902237061",
+      "category": "Test",
+      "title": "Guida Test Dashboard",
+      "content": "Istruzioni dettagliate per il test.",
+      "keywords": [
+        "test",
+        "guida"
+      ]
+    },
+    {
+      "id": "kb_1789902294563",
+      "category": "Test",
+      "title": "Guida Test Dashboard",
+      "content": "Istruzioni dettagliate per il test.",
+      "keywords": [
+        "test",
+        "guida"
+      ]
+    }
+  ]
+}

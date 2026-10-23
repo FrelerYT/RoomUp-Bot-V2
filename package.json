@@ -1,0 +1,23 @@
+{
+  "name": "roomup-bot-v2",
+  "version": "2.0.0",
+  "description": "RoomUp V2 - Master Multi-Guild Discord Bot & Web Dashboard",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "@google/generative-ai": "^0.24.1",
+    "@napi-rs/canvas": "^1.0.9",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "ffmpeg-static": "^5.3.0",
+    "opusscript": "^0.0.8",
+    "play-dl": "^1.9.7",
+    "tweetnacl": "^1.0.3"
+  }
+}

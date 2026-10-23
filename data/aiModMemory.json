@@ -1,0 +1,350 @@
+{
+  "123456789": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "1540661437821620235": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "123456789012345678": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "1337424683053748285": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "guild_test_123": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "741639102434525206": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "1429445691452948524": {
+    "precedents": [
+      {
+        "id": "prec_manual_1789901796283",
+        "pattern": "test spam rule",
+        "severity": "low",
+        "actionTaken": "warn",
+        "source": "dashboard_manual",
+        "timestamp": "2026-09-20T10:56:36.283Z"
+      },
+      {
+        "id": "prec_manual_1789902118148",
+        "pattern": "test spam rule",
+        "severity": "low",
+        "actionTaken": "warn",
+        "source": "dashboard_manual",
+        "timestamp": "2026-09-20T11:01:58.148Z"
+      },
+      {
+        "id": "prec_manual_1789902239526",
+        "pattern": "test spam rule",
+        "severity": "low",
+        "actionTaken": "warn",
+        "source": "dashboard_manual",
+        "timestamp": "2026-09-20T11:03:59.526Z"
+      },
+      {
+        "id": "prec_manual_1789902296536",
+        "pattern": "test spam rule",
+        "severity": "low",
+        "actionTaken": "warn",
+        "source": "dashboard_manual",
+        "timestamp": "2026-09-20T11:04:56.536Z"
+      }
+    ],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "non-existent-guild": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  },
+  "965378975675322438": {
+    "precedents": [],
+    "learnedRules": [
+      {
+        "id": "rule_1",
+        "rule": "Nessun insulto diretto o denigrazione verso altri membri",
+        "category": "toxic",
+        "weight": 90
+      },
+      {
+        "id": "rule_2",
+        "rule": "Nessuna bestemmia o volgarità pesante in canali pubblici",
+        "category": "profanity",
+        "weight": 85
+      },
+      {
+        "id": "rule_3",
+        "rule": "Evita provocazioni continue, flame e incitamento al conflitto",
+        "category": "flame",
+        "weight": 80
+      },
+      {
+        "id": "rule_4",
+        "rule": "Vietato condividere link server Discord esterni senza partnership",
+        "category": "invite",
+        "weight": 95
+      }
+    ],
+    "consultationHistory": [],
+    "stats": {
+      "autonomousActions": 0,
+      "humanEscalations": 0,
+      "learnedDecisions": 0
+    }
+  }
+}
