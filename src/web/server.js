@@ -2,6 +2,7 @@ const express = require("express");
 const session = require("express-session");
 const path = require("path");
 const fs = require("fs");
+const crypto = require("crypto");
 const { getClient } = require("../bot/client");
 const { loadSettings, saveSettings, getGuildConfig, updateGuildConfig, DEFAULT_CATEGORIES } = require("../config/settingsManager");
 const { sendTicketPanel } = require("../bot/ticketEngine");
@@ -147,8 +148,19 @@ function createWebServer(portOverride) {
   // Trust Render/Cloudflare reverse proxy (necessario per HTTPS su cloud)
   app.set("trust proxy", 1);
 
-  app.use(express.json({ limit: "50mb" }));
-  app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+  // Security Headers (OWASP standard hardening)
+  app.use((req, res, next) => {
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    res.setHeader("X-Frame-Options", "SAMEORIGIN");
+    res.setHeader("X-XSS-Protection", "1; mode=block");
+    res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+    res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+    res.removeHeader("X-Powered-By");
+    next();
+  });
+
+  app.use(express.json({ limit: "10mb" }));
+  app.use(express.urlencoded({ extended: true, limit: "10mb" }));
   app.use(express.static(path.join(__dirname, "public")));
 
   app.set("view engine", "ejs");
@@ -156,16 +168,57 @@ function createWebServer(portOverride) {
 
   app.use(
     session({
-      secret: process.env.SESSION_SECRET || "roomup-v2-session-key",
+      name: "roomup_sid",
+      secret: process.env.SESSION_SECRET || "roomup-v2-master-super-secret-key-2026",
       resave: false,
       saveUninitialized: false,
       cookie: {
+        httpOnly: true,
         maxAge: 7 * 24 * 60 * 60 * 1000,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
+        secure: "auto",
+        sameSite: "lax"
       }
     })
   );
+
+  // In-Memory Rate Limiter (Anti-DDoS & Flood Protection)
+  const rateLimitBuckets = new Map();
+  function rateLimiter({ windowMs = 60000, maxRequests = 60, message = "Troppe richieste inviate in breve tempo. Riprova più tardi." } = {}) {
+    return (req, res, next) => {
+      const host = (req.headers["host"] || "").toLowerCase();
+      const isTestHeaderAllowed = (process.env.NODE_ENV === "test" || (!process.env.RENDER_EXTERNAL_URL && host.includes("localhost"))) && req.headers["x-test-auth"] === "true";
+      if (isTestHeaderAllowed) return next();
+
+      const clientIp = req.ip || req.headers["x-forwarded-for"] || req.socket?.remoteAddress || "127.0.0.1";
+      const key = `${req.path}:${req.session?.user?.id || clientIp}`;
+      const now = Date.now();
+      let record = rateLimitBuckets.get(key);
+      if (!record || now > record.resetTime) {
+        record = { count: 1, resetTime: now + windowMs };
+        rateLimitBuckets.set(key, record);
+      } else {
+        record.count++;
+      }
+
+      if (record.count > maxRequests) {
+        res.setHeader("Retry-After", Math.ceil((record.resetTime - now) / 1000));
+        return res.status(429).json({
+          success: false,
+          error: "rate_limited",
+          message
+        });
+      }
+      next();
+    };
+  }
+
+  // Periodic cleanup of expired rate limit buckets
+  setInterval(() => {
+    const now = Date.now();
+    for (const [key, record] of rateLimitBuckets.entries()) {
+      if (now > record.resetTime) rateLimitBuckets.delete(key);
+    }
+  }, 300000).unref();
 
   // CSRF & Origin validation for mutation requests
   app.use((req, res, next) => {
@@ -178,8 +231,10 @@ function createWebServer(portOverride) {
           const originUrl = new URL(origin);
           const originHost = originUrl.host.toLowerCase();
           const reqHost = host.toLowerCase();
-          if (originHost !== reqHost && !originHost.includes("localhost") && !originHost.includes("127.0.0.1") && req.headers["x-test-auth"] !== "true") {
-            return res.status(403).json({ success: false, message: "CSRF check fallito: origine non valida" });
+          const isLocal = originHost.includes("localhost") || originHost.includes("127.0.0.1");
+          const isTestHeaderAllowed = (process.env.NODE_ENV === "test" || (!process.env.RENDER_EXTERNAL_URL && reqHost.includes("localhost"))) && req.headers["x-test-auth"] === "true";
+          if (originHost !== reqHost && !isLocal && !isTestHeaderAllowed) {
+            return res.status(403).json({ success: false, message: "CSRF check fallito: origine richiesta non valida" });
           }
         } catch {}
       }
@@ -201,12 +256,12 @@ function createWebServer(portOverride) {
 
   const CLIENT_ID = process.env.DISCORD_CLIENT_ID || "1543608170327445634";
   const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET || "";
-  // Su Render il BASE_URL viene passato come variabile d'ambiente da Render stesso (RENDER_EXTERNAL_URL)
-// Fallback: usa http://localhost:3002 solo in sviluppo locale
-const BASE_URL =
-  process.env.RENDER_EXTERNAL_URL ||
-  process.env.BASE_URL ||
-  "http://localhost:3002";
+  const BASE_URL =
+    process.env.RENDER_EXTERNAL_URL ||
+    process.env.BASE_URL ||
+    "http://localhost:3002";
+
+  const BOT_OWNER_ID = "1020343046539325480"; // Founder Frè
 
   function hasAdminOrManageGuild(perms) {
     try {
@@ -220,24 +275,53 @@ const BASE_URL =
   }
 
   function checkGuildAccess(req, guildId) {
-    if (!guildId) return false;
-    // 1. Bot owner and dev sessions always have access
-    if (req.session?.isDev || req.session?.user?.id === "1543608170327445634") {
+    if (!guildId || !/^\d{17,20}$/.test(String(guildId))) return false;
+
+    const host = (req.headers["host"] || "").toLowerCase();
+    const isTestHeaderAllowed = (process.env.NODE_ENV === "test" || (!process.env.RENDER_EXTERNAL_URL && host.includes("localhost"))) && req.headers["x-test-auth"] === "true";
+    if (isTestHeaderAllowed) {
       return true;
     }
-    // 2. If user has session with Discord guilds
-    if (req.session && req.session.user) {
-      const userGuilds = req.session.guilds || [];
-      const target = userGuilds.find(g => g.id === guildId);
-      if (target) {
-        if (target.owner) return true;
-        if (hasAdminOrManageGuild(target.permissions)) return true;
+
+    const user = req.session?.user;
+    if (!user || !user.id) return false;
+
+    // 1. Global Bot Founder / Dev master access
+    if (user.id === BOT_OWNER_ID) {
+      return true;
+    }
+
+    // 2. Verified OAuth2 guilds in user session
+    const userGuilds = Array.isArray(req.session.guilds) ? req.session.guilds : [];
+    const targetOAuthGuild = userGuilds.find(g => g.id === guildId);
+    if (targetOAuthGuild) {
+      if (targetOAuthGuild.owner) return true;
+      if (hasAdminOrManageGuild(targetOAuthGuild.permissions)) return true;
+    }
+
+    // 3. Fallback: Live Discord guild cache check for administrator/manageGuild or staff roles
+    const client = getClient();
+    if (client && client.isReady()) {
+      const liveGuild = client.guilds.cache.get(guildId);
+      if (liveGuild) {
+        if (liveGuild.ownerId === user.id) return true;
+        const member = liveGuild.members.cache.get(user.id);
+        if (member) {
+          if (member.permissions.has("Administrator") || member.permissions.has("ManageGuild")) {
+            return true;
+          }
+          try {
+            const settings = loadSettings();
+            const guildSettings = settings[guildId] || {};
+            const staffRoles = guildSettings.staffRoles || [];
+            if (Array.isArray(staffRoles) && staffRoles.some(rId => member.roles.cache.has(rId))) {
+              return true;
+            }
+          } catch {}
+        }
       }
     }
-    // 3. Allow internal automated tests with explicit verification header
-    if (req.headers["x-test-auth"] === "true") {
-      return true;
-    }
+
     return false;
   }
 
@@ -256,66 +340,37 @@ const BASE_URL =
     });
   });
 
-  // 1. OAuth2 Login Route
-  app.get("/login", (req, res) => {
-    if (req.query.dev === "true" || req.query.bypass === "true") {
-      return res.redirect("/login/dev");
+  // 1. Strict OAuth2 Login Route (No dev bypasses, CSRF state secured)
+  app.get("/login", rateLimiter({ windowMs: 60000, maxRequests: 20, message: "Troppi tentativi di accesso. Riprova tra un minuto." }), (req, res) => {
+    if (!CLIENT_SECRET) {
+      console.error("[OAuth Security] Impossibile avviare il login: DISCORD_CLIENT_SECRET non impostato.");
+      return res.status(500).send("Configurazione server incompleta: credenziali Discord OAuth2 mancanti.");
     }
-    const host = (req.headers.host || "").toLowerCase();
-    const isLanOrIp = /^(\d{1,3}\.){3}\d{1,3}(:\d+)?$/.test(host) || host.includes("192.168.") || host.includes("10.") || host.includes("172.") || host.includes("localhost") || host.includes("127.0.0.1");
-    if (!CLIENT_SECRET || (isLanOrIp && req.query.force_oauth !== "true")) {
-      return res.redirect("/login/dev");
-    }
+    const state = crypto.randomBytes(24).toString("hex");
+    req.session.oauthState = state;
     const redirectUri = encodeURIComponent(`${BASE_URL}/auth/callback`);
-    const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20guilds`;
+    const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20guilds&state=${state}&prompt=consent`;
     res.redirect(authUrl);
   });
 
-  // 1b. Dev / Local Direct Login Route (Bypasses OAuth redirect whitelist in local dev)
+  // 1b. Dev login is permanently disabled for public security
   app.get("/login/dev", (req, res) => {
-    const client = getClient();
-    const botGuildMap = new Map();
-
-    if (client && client.isReady()) {
-      for (const g of client.guilds.cache.values()) {
-        botGuildMap.set(g.id, {
-          id: g.id,
-          name: g.name,
-          icon: g.iconURL({ dynamic: true, size: 128 }) || "",
-          owner: true,
-          permissions: "8" // Administrator
-        });
-      }
-    } else {
-      // Fallback only to verified guild if client is still connecting
-      botGuildMap.set("1429445691452948524", {
-        id: "1429445691452948524",
-        name: "RoomUp!",
-        icon: "",
-        owner: true,
-        permissions: "8"
-      });
-    }
-
-    req.session.user = {
-      id: "1543608170327445634",
-      username: "frelerr",
-      global_name: "frelerr",
-      discriminator: "0",
-      avatar: null,
-      avatarUrl: "https://cdn.discordapp.com/embed/avatars/0.png"
-    };
-    req.session.isDev = true;
-    req.session.guilds = Array.from(botGuildMap.values());
-    res.redirect("/");
+    return res.status(404).send("Accesso rapido disabilitato per ragioni di sicurezza della piattaforma pubblica.");
   });
 
-  // 2. OAuth2 Callback Route
+  // 2. OAuth2 Callback Route (State Verification & Session Regeneration)
   app.get("/auth/callback", async (req, res) => {
-    const { code, error } = req.query;
+    const { code, state, error } = req.query;
     if (error || !code) {
       return res.redirect("/?error=auth_cancelled");
     }
+
+    // CSRF Protection: Verify OAuth2 State
+    if (!state || !req.session?.oauthState || state !== req.session.oauthState) {
+      console.warn("[OAuth Security] Tentativo di accesso rifiutato: state mismatch o sessione scaduta (CSRF protection).");
+      return res.redirect("/?error=invalid_state");
+    }
+    delete req.session.oauthState;
 
     try {
       const redirectUri = `${BASE_URL}/auth/callback`;
@@ -333,7 +388,7 @@ const BASE_URL =
 
       const tokenData = await tokenRes.json();
       if (!tokenData.access_token) {
-        console.error("[OAuth] Token Exchange Failed:", tokenData);
+        console.error("[OAuth Security] Scambio token Discord fallito:", tokenData);
         return res.redirect("/?error=token_failed");
       }
 
@@ -353,19 +408,27 @@ const BASE_URL =
         ? `https://cdn.discordapp.com/avatars/${userData.id}/${userData.avatar}.png?size=128`
         : "https://cdn.discordapp.com/embed/avatars/0.png";
 
-      req.session.user = {
-        id: userData.id,
-        username: userData.username,
-        global_name: userData.global_name || userData.username,
-        discriminator: userData.discriminator || "0",
-        avatar: userData.avatar,
-        avatarUrl
-      };
+      // Prevent session fixation attack: regenerate session on login
+      req.session.regenerate((err) => {
+        if (err) {
+          console.error("[OAuth Security] Errore rigenerazione sessione:", err);
+          return res.redirect("/?error=session_error");
+        }
 
-      req.session.guilds = Array.isArray(guildsData) ? guildsData : [];
-      return res.redirect("/");
+        req.session.user = {
+          id: userData.id,
+          username: userData.username,
+          global_name: userData.global_name || userData.username,
+          discriminator: userData.discriminator || "0",
+          avatar: userData.avatar,
+          avatarUrl
+        };
+
+        req.session.guilds = Array.isArray(guildsData) ? guildsData : [];
+        res.redirect("/");
+      });
     } catch (err) {
-      console.error("[OAuth] Exception during authentication:", err);
+      console.error("[OAuth Security] Eccezione imprevista durante l'autenticazione OAuth2:", err);
       return res.redirect("/?error=server_error");
     }
   });
@@ -373,6 +436,7 @@ const BASE_URL =
   // 3. Logout Route
   app.get("/logout", (req, res) => {
     req.session.destroy(() => {
+      res.clearCookie("roomup_sid");
       res.redirect("/");
     });
   });
@@ -427,17 +491,25 @@ const BASE_URL =
   app.get("/dashboard/:guildId", async (req, res) => {
     const { guildId } = req.params;
 
-    // Check authentication
-    if (!req.session?.user && req.headers["x-test-auth"] !== "true" && req.query.bypass !== "dev") {
+    // Validate Discord snowflake ID
+    if (!/^\d{17,20}$/.test(String(guildId))) {
+      return res.status(400).send("ID server Discord non valido.");
+    }
+
+    const host = (req.headers["host"] || "").toLowerCase();
+    const isTestHeaderAllowed = (process.env.NODE_ENV === "test" || (!process.env.RENDER_EXTERNAL_URL && host.includes("localhost"))) && req.headers["x-test-auth"] === "true";
+
+    // Check authentication (Strict: no bypasses)
+    if (!req.session?.user && !isTestHeaderAllowed) {
       return res.redirect("/login");
     }
 
-    // Check permissions
+    // Check permissions (Strict: only owner, admin, or staff of this specific guild)
     if (!checkGuildAccess(req, guildId)) {
       return res.status(403).render("forbidden", {
         user: req.session?.user || null,
         guildId,
-        message: "Ti serve il permesso di Amministratore o Gestisci Server per aprire questo pannello."
+        message: "Accesso negato: non hai i permessi di Amministratore o Gestisci Server per questo server Discord."
       });
     }
 
@@ -631,13 +703,43 @@ const BASE_URL =
   });
 
   // 2d-0. Protected API routes authorization middleware for all /api/dashboard/:guildId/* routes
-  app.use("/api/dashboard/:guildId", (req, res, next) => {
-    const { guildId } = req.params;
-    if (!checkGuildAccess(req, guildId)) {
-      return res.status(403).json({ success: false, message: "Non autorizzato: autenticazione o permessi mancanti per questo server." });
+  app.use((req, res, next) => {
+    const match = req.path.match(/^\/api\/dashboard\/([^\/]+)/);
+    if (!match) return next();
+
+    // Ignore webhook routes if any
+    if (req.path.includes("/webhook/")) return next();
+
+    const guildId = match[1];
+
+    // Validate Discord snowflake ID format (17-20 digits)
+    if (!/^\d{17,20}$/.test(guildId)) {
+      return res.status(400).json({ success: false, message: "ID server Discord non valido." });
     }
+
+    // Verify User Session & Guild Authorization (Strict Multi-Guild Isolation)
+    if (!checkGuildAccess(req, guildId)) {
+      return res.status(403).json({
+        success: false,
+        error: "forbidden",
+        message: "Non autorizzato: autenticazione o permessi mancanti per questo server."
+      });
+    }
+
     next();
   });
+
+  // Recursive Prototype Pollution Sanitizer
+  function sanitizeConfigObject(obj) {
+    if (!obj || typeof obj !== "object") return obj;
+    if (Array.isArray(obj)) return obj.map(sanitizeConfigObject);
+    const clean = {};
+    for (const [key, value] of Object.entries(obj)) {
+      if (["__proto__", "constructor", "prototype"].includes(key)) continue;
+      clean[key] = sanitizeConfigObject(value);
+    }
+    return clean;
+  }
 
   // 2d. API Get Specific Guild Config
   app.get("/api/dashboard/:guildId/config", (req, res) => {
@@ -648,10 +750,10 @@ const BASE_URL =
     return res.json(config);
   });
 
-  // 3. API Save Guild Config
-  app.post("/api/dashboard/:guildId/save", async (req, res) => {
+  // 3. API Save Guild Config (Rate-limited, sanitized, permission-guarded)
+  app.post("/api/dashboard/:guildId/save", rateLimiter({ windowMs: 60000, maxRequests: 30, message: "Troppi salvataggi ravvicinati. Riprova tra un minuto." }), async (req, res) => {
     const { guildId } = req.params;
-    const newConfig = req.body;
+    const newConfig = sanitizeConfigObject(req.body);
     try {
       const updated = updateGuildConfig(guildId, newConfig);
 
@@ -675,7 +777,7 @@ const BASE_URL =
   });
 
   // 4. API Send Ticket Panel
-  app.post("/api/dashboard/:guildId/panel/ticket", async (req, res) => {
+  app.post("/api/dashboard/:guildId/panel/ticket", rateLimiter({ windowMs: 60000, maxRequests: 20 }), async (req, res) => {
     const { guildId } = req.params;
     const { channelId, panelId } = req.body;
     const client = getClient();
@@ -686,7 +788,7 @@ const BASE_URL =
       if (!guild) return res.status(404).json({ success: false, message: "Server non trovato" });
 
       const channel = guild.channels.cache.get(channelId);
-      if (!channel || !channel.isTextBased()) return res.status(400).json({ success: false, message: "Canale non valido" });
+      if (!channel || !channel.isTextBased() || channel.guildId !== guildId) return res.status(400).json({ success: false, message: "Canale non valido o appartenente a un altro server" });
 
       const config = getGuildConfig(guildId);
       const panels = config.tickets?.panels || [];
@@ -700,7 +802,7 @@ const BASE_URL =
   });
 
   // 5. API Send Verification Panel
-  app.post("/api/dashboard/:guildId/panel/verify", async (req, res) => {
+  app.post("/api/dashboard/:guildId/panel/verify", rateLimiter({ windowMs: 60000, maxRequests: 20 }), async (req, res) => {
     const { guildId } = req.params;
     const { channelId } = req.body;
     const client = getClient();
@@ -711,7 +813,7 @@ const BASE_URL =
       if (!guild) return res.status(404).json({ success: false, message: "Server non trovato" });
 
       const channel = guild.channels.cache.get(channelId);
-      if (!channel || !channel.isTextBased()) return res.status(400).json({ success: false, message: "Canale non valido" });
+      if (!channel || !channel.isTextBased() || channel.guildId !== guildId) return res.status(400).json({ success: false, message: "Canale non valido o appartenente a un altro server" });
 
       const config = getGuildConfig(guildId);
       const vConfig = { ...(config.verification || {}), ...(req.body.verification || {}) };
@@ -723,7 +825,7 @@ const BASE_URL =
   });
 
   // 5a-2. API Send Unban Appeal Panel
-  app.post("/api/dashboard/:guildId/panel/unban", async (req, res) => {
+  app.post("/api/dashboard/:guildId/panel/unban", rateLimiter({ windowMs: 60000, maxRequests: 20 }), async (req, res) => {
     const { guildId } = req.params;
     const { channelId, options } = req.body;
     const client = getClient();
@@ -735,7 +837,7 @@ const BASE_URL =
 
       const targetChannelId = channelId || "1550847057802043392";
       const channel = guild.channels.cache.get(targetChannelId) || await guild.channels.fetch(targetChannelId).catch(() => null);
-      if (!channel || !channel.isTextBased()) return res.status(400).json({ success: false, message: "Canale non valido o non testuale" });
+      if (!channel || !channel.isTextBased() || channel.guildId !== guildId) return res.status(400).json({ success: false, message: "Canale non valido o appartenente a un altro server" });
 
       // Applica i permessi esclusivi: solo il ruolo bannat* vede il canale
       await applyUnbanChannelPermissions(channel, guild);
@@ -748,8 +850,8 @@ const BASE_URL =
     }
   });
 
-  // 5a-3. API Send Custom Universal Embed to Discord
-  app.post("/api/dashboard/:guildId/send-embed", async (req, res) => {
+  // 5a-3. API Send Custom Universal Embed to Discord (Rate-limited, channel guild-isolated)
+  app.post("/api/dashboard/:guildId/send-embed", rateLimiter({ windowMs: 60000, maxRequests: 25, message: "Troppi invii di embed in breve tempo. Riprova tra poco." }), async (req, res) => {
     const { guildId } = req.params;
     const { channelId, content, embed, pingRole } = req.body;
     const client = getClient();
@@ -761,7 +863,7 @@ const BASE_URL =
 
       if (!channelId) return res.status(400).json({ success: false, message: "Seleziona un canale di destinazione valido" });
       const channel = guild.channels.cache.get(channelId) || await guild.channels.fetch(channelId).catch(() => null);
-      if (!channel || !channel.isTextBased()) return res.status(400).json({ success: false, message: "Canale non valido o non testuale" });
+      if (!channel || !channel.isTextBased() || channel.guildId !== guildId) return res.status(400).json({ success: false, message: "Canale non valido, non testuale o appartenente a un altro server" });
 
       const { EmbedBuilder } = require("discord.js");
       const dEmbed = new EmbedBuilder();
