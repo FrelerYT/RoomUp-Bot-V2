@@ -66,6 +66,23 @@ const client = createDiscordClient(token, clientId);
 console.log(`[Init] Avvio Web Server Dashboard su porta ${port}...`);
 const app = createWebServer();
 
+// 3. Self-ping keepalive su Render Cloud (evita sleep dopo 15 minuti)
+// Funziona solo quando RENDER_EXTERNAL_URL è definita (in produzione su Render)
+const renderUrl = process.env.RENDER_EXTERNAL_URL;
+if (renderUrl) {
+  const PING_INTERVAL = 13 * 60 * 1000; // ogni 13 minuti
+  setInterval(async () => {
+    try {
+      const res = await fetch(`${renderUrl}/api/health`);
+      const json = await res.json();
+      console.log(`[KeepAlive] Render self-ping OK — uptime: ${Math.floor(json.uptime || 0)}s`);
+    } catch (e) {
+      console.warn("[KeepAlive] Render self-ping fallito:", e.message);
+    }
+  }, PING_INTERVAL);
+  console.log(`[KeepAlive] Self-ping Render attivo ogni 13 minuti su ${renderUrl}/api/health`);
+}
+
 console.log("=============================================================");
 console.log("✅ Sistema Master V2 Inizializzato con Successo!");
 console.log(`👉 Web Dashboard attiva su: http://localhost:${port}`);

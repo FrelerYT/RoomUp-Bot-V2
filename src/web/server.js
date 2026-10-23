@@ -144,6 +144,9 @@ function createWebServer(portOverride) {
   const app = express();
   const PORT = portOverride || process.env.PORT || 3002;
 
+  // Trust Render/Cloudflare reverse proxy (necessario per HTTPS su cloud)
+  app.set("trust proxy", 1);
+
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ extended: true, limit: "50mb" }));
   app.use(express.static(path.join(__dirname, "public")));
@@ -156,7 +159,11 @@ function createWebServer(portOverride) {
       secret: process.env.SESSION_SECRET || "roomup-v2-session-key",
       resave: false,
       saveUninitialized: false,
-      cookie: { maxAge: 7 * 24 * 60 * 60 * 1000 }
+      cookie: {
+        maxAge: 7 * 24 * 60 * 60 * 1000,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
+      }
     })
   );
 
@@ -194,7 +201,12 @@ function createWebServer(portOverride) {
 
   const CLIENT_ID = process.env.DISCORD_CLIENT_ID || "1543608170327445634";
   const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET || "";
-  const BASE_URL = process.env.BASE_URL || "http://localhost:3002";
+  // Su Render il BASE_URL viene passato come variabile d'ambiente da Render stesso (RENDER_EXTERNAL_URL)
+// Fallback: usa http://localhost:3002 solo in sviluppo locale
+const BASE_URL =
+  process.env.RENDER_EXTERNAL_URL ||
+  process.env.BASE_URL ||
+  "http://localhost:3002";
 
   function hasAdminOrManageGuild(perms) {
     try {
