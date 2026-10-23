@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title><%= guildName %> • RoomUp! • ProBot Edition</title>
+  <title><%= guildName %> • RoomUp! Dashboard</title>
   <link rel="icon" type="image/jpeg" href="/img/butterfly_avatar.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root {
-      --bg-base: #080a11;
-      --bg-rail: #06070c;
-      --bg-sidebar: #0f121d;
-      --bg-surface: #121524;
-      --bg-card: #151829;
-      --bg-card-hover: #1c2138;
-      --bg-input: #0b0d16;
+      --bg-base: #0f1117;
+      --bg-rail: #090a0d;
+      --bg-sidebar: #14161d;
+      --bg-surface: #181a22;
+      --bg-card: #1a1d26;
+      --bg-card-hover: #212530;
+      --bg-input: #101217;
       --border: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(139, 92, 246, 0.45);
-      --border-focus: #8b5cf6;
-      --gradient-brand: linear-gradient(135deg, #7c3aed 0%, #a855f7 40%, #ec4899 80%, #f59e0b 100%);
-      --gradient-btn: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
-      --gradient-btn-hover: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-      --primary: #8b5cf6;
-      --primary-hover: #7c3aed;
-      --primary-glow: rgba(139, 92, 246, 0.35);
-      --accent-green: #10b981;
-      --accent-red: #ef4444;
-      --accent-yellow: #f59e0b;
-      --accent-purple: #8b5cf6;
-      --accent-pink: #ec4899;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
+      --border-hover: rgba(88, 101, 242, 0.45);
+      --border-focus: #5865F2;
+      --gradient-brand: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+      --gradient-btn: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+      --gradient-btn-hover: linear-gradient(135deg, #4752C4 0%, #3c45a5 100%);
+      --primary: #5865F2;
+      --primary-hover: #4752C4;
+      --primary-glow: rgba(88, 101, 242, 0.25);
+      --accent-green: #23a55a;
+      --accent-red: #f23f43;
+      --accent-yellow: #f0b232;
+      --accent-purple: #5865F2;
+      --accent-pink: #5865F2;
+      --text-main: #f2f3f5;
+      --text-muted: #949ba4;
+      --text-dim: #626770;
       --squircle-radius: 22%;
-      --card-radius: 16px;
+      --card-radius: 14px;
       --control-radius: 10px;
     }
 
@@ -56,7 +56,7 @@
 
     /* Top Sticky Header */
     header {
-      background: #111216;
+      background: #14161d;
       border-bottom: 1px solid var(--border);
       height: 64px;
       padding: 0 1.75rem;
@@ -271,7 +271,7 @@
     }
 
     /* Server Hero Banner (Panoramica) */
-    .probot-hero-card {
+    .roomup-hero-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--card-radius);
@@ -299,10 +299,10 @@
     .stat-pill { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 0.25rem 0.65rem; border-radius: 6px; font-size: 0.78rem; color: var(--text-muted); display: inline-flex; align-items: center; gap: 0.4rem; }
     .stat-pill strong { color: var(--text-main); }
     .hero-actions { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
-    .btn-probot-primary { background: #5865F2; color: #fff; border: none; height: 38px; padding: 0 1.25rem; border-radius: 8px; font-weight: 700; font-size: 0.86rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem; transition: all 0.15s; }
-    .btn-probot-primary:hover { background: #4752C4; transform: translateY(-1px); }
-    .btn-probot-secondary { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text-main); height: 38px; padding: 0 1.1rem; border-radius: 8px; font-weight: 600; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.15s; }
-    .btn-probot-secondary:hover { background: rgba(255,255,255,0.08); border-color: var(--border-hover); }
+    .btn-roomup-primary { background: #5865F2; color: #fff; border: none; height: 38px; padding: 0 1.25rem; border-radius: 8px; font-weight: 700; font-size: 0.86rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem; transition: all 0.15s; }
+    .btn-roomup-primary:hover { background: #4752C4; transform: translateY(-1px); }
+    .btn-roomup-secondary { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text-main); height: 38px; padding: 0 1.1rem; border-radius: 8px; font-weight: 600; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.15s; }
+    .btn-roomup-secondary:hover { background: rgba(255,255,255,0.08); border-color: var(--border-hover); }
 
     /* Module Section Header */
     .module-section-header {
@@ -363,8 +363,8 @@
       background: #14151b;
     }
 
-    /* ProBot Module Grid (23 Modules) */
-    .probot-module-grid {
+    /* RoomUp Module Grid (23 Modules) */
+    .roomup-module-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
       gap: 1.15rem;
@@ -893,8 +893,8 @@
       .grid-2 { grid-template-columns: 1fr !important; }
       .grid-3 { grid-template-columns: repeat(3, 1fr) !important; gap: 1rem !important; }
       .grid-4 { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
-      .probot-module-grid { grid-template-columns: 1fr !important; }
-      .probot-hero-card { flex-direction: column !important; align-items: flex-start !important; padding: 1.25rem 1rem !important; }
+      .roomup-module-grid { grid-template-columns: 1fr !important; }
+      .roomup-hero-card { flex-direction: column !important; align-items: flex-start !important; padding: 1.25rem 1rem !important; }
       .hero-left { width: 100% !important; }
       .hero-actions { width: 100% !important; justify-content: flex-start !important; }
       .event-row { flex-direction: column !important; align-items: flex-start !important; }
@@ -1012,7 +1012,7 @@
         width: 100% !important;
         margin: 0 !important;
       }
-      .probot-hero-card {
+      .roomup-hero-card {
         padding: 1.25rem 1rem !important;
         gap: 1.15rem !important;
       }
@@ -1045,8 +1045,8 @@
         display: flex !important;
         gap: 0.65rem !important;
       }
-      .hero-actions .btn-probot-primary,
-      .hero-actions .btn-probot-secondary {
+      .hero-actions .btn-roomup-primary,
+      .hero-actions .btn-roomup-secondary {
         flex: 1 !important;
         min-width: 0 !important;
         justify-content: center !important;
@@ -1081,7 +1081,7 @@
       }
       .sub-header-actions .btn-primary,
       .sub-header-actions .btn-action,
-      .sub-header-actions .btn-probot-primary {
+      .sub-header-actions .btn-roomup-primary {
         flex: 1 !important;
         min-width: 130px !important;
         justify-content: center !important;
@@ -1125,7 +1125,7 @@
       .form-control {
         height: 42px !important;
       }
-      .btn-save, .btn-action, .btn-primary, .btn-danger, .btn-probot-primary {
+      .btn-save, .btn-action, .btn-primary, .btn-danger, .btn-roomup-primary {
         min-height: 40px !important;
         border-radius: 10px !important;
       }
@@ -1234,7 +1234,7 @@
         width: 100% !important;
         justify-content: center !important;
       }
-      .probot-hero-card {
+      .roomup-hero-card {
         padding: 1rem 0.85rem !important;
       }
       .hero-stats-pills {
@@ -1817,8 +1817,8 @@
         <span class="brand-badge-pill">Dashboard</span>
       </a>
 
-      <!-- ProBot Quick Server Dropdown Switcher -->
-      <div class="probot-server-switcher" style="position: relative; display: inline-flex; align-items: center;">
+      <!-- RoomUp Quick Server Dropdown Switcher -->
+      <div class="roomup-server-switcher" style="position: relative; display: inline-flex; align-items: center;">
         <button type="button" class="btn-server-select" onclick="toggleServerDropdown(event)" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 12px; height: 38px; padding: 0 0.85rem; display: flex; align-items: center; gap: 0.6rem; color: #fff; font-size: 0.86rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
           <% if (guildIcon) { %>
             <img src="<%= guildIcon %>" alt="<%= guildName %>" style="width: 22px; height: 22px; border-radius: 6px; object-fit: cover;">
@@ -1829,7 +1829,7 @@
           <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem; color: var(--text-muted);"></i>
         </button>
 
-        <div id="probotServerDropdown" style="display: none; position: absolute; top: calc(100% + 8px); left: 0; min-width: 240px; background: #141726; border: 1px solid var(--border-hover); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(139,92,246,0.2); z-index: 999; padding: 0.5rem; flex-direction: column; gap: 0.25rem;">
+        <div id="roomupServerDropdown" style="display: none; position: absolute; top: calc(100% + 8px); left: 0; min-width: 240px; background: #141726; border: 1px solid var(--border-hover); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 999; padding: 0.5rem; flex-direction: column; gap: 0.25rem;">
           <div style="font-size: 0.72rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; padding: 0.35rem 0.65rem; letter-spacing: 0.5px;">I Tuoi Server</div>
           <% (allGuilds || []).forEach(g => { %>
             <a href="/dashboard/<%= g.id %>" style="display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 0.65rem; border-radius: 8px; text-decoration: none; color: <%= g.id === guildId ? '#c4b5fd' : '#f8fafc' %>; background: <%= g.id === guildId ? 'rgba(139, 92, 246, 0.15)' : 'transparent' %>; font-size: 0.85rem; font-weight: 600; transition: background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='<%= g.id === guildId ? 'rgba(139, 92, 246, 0.15)' : 'transparent' %>'">
@@ -1901,7 +1901,7 @@
       </div>
     </div>
 
-    <!-- Left Navigation Sidebar (ProBot Grouping) -->
+    <!-- Left Navigation Sidebar (RoomUp Grouping) -->
     <aside id="mainSidebar">
       <div class="sidebar-header">
         <div class="server-pill">
@@ -2209,11 +2209,11 @@
     <!-- Main Workspace Area -->
     <main class="main-workspace">
 
-      <!-- ================= TAB 1: OVERVIEW (PROBOT REDESIGN) ================= -->
+      <!-- ================= TAB 1: OVERVIEW (ROOMUP REDESIGN) ================= -->
       <div id="tab-overview" class="tab-pane active">
         
-        <!-- PROBOT SERVER HERO BANNER -->
-        <div class="probot-hero-card">
+        <!-- ROOMUP SERVER HERO BANNER -->
+        <div class="roomup-hero-card">
           <div class="hero-left">
             <div class="hero-avatar-wrapper">
               <div class="hero-avatar supercircle">
@@ -2239,10 +2239,10 @@
             </div>
           </div>
           <div class="hero-actions">
-            <a href="/invite" target="_blank" class="btn-probot-primary">
+            <a href="/invite" target="_blank" class="btn-roomup-primary">
               <i class="fa-solid fa-plus"></i> Invita Bot
             </a>
-            <button type="button" class="btn-probot-secondary" onclick="location.reload()">
+            <button type="button" class="btn-roomup-secondary" onclick="location.reload()">
               <i class="fa-solid fa-rotate"></i> Aggiorna
             </button>
           </div>
@@ -2280,7 +2280,7 @@
           </div>
         </div>
 
-        <!-- PROBOT MODULE OVERVIEW GRID -->
+        <!-- ROOMUP MODULE OVERVIEW GRID -->
         <div class="dashboard-card" style="padding: 1.5rem;">
           <div class="card-header" style="margin-bottom: 0.75rem;">
             <div>
@@ -2301,7 +2301,7 @@
             <div class="module-section-header">
               <i class="fa-solid fa-shield-halved"></i> Sicurezza (7 Moduli)
             </div>
-            <div class="probot-module-grid">
+            <div class="roomup-module-grid">
               
               <!-- 1. Moderazione AI -->
               <div class="module-card" data-module-name="Moderazione AI" data-category="Sicurezza">
@@ -2486,7 +2486,7 @@
             <div class="module-section-header">
               <i class="fa-solid fa-users"></i> Community (8 Moduli)
             </div>
-            <div class="probot-module-grid">
+            <div class="roomup-module-grid">
 
               <!-- 8. Benvenuto -->
               <div class="module-card" data-module-name="Benvenuto" data-category="Community">
@@ -2717,7 +2717,7 @@
             <div class="module-section-header">
               <i class="fa-solid fa-wand-magic-sparkles"></i> Strumenti & Utility (8 Moduli)
             </div>
-            <div class="probot-module-grid">
+            <div class="roomup-module-grid">
 
               <!-- 16. Assistente AI -->
               <div class="module-card" data-module-name="Assistente AI" data-category="Strumenti & Utility">
@@ -3123,6 +3123,7 @@
             </div>
           </div>
         </div>
+      </div>
       <!-- ================= TAB: SENTINEL AUTONOMOUS STAFF SYSTEM ================= -->
       <div id="tab-sentinel" class="tab-pane">
         <div class="sub-header">
@@ -7478,7 +7479,7 @@
                       <td><span class="badge-tag <%= c.status === 'ACTIVE' ? 'yellow' : 'green' %>"><%= c.status %></span></td>
                       <td>
                         <% if (c.status === 'ACTIVE') { %>
-                          <button type="button" class="btn-probot-secondary btn-sm" onclick="resolveCaseDirect('<%= c.caseId %>')" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-check"></i> Risolvi</button>
+                          <button type="button" class="btn-roomup-secondary btn-sm" onclick="resolveCaseDirect('<%= c.caseId %>')" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-check"></i> Risolvi</button>
                         <% } else { %>
                           <span style="font-size: 0.72rem; color: var(--text-dim);">-</span>
                         <% } %>
@@ -7560,7 +7561,7 @@
                     <td><span class="badge-tag <%= r.status === 'PENDING' ? 'yellow' : 'blue' %>"><%= r.status %></span></td>
                     <td>
                       <% if (r.status === 'PENDING') { %>
-                        <button type="button" class="btn-probot-secondary btn-sm" onclick="dismissReportDirect('<%= r.id %>')" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-box-archive"></i> Archivia</button>
+                        <button type="button" class="btn-roomup-secondary btn-sm" onclick="dismissReportDirect('<%= r.id %>')" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-box-archive"></i> Archivia</button>
                       <% } else { %>
                         <span style="font-size: 0.72rem; color: var(--text-dim);"><%= r.status %></span>
                       <% } %>
@@ -7606,8 +7607,8 @@
                     <td><span class="badge-tag <%= a.status === 'PENDING' ? 'yellow' : (a.status === 'ACCEPTED' ? 'green' : 'red') %>"><%= a.status %></span></td>
                     <td>
                       <% if (a.status === 'PENDING') { %>
-                        <button type="button" class="btn-probot-secondary btn-sm" onclick="resolveAppealDirect('<%= a.id %>', 'ACCEPTED')" style="color: #2ecc71; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-check"></i> Approva</button>
-                        <button type="button" class="btn-probot-secondary btn-sm" onclick="resolveAppealDirect('<%= a.id %>', 'REJECTED')" style="color: #ef4444; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-xmark"></i> Respingi</button>
+                        <button type="button" class="btn-roomup-secondary btn-sm" onclick="resolveAppealDirect('<%= a.id %>', 'ACCEPTED')" style="color: #2ecc71; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-check"></i> Approva</button>
+                        <button type="button" class="btn-roomup-secondary btn-sm" onclick="resolveAppealDirect('<%= a.id %>', 'REJECTED')" style="color: #ef4444; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-xmark"></i> Respingi</button>
                       <% } else { %>
                         <span style="font-size: 0.72rem; color: var(--text-dim);"><%= a.status %></span>
                       <% } %>
@@ -7697,7 +7698,7 @@
                     <td><code>#<%= s.threadId %></code></td>
                     <td><%= s.openedAt ? new Date(s.openedAt).toLocaleString("it-IT") : "-" %></td>
                     <td>
-                      <button type="button" class="btn-probot-secondary btn-sm" onclick="closeModmailSessionDirect('<%= uid %>')" style="color: var(--accent-red); font-size: 0.75rem;">
+                      <button type="button" class="btn-roomup-secondary btn-sm" onclick="closeModmailSessionDirect('<%= uid %>')" style="color: var(--accent-red); font-size: 0.75rem;">
                         <i class="fa-solid fa-lock"></i> Chiudi Sessione
                       </button>
                     </td>
@@ -7780,8 +7781,8 @@
                     </td>
                     <td>
                       <% if (sub.status === 'PENDING') { %>
-                        <button type="button" class="btn-probot-secondary btn-sm" onclick="updateFormSubDirect('<%= sub.id %>', 'APPROVED')" style="color: #2ecc71; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-check"></i></button>
-                        <button type="button" class="btn-probot-secondary btn-sm" onclick="updateFormSubDirect('<%= sub.id %>', 'REJECTED')" style="color: #ef4444; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="btn-roomup-secondary btn-sm" onclick="updateFormSubDirect('<%= sub.id %>', 'APPROVED')" style="color: #2ecc71; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-check"></i></button>
+                        <button type="button" class="btn-roomup-secondary btn-sm" onclick="updateFormSubDirect('<%= sub.id %>', 'REJECTED')" style="color: #ef4444; font-size: 0.72rem; padding: 0.2rem 0.5rem;"><i class="fa-solid fa-xmark"></i></button>
                       <% } else { %>
                         <span style="font-size: 0.72rem; color: var(--text-dim);"><%= sub.reviewedBy || 'Revisionato' %></span>
                       <% } %>
@@ -8177,7 +8178,7 @@
                     <div class="diag-title"><%= a.name %></div>
                     <div class="diag-desc">Trigger: <code><%= a.trigger %></code> &bull; Azioni configurate: <%= a.actions ? a.actions.length : 0 %></div>
                   </div>
-                  <button type="button" class="btn-probot-secondary" onclick="deleteWorkflowDirect('<%= a.id %>')" style="color: var(--accent-red);"><i class="fa-solid fa-trash"></i></button>
+                  <button type="button" class="btn-roomup-secondary" onclick="deleteWorkflowDirect('<%= a.id %>')" style="color: var(--accent-red);"><i class="fa-solid fa-trash"></i></button>
                 </div>
               <% }) %>
             <% } else { %>
@@ -8198,7 +8199,7 @@
         <span>Ci sono modifiche non salvate!</span>
       </div>
       <div class="floating-save-actions">
-        <button type="button" class="btn-probot-secondary" onclick="resetUnsavedChanges()">
+        <button type="button" class="btn-roomup-secondary" onclick="resetUnsavedChanges()">
           <i class="fa-solid fa-arrow-rotate-left"></i> Annulla
         </button>
         <button type="button" class="btn-save" id="floatingSaveBtn" onclick="saveAllSettings()">
@@ -8242,7 +8243,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-probot-secondary" onclick="closeAddPrecedentModal()">Annulla</button>
+        <button type="button" class="btn-roomup-secondary" onclick="closeAddPrecedentModal()">Annulla</button>
         <button type="button" class="btn-action" onclick="submitAddPrecedent()"><i class="fa-solid fa-plus"></i> Salva Regola</button>
       </div>
     </div>
@@ -8281,7 +8282,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-probot-secondary" onclick="closeAddKnowledgeModal()">Annulla</button>
+        <button type="button" class="btn-roomup-secondary" onclick="closeAddKnowledgeModal()">Annulla</button>
         <button type="button" class="btn-action" onclick="submitAddKnowledge()"><i class="fa-solid fa-plus"></i> Salva Documento</button>
       </div>
     </div>
@@ -8324,7 +8325,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn-probot-secondary" onclick="closeNewCaseModal()">Annulla</button>
+        <button type="button" class="btn-roomup-secondary" onclick="closeNewCaseModal()">Annulla</button>
         <button type="button" class="btn-action" onclick="submitNewCase()"><i class="fa-solid fa-check"></i> Registra Sanzione</button>
       </div>
     </div>
@@ -8336,17 +8337,17 @@
     const GUILD_ID = "<%= guildId %>";
     let hasUnsavedChanges = false;
 
-    // ProBot Server Dropdown Switcher
+    // RoomUp Server Dropdown Switcher
     function toggleServerDropdown(event) {
       if (event) event.stopPropagation();
-      const dd = document.getElementById('probotServerDropdown');
+      const dd = document.getElementById('roomupServerDropdown');
       if (!dd) return;
       const isOpen = dd.style.display === 'flex';
       dd.style.display = isOpen ? 'none' : 'flex';
     }
 
     document.addEventListener('click', (e) => {
-      const dd = document.getElementById('probotServerDropdown');
+      const dd = document.getElementById('roomupServerDropdown');
       if (dd && dd.style.display === 'flex' && !dd.contains(e.target) && !e.target.closest('.btn-server-select')) {
         dd.style.display = 'none';
       }

@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>RoomUp! • ProBot Edition • Piattaforma Discord All-In-One</title>
+  <title>RoomUp! • Piattaforma di Gestione Discord</title>
   <link rel="icon" type="image/jpeg" href="/img/butterfly_avatar.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root {
-      --bg-base: #080a11;
-      --bg-surface: #0f121d;
-      --bg-card: #141726;
-      --bg-card-hover: #1c2136;
-      --bg-input: #0b0d16;
+      --bg-base: #0f1117;
+      --bg-surface: #141720;
+      --bg-card: #181b24;
+      --bg-card-hover: #202430;
+      --bg-input: #111319;
       --border: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(139, 92, 246, 0.45);
-      --border-focus: #8b5cf6;
-      --gradient-brand: linear-gradient(135deg, #7c3aed 0%, #a855f7 40%, #ec4899 80%, #f59e0b 100%);
-      --gradient-btn: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
-      --gradient-btn-hover: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-      --primary: #8b5cf6;
-      --primary-hover: #7c3aed;
-      --primary-glow: rgba(139, 92, 246, 0.35);
-      --accent-pink: #ec4899;
-      --accent-green: #10b981;
-      --accent-red: #ef4444;
-      --accent-amber: #f59e0b;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
+      --border-hover: rgba(88, 101, 242, 0.45);
+      --border-focus: #5865F2;
+      --gradient-brand: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+      --gradient-btn: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+      --gradient-btn-hover: linear-gradient(135deg, #4752C4 0%, #3c45a5 100%);
+      --primary: #5865F2;
+      --primary-hover: #4752C4;
+      --primary-glow: rgba(88, 101, 242, 0.25);
+      --accent-green: #23a55a;
+      --accent-red: #f23f43;
+      --accent-amber: #f0b232;
+      --text-main: #f2f3f5;
+      --text-muted: #949ba4;
+      --text-dim: #626770;
       --squircle-radius: 22%;
       --card-radius: 16px;
       --control-radius: 10px;
@@ -52,7 +51,7 @@
 
     .supercircle { border-radius: var(--squircle-radius) !important; }
 
-    /* ================= TOP NAVBAR (PROBOT STYLE) ================= */
+    /* ================= TOP NAVBAR (ROOMUP STYLE) ================= */
     header {
       background: rgba(15, 18, 29, 0.85);
       backdrop-filter: blur(16px);
@@ -217,7 +216,7 @@
       border-color: rgba(239, 68, 68, 0.3); 
     }
 
-    .btn-probot-primary {
+    .btn-roomup-primary {
       background: var(--gradient-btn);
       color: #fff;
       border: none;
@@ -234,7 +233,7 @@
       cursor: pointer;
       box-shadow: 0 4px 15px var(--primary-glow);
     }
-    .btn-probot-primary:hover {
+    .btn-roomup-primary:hover {
       background: var(--gradient-btn-hover);
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
@@ -360,7 +359,7 @@
       font-weight: 700;
     }
 
-    /* SERVER GRID & CARDS (PROBOT STYLE) */
+    /* SERVER GRID & CARDS (ROOMUP STYLE) */
     .server-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -561,7 +560,7 @@
       line-height: 1.5;
     }
 
-    /* VISITOR HERO (PROBOT SUNSET MARKETING) */
+    /* VISITOR HERO (ROOMUP SUNSET MARKETING) */
     .visitor-hero {
       text-align: center;
       padding: 4.5rem 1.5rem 5rem 1.5rem;
@@ -751,7 +750,7 @@
         <img src="/img/butterfly_avatar.jpg" alt="RoomUp Logo" class="bot-icon supercircle">
         <div class="logo-container">
           <span class="logo">RoomUp!</span>
-          <span class="brand-badge-pill">ProBot Edition</span>
+          <span class="brand-badge-pill">Dashboard Ufficiale</span>
         </div>
       </a>
       <div class="nav-status-pill" title="Stato Gateway Discord">
@@ -770,7 +769,7 @@
           <i class="fa-solid fa-right-from-bracket"></i> Esci
         </a>
       <% } else { %>
-        <a href="/login?force_oauth=true" class="btn-probot-primary">
+        <a href="/login?force_oauth=true" class="btn-roomup-primary">
           <i class="fa-brands fa-discord"></i> Accedi con Discord
         </a>
       <% } %>
@@ -780,7 +779,7 @@
   <!-- ================= MAIN CONTENT ================= -->
   <main>
     <% if (safeUser) { %>
-      <!-- ================= AUTHENTICATED: PROBOT SERVER HUB ================= -->
+      <!-- ================= AUTHENTICATED: ROOMUP SERVER HUB ================= -->
       <div class="sub-header">
         <div class="sub-header-left">
           <div class="header-icon supercircle">
@@ -876,7 +875,7 @@
       <% } %>
 
     <% } else { %>
-      <!-- ================= VISITOR: PROBOT SUNSET MARKETING HERO ================= -->
+      <!-- ================= VISITOR: ROOMUP MARKETING HERO ================= -->
       <section class="visitor-hero">
         <% if (typeof error !== 'undefined' && error) { %>
           <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 12px; padding: 0.85rem 1.15rem; margin-bottom: 2rem; color: #fca5a5; font-size: 0.88rem; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
@@ -887,7 +886,7 @@
         <img src="/img/butterfly_avatar.jpg" alt="RoomUp Butterfly" class="hero-butterfly-emblem">
 
         <div class="hero-badge">
-          <i class="fa-solid fa-bolt-lightning"></i> Piattaforma Discord All-In-One • Stile ProBot
+          <i class="fa-solid fa-bolt-lightning"></i> Piattaforma di Gestione Discord All-In-One
         </div>
         <h1>
           Tutto il potere del tuo server<br>
@@ -898,7 +897,7 @@
         </p>
 
         <div class="visitor-hero-actions">
-          <a href="/login?force_oauth=true" class="btn-probot-primary" style="height: 48px; padding: 0 2rem; font-size: 0.96rem;">
+          <a href="/login?force_oauth=true" class="btn-roomup-primary" style="height: 48px; padding: 0 2rem; font-size: 0.96rem;">
             <i class="fa-brands fa-discord" style="font-size: 1.15rem;"></i> Accedi con Discord
           </a>
           <a href="/login/dev" class="btn-action" style="height: 48px; padding: 0 1.65rem; font-size: 0.92rem;" title="Accesso Rapido Staff">
@@ -947,7 +946,7 @@
     <div class="footer-inner">
       <div style="display: flex; align-items: center; gap: 0.65rem;">
         <img src="/img/butterfly_avatar.jpg" alt="Logo" style="width: 24px; height: 24px; border-radius: 6px;">
-        <span><strong>RoomUp!</strong> • Piattaforma Discord All-In-One • ProBot Style</span>
+        <span><strong>RoomUp!</strong> • Piattaforma di Gestione Discord</span>
       </div>
       <div style="display: flex; gap: 1.5rem;">
         <a href="https://discord.com/api/oauth2/authorize?client_id=<%= safeClientId %>&permissions=8&scope=bot%20applications.commands" target="_blank" style="color: var(--text-muted); text-decoration: none;">Invita Bot</a>
@@ -968,7 +967,7 @@
       });
     }
 
-    // ProBot-style 1-Click Popup Add Bot Flow
+    // RoomUp-style 1-Click Popup Add Bot Flow
     function openAddBotPopup(guildId, guildName) {
       const clientId = "<%= safeClientId %>";
       const inviteUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&guild_id=${guildId}&permissions=8&scope=bot%20applications.commands`;
