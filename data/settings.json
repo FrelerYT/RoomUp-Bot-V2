@@ -109,56 +109,16 @@
           "id": "panel_support",
           "channelId": "1558547865423585326",
           "title": "🛡️ ROOMUP! × YOUTUBERMC • CENTRO SUPPORTO",
-          "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona una categoria dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n🛠️ **Assistenza Generale & Discord**: problemi con ruoli, domande sul server o chiarimenti.\n🛡️ **Supporto SMP & Protezione Terreni**: problemi con Claim chunk, Gang/Team, furti o permessi.\n🐛 **Segnalazione Bug & Plugin Spigot**: anomalie con Spawners, Casse Crate, /shop, /ah o combat.\n\n*(Per Candidature Staff o Acquisti VIP utilizza i canali dedicati nella categoria SUPPORTO).* ",
+          "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona la sezione di supporto desiderata dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n⚔️ **Supporto SMP**\n• Assistenza gameplay in-game sul server Minecraft 1.21.x.\n• Claim di Chunk, protezione terreni, Gang/Team, furti, permessi o anomalie di gioco.\n• *Notifica automaticamente lo Staff SMP.*\n\n👤 **Supporto Account**\n• Assistenza account di gioco, recupero nick registrato e Store.\n• Acquisti VIP, donazioni Patreon e Chiavi Casse (Crate Keys).\n• *Notifica automaticamente l'Amministrazione Account.*\n\n🛠️ **Supporto Generale**\n• Domande generali sul server Discord o sulla community.\n• Chiarimenti su regole, eventi e ruoli.\n• *Notifica automaticamente lo Staff Generale.*\n\n*(Per Candidature Staff o Creator utilizza il canale dedicato <#1563174274829910137>).* ",
           "color": "#8525e5",
-          "placeholder": "Seleziona una categoria di supporto...",
+          "placeholder": "Seleziona la sezione ticket (SMP, Account, Generale)...",
           "footer": "RoomUp! Support System • Server SMP 1.21.x",
           "categories": [
             {
-              "key": "general",
-              "label": "Assistenza Generale & Discord",
-              "icon": "🛠️",
-              "desc": "Domande sul server Discord, ruoli o chiarimenti generali",
-              "staffRoleIds": [
-                "1563271649782931476",
-                "1563174213592940599",
-                "1563174215207624734",
-                "1563174216084488317",
-                "1563174219649523792",
-                "1563174220442239098",
-                "1563174222224957482",
-                "1563174224158523513",
-                "1563174227371098183",
-                "1563174228935843851",
-                "1558547070715961486"
-              ],
-              "categoryId": "1558842542479638639",
-              "questions": [
-                {
-                  "label": "📝 Descrivi la tua richiesta o domanda",
-                  "style": "Paragraph",
-                  "required": true,
-                  "placeholder": "Spiega di cosa hai bisogno..."
-                }
-              ],
-              "viewRoles": [
-                "1563271649782931476",
-                "1563174213592940599",
-                "1563174215207624734",
-                "1563174216084488317",
-                "1563174219649523792",
-                "1563174220442239098",
-                "1563174222224957482",
-                "1563174224158523513",
-                "1563174227371098183",
-                "1563174228935843851"
-              ]
-            },
-            {
-              "key": "smp_claims",
-              "label": "Supporto SMP & Protezione Terreni",
-              "icon": "🛡️",
-              "desc": "Assistenza su Claim chunk, Gang/Team, furti o permessi",
+              "key": "smp",
+              "label": "Supporto SMP",
+              "icon": "⚔️",
+              "desc": "Problemi in-game, claim chunk, gang, furti o SMP",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -181,16 +141,16 @@
                   "placeholder": "Es: Stev3_MC"
                 },
                 {
-                  "label": "📍 Coordinate o Nome del Claim / Fazione",
+                  "label": "📍 Coordinate o Nome Gang / Claim",
                   "style": "Short",
-                  "required": true,
+                  "required": false,
                   "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
                 },
                 {
-                  "label": "📝 Dettagli del problema",
+                  "label": "📝 Descrizione del problema",
                   "style": "Paragraph",
                   "required": true,
-                  "placeholder": "Spiega cosa è successo (furto, griefing, errore claim...)"
+                  "placeholder": "Spiega cosa è accaduto in-game..."
                 }
               ],
               "viewRoles": [
@@ -207,10 +167,10 @@
               ]
             },
             {
-              "key": "game_bugs",
-              "label": "Segnalazione Bug & Plugin Spigot",
-              "icon": "🐛",
-              "desc": "Bug su Spawners, Casse Crate, /shop, /ah, /menu o combat",
+              "key": "account",
+              "label": "Supporto Account",
+              "icon": "👤",
+              "desc": "Recupero account, cambio nick, VIP e Crate Keys",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -222,27 +182,67 @@
                 "1563174224158523513",
                 "1563174227371098183",
                 "1563174228935843851",
-                "1558547337033289890"
+                "1558547405178413136"
               ],
               "categoryId": "1558842542479638639",
               "questions": [
                 {
-                  "label": "🎮 Il tuo Nickname Minecraft",
+                  "label": "🎮 Nickname Minecraft e piattaforma",
                   "style": "Short",
                   "required": true,
-                  "placeholder": "Es: Alex_Pro"
+                  "placeholder": "Java o Bedrock + Nickname"
                 },
                 {
-                  "label": "⚙️ Sistema coinvolto (/menu, Spawner, Crate, Shop...)",
+                  "label": "🧾 Motivo (Recupero / Cambio Nick / VIP / Store)",
                   "style": "Short",
                   "required": true,
-                  "placeholder": "Es: Spawner Blaze / Casse Mitiche"
+                  "placeholder": "Es: Cambio nickname / Acquisto VIP"
                 },
                 {
-                  "label": "🔍 Descrizione e passaggi per riprodurre il bug",
+                  "label": "📝 Dettagli della richiesta",
                   "style": "Paragraph",
                   "required": true,
-                  "placeholder": "Cosa stavi facendo quando si è verificato l'errore?"
+                  "placeholder": "Descrivi la richiesta o inserisci ID transazione..."
+                }
+              ],
+              "viewRoles": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851"
+              ]
+            },
+            {
+              "key": "general",
+              "label": "Supporto Generale",
+              "icon": "🛠️",
+              "desc": "Domande generali sul Discord, ruoli o chiarimenti",
+              "staffRoleIds": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851",
+                "1558547070715961486"
+              ],
+              "categoryId": "1558842542479638639",
+              "questions": [
+                {
+                  "label": "📝 Descrivi la tua richiesta o domanda",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Di cosa hai bisogno?"
                 }
               ],
               "viewRoles": [
@@ -546,7 +546,151 @@
             }
           ]
         }
-      ]
+      ],
+      "smp": {
+        "key": "smp",
+        "label": "Supporto SMP",
+        "icon": "⚔️",
+        "desc": "Problemi in-game, claim chunk, gang, furti o SMP",
+        "staffRoleIds": [
+          "1563271649782931476",
+          "1563174213592940599",
+          "1563174215207624734",
+          "1563174216084488317",
+          "1563174219649523792",
+          "1563174220442239098",
+          "1563174222224957482",
+          "1563174224158523513",
+          "1563174227371098183",
+          "1563174228935843851",
+          "1558547269425303742"
+        ],
+        "categoryId": "1558842542479638639",
+        "questions": [
+          {
+            "label": "🎮 Il tuo Nickname Minecraft",
+            "style": "Short",
+            "required": true,
+            "placeholder": "Es: Stev3_MC"
+          },
+          {
+            "label": "📍 Coordinate o Nome Gang / Claim",
+            "style": "Short",
+            "required": false,
+            "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
+          },
+          {
+            "label": "📝 Descrizione del problema",
+            "style": "Paragraph",
+            "required": true,
+            "placeholder": "Spiega cosa è accaduto in-game..."
+          }
+        ],
+        "viewRoles": [
+          "1563271649782931476",
+          "1563174213592940599",
+          "1563174215207624734",
+          "1563174216084488317",
+          "1563174219649523792",
+          "1563174220442239098",
+          "1563174222224957482",
+          "1563174224158523513",
+          "1563174227371098183",
+          "1563174228935843851"
+        ]
+      },
+      "account": {
+        "key": "account",
+        "label": "Supporto Account",
+        "icon": "👤",
+        "desc": "Recupero account, cambio nick, VIP e Crate Keys",
+        "staffRoleIds": [
+          "1563271649782931476",
+          "1563174213592940599",
+          "1563174215207624734",
+          "1563174216084488317",
+          "1563174219649523792",
+          "1563174220442239098",
+          "1563174222224957482",
+          "1563174224158523513",
+          "1563174227371098183",
+          "1563174228935843851",
+          "1558547405178413136"
+        ],
+        "categoryId": "1558842542479638639",
+        "questions": [
+          {
+            "label": "🎮 Nickname Minecraft e piattaforma",
+            "style": "Short",
+            "required": true,
+            "placeholder": "Java o Bedrock + Nickname"
+          },
+          {
+            "label": "🧾 Motivo (Recupero / Cambio Nick / VIP / Store)",
+            "style": "Short",
+            "required": true,
+            "placeholder": "Es: Cambio nickname / Acquisto VIP"
+          },
+          {
+            "label": "📝 Dettagli della richiesta",
+            "style": "Paragraph",
+            "required": true,
+            "placeholder": "Descrivi la richiesta o inserisci ID transazione..."
+          }
+        ],
+        "viewRoles": [
+          "1563271649782931476",
+          "1563174213592940599",
+          "1563174215207624734",
+          "1563174216084488317",
+          "1563174219649523792",
+          "1563174220442239098",
+          "1563174222224957482",
+          "1563174224158523513",
+          "1563174227371098183",
+          "1563174228935843851"
+        ]
+      },
+      "general": {
+        "key": "general",
+        "label": "Supporto Generale",
+        "icon": "🛠️",
+        "desc": "Domande generali sul Discord, ruoli o chiarimenti",
+        "staffRoleIds": [
+          "1563271649782931476",
+          "1563174213592940599",
+          "1563174215207624734",
+          "1563174216084488317",
+          "1563174219649523792",
+          "1563174220442239098",
+          "1563174222224957482",
+          "1563174224158523513",
+          "1563174227371098183",
+          "1563174228935843851",
+          "1558547070715961486"
+        ],
+        "categoryId": "1558842542479638639",
+        "questions": [
+          {
+            "label": "📝 Descrivi la tua richiesta o domanda",
+            "style": "Paragraph",
+            "required": true,
+            "placeholder": "Di cosa hai bisogno?"
+          }
+        ],
+        "viewRoles": [
+          "1563271649782931476",
+          "1563174213592940599",
+          "1563174215207624734",
+          "1563174216084488317",
+          "1563174219649523792",
+          "1563174220442239098",
+          "1563174222224957482",
+          "1563174224158523513",
+          "1563174227371098183",
+          "1563174228935843851"
+        ]
+      }
     },
     "verification": {
       "enabled": false,
@@ -1176,56 +1320,16 @@
         "id": "panel_support",
         "channelId": "1558547865423585326",
         "title": "🛡️ ROOMUP! × YOUTUBERMC • CENTRO SUPPORTO",
-        "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona una categoria dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n🛠️ **Assistenza Generale & Discord**: problemi con ruoli, domande sul server o chiarimenti.\n🛡️ **Supporto SMP & Protezione Terreni**: problemi con Claim chunk, Gang/Team, furti o permessi.\n🐛 **Segnalazione Bug & Plugin Spigot**: anomalie con Spawners, Casse Crate, /shop, /ah o combat.\n\n*(Per Candidature Staff o Acquisti VIP utilizza i canali dedicati nella categoria SUPPORTO).* ",
+        "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona la sezione di supporto desiderata dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n⚔️ **Supporto SMP**\n• Assistenza gameplay in-game sul server Minecraft 1.21.x.\n• Claim di Chunk, protezione terreni, Gang/Team, furti, permessi o anomalie di gioco.\n• *Notifica automaticamente lo Staff SMP.*\n\n👤 **Supporto Account**\n• Assistenza account di gioco, recupero nick registrato e Store.\n• Acquisti VIP, donazioni Patreon e Chiavi Casse (Crate Keys).\n• *Notifica automaticamente l'Amministrazione Account.*\n\n🛠️ **Supporto Generale**\n• Domande generali sul server Discord o sulla community.\n• Chiarimenti su regole, eventi e ruoli.\n• *Notifica automaticamente lo Staff Generale.*\n\n*(Per Candidature Staff o Creator utilizza il canale dedicato <#1563174274829910137>).* ",
         "color": "#8525e5",
-        "placeholder": "Seleziona una categoria di supporto...",
+        "placeholder": "Seleziona la sezione ticket (SMP, Account, Generale)...",
         "footer": "RoomUp! Support System • Server SMP 1.21.x",
         "categories": [
           {
-            "key": "general",
-            "label": "Assistenza Generale & Discord",
-            "icon": "🛠️",
-            "desc": "Domande sul server Discord, ruoli o chiarimenti generali",
-            "staffRoleIds": [
-              "1563271649782931476",
-              "1563174213592940599",
-              "1563174215207624734",
-              "1563174216084488317",
-              "1563174219649523792",
-              "1563174220442239098",
-              "1563174222224957482",
-              "1563174224158523513",
-              "1563174227371098183",
-              "1563174228935843851",
-              "1558547070715961486"
-            ],
-            "categoryId": "1558842542479638639",
-            "questions": [
-              {
-                "label": "📝 Descrivi la tua richiesta o domanda",
-                "style": "Paragraph",
-                "required": true,
-                "placeholder": "Spiega di cosa hai bisogno..."
-              }
-            ],
-            "viewRoles": [
-              "1563271649782931476",
-              "1563174213592940599",
-              "1563174215207624734",
-              "1563174216084488317",
-              "1563174219649523792",
-              "1563174220442239098",
-              "1563174222224957482",
-              "1563174224158523513",
-              "1563174227371098183",
-              "1563174228935843851"
-            ]
-          },
-          {
-            "key": "smp_claims",
-            "label": "Supporto SMP & Protezione Terreni",
-            "icon": "🛡️",
-            "desc": "Assistenza su Claim chunk, Gang/Team, furti o permessi",
+            "key": "smp",
+            "label": "Supporto SMP",
+            "icon": "⚔️",
+            "desc": "Problemi in-game, claim chunk, gang, furti o SMP",
             "staffRoleIds": [
               "1563271649782931476",
               "1563174213592940599",
@@ -1248,16 +1352,16 @@
                 "placeholder": "Es: Stev3_MC"
               },
               {
-                "label": "📍 Coordinate o Nome del Claim / Fazione",
+                "label": "📍 Coordinate o Nome Gang / Claim",
                 "style": "Short",
-                "required": true,
+                "required": false,
                 "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
               },
               {
-                "label": "📝 Dettagli del problema",
+                "label": "📝 Descrizione del problema",
                 "style": "Paragraph",
                 "required": true,
-                "placeholder": "Spiega cosa è successo (furto, griefing, errore claim...)"
+                "placeholder": "Spiega cosa è accaduto in-game..."
               }
             ],
             "viewRoles": [
@@ -1274,10 +1378,10 @@
             ]
           },
           {
-            "key": "game_bugs",
-            "label": "Segnalazione Bug & Plugin Spigot",
-            "icon": "🐛",
-            "desc": "Bug su Spawners, Casse Crate, /shop, /ah, /menu o combat",
+            "key": "account",
+            "label": "Supporto Account",
+            "icon": "👤",
+            "desc": "Recupero account, cambio nick, VIP e Crate Keys",
             "staffRoleIds": [
               "1563271649782931476",
               "1563174213592940599",
@@ -1289,27 +1393,67 @@
               "1563174224158523513",
               "1563174227371098183",
               "1563174228935843851",
-              "1558547337033289890"
+              "1558547405178413136"
             ],
             "categoryId": "1558842542479638639",
             "questions": [
               {
-                "label": "🎮 Il tuo Nickname Minecraft",
+                "label": "🎮 Nickname Minecraft e piattaforma",
                 "style": "Short",
                 "required": true,
-                "placeholder": "Es: Alex_Pro"
+                "placeholder": "Java o Bedrock + Nickname"
               },
               {
-                "label": "⚙️ Sistema coinvolto (/menu, Spawner, Crate, Shop...)",
+                "label": "🧾 Motivo (Recupero / Cambio Nick / VIP / Store)",
                 "style": "Short",
                 "required": true,
-                "placeholder": "Es: Spawner Blaze / Casse Mitiche"
+                "placeholder": "Es: Cambio nickname / Acquisto VIP"
               },
               {
-                "label": "🔍 Descrizione e passaggi per riprodurre il bug",
+                "label": "📝 Dettagli della richiesta",
                 "style": "Paragraph",
                 "required": true,
-                "placeholder": "Cosa stavi facendo quando si è verificato l'errore?"
+                "placeholder": "Descrivi la richiesta o inserisci ID transazione..."
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          },
+          {
+            "key": "general",
+            "label": "Supporto Generale",
+            "icon": "🛠️",
+            "desc": "Domande generali sul Discord, ruoli o chiarimenti",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547070715961486"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "📝 Descrivi la tua richiesta o domanda",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Di cosa hai bisogno?"
               }
             ],
             "viewRoles": [

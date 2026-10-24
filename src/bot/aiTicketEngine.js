@@ -383,7 +383,9 @@ function recordStaffActionLive(guildId, categoryKey, userLastMessage, staffMessa
 
 // ─── CONTESTI CATEGORIE ─────────────────────────────────────
 const CATEGORY_CONTEXT = {
-  general:     `Ticket di supporto generale. L'utente ha bisogno di assistenza tecnica, chiarimenti o aiuto su RoomUp. Rispondi in modo naturale, diretto e amichevole.`,
+  general:     `Ticket di supporto generale. L'utente ha bisogno di assistenza tecnica, chiarimenti o aiuto su RoomUp o Discord. Rispondi in modo naturale, diretto e amichevole.`,
+  smp:         `Ticket di supporto gameplay Minecraft per RoomUp! x YouTuberMC (SMP 1.21.x su Paper a 20 TPS). L'utente chiede assistenza su claim di chunk, gang/team, furti o griefing, /menu centrale, /shop o /ah (0% inserzione, 2% vendita), Spawners con Registro Raccolte, o Casse Crate (Leggendaria Netherite Max Enchant, Mitica Magic Bucket e Razzo Stellare Infinito 14gg). Sii accogliente e professionale.`,
+  account:     `Ticket di supporto account, recupero nick, donazioni Patreon, VIP o store. L'utente ha problemi con il cambio nickname, il recupero credenziali o pacchetti VIP/Crate keys acquistati. Rispondi con massima serietà e riservatezza.`,
   partnership: `Richiesta di partnership con RoomUp. Requisiti: server attivo da almeno un mese, comunità solida, link invito permanente. Invito ufficiale RoomUp: discord.gg/roomup`,
   staff_app:   `Sei l'esaminatore ufficiale e supervisore dello staff per RoomUp! x YouTuberMC (Minecraft SMP 1.21.x e Discord).
 Conosci alla perfezione tutte le procedure di ScreenShare (SS) forensi:

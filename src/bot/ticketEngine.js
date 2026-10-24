@@ -302,7 +302,8 @@ async function createTicketChannel(guild, user, typeKey, panelId, modalAnswers =
   }
 
   const formattedNum = String(newCount).padStart(4, '0');
-  const channelName = `ticket-${formattedNum}`;
+  const typePrefix = typeKey ? `${typeKey.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}-` : '';
+  const channelName = `ticket-${typePrefix}${formattedNum}`;
 
   // Permission Overwrites
   const overwrites = [
