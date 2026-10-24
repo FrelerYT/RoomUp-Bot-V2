@@ -134,7 +134,7 @@ const ROOMUP_SMP_KNOWLEDGE = {
     legendaryHighlights: "Equipaggiamenti Netherite con enchant massimi (Sharpness V, Looting III, Sweeping Edge III, Protection IV, ecc.).",
     mythicHighlights: "Secchio Magico (Magic Bucket con acqua infinita) e Razzo Stellare Infinito (14 giorni di boost elitre con particelle stellari e suoni custom)."
   },
-  teamsAndClaims: "Gang/Team con banca comune e fuoco amico; Claim chunk anti-griefing e anti-furto; viaggi con /home, /rtp sicuro e /tpa.",
+  teamsAndClaims: "Server in stile DonutSMP con raiding e griefing consentiti tra basi nel rispetto delle regole di gioco. Gang/Team con banca comune e fuoco amico; viaggi con /home, /rtp sicuro e /tpa. Lo staff non rimborsa raid leciti di gioco.",
   pvpMechanics: "Combattimento 1.9+ bilanciato con Combat Tag: blocco totale dei comandi durante il fight e morte istantanea in caso di combat-log.",
   technicalAddons: "Simple Voice Chat (prossimità vocale), Oraxen (texture, modelli e glifi custom), FancyNpcs e DecentHolograms allo spawn."
 };

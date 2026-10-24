@@ -62,6 +62,15 @@
       "content": "Sentinel AI valuta i candidati su 4 dimensioni: 1) Conoscenza SS (BAM, Prefetch, javaw strings, AnyDesk, regole freeze); 2) Conoscenza SMP RoomUp! (Paper 1.21.x, /menu, shop, crates, claims, spawners); 3) Moderazione Discord & De-escalation; 4) Maturita e tono. Punteggio: >= 7.5 Idoneo per provino vocale / Helper; 5.5 - 7.4 In Riserva / Trainee; < 5.5 Non Idoneo.",
       "confidence": 1,
       "verified": true
+    },
+    {
+      "id": "skb_donutsmp_gameplay",
+      "category": "SERVER_GAMEPLAY",
+      "title": "Meccaniche SMP DonutSMP Style (Grief & Raiding)",
+      "topic": "smp donutusmp gameplay grief",
+      "content": "RoomUp! SMP è un server hardcore in stile DonutSMP. Il griefing, i raid alle basi e il PvP libero fanno parte del normale gameplay di sopravvivenza. I giocatori non possono aprire ticket per lamentarsi di essere stati derubati o raidati, poiché è consentito e fa parte del gioco. Il Supporto SMP è riservato a problemi tecnici, bug, comandi (/menu, /shop, /ah) o anomalie di plugin.",
+      "confidence": 1,
+      "verified": true
     }
   ],
   "111111111111111111": [],

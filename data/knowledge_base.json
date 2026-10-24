@@ -282,6 +282,21 @@
         "colloquio"
       ],
       "content": "Requisiti per candidarsi come Staff: età minima 14 anni, microfono funzionante per assistenza vocale, conoscenza approfondita del regolamento e delle meccaniche SMP RoomUp! x YouTuberMC (/menu, shop, ah, crates, claim). Per i ruoli Helper e Mod Minecraft è richiesta competenza pratica nelle procedure di ScreenShare (SS). Le candidature si aprono tramite ticket in #❓・apri-un-ticket dove Sentinel AI somministra il colloquio tecnico preliminare."
+    },
+    {
+      "id": "kb_donutsmp",
+      "category": "Gameplay SMP",
+      "title": "Stile DonutSMP, Raiding & Griefing",
+      "keywords": [
+        "donutsmp",
+        "grief",
+        "griefing",
+        "raid",
+        "raiding",
+        "furti",
+        "basi"
+      ],
+      "content": "RoomUp! SMP è un server hardcore in stile DonutSMP. Il griefing, i raid alle basi e il PvP sono parte integrante del gameplay e consentiti dalle regole di gioco. Lo staff non interviene per richieste di rollback o rimborsi legati a raid o furti di gioco. Il Supporto SMP è dedicato ad assistenza tecnica, problemi tecnici, bug di sistema, comandi (/menu, /shop, /ah) o anomalie di plugin."
     }
   ]
 }

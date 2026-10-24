@@ -109,16 +109,16 @@
           "id": "panel_support",
           "channelId": "1558547865423585326",
           "title": "🛡️ ROOMUP! × YOUTUBERMC • CENTRO SUPPORTO",
-          "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona la sezione di supporto desiderata dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n⚔️ **Supporto SMP**\n• Assistenza gameplay in-game sul server Minecraft 1.21.x.\n• Claim di Chunk, protezione terreni, Gang/Team, furti, permessi o anomalie di gioco.\n• *Notifica automaticamente lo Staff SMP.*\n\n👤 **Supporto Account**\n• Assistenza account di gioco, recupero nick registrato e Store.\n• Acquisti VIP, donazioni Patreon e Chiavi Casse (Crate Keys).\n• *Notifica automaticamente l'Amministrazione Account.*\n\n🛠️ **Supporto Generale**\n• Domande generali sul server Discord o sulla community.\n• Chiarimenti su regole, eventi e ruoli.\n• *Notifica automaticamente lo Staff Generale.*\n\n*(Per Candidature Staff o Creator utilizza il canale dedicato <#1563174274829910137>).* ",
+          "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** (SMP 1.21.x Style DonutSMP)!\n\nSeleziona la tipologia di assistenza desiderata dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n⚔️ **Supporto SMP**\n• Assistenza per il server Minecraft SMP (1.21.x).\n• Problemi tecnici in-game, comandi (/menu, /shop, /ah), Spawners, Casse o bug.\n• *Notifica automaticamente lo Staff SMP.*\n\n👤 **Supporto Account**\n• Assistenza account di gioco, recupero nick registrato e Store.\n• Acquisti VIP, donazioni Patreon e Chiavi Casse (Crate Keys).\n• *Notifica automaticamente l'Amministrazione Account.*\n\n🛠️ **Supporto Generale**\n• Domande generali sul server Discord o sulla community.\n• Chiarimenti su regole, eventi e ruoli.\n• *Notifica automaticamente lo Staff Generale.*\n\n*(Per Candidature Staff o Creator utilizza il canale dedicato <#1563174274829910137>).* ",
           "color": "#8525e5",
           "placeholder": "Seleziona la sezione ticket (SMP, Account, Generale)...",
-          "footer": "RoomUp! Support System • Server SMP 1.21.x",
+          "footer": "RoomUp! Support System • DonutSMP Style 1.21.x",
           "categories": [
             {
               "key": "smp",
               "label": "Supporto SMP",
               "icon": "⚔️",
-              "desc": "Problemi in-game, claim chunk, gang, furti o SMP",
+              "desc": "Assistenza per il server Minecraft SMP, comandi o problemi in-game",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -141,16 +141,10 @@
                   "placeholder": "Es: Stev3_MC"
                 },
                 {
-                  "label": "📍 Coordinate o Nome Gang / Claim",
-                  "style": "Short",
-                  "required": false,
-                  "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
-                },
-                {
-                  "label": "📝 Descrizione del problema",
+                  "label": "📝 Di cosa hai bisogno sulla SMP?",
                   "style": "Paragraph",
                   "required": true,
-                  "placeholder": "Spiega cosa è accaduto in-game..."
+                  "placeholder": "Descrivi il problema tecnico, bug o richiesta..."
                 }
               ],
               "viewRoles": [
@@ -551,7 +545,7 @@
         "key": "smp",
         "label": "Supporto SMP",
         "icon": "⚔️",
-        "desc": "Problemi in-game, claim chunk, gang, furti o SMP",
+        "desc": "Assistenza per il server Minecraft SMP, comandi o problemi in-game",
         "staffRoleIds": [
           "1563271649782931476",
           "1563174213592940599",
@@ -574,16 +568,10 @@
             "placeholder": "Es: Stev3_MC"
           },
           {
-            "label": "📍 Coordinate o Nome Gang / Claim",
-            "style": "Short",
-            "required": false,
-            "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
-          },
-          {
-            "label": "📝 Descrizione del problema",
+            "label": "📝 Di cosa hai bisogno sulla SMP?",
             "style": "Paragraph",
             "required": true,
-            "placeholder": "Spiega cosa è accaduto in-game..."
+            "placeholder": "Descrivi il problema tecnico, bug o richiesta..."
           }
         ],
         "viewRoles": [
@@ -1320,16 +1308,16 @@
         "id": "panel_support",
         "channelId": "1558547865423585326",
         "title": "🛡️ ROOMUP! × YOUTUBERMC • CENTRO SUPPORTO",
-        "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona la sezione di supporto desiderata dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n⚔️ **Supporto SMP**\n• Assistenza gameplay in-game sul server Minecraft 1.21.x.\n• Claim di Chunk, protezione terreni, Gang/Team, furti, permessi o anomalie di gioco.\n• *Notifica automaticamente lo Staff SMP.*\n\n👤 **Supporto Account**\n• Assistenza account di gioco, recupero nick registrato e Store.\n• Acquisti VIP, donazioni Patreon e Chiavi Casse (Crate Keys).\n• *Notifica automaticamente l'Amministrazione Account.*\n\n🛠️ **Supporto Generale**\n• Domande generali sul server Discord o sulla community.\n• Chiarimenti su regole, eventi e ruoli.\n• *Notifica automaticamente lo Staff Generale.*\n\n*(Per Candidature Staff o Creator utilizza il canale dedicato <#1563174274829910137>).* ",
+        "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** (SMP 1.21.x Style DonutSMP)!\n\nSeleziona la tipologia di assistenza desiderata dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n⚔️ **Supporto SMP**\n• Assistenza per il server Minecraft SMP (1.21.x).\n• Problemi tecnici in-game, comandi (/menu, /shop, /ah), Spawners, Casse o bug.\n• *Notifica automaticamente lo Staff SMP.*\n\n👤 **Supporto Account**\n• Assistenza account di gioco, recupero nick registrato e Store.\n• Acquisti VIP, donazioni Patreon e Chiavi Casse (Crate Keys).\n• *Notifica automaticamente l'Amministrazione Account.*\n\n🛠️ **Supporto Generale**\n• Domande generali sul server Discord o sulla community.\n• Chiarimenti su regole, eventi e ruoli.\n• *Notifica automaticamente lo Staff Generale.*\n\n*(Per Candidature Staff o Creator utilizza il canale dedicato <#1563174274829910137>).* ",
         "color": "#8525e5",
         "placeholder": "Seleziona la sezione ticket (SMP, Account, Generale)...",
-        "footer": "RoomUp! Support System • Server SMP 1.21.x",
+        "footer": "RoomUp! Support System • DonutSMP Style 1.21.x",
         "categories": [
           {
             "key": "smp",
             "label": "Supporto SMP",
             "icon": "⚔️",
-            "desc": "Problemi in-game, claim chunk, gang, furti o SMP",
+            "desc": "Assistenza per il server Minecraft SMP, comandi o problemi in-game",
             "staffRoleIds": [
               "1563271649782931476",
               "1563174213592940599",
@@ -1352,16 +1340,10 @@
                 "placeholder": "Es: Stev3_MC"
               },
               {
-                "label": "📍 Coordinate o Nome Gang / Claim",
-                "style": "Short",
-                "required": false,
-                "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
-              },
-              {
-                "label": "📝 Descrizione del problema",
+                "label": "📝 Di cosa hai bisogno sulla SMP?",
                 "style": "Paragraph",
                 "required": true,
-                "placeholder": "Spiega cosa è accaduto in-game..."
+                "placeholder": "Descrivi il problema tecnico, bug o richiesta..."
               }
             ],
             "viewRoles": [
