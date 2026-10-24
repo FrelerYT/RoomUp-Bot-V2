@@ -3901,10 +3901,9 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Embed & Annunci Giveaway</div>
               <div class="card-desc">Personalizza titoli, colori ed ogni messaggio di notifica vincita.</div>
             </div>
-          <
+          </div>
         <div class="discord-editor-grid">
           <div>
-            /div>
 
           <div class="grid-2">
             <div class="form-group">
@@ -4416,10 +4415,9 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Embed & Notifica Level Up</div>
               <div class="card-desc">Personalizza titolo, colori, footer e il testo di congratulazioni.</div>
             </div>
-          <
+          </div>
         <div class="discord-editor-grid">
           <div>
-            /div>
 
           <div class="grid-3">
             <div class="form-group">
@@ -4934,10 +4932,9 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Annuncio & Embed Partnership</div>
               <div class="card-desc">Personalizza titolo, colori, descrizione, thumbnail e banner pubblicati nel canale partnership.</div>
             </div>
-          <
+          </div>
         <div class="discord-editor-grid">
           <div>
-            /div>
 
           <div class="grid-2">
             <div class="form-group">
@@ -5435,10 +5432,9 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Personalizzazione Embed di Benvenuto & Chiusura</div>
               <div class="card-desc">Modifica i titoli, i colori, i footer e i messaggi inviati nei ticket e nei DM.</div>
             </div>
-          <
+          </div>
         <div class="discord-editor-grid">
           <div>
-            /div>
 
           <div class="grid-3">
             <div class="form-group">
@@ -5662,10 +5658,9 @@
               <div class="card-title"><i class="fa-solid fa-paintbrush"></i> Design Visivo & Personalizzazione Embed</div>
               <div class="card-desc">Personalizza titolo, descrizione, colori, icone, banner e pulsanti dell'embed di verifica.</div>
             </div>
-          <
+          </div>
         <div class="discord-editor-grid">
           <div>
-            /div>
 
           <div class="grid-2">
             <div class="form-group">
@@ -9356,6 +9351,7 @@ Per qualsiasi richiesta o assistenza, apri pure un ticket!</textarea>
       'tab-server-stats': 'Statistiche Server',
       'tab-verification': 'Sistema Verifica',
       'tab-welcome': 'Benvenuto & Addio',
+      'tab-embed-builder': 'Costruttore Embed Studio',
       'tab-custom-commands': 'Comandi Rapidi',
       'tab-starboard': 'Starboard',
       'tab-antiraid': 'Anti-Raid & Screening',
@@ -9426,6 +9422,9 @@ Per qualsiasi richiesta o assistenza, apri pure un ticket!</textarea>
       window.location.hash = tabId.replace('tab-', '');
       if (tabId === 'tab-sentinel' && typeof loadSentinelAllData === 'function') {
         loadSentinelAllData();
+      }
+      if (tabId === 'tab-embed-builder' && typeof syncEbPreview === 'function') {
+        syncEbPreview();
       }
     }
 
