@@ -106,17 +106,19 @@
       "closeDmMessage": "Il tuo ticket **#{ticketNumber}** su **RoomUp! × YouTuberMC** è stato archiviato da **{moderator}**.",
       "panels": [
         {
-          "id": "panel_smp_main",
-          "title": "RoomUp! × YouTuberMC • Centro Supporto & Assistenza",
-          "description": "Benvenuto nel centro assistenza ufficiale di **RoomUp! × YouTuberMC**.\nSeleziona una categoria dal menu sottostante per aprire un canale privato con il nostro team Staff.",
-          "color": "#8525e5",
+          "id": "panel_support",
           "channelId": "1558547865423585326",
+          "title": "🛡️ ROOMUP! × YOUTUBERMC • CENTRO SUPPORTO",
+          "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona una categoria dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n🛠️ **Assistenza Generale & Discord**: problemi con ruoli, domande sul server o chiarimenti.\n🛡️ **Supporto SMP & Protezione Terreni**: problemi con Claim chunk, Gang/Team, furti o permessi.\n🐛 **Segnalazione Bug & Plugin Spigot**: anomalie con Spawners, Casse Crate, /shop, /ah o combat.\n\n*(Per Candidature Staff o Acquisti VIP utilizza i canali dedicati nella categoria SUPPORTO).* ",
+          "color": "#8525e5",
+          "placeholder": "Seleziona una categoria di supporto...",
+          "footer": "RoomUp! Support System • Server SMP 1.21.x",
           "categories": [
             {
               "key": "general",
               "label": "Assistenza Generale & Discord",
-              "icon": "fa-solid fa-comments",
-              "desc": "Domande sul server Discord, ruoli o informazioni generali",
+              "icon": "🛠️",
+              "desc": "Domande sul server Discord, ruoli o chiarimenti generali",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -133,10 +135,10 @@
               "categoryId": "1558842542479638639",
               "questions": [
                 {
-                  "label": "📝 Descrivi la tua richiesta o problema",
+                  "label": "📝 Descrivi la tua richiesta o domanda",
                   "style": "Paragraph",
                   "required": true,
-                  "placeholder": "Spiega nel dettaglio di cosa hai bisogno..."
+                  "placeholder": "Spiega di cosa hai bisogno..."
                 }
               ],
               "viewRoles": [
@@ -155,8 +157,8 @@
             {
               "key": "smp_claims",
               "label": "Supporto SMP & Protezione Terreni",
-              "icon": "fa-solid fa-shield-halved",
-              "desc": "Assistenza su Claim chunk, Gang/Team, griefing o permessi",
+              "icon": "🛡️",
+              "desc": "Assistenza su Claim chunk, Gang/Team, furti o permessi",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -173,7 +175,7 @@
               "categoryId": "1558842542479638639",
               "questions": [
                 {
-                  "label": "🎮 Il tuo Nickname Minecraft esatto",
+                  "label": "🎮 Il tuo Nickname Minecraft",
                   "style": "Short",
                   "required": true,
                   "placeholder": "Es: Stev3_MC"
@@ -182,13 +184,13 @@
                   "label": "📍 Coordinate o Nome del Claim / Fazione",
                   "style": "Short",
                   "required": true,
-                  "placeholder": "Es: X: 1200, Z: -450 oppure Nome Gang"
+                  "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
                 },
                 {
-                  "label": "📝 Dettagli del problema riscontrato",
+                  "label": "📝 Dettagli del problema",
                   "style": "Paragraph",
                   "required": true,
-                  "placeholder": "Spiega cosa è accaduto (furto, griefing, errore claim...)"
+                  "placeholder": "Spiega cosa è successo (furto, griefing, errore claim...)"
                 }
               ],
               "viewRoles": [
@@ -207,8 +209,8 @@
             {
               "key": "game_bugs",
               "label": "Segnalazione Bug & Plugin Spigot",
-              "icon": "fa-solid fa-bug",
-              "desc": "Bug su Spawners, Crate Casse, /shop, /ah, /menu o combat",
+              "icon": "🐛",
+              "desc": "Bug su Spawners, Casse Crate, /shop, /ah, /menu o combat",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -255,64 +257,23 @@
                 "1563174227371098183",
                 "1563174228935843851"
               ]
-            },
-            {
-              "key": "store_vip",
-              "label": "Store, VIP, Crate Keys & Account",
-              "icon": "fa-solid fa-gem",
-              "desc": "Acquisti VIP, Patreon, Crate Keys non ricevute o cambio nick",
-              "staffRoleIds": [
-                "1563271649782931476",
-                "1563174213592940599",
-                "1563174215207624734",
-                "1563174216084488317",
-                "1563174219649523792",
-                "1563174220442239098",
-                "1563174222224957482",
-                "1563174224158523513",
-                "1563174227371098183",
-                "1563174228935843851",
-                "1558547405178413136"
-              ],
-              "categoryId": "1558842542479638639",
-              "questions": [
-                {
-                  "label": "🎮 Nickname Minecraft e Piattaforma (Java / Bedrock)",
-                  "style": "Short",
-                  "required": true,
-                  "placeholder": "Es: Java - FrelerYT"
-                },
-                {
-                  "label": "🧾 ID Transazione o Pacchetto acquistato",
-                  "style": "Short",
-                  "required": true,
-                  "placeholder": "Es: Grado VIP / 5x Cassa Leggendaria"
-                },
-                {
-                  "label": "📝 Dettagli della richiesta",
-                  "style": "Paragraph",
-                  "required": true,
-                  "placeholder": "Spiega il problema riscontrato con lo store..."
-                }
-              ],
-              "viewRoles": [
-                "1563271649782931476",
-                "1563174213592940599",
-                "1563174215207624734",
-                "1563174216084488317",
-                "1563174219649523792",
-                "1563174220442239098",
-                "1563174222224957482",
-                "1563174224158523513",
-                "1563174227371098183",
-                "1563174228935843851"
-              ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "panel_staff_candidacy",
+          "channelId": "1563174274829910137",
+          "title": "🏹 CANDIDATURE STAFF & MEDIA CREATOR",
+          "description": "Vuoi entrare a far parte del Team di **RoomUp! × YouTuberMC** o collaborare come Creator?\n\nSeleziona la tipologia di candidatura dal menu a tendina sottostante:\n\n📄 **Candidatura Staff (Helper / Mod / Pluginner)**:\n• Età minima: **14 anni**\n• Microfono funzionante per assistenza e controlli vocali\n• Conoscenza delle procedure di **ScreenShare (SS)** e delle meccaniche SMP\n• *Sentinel AI ti guiderà in un breve colloquio tecnico preliminare.*\n\n🎥 **Richiesta Rango Creator (YouTuber / Streamer / TikToker)**:\n• Canale attivo con contenuti dedicati a Minecraft o gaming\n• Ruolo speciale, vantaggi in-game e canale annunci dedicato.",
+          "color": "#e74c3c",
+          "placeholder": "Seleziona il tipo di candidatura...",
+          "footer": "RoomUp! Staff Management • Provini & Creator",
+          "categories": [
             {
               "key": "staff_app",
               "label": "Candidatura Staff (Helper / Mod / Pluginner)",
-              "icon": "fa-solid fa-id-card",
-              "desc": "Invia la tua candidatura per entrare nel team Staff di RoomUp!",
+              "icon": "📄",
+              "desc": "Invia la tua candidatura per entrare nello Staff di RoomUp!",
               "staffRoleIds": [
                 "1563271649782931476",
                 "1563174213592940599",
@@ -367,8 +328,8 @@
             },
             {
               "key": "creator_media",
-              "label": "Richiesta Rango YouTuber / Streamer / Media",
-              "icon": "fa-brands fa-youtube",
+              "label": "Richiesta Rango YouTuber / Streamer / TikToker",
+              "icon": "🎥",
               "desc": "Sei un content creator? Richiedi il ruolo e vantaggi dedicati!",
               "staffRoleIds": [
                 "1563271649782931476",
@@ -401,6 +362,173 @@
                   "style": "Paragraph",
                   "required": true,
                   "placeholder": "Serie survival, live streaming, short..."
+                }
+              ],
+              "viewRoles": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "panel_store_vip",
+          "channelId": "1563174276247322644",
+          "title": "💸 STORE ROOMUP! • VIP, PATREON & CRATE KEYS",
+          "description": "Benvenuto nella sezione Assistenza Store di **RoomUp! × YouTuberMC**!\n\nSostieni il server e sblocca vantaggi esclusivi:\n\n💎 **Gradi VIP & Patreon**: prefissi esclusivi, comandi speciali, più home e slot asta aumentati.\n🗝️ **Chiavi Casse (Crates)**: sblocca le Casse **Leggendaria** (Netherite Max Enchant) e **Mitica** (**Secchio Magico** acqua infinita e **Razzo Stellare Infinito**).\n⚙️ **Assistenza Acquisti & Transazioni**: pacchetto non ricevuto, cambio nickname o donazioni personalizzate.\n\nSeleziona un'opzione dal menu a tendina per aprire un ticket con l'Amministrazione:",
+          "color": "#f1c40f",
+          "placeholder": "Seleziona assistenza store / pacchetto...",
+          "footer": "RoomUp! Store & Billing • Supporto Diretto",
+          "categories": [
+            {
+              "key": "store_vip",
+              "label": "Assistenza VIP & Donazioni Patreon",
+              "icon": "💎",
+              "desc": "Acquisti VIP, donazioni Patreon e sblocco permessi",
+              "staffRoleIds": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851",
+                "1558547405178413136"
+              ],
+              "categoryId": "1558842542479638639",
+              "questions": [
+                {
+                  "label": "🎮 Nickname Minecraft e piattaforma",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Java o Bedrock + Nickname"
+                },
+                {
+                  "label": "🧾 ID Transazione o Pacchetto acquistato",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: Grado VIP / Patreon"
+                },
+                {
+                  "label": "📝 Dettagli della richiesta",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Spiega il problema riscontrato..."
+                }
+              ],
+              "viewRoles": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851"
+              ]
+            },
+            {
+              "key": "crate_keys",
+              "label": "Assistenza Crate Keys & Ricompense In-Game",
+              "icon": "🗝️",
+              "desc": "Chiavi Casse Leggendaria / Mitica non ricevute o problemi",
+              "staffRoleIds": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851",
+                "1558547405178413136"
+              ],
+              "categoryId": "1558842542479638639",
+              "questions": [
+                {
+                  "label": "🎮 Nickname Minecraft",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: Steve_123"
+                },
+                {
+                  "label": "🗝️ Tipo di Cassa (Leggendaria / Mitica / Spawner)",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: 5x Cassa Mitica"
+                },
+                {
+                  "label": "📝 Descrivi cosa è accaduto",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Dettagli sulla transazione o apertura cassa..."
+                }
+              ],
+              "viewRoles": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851"
+              ]
+            },
+            {
+              "key": "account_transfer",
+              "label": "Recupero Account & Cambio Nickname",
+              "icon": "🔄",
+              "desc": "Richiesta cambio nick registrato o recupero account di gioco",
+              "staffRoleIds": [
+                "1563271649782931476",
+                "1563174213592940599",
+                "1563174215207624734",
+                "1563174216084488317",
+                "1563174219649523792",
+                "1563174220442239098",
+                "1563174222224957482",
+                "1563174224158523513",
+                "1563174227371098183",
+                "1563174228935843851",
+                "1558547405178413136"
+              ],
+              "categoryId": "1558842542479638639",
+              "questions": [
+                {
+                  "label": "🎮 Vecchio Nickname registrato",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: VecchioNick"
+                },
+                {
+                  "label": "🎮 Nuovo Nickname desiderato",
+                  "style": "Short",
+                  "required": true,
+                  "placeholder": "Es: NuovoNick"
+                },
+                {
+                  "label": "📝 Motivo del cambio",
+                  "style": "Paragraph",
+                  "required": true,
+                  "placeholder": "Spiega perché richiedi il trasferimento..."
                 }
               ],
               "viewRoles": [
@@ -1042,6 +1170,449 @@
       "1563174224158523513",
       "1563174227371098183",
       "1563174228935843851"
+    ],
+    "ticketPanels": [
+      {
+        "id": "panel_support",
+        "channelId": "1558547865423585326",
+        "title": "🛡️ ROOMUP! × YOUTUBERMC • CENTRO SUPPORTO",
+        "description": "Benvenuto nel **Centro Supporto Ufficiale** di **RoomUp! × YouTuberMC** SMP 1.21.x!\n\nSeleziona una categoria dal menu a tendina sottostante per aprire un canale privato con lo Staff:\n\n🛠️ **Assistenza Generale & Discord**: problemi con ruoli, domande sul server o chiarimenti.\n🛡️ **Supporto SMP & Protezione Terreni**: problemi con Claim chunk, Gang/Team, furti o permessi.\n🐛 **Segnalazione Bug & Plugin Spigot**: anomalie con Spawners, Casse Crate, /shop, /ah o combat.\n\n*(Per Candidature Staff o Acquisti VIP utilizza i canali dedicati nella categoria SUPPORTO).* ",
+        "color": "#8525e5",
+        "placeholder": "Seleziona una categoria di supporto...",
+        "footer": "RoomUp! Support System • Server SMP 1.21.x",
+        "categories": [
+          {
+            "key": "general",
+            "label": "Assistenza Generale & Discord",
+            "icon": "🛠️",
+            "desc": "Domande sul server Discord, ruoli o chiarimenti generali",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547070715961486"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "📝 Descrivi la tua richiesta o domanda",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Spiega di cosa hai bisogno..."
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          },
+          {
+            "key": "smp_claims",
+            "label": "Supporto SMP & Protezione Terreni",
+            "icon": "🛡️",
+            "desc": "Assistenza su Claim chunk, Gang/Team, furti o permessi",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547269425303742"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🎮 Il tuo Nickname Minecraft",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: Stev3_MC"
+              },
+              {
+                "label": "📍 Coordinate o Nome del Claim / Fazione",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: X: 1200, Z: -450 / Nome Gang"
+              },
+              {
+                "label": "📝 Dettagli del problema",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Spiega cosa è successo (furto, griefing, errore claim...)"
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          },
+          {
+            "key": "game_bugs",
+            "label": "Segnalazione Bug & Plugin Spigot",
+            "icon": "🐛",
+            "desc": "Bug su Spawners, Casse Crate, /shop, /ah, /menu o combat",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547337033289890"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🎮 Il tuo Nickname Minecraft",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: Alex_Pro"
+              },
+              {
+                "label": "⚙️ Sistema coinvolto (/menu, Spawner, Crate, Shop...)",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: Spawner Blaze / Casse Mitiche"
+              },
+              {
+                "label": "🔍 Descrizione e passaggi per riprodurre il bug",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Cosa stavi facendo quando si è verificato l'errore?"
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "panel_staff_candidacy",
+        "channelId": "1563174274829910137",
+        "title": "🏹 CANDIDATURE STAFF & MEDIA CREATOR",
+        "description": "Vuoi entrare a far parte del Team di **RoomUp! × YouTuberMC** o collaborare come Creator?\n\nSeleziona la tipologia di candidatura dal menu a tendina sottostante:\n\n📄 **Candidatura Staff (Helper / Mod / Pluginner)**:\n• Età minima: **14 anni**\n• Microfono funzionante per assistenza e controlli vocali\n• Conoscenza delle procedure di **ScreenShare (SS)** e delle meccaniche SMP\n• *Sentinel AI ti guiderà in un breve colloquio tecnico preliminare.*\n\n🎥 **Richiesta Rango Creator (YouTuber / Streamer / TikToker)**:\n• Canale attivo con contenuti dedicati a Minecraft o gaming\n• Ruolo speciale, vantaggi in-game e canale annunci dedicato.",
+        "color": "#e74c3c",
+        "placeholder": "Seleziona il tipo di candidatura...",
+        "footer": "RoomUp! Staff Management • Provini & Creator",
+        "categories": [
+          {
+            "key": "staff_app",
+            "label": "Candidatura Staff (Helper / Mod / Pluginner)",
+            "icon": "📄",
+            "desc": "Invia la tua candidatura per entrare nello Staff di RoomUp!",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🎂 Quanti anni hai?",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Età (minimo 14 anni)"
+              },
+              {
+                "label": "💼 Ruolo desiderato ed esperienze pregresse",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Helper / Mod / Pluginner e server dove hai lavorato..."
+              },
+              {
+                "label": "🕐 Disponibilità oraria settimanale",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: 2-3 ore al giorno, pomeriggi e weekend"
+              },
+              {
+                "label": "🌟 Perché dovremmo scegliere te?",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Cosa puoi portare a RoomUp! × YouTuberMC?"
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          },
+          {
+            "key": "creator_media",
+            "label": "Richiesta Rango YouTuber / Streamer / TikToker",
+            "icon": "🎥",
+            "desc": "Sei un content creator? Richiedi il ruolo e vantaggi dedicati!",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🔗 Link al tuo canale (YouTube, Twitch, TikTok)",
+                "style": "Short",
+                "required": true,
+                "placeholder": "https://..."
+              },
+              {
+                "label": "📊 Statistiche (iscritti, media visualizzazioni)",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: 2.5k iscritti, 800 views a video"
+              },
+              {
+                "label": "🎬 Che contenuti intendi realizzare su RoomUp?",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Serie survival, live streaming, short..."
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "panel_store_vip",
+        "channelId": "1563174276247322644",
+        "title": "💸 STORE ROOMUP! • VIP, PATREON & CRATE KEYS",
+        "description": "Benvenuto nella sezione Assistenza Store di **RoomUp! × YouTuberMC**!\n\nSostieni il server e sblocca vantaggi esclusivi:\n\n💎 **Gradi VIP & Patreon**: prefissi esclusivi, comandi speciali, più home e slot asta aumentati.\n🗝️ **Chiavi Casse (Crates)**: sblocca le Casse **Leggendaria** (Netherite Max Enchant) e **Mitica** (**Secchio Magico** acqua infinita e **Razzo Stellare Infinito**).\n⚙️ **Assistenza Acquisti & Transazioni**: pacchetto non ricevuto, cambio nickname o donazioni personalizzate.\n\nSeleziona un'opzione dal menu a tendina per aprire un ticket con l'Amministrazione:",
+        "color": "#f1c40f",
+        "placeholder": "Seleziona assistenza store / pacchetto...",
+        "footer": "RoomUp! Store & Billing • Supporto Diretto",
+        "categories": [
+          {
+            "key": "store_vip",
+            "label": "Assistenza VIP & Donazioni Patreon",
+            "icon": "💎",
+            "desc": "Acquisti VIP, donazioni Patreon e sblocco permessi",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547405178413136"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🎮 Nickname Minecraft e piattaforma",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Java o Bedrock + Nickname"
+              },
+              {
+                "label": "🧾 ID Transazione o Pacchetto acquistato",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: Grado VIP / Patreon"
+              },
+              {
+                "label": "📝 Dettagli della richiesta",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Spiega il problema riscontrato..."
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          },
+          {
+            "key": "crate_keys",
+            "label": "Assistenza Crate Keys & Ricompense In-Game",
+            "icon": "🗝️",
+            "desc": "Chiavi Casse Leggendaria / Mitica non ricevute o problemi",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547405178413136"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🎮 Nickname Minecraft",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: Steve_123"
+              },
+              {
+                "label": "🗝️ Tipo di Cassa (Leggendaria / Mitica / Spawner)",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: 5x Cassa Mitica"
+              },
+              {
+                "label": "📝 Descrivi cosa è accaduto",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Dettagli sulla transazione o apertura cassa..."
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          },
+          {
+            "key": "account_transfer",
+            "label": "Recupero Account & Cambio Nickname",
+            "icon": "🔄",
+            "desc": "Richiesta cambio nick registrato o recupero account di gioco",
+            "staffRoleIds": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851",
+              "1558547405178413136"
+            ],
+            "categoryId": "1558842542479638639",
+            "questions": [
+              {
+                "label": "🎮 Vecchio Nickname registrato",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: VecchioNick"
+              },
+              {
+                "label": "🎮 Nuovo Nickname desiderato",
+                "style": "Short",
+                "required": true,
+                "placeholder": "Es: NuovoNick"
+              },
+              {
+                "label": "📝 Motivo del cambio",
+                "style": "Paragraph",
+                "required": true,
+                "placeholder": "Spiega perché richiedi il trasferimento..."
+              }
+            ],
+            "viewRoles": [
+              "1563271649782931476",
+              "1563174213592940599",
+              "1563174215207624734",
+              "1563174216084488317",
+              "1563174219649523792",
+              "1563174220442239098",
+              "1563174222224957482",
+              "1563174224158523513",
+              "1563174227371098183",
+              "1563174228935843851"
+            ]
+          }
+        ]
+      }
     ]
   },
   "1540661437821620235": {

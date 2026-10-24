@@ -167,7 +167,11 @@ function findPanelConfig(settings, guildId, panelId) {
     const found = g.ticketPanels.find(p => p.id === panelId);
     if (found) return found;
   }
-  return g.ticketPanel || { id: "panel_default" };
+  if (Array.isArray(g.tickets?.panels)) {
+    const found = g.tickets.panels.find(p => p.id === panelId);
+    if (found) return found;
+  }
+  return g.ticketPanel || g.tickets?.panel || { id: "panel_default" };
 }
 
 /**
@@ -245,13 +249,14 @@ function isTicketStaff(member, channel, guildConfig = {}) {
     ...(guildConfig.ticketPanel?.allowedRoles || [])
   ]);
 
-  if (Array.isArray(guildConfig.ticketPanels)) {
-    guildConfig.ticketPanels.forEach(p => {
-      (p.viewRoles || []).forEach(r => staffRoleIds.add(r));
-      (p.allowedRoles || []).forEach(r => staffRoleIds.add(r));
-      (p.categories || []).forEach(c => (c.viewRoles || []).forEach(r => staffRoleIds.add(r)));
-    });
-  }
+  const allPanelsForStaff = Array.isArray(guildConfig.ticketPanels)
+    ? guildConfig.ticketPanels
+    : (Array.isArray(guildConfig.tickets?.panels) ? guildConfig.tickets.panels : []);
+  allPanelsForStaff.forEach(p => {
+    (p.viewRoles || []).forEach(r => staffRoleIds.add(r));
+    (p.allowedRoles || []).forEach(r => staffRoleIds.add(r));
+    (p.categories || []).forEach(c => (c.viewRoles || []).forEach(r => staffRoleIds.add(r)));
+  });
 
   return member.roles.cache.some(r => staffRoleIds.has(r.id));
 }
@@ -578,7 +583,9 @@ function initTicketEngine(client, loadSettingsFn, saveSettingsFn) {
             panelId = "panel_default";
             selectedType = raw.replace("panel_default_", "");
           } else {
-            const allPanels = Array.isArray(guildConfig.ticketPanels) ? guildConfig.ticketPanels : [];
+            const allPanels = Array.isArray(guildConfig.ticketPanels)
+              ? guildConfig.ticketPanels
+              : (Array.isArray(guildConfig.tickets?.panels) ? guildConfig.tickets.panels : []);
             const matchedPanel = allPanels.find(p => raw.startsWith(p.id + "_"));
             if (matchedPanel) {
               panelId = matchedPanel.id;
