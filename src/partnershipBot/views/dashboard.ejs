@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linea Temporale • Gestione Partnership</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg: #111214;
+      --card-bg: #1e1f22;
+      --card-sub: #2b2d31;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 255, 255, 0.16);
+      --primary: #5865F2;
+      --primary-hover: #4752C4;
+      --text: #f2f3f5;
+      --text-muted: #949ba4;
+      --text-sub: #dbdee1;
+      --green: #23a55a;
+      --red: #f23f43;
+      --yellow: #f0b232;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-sub);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      height: 56px;
+      border-bottom: 1px solid var(--border);
+      background: #111214;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    .brand-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .user-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 12.5px;
+      color: var(--text-sub);
+    }
+
+    .user-pill i {
+      color: var(--primary);
+    }
+
+    .btn-logout {
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: rgba(242, 63, 67, 0.1);
+      border: 1px solid rgba(242, 63, 67, 0.25);
+      color: #f23f43;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+
+    .btn-logout:hover {
+      background: var(--red);
+      color: #fff;
+    }
+
+    /* Main Content */
+    .main-container {
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Metric Cards Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .metric-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: border-color 0.15s;
+    }
+
+    .metric-card:hover {
+      border-color: var(--border-hover);
+    }
+
+    .metric-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .icon-counter { background: rgba(88, 101, 242, 0.12); color: var(--primary); }
+    .icon-active { background: rgba(35, 165, 90, 0.12); color: var(--green); }
+    .icon-deleted { background: rgba(242, 63, 67, 0.12); color: var(--red); }
+    .icon-exits { background: rgba(240, 178, 50, 0.12); color: var(--yellow); }
+
+    .metric-data h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+
+    .metric-data p {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Tabs Navigation */
+    .tabs-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Tab Content Sections */
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    /* Card Panels */
+    .panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .panel-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel-subtitle {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Tables */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #18191c;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      background: #1e1f22;
+      padding: 11px 16px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 13px 16px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      vertical-align: middle;
+      color: var(--text-sub);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    /* Avatars and Users */
+    .user-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #2b2d31;
+    }
+
+    .avatar-fallback {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #2b2d31;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 12px;
+      color: #f2f3f5;
+      border: 1px solid var(--border);
+    }
+
+    .user-info .user-name {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .user-info .user-id {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+
+    .badge-success { background: rgba(35, 165, 90, 0.15); color: #23a55a; }
+    .badge-danger { background: rgba(242, 63, 67, 0.15); color: #f23f43; }
+    .badge-purple { background: rgba(88, 101, 242, 0.15); color: #8ea1e1; }
+    .badge-warning { background: rgba(240, 178, 50, 0.15); color: #f0b232; }
+
+    /* Medals */
+    .rank-cell {
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rank-1 { color: #f0b232; }
+    .rank-2 { color: #c0c0c0; }
+    .rank-3 { color: #cd7f32; }
+
+    /* Action Buttons */
+    .btn-action-delete {
+      padding: 5px 11px;
+      border-radius: 6px;
+      border: 1px solid rgba(242, 63, 67, 0.3);
+      background: rgba(242, 63, 67, 0.1);
+      color: #f23f43;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .btn-action-delete:hover {
+      background: #f23f43;
+      color: #fff;
+    }
+
+    /* Forms */
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .form-select, .form-input, .form-textarea {
+      width: 100%;
+      padding: 9px 12px;
+      background: #111214;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 75px;
+      font-family: inherit;
+    }
+
+    .form-select option {
+      background: #1e1f22;
+      color: #fff;
+    }
+
+    .form-select:focus, .form-input:focus, .form-textarea:focus {
+      border-color: var(--primary);
+    }
+
+    .btn-submit {
+      padding: 9px 18px;
+      border-radius: 8px;
+      border: none;
+      background: var(--primary);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s;
+    }
+
+    .btn-submit:hover {
+      background: var(--primary-hover);
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .toast-success { background: #1b3d2b; border: 1px solid #23a55a; color: #a3f7be; }
+    .toast-error { background: #401d21; border: 1px solid #f23f43; color: #ffbcc2; }
+
+    .empty-state {
+      padding: 36px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13.5px;
+    }
+    .empty-state i {
+      font-size: 32px;
+      margin-bottom: 10px;
+      opacity: 0.4;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="<%= basePath %>/logo.jpg" alt="Logo" class="brand-logo-img">
+      <div>
+        <div class="brand-title">Linea Temporale</div>
+        <div style="font-size: 11px; color: #23a55a; display: flex; align-items: center; gap: 5px;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background: #23a55a; display: inline-block;"></span> Sistema Attivo (<%= guilds.length %> <%= guilds.length === 1 ? 'Server Sincronizzato' : 'Server Sincronizzati' %>)
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <div class="user-pill">
+        <i class="fa-solid fa-user-shield"></i>
+        <span><%= user %></span>
+      </div>
+      <a href="<%= basePath %>/logout" class="btn-logout">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Esci</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+
+    <!-- Metrics Cards Grid -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon icon-counter">
+          <i class="fa-solid fa-hashtag"></i>
+        </div>
+        <div class="metric-data">
+          <h3><%= stats.counter %></h3>
+          <p>Partnership Registrate (Totale)</p>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon icon-active">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="metric-data">
+          <h3><%= stats.activeCount %></h3>
+          <p>Partnership Attive</p>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon icon-deleted">
+          <i class="fa-solid fa-trash-can"></i>
+        </div>
+        <div class="metric-data">
+          <h3><%= stats.deletedCount %></h3>
+          <p>Partnership Revocate</p>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon icon-exits">
+          <i class="fa-solid fa-user-slash"></i>
+        </div>
+        <div class="metric-data">
+          <h3><%= stats.exitsCount %></h3>
+          <p>Uscite Rilevate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab('tab-leaderboard')">
+        <i class="fa-solid fa-trophy"></i>
+        <span>Classifica Staff</span>
+      </button>
+
+      <button class="tab-btn" onclick="switchTab('tab-exits')">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>Registro Attività</span>
+      </button>
+
+      <button class="tab-btn" onclick="switchTab('tab-partners')">
+        <i class="fa-solid fa-list-check"></i>
+        <span>Tutte le Partnership</span>
+      </button>
+
+      <button class="tab-btn" onclick="switchTab('tab-channels')">
+        <i class="fa-solid fa-server"></i>
+        <span>Configurazione Server (<%= guilds.length %>)</span>
+      </button>
+
+      <button class="tab-btn" onclick="switchTab('tab-messages')">
+        <i class="fa-solid fa-message"></i>
+        <span>Personalizzazione Messaggi</span>
+      </button>
+    </div>
+
+    <!-- 1. TAB: CLASSIFICA STAFF -->
+    <div id="tab-leaderboard" class="tab-pane active">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Riepilogo Attività Staff</h2>
+            <p class="panel-subtitle">Classifica dello staff in base alle partnership registrate nel sistema</p>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 80px;">Posizione</th>
+                <th>Membro dello Staff</th>
+                <th>Partnership Create</th>
+                <th>Attualmente Attive</th>
+                <th>Revocate</th>
+                <th>Tasso di Tenuta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if (leaderboard.length === 0) { %>
+                <tr>
+                  <td colspan="6">
+                    <div class="empty-state">
+                      <i class="fa-solid fa-chart-line"></i>
+                      Nessuna partnership registrata al momento. Utilizzare il comando <code>/partner</code> su Discord per iniziare.
+                    </div>
+                  </td>
+                </tr>
+              <% } else { %>
+                <% leaderboard.forEach((staff, index) => { %>
+                  <tr>
+                    <td>
+                      <div class="rank-cell <%= index === 0 ? 'rank-1' : (index === 1 ? 'rank-2' : (index === 2 ? 'rank-3' : '')) %>">
+                        <%= index + 1 %>°
+                      </div>
+                    </td>
+                    <td>
+                      <div class="user-cell">
+                        <% if (staff.hostAvatar) { %>
+                          <img src="<%= staff.hostAvatar %>" class="avatar-img" alt="<%= staff.hostTag %>">
+                        <% } else { %>
+                          <div class="avatar-fallback"><%= staff.hostTag ? staff.hostTag[0].toUpperCase() : 'S' %></div>
+                        <% } %>
+                        <div class="user-info">
+                          <div class="user-name"><%= staff.hostTag %></div>
+                          <div class="user-id">ID: <%= staff.hostId %></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td><strong style="font-size: 14px; color: #fff;"><%= staff.totalCreated %></strong></td>
+                    <td><span class="badge badge-success"><%= staff.activeCount %> attive</span></td>
+                    <td><span class="badge badge-danger"><%= staff.deletedCount %> revocate</span></td>
+                    <td>
+                      <% const rate = staff.totalCreated > 0 ? Math.round((staff.activeCount / staff.totalCreated) * 100) : 0; %>
+                      <div style="font-weight: 700; color: <%= rate > 70 ? '#23a55a' : (rate > 40 ? '#f0b232' : '#f23f43') %>;">
+                        <%= rate %>%
+                      </div>
+                    </td>
+                  </tr>
+                <% }); %>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. TAB: REGISTRO AUDIT & LOG ATTIVITÀ -->
+    <div id="tab-exits" class="tab-pane">
+      <div class="panel">
+        <div class="panel-header" style="flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h2 class="panel-title">Registro Audit & Attività di Sistema</h2>
+            <p class="panel-subtitle">Cronologia completa delle registrazioni, rimozioni manuali e revoche automatiche per uscita dal server</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; background: #111214; border: 1px solid var(--border); border-radius: 8px; padding: 3px; gap: 3px;">
+              <button type="button" class="log-filter-btn active" onclick="setLogFilter('all', this)" style="padding: 5px 12px; border-radius: 6px; border: none; font-size: 12px; font-weight: 700; cursor: pointer; background: var(--primary); color: #fff;">Tutti</button>
+              <button type="button" class="log-filter-btn" onclick="setLogFilter('create', this)" style="padding: 5px 12px; border-radius: 6px; border: none; font-size: 12px; font-weight: 700; cursor: pointer; background: transparent; color: var(--text-muted);">Creazioni</button>
+              <button type="button" class="log-filter-btn" onclick="setLogFilter('delete', this)" style="padding: 5px 12px; border-radius: 6px; border: none; font-size: 12px; font-weight: 700; cursor: pointer; background: transparent; color: var(--text-muted);">Eliminazioni</button>
+              <button type="button" class="log-filter-btn" onclick="setLogFilter('auto_leave', this)" style="padding: 5px 12px; border-radius: 6px; border: none; font-size: 12px; font-weight: 700; cursor: pointer; background: transparent; color: var(--text-muted);">Uscite Server</button>
+            </div>
+            <input type="text" id="auditSearch" placeholder="Cerca per utente, server o ID..." class="form-input" style="width: 210px; padding: 7px 12px; font-size: 12.5px;" oninput="filterAuditLogs()">
+            <button type="button" onclick="clearAuditLogs()" style="padding: 7px 12px; border-radius: 8px; border: 1px solid rgba(242, 63, 67, 0.4); background: rgba(242, 63, 67, 0.1); color: #f23f43; font-size: 12px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-trash-can"></i> Svuota Registro
+            </button>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table id="auditTable">
+            <thead>
+              <tr>
+                <th style="width: 110px;">Evento</th>
+                <th>Collaboratore</th>
+                <th>Staff / Operatore</th>
+                <th>Server</th>
+                <th>Partner</th>
+                <th>Dettagli / Motivo</th>
+                <th style="width: 140px;">Data e Ora</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if (!auditLogs || auditLogs.length === 0) { %>
+                <tr>
+                  <td colspan="7">
+                    <div class="empty-state">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      Nessun evento registrato nei log di sistema.
+                    </div>
+                  </td>
+                </tr>
+              <% } else { %>
+                <% auditLogs.forEach(log => { %>
+                  <tr data-log-type="<%= log.type %>" data-search="<%= ((log.collaboratorTag || '') + ' ' + (log.collaboratorId || '') + ' ' + (log.hostTag || '') + ' ' + (log.originGuildName || '') + ' ' + (log.reason || '') + ' ' + (log.details || '') + ' ' + (log.partnerNumbers || []).join(' ')).toLowerCase() %>">
+                    <td>
+                      <% if (log.type === 'create') { %>
+                        <span class="badge badge-success">Creata</span>
+                      <% } else if (log.type === 'delete') { %>
+                        <span class="badge badge-warning">Eliminata</span>
+                      <% } else if (log.type === 'auto_leave') { %>
+                        <span class="badge badge-danger">Revocata</span>
+                      <% } else { %>
+                        <span class="badge badge-purple"><%= log.type %></span>
+                      <% } %>
+                    </td>
+                    <td>
+                      <% if (log.collaboratorTag || log.collaboratorId) { %>
+                        <div class="user-cell">
+                          <% if (log.collaboratorAvatar) { %>
+                            <img src="<%= log.collaboratorAvatar %>" class="avatar-img" alt="<%= log.collaboratorTag %>">
+                          <% } else { %>
+                            <div class="avatar-fallback"><%= log.collaboratorTag ? log.collaboratorTag[0].toUpperCase() : 'C' %></div>
+                          <% } %>
+                          <div class="user-info">
+                            <div class="user-name"><%= log.collaboratorTag || 'Sconosciuto' %></div>
+                            <% if (log.collaboratorId) { %>
+                              <div class="user-id">ID: <%= log.collaboratorId %></div>
+                            <% } %>
+                          </div>
+                        </div>
+                      <% } else { %>
+                        <span style="color: var(--text-muted); font-size: 12px;">N/A</span>
+                      <% } %>
+                    </td>
+                    <td>
+                      <% if (log.hostTag || log.hostId) { %>
+                        <div class="user-cell">
+                          <% if (log.hostAvatar) { %>
+                            <img src="<%= log.hostAvatar %>" class="avatar-img">
+                          <% } else { %>
+                            <div class="avatar-fallback"><%= log.hostTag ? log.hostTag[0].toUpperCase() : 'S' %></div>
+                          <% } %>
+                          <div class="user-info">
+                            <div class="user-name"><%= log.hostTag %></div>
+                          </div>
+                        </div>
+                      <% } else { %>
+                        <span class="badge badge-purple" style="font-size: 10px;">Sistema</span>
+                      <% } %>
+                    </td>
+                    <td>
+                      <% if (log.originGuildName) { %>
+                        <span class="badge badge-purple"><%= log.originGuildName %></span>
+                      <% } else { %>
+                        <span style="color: var(--text-muted); font-size: 12px;">Multi-Server</span>
+                      <% } %>
+                    </td>
+                    <td>
+                      <% if (log.partnerNumbers && log.partnerNumbers.length > 0) { %>
+                        <% log.partnerNumbers.forEach(n => { %>
+                          <span class="badge <%= log.type === 'auto_leave' ? 'badge-danger' : (log.type === 'delete' ? 'badge-warning' : 'badge-success') %>">#<%= n %></span>
+                        <% }); %>
+                      <% } else { %>
+                        <span style="color: var(--text-muted); font-size: 12px;">-</span>
+                      <% } %>
+                    </td>
+                    <td style="max-width: 250px; font-size: 12px; color: var(--text-sub);">
+                      <%= log.reason || log.details || '-' %>
+                    </td>
+                    <td style="color: var(--text-muted); font-size: 11px; white-space: nowrap;">
+                      <div><%= new Date(log.timestamp).toLocaleString('it-IT') %></div>
+                    </td>
+                  </tr>
+                <% }); %>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. TAB: TUTTE LE PARTNERSHIP -->
+    <div id="tab-partners" class="tab-pane">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Elenco Generale Partnership</h2>
+            <p class="panel-subtitle">Registro completo con server di origine, messaggi inviati e stato della sincronizzazione</p>
+          </div>
+          <div>
+            <input type="text" id="partnerSearch" placeholder="Cerca per nome, server o ID..." class="form-input" style="width: 260px;" oninput="filterPartners()">
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table id="partnersTable">
+            <thead>
+              <tr>
+                <th style="width: 70px;">Numero</th>
+                <th>Collaboratore</th>
+                <th>Server Origine</th>
+                <th>Staff Host</th>
+                <th>Descrizione</th>
+                <th>Inviati</th>
+                <th>Stato</th>
+                <th>Azione</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if (partners.length === 0) { %>
+                <tr>
+                  <td colspan="8">
+                    <div class="empty-state">
+                      <i class="fa-solid fa-folder-open"></i>
+                      Nessuna partnership presente nell'archivio.
+                    </div>
+                  </td>
+                </tr>
+              <% } else { %>
+                <% partners.forEach(p => { %>
+                  <tr data-search="<%= (p.collaboratorTag + ' ' + p.hostTag + ' ' + (p.originGuildName || '') + ' ' + p.number + ' ' + (p.desc || '')).toLowerCase() %>">
+                    <td>
+                      <strong style="color: var(--primary); font-size: 13.5px;">#<%= p.number %></strong>
+                    </td>
+                    <td>
+                      <div class="user-cell">
+                        <% if (p.collaboratorAvatar) { %>
+                          <img src="<%= p.collaboratorAvatar %>" class="avatar-img">
+                        <% } else { %>
+                          <div class="avatar-fallback"><%= p.collaboratorTag ? p.collaboratorTag[0].toUpperCase() : 'C' %></div>
+                        <% } %>
+                        <div class="user-info">
+                          <div class="user-name"><%= p.collaboratorTag %></div>
+                          <div class="user-id">ID: <%= p.collaboratorId %></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="badge badge-purple"><%= p.originGuildName || 'N/A' %></span>
+                    </td>
+                    <td>
+                      <div class="user-cell">
+                        <% if (p.hostAvatar) { %>
+                          <img src="<%= p.hostAvatar %>" class="avatar-img">
+                        <% } else { %>
+                          <div class="avatar-fallback"><%= p.hostTag ? p.hostTag[0].toUpperCase() : 'H' %></div>
+                        <% } %>
+                        <div class="user-info">
+                          <div class="user-name"><%= p.hostTag %></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td style="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                      <span title="<%= p.desc %>" style="color: var(--text-sub);"><%= p.desc %></span>
+                    </td>
+                    <td>
+                      <span class="badge badge-purple"><%= (p.messages || []).length %> Server</span>
+                    </td>
+                    <td>
+                      <% if (p.active) { %>
+                        <span class="badge badge-success">Attiva</span>
+                      <% } else { %>
+                        <span class="badge badge-danger" title="<%= p.deletedReason || 'Revocata' %>"><%= p.deletedReason || 'Revocata' %></span>
+                      <% } %>
+                    </td>
+                    <td>
+                      <% if (p.active) { %>
+                        <button class="btn-action-delete" onclick="deletePartner('<%= p.id %>', '<%= p.number %>')">
+                          Elimina
+                        </button>
+                      <% } else { %>
+                        <button class="btn-action-delete" style="background: rgba(255,255,255,0.06); color: var(--text-muted); border-color: var(--border);" onclick="purgePartner('<%= p.id %>', '<%= p.number %>')" title="Rimuovi definitivamente dall'archivio">
+                          Rimuovi
+                        </button>
+                      <% } %>
+                    </td>
+                  </tr>
+                <% }); %>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. TAB: CONFIGURAZIONE SERVER -->
+    <div id="tab-channels" class="tab-pane">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Configurazione Server e Ruoli Autorizzati</h2>
+            <p class="panel-subtitle">Imposta per ciascun server collegato il canale di invio, il canale log, i ruoli abilitati e il ping.</p>
+          </div>
+        </div>
+
+        <form id="serversForm" onsubmit="saveServers(event)">
+          <div style="margin-bottom: 20px;">
+            <% if (guilds.length === 0) { %>
+              <div class="empty-state">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Il bot non è presente in alcun server. Invitare il bot nei server desiderati e ricaricare la pagina.
+              </div>
+            <% } else { %>
+              <div class="form-grid">
+                <% guilds.forEach((g) => { 
+                  const sc = g.serverConf || {};
+                  const staffIds = sc.staffRoleIds || [];
+                %>
+                  <div class="panel server-card" data-guild-id="<%= g.id %>" data-guild-name="<%= g.name %>" style="background: #18191c; margin-bottom: 0;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">
+                      <% if (g.icon) { %><img src="<%= g.icon %>" style="width: 30px; height: 30px; border-radius: 50%;"><% } %>
+                      <div>
+                        <strong style="color: #fff; font-size: 14.5px;"><%= g.name %></strong>
+                        <div style="font-size: 11px; color: var(--text-muted);">ID: <%= g.id %></div>
+                      </div>
+                    </div>
+
+                    <!-- Canale Partner -->
+                    <div class="form-group">
+                      <label class="form-label">Canale Invio Partnership</label>
+                      <select class="form-select partner-ch-select">
+                        <option value="">-- Seleziona Canale Partner --</option>
+                        <% g.channels.forEach(ch => { %>
+                          <option value="<%= ch.id %>" <%= sc.partnerChannelId === ch.id ? 'selected' : '' %>>
+                            # <%= ch.name %>
+                          </option>
+                        <% }); %>
+                      </select>
+                    </div>
+
+                    <!-- Canale Log -->
+                    <div class="form-group">
+                      <label class="form-label">Canale Log Notifiche</label>
+                      <select class="form-select log-ch-select">
+                        <option value="">-- Seleziona Canale Log (Opzionale) --</option>
+                        <% g.channels.forEach(ch => { %>
+                          <option value="<%= ch.id %>" <%= sc.logChannelId === ch.id ? 'selected' : '' %>>
+                            # <%= ch.name %>
+                          </option>
+                        <% }); %>
+                      </select>
+                    </div>
+
+                    <!-- Ruoli Staff Autorizzati (Multipli) -->
+                    <div class="form-group">
+                      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                        <label class="form-label" style="margin-bottom: 0;">Ruoli Staff Abilitati</label>
+                        <span class="badge badge-purple" style="font-size: 10px;">Multi-Selezione</span>
+                      </div>
+                      <div style="max-height: 140px; overflow-y: auto; background: #111214; border: 1px solid var(--border); border-radius: 8px; padding: 6px;">
+                        <% if (!g.roles || g.roles.length === 0) { %>
+                          <div style="color: var(--text-muted); font-size: 12px; padding: 6px;">Nessun ruolo presente nel server.</div>
+                        <% } else { %>
+                          <% g.roles.forEach(r => { 
+                            const isChecked = staffIds.includes(r.id);
+                          %>
+                            <label style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 6px; cursor: pointer;" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
+                              <input type="checkbox" class="staff-role-cb" value="<%= r.id %>" <%= isChecked ? 'checked' : '' %> style="accent-color: var(--primary); width: 15px; height: 15px; cursor: pointer;">
+                              <span style="width: 8px; height: 8px; border-radius: 50%; background: <%= r.color && r.color !== '#000000' ? r.color : 'var(--primary)' %>; display: inline-block;"></span>
+                              <span style="font-size: 12.5px; color: var(--text);"><%= r.name %></span>
+                            </label>
+                          <% }); %>
+                        <% } %>
+                      </div>
+                      <small style="color: var(--text-muted); font-size: 11px; display: block; margin-top: 4px;">Seleziona i ruoli abilitati ad utilizzare i comandi /partner.</small>
+                    </div>
+
+                    <!-- Ping Partnership -->
+                    <div class="form-group">
+                      <label class="form-label">Ping Partnership</label>
+                      <select class="form-select ping-select">
+                        <option value="" <%= !sc.ping ? 'selected' : '' %>>Nessun Ping</option>
+                        <option value="@everyone" <%= sc.ping === '@everyone' ? 'selected' : '' %>>@everyone</option>
+                        <option value="@here" <%= sc.ping === '@here' ? 'selected' : '' %>>@here</option>
+                        <optgroup label="Ruoli del Server">
+                          <% (g.roles || []).forEach(r => { %>
+                            <option value="<%= r.id %>" <%= sc.ping === r.id || sc.ping === ('<@&' + r.id + '>') ? 'selected' : '' %>>
+                              @<%= r.name %>
+                            </option>
+                          <% }); %>
+                        </optgroup>
+                      </select>
+                      <small style="color: var(--text-muted); font-size: 11px;">Menzione applicata al messaggio della partnership in questo server.</small>
+                    </div>
+
+                  </div>
+                <% }); %>
+              </div>
+            <% } %>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Salva Configurazioni Server
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 5. TAB: PERSONALIZZAZIONE MESSAGGI -->
+    <div id="tab-messages" class="tab-pane">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Personalizzazione Messaggi del Bot</h2>
+            <p class="panel-subtitle">Configura i testi di risposta e le notifiche di sistema inviate dal bot su Discord</p>
+          </div>
+        </div>
+
+        <form id="messagesForm" onsubmit="saveMessages(event)">
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px;">
+
+            <!-- 1. Accesso Negato -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: #f23f43;">Errore Accesso Negato (Permessi Mancanti)</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Variabile: {roles}</span>
+              </div>
+              <textarea class="form-textarea" id="msg_accessDenied"><%= messages.accessDenied %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Inviato quando un utente non possiede i ruoli autorizzati per eseguire il comando.</small>
+            </div>
+
+            <!-- 2. Partnership Pubblicata con Successo -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: #23a55a;">Risposta Comando /partner (Conferma)</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Variabili: {number}, {author}, {server}, {staff}, {count}, {messageId}</span>
+              </div>
+              <textarea class="form-textarea" id="msg_partnerSuccess"><%= messages.partnerSuccess %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Risposta effimera inviata all'operatore dopo la pubblicazione.</small>
+            </div>
+
+            <!-- 3. Partnership Eliminata con Successo -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: #f0b232;">Risposta Comando /delete-partner (Rimozione)</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Variabili: {number}, {author}, {staff}, {count}</span>
+              </div>
+              <textarea class="form-textarea" id="msg_deleteSuccess"><%= messages.deleteSuccess %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Risposta effimera inviata all'operatore dopo l'eliminazione dei messaggi.</small>
+            </div>
+
+            <!-- 4. Partnership Non Trovata -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: #f23f43;">Riferimento Non Trovato (/delete-partner)</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Variabile: {id}</span>
+              </div>
+              <textarea class="form-textarea" id="msg_notFound"><%= messages.notFound %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Inviato se l'ID messaggio o il numero specificato non corrisponde a nessuna partnership.</small>
+            </div>
+
+            <!-- 5. Partnership Già Eliminata -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: var(--text-muted);">Partnership Già Revocata</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Variabile: {number}</span>
+              </div>
+              <textarea class="form-textarea" id="msg_alreadyDeleted"><%= messages.alreadyDeleted %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Inviato se la partnership indicata risultava già eliminata in precedenza.</small>
+            </div>
+
+            <!-- 6. Nessun Canale Configurato -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: #f0b232;">Nessun Canale Sincronizzato</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Nessuna variabile</span>
+              </div>
+              <textarea class="form-textarea" id="msg_noChannels"><%= messages.noChannels %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Inviato se viene eseguito /partner ma nessun server possiede un canale configurato.</small>
+            </div>
+
+            <!-- 7. Avviso Uscita Collaboratore dal Server -->
+            <div class="form-group" style="background: #18191c; border: 1px solid var(--border); padding: 14px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label class="form-label" style="margin-bottom: 0; color: #f23f43;">Notifica Revoca Automatica per Uscita Collaboratore</label>
+                <span class="badge badge-purple" style="font-size: 11px;">Variabili: {user}, {userId}, {server}, {numbers}</span>
+              </div>
+              <textarea class="form-textarea" id="msg_collaboratorLeftAlert"><%= messages.collaboratorLeftAlert %></textarea>
+              <small style="color: var(--text-muted); font-size: 11px;">Inviato nei canali log quando un partner abbandona uno dei server collegati.</small>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Salva Configurazioni Messaggi
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Toast Alert -->
+  <div id="toast"></div>
+
+  <script>
+    const BASE_PATH = '<%= basePath %>';
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+
+      event.currentTarget.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      toast.className = type === 'success' ? 'toast-success' : 'toast-error';
+      toast.innerHTML = `<i class="fa-solid ${type === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation'}"></i> ${message}`;
+      toast.style.display = 'flex';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 3500);
+    }
+
+    function filterPartners() {
+      const query = document.getElementById('partnerSearch').value.toLowerCase();
+      const rows = document.querySelectorAll('#partnersTable tbody tr[data-search]');
+      rows.forEach(r => {
+        const text = r.getAttribute('data-search');
+        r.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+
+    let currentLogFilter = 'all';
+
+    function setLogFilter(type, btn) {
+      currentLogFilter = type;
+      document.querySelectorAll('.log-filter-btn').forEach(b => {
+        b.style.background = 'transparent';
+        b.style.color = 'var(--text-muted)';
+      });
+      btn.style.background = 'var(--primary)';
+      btn.style.color = '#fff';
+      filterAuditLogs();
+    }
+
+    function filterAuditLogs() {
+      const query = (document.getElementById('auditSearch')?.value || '').toLowerCase();
+      const rows = document.querySelectorAll('#auditTable tbody tr[data-log-type]');
+      rows.forEach(r => {
+        const type = r.getAttribute('data-log-type');
+        const search = r.getAttribute('data-search') || '';
+        const matchType = (currentLogFilter === 'all' || type === currentLogFilter);
+        const matchQuery = !query || search.includes(query);
+        r.style.display = (matchType && matchQuery) ? '' : 'none';
+      });
+    }
+
+    async function deletePartner(partnerId, number) {
+      if (!confirm(`Eliminare la partnership #${number}?`)) return;
+
+      try {
+        const res = await fetch(`${BASE_PATH}/api/partner/delete/${partnerId}`, { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          showToast(data.message, 'success');
+          setTimeout(() => location.reload(), 1000);
+        } else {
+          showToast(data.error || 'Errore durante la rimozione', 'error');
+        }
+      } catch (e) {
+        showToast('Errore di comunicazione', 'error');
+      }
+    }
+
+    async function purgePartner(partnerId, number) {
+      if (!confirm(`Rimuovere definitivamente la partnership #${number} dall'archivio?`)) return;
+
+      try {
+        const res = await fetch(`${BASE_PATH}/api/partner/purge/${partnerId}`, { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          showToast(data.message, 'success');
+          setTimeout(() => location.reload(), 800);
+        } else {
+          showToast(data.error || 'Errore', 'error');
+        }
+      } catch (e) {
+        showToast('Errore di comunicazione', 'error');
+      }
+    }
+
+    async function clearAuditLogs() {
+      if (!confirm('Svuotare tutti i log del registro attività?')) return;
+
+      try {
+        const res = await fetch(`${BASE_PATH}/api/audit/clear`, { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          showToast(data.message, 'success');
+          setTimeout(() => location.reload(), 800);
+        } else {
+          showToast(data.error || 'Errore', 'error');
+        }
+      } catch (e) {
+        showToast('Errore di comunicazione', 'error');
+      }
+    }
+
+    async function saveServers(e) {
+      e.preventDefault();
+      const servers = [];
+
+      document.querySelectorAll('.server-card').forEach(card => {
+        const guildId = card.getAttribute('data-guild-id');
+        const guildName = card.getAttribute('data-guild-name');
+        const partnerChannelId = card.querySelector('.partner-ch-select').value;
+        const logChannelId = card.querySelector('.log-ch-select').value;
+        const ping = card.querySelector('.ping-select').value;
+
+        const staffRoleIds = Array.from(card.querySelectorAll('.staff-role-cb:checked')).map(cb => cb.value);
+
+        servers.push({
+          guildId,
+          guildName,
+          partnerChannelId,
+          logChannelId,
+          staffRoleIds,
+          ping
+        });
+      });
+
+      try {
+        const res = await fetch(`${BASE_PATH}/api/settings/servers`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ servers })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(data.message, 'success');
+        } else {
+          showToast(data.error || 'Errore durante il salvataggio', 'error');
+        }
+      } catch (e) {
+        showToast('Errore di comunicazione', 'error');
+      }
+    }
+
+    async function saveMessages(e) {
+      e.preventDefault();
+      const messages = {
+        accessDenied: document.getElementById('msg_accessDenied').value,
+        noChannels: document.getElementById('msg_noChannels').value,
+        partnerSuccess: document.getElementById('msg_partnerSuccess').value,
+        deleteSuccess: document.getElementById('msg_deleteSuccess').value,
+        notFound: document.getElementById('msg_notFound').value,
+        alreadyDeleted: document.getElementById('msg_alreadyDeleted').value,
+        collaboratorLeftAlert: document.getElementById('msg_collaboratorLeftAlert').value
+      };
+
+      try {
+        const res = await fetch(`${BASE_PATH}/api/settings/messages`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(data.message, 'success');
+        } else {
+          showToast(data.error || 'Errore durante il salvataggio dei messaggi', 'error');
+        }
+      } catch (e) {
+        showToast('Errore di comunicazione', 'error');
+      }
+    }
+  </script>
+</body>
+</html>

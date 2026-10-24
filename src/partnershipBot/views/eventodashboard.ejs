@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestione Evento • Linea Temporale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --surface: #131720;
+      --surface-hover: #181d28;
+      --surface-sub: #0e1117;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --primary: #ff595e;
+      --primary-hover: #fa484e;
+      --text: #f0f2f5;
+      --text-muted: #8c93a0;
+      --text-sub: #5d6472;
+      --green: #10b981;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Nav */
+    .nav {
+      height: 56px;
+      background: #0f1218;
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: #ff595e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .nav-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
+    .nav-sep {
+      color: var(--text-sub);
+      font-size: 13px;
+    }
+
+    .nav-section {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .btn-nav:hover {
+      background: var(--surface);
+      color: #fff;
+      border-color: var(--border-strong);
+    }
+    .btn-nav-exit {
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.2);
+    }
+    .btn-nav-exit:hover {
+      background: rgba(239, 68, 68, 0.1);
+      color: #fca5a5;
+      border-color: rgba(239, 68, 68, 0.35);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 24px 60px;
+    }
+
+    /* Page Header */
+    .page-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .head-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .page-heading {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+
+    .status-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .tag-active {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--green);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    .tag-paused {
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--amber);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+    }
+    .tag-ended {
+      background: rgba(239, 68, 68, 0.12);
+      color: var(--red);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+    }
+
+    .status-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    /* Stats Ribbon */
+    .stats-ribbon {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 20px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .stat-entry {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .stat-num {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 18px;
+      background: var(--border);
+    }
+
+    /* Main Grid: 2 Columns */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .card-head {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      line-height: 1;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-subtle {
+      background: var(--surface-sub);
+      color: var(--text-muted);
+      border-color: var(--border);
+    }
+    .btn-subtle:hover {
+      background: var(--surface-hover);
+      color: #fff;
+      border-color: var(--border-strong);
+    }
+
+    .btn-danger-outline {
+      background: transparent;
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.25);
+    }
+    .btn-danger-outline:hover {
+      background: rgba(239, 68, 68, 0.1);
+      border-color: rgba(239, 68, 68, 0.4);
+    }
+
+    .btn-xs {
+      padding: 5px 9px;
+      font-size: 12px;
+      border-radius: 6px;
+    }
+
+    /* Server Table */
+    .server-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .server-row {
+      display: flex;
+      align-items: center;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      gap: 14px;
+      transition: background 0.12s ease;
+    }
+    .server-row:last-child {
+      border-bottom: none;
+    }
+    .server-row:hover {
+      background: var(--surface-hover);
+    }
+
+    .rank-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--surface-sub);
+      border: 1px solid var(--border);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .rank-first {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .server-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: var(--surface-sub);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .server-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .server-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .server-name {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .server-link-btn {
+      color: var(--text-sub);
+      display: inline-flex;
+      align-items: center;
+    }
+    .server-link-btn:hover {
+      color: var(--text-muted);
+    }
+
+    .server-desc-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 320px;
+      margin-top: 1px;
+    }
+
+    .server-votes-control {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .input-votes {
+      width: 62px;
+      background: var(--surface-sub);
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      outline: none;
+    }
+    .input-votes:focus {
+      border-color: var(--primary);
+    }
+
+    .row-actions {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .btn-icon {
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+    .btn-icon:hover {
+      background: var(--surface-sub);
+      color: #fff;
+      border-color: var(--border);
+    }
+    .btn-icon-danger:hover {
+      background: rgba(239, 68, 68, 0.1);
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.25);
+    }
+
+    .empty-banner {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    /* Settings Form */
+    .settings-body {
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field-label {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .input {
+      width: 100%;
+      background: var(--surface-sub);
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+    .input:focus {
+      border-color: var(--primary);
+    }
+
+    textarea.input {
+      resize: vertical;
+      min-height: 72px;
+      line-height: 1.45;
+    }
+
+    select.input {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%238c93a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 32px;
+    }
+
+    .field-note {
+      font-size: 11.5px;
+      color: var(--text-sub);
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 200;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+    }
+
+    .modal-head {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-head-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .modal-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-height: 75vh;
+      overflow-y: auto;
+    }
+
+    .modal-foot {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border);
+      background: var(--surface-sub);
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .upload-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .preview-box {
+      width: 100%;
+      height: 70px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #000;
+      overflow: hidden;
+      margin-top: 6px;
+      position: relative;
+      display: none;
+    }
+    .preview-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .btn-clear-preview {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .icon-preview-box {
+      width: 46px;
+      height: 46px;
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #191e28;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid var(--border-strong);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      display: none;
+      align-items: center;
+      gap: 8px;
+      z-index: 500;
+    }
+
+    @media (max-width: 900px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="brand-mark">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+      </div>
+      <span class="nav-title">Linea Temporale</span>
+      <span class="nav-sep">/</span>
+      <span class="nav-section">Dashboard Evento</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="/Evento" target="_blank" rel="noopener" class="btn-nav">
+        <span>Pagina Pubblica</span>
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+      <a href="/partnershipdashboard" class="btn-nav">
+        <span>Partnership</span>
+      </a>
+      <a href="/partnershipdashboard/logout" class="btn-nav btn-nav-exit">
+        <span>Esci</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Page Header -->
+    <div class="page-head">
+      <div class="head-title-wrap">
+        <h1 class="page-heading">Evento Votazioni</h1>
+        <span class="status-tag <%= settings.status === 'active' ? 'tag-active' : (settings.status === 'paused' ? 'tag-paused' : 'tag-ended') %>" id="statusPill">
+          <span class="status-bullet"></span>
+          <span id="statusPillText"><%= settings.status === 'active' ? 'Attivo' : (settings.status === 'paused' ? 'In Pausa' : 'Concluso') %></span>
+        </span>
+      </div>
+
+      <div style="display: flex; gap: 8px;">
+        <button class="btn btn-primary btn-xs" onclick="openAddModal()">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Nuovo Server</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Stats Ribbon -->
+    <div class="stats-ribbon">
+      <div class="stat-entry">
+        <span class="stat-num"><%= servers.length %></span>
+        <span class="stat-desc">Server in gara</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-entry">
+        <span class="stat-num"><%= totalVotes %></span>
+        <span class="stat-desc">Voti totali</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-entry">
+        <span class="stat-desc">Al 1° posto:</span>
+        <span class="stat-num" style="font-size: 14px;"><%= servers.length > 0 ? servers[0].name : 'Nessuno' %></span>
+        <% if (servers.length > 0) { %>
+          <span class="stat-desc">(<%= servers[0].votes %> voti)</span>
+        <% } %>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-entry">
+        <span class="stat-desc">Regola:</span>
+        <span class="stat-num" style="font-size: 13.5px;">1 Solo Server</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-entry">
+        <span class="stat-desc">Termine:</span>
+        <span class="stat-num" style="font-size: 13.5px; color: #ff595e;">21/09 ore 00:00</span>
+      </div>
+    </div>
+
+    <!-- 2-Column Dashboard Grid -->
+    <div class="dashboard-grid">
+
+      <!-- Left Column: Server List & Live Rankings -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Classifica Server (<%= servers.length %>)</span>
+          <button class="btn btn-danger-outline btn-xs" onclick="resetAllVotes()" title="Azzera il conteggio di tutti i voti">
+            <span>Azzera Voti</span>
+          </button>
+        </div>
+
+        <% if (servers.length === 0) { %>
+          <div class="empty-banner">
+            Nessun server registrato. Clicca su "Nuovo Server" per iniziare.
+          </div>
+        <% } else { %>
+          <div class="server-list">
+            <% servers.forEach((server, index) => { %>
+              <div class="server-row" id="row-<%= server.id %>">
+                <span class="rank-num <%= index === 0 ? 'rank-first' : '' %>">
+                  #<%= index + 1 %>
+                </span>
+
+                <img 
+                  src="<%= server.icon || 'https://cdn.discordapp.com/embed/avatars/0.png' %>" 
+                  class="server-avatar"
+                  alt="<%= server.name %>"
+                  onerror="this.onerror=null; this.src='https://cdn.discordapp.com/embed/avatars/0.png';"
+                />
+
+                <div class="server-info">
+                  <div class="server-title-row">
+                    <span class="server-name"><%= server.name %></span>
+                    <% if (server.inviteUrl) { %>
+                      <a href="<%= server.inviteUrl %>" target="_blank" rel="noopener" class="server-link-btn" title="Link invito">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    <% } %>
+                  </div>
+                  <div class="server-desc-sub"><%= server.description || 'Nessuna descrizione' %></div>
+                </div>
+
+                <div class="server-votes-control">
+                  <input 
+                    type="number" 
+                    class="input-votes" 
+                    id="input-votes-<%= server.id %>" 
+                    value="<%= server.votes || 0 %>" 
+                    min="0"
+                  />
+                  <button class="btn btn-subtle btn-xs" onclick="saveVotes('<%= server.id %>')" title="Salva punteggio">
+                    <span>Salva</span>
+                  </button>
+                </div>
+
+                <div class="row-actions">
+                  <button class="btn-icon" onclick='openEditModal(<%- JSON.stringify(server) %>)' title="Modifica server">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                  </button>
+                  <button class="btn-icon btn-icon-danger" onclick="deleteServer('<%= server.id %>', '<%= server.name %>')" title="Elimina server">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            <% }); %>
+          </div>
+        <% } %>
+      </div>
+
+      <!-- Right Column: Settings -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Parametri Evento</span>
+        </div>
+
+        <form id="settingsForm" onsubmit="saveSettings(event)" class="settings-body">
+          <div class="field">
+            <label class="field-label">Titolo Evento</label>
+            <input type="text" class="input" id="ev_title" value="<%= settings.title %>" required>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Premio Vincitore</label>
+            <input type="text" class="input" id="ev_prize" value="<%= settings.prize %>">
+          </div>
+
+          <div class="field">
+            <label class="field-label">Stato Votazioni</label>
+            <select class="input" id="ev_status">
+              <option value="active" <%= settings.status === 'active' ? 'selected' : '' %>>Attivo (Voti aperti)</option>
+              <option value="paused" <%= settings.status === 'paused' ? 'selected' : '' %>>In Pausa (Voti bloccati)</option>
+              <option value="ended" <%= settings.status === 'ended' ? 'selected' : '' %>>Concluso (Terminato)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Regola Votazioni</label>
+            <input type="hidden" id="ev_cooldown" value="0">
+            <div style="padding: 9px 12px; background: var(--bg-hover); border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; color: var(--text-main); font-weight: 500;">
+              Voto Unico Permanente (1 solo server per account per tutta la durata)
+            </div>
+            <span class="field-note">L'utente può votare un unico server fino al termine dell'evento</span>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Termine Evento (Data e Ora)</label>
+            <input type="text" class="input" id="ev_endDate" value="<%= settings.endDate || '2026-09-21T00:00:00+02:00' %>">
+            <span class="field-note">Formato ISO: AAAA-MM-GGTHH:mm:ss</span>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Descrizione / Regole</label>
+            <textarea class="input" id="ev_desc" rows="3" required><%= settings.description %></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 6px;">
+            <span>Salva Impostazioni</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal Inserimento / Modifica Server -->
+  <div id="serverModal" class="modal-backdrop">
+    <div class="modal">
+      <div class="modal-head">
+        <span class="modal-head-title" id="modalTitle">Nuovo Server</span>
+        <button type="button" class="btn-icon" onclick="closeServerModal()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="serverForm" onsubmit="handleServerSubmit(event)">
+        <input type="hidden" id="modal_srv_id">
+
+        <div class="modal-body">
+          <div class="field">
+            <label class="field-label">Nome del Server</label>
+            <input type="text" class="input" id="modal_srv_name" placeholder="Es. RoomUp Community" required>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Banner (URL o File)</label>
+            <div class="upload-row">
+              <input type="text" class="input" id="modal_srv_banner" placeholder="URL immagine o carica..." oninput="updatePreview('modal_srv_banner', 'preview_modal_banner_img', 'preview_modal_banner')">
+              <input type="file" id="file_modal_banner" accept="image/*" style="display: none;" onchange="handleFileUpload(this, 'modal_srv_banner', 'preview_modal_banner_img', 'preview_modal_banner')">
+              <button type="button" class="btn btn-subtle btn-xs" onclick="document.getElementById('file_modal_banner').click()">Carica</button>
+            </div>
+            <div id="preview_modal_banner" class="preview-box">
+              <img id="preview_modal_banner_img" src="" alt="Banner">
+              <button type="button" class="btn-clear-preview" onclick="clearImage('modal_srv_banner', 'preview_modal_banner')">Rimuovi</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Icona (URL o File)</label>
+            <div class="upload-row">
+              <input type="text" class="input" id="modal_srv_icon" placeholder="URL icona o carica..." oninput="updatePreview('modal_srv_icon', 'preview_modal_icon_img', 'preview_modal_icon')">
+              <input type="file" id="file_modal_icon" accept="image/*" style="display: none;" onchange="handleFileUpload(this, 'modal_srv_icon', 'preview_modal_icon_img', 'preview_modal_icon')">
+              <button type="button" class="btn btn-subtle btn-xs" onclick="document.getElementById('file_modal_icon').click()">Carica</button>
+            </div>
+            <div id="preview_modal_icon" class="preview-box icon-preview-box">
+              <img id="preview_modal_icon_img" src="" alt="Icona">
+              <button type="button" class="btn-clear-preview" onclick="clearImage('modal_srv_icon', 'preview_modal_icon')">X</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Link Invito Discord</label>
+            <input type="url" class="input" id="modal_srv_invite" placeholder="https://discord.gg/...">
+          </div>
+
+          <div class="field">
+            <label class="field-label">Breve Descrizione</label>
+            <textarea class="input" id="modal_srv_desc" placeholder="Descrivi il server in poche parole..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-foot">
+          <button type="button" class="btn btn-subtle" onclick="closeServerModal()">Annulla</button>
+          <button type="submit" class="btn btn-primary" id="modalSubmitBtn">Aggiungi</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast">
+    <span id="toastText">Operazione completata</span>
+  </div>
+
+  <script>
+    function showToast(msg, isError = false) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toastText');
+      text.textContent = msg;
+      toast.style.borderColor = isError ? 'rgba(239, 68, 68, 0.4)' : 'rgba(16, 185, 129, 0.4)';
+      toast.style.display = 'flex';
+      setTimeout(() => { toast.style.display = 'none'; }, 3000);
+    }
+
+    function updatePreview(inputId, imgId, containerId) {
+      const val = document.getElementById(inputId).value.trim();
+      const container = document.getElementById(containerId);
+      const img = document.getElementById(imgId);
+      if (val) {
+        img.src = val;
+        container.style.display = 'block';
+      } else {
+        container.style.display = 'none';
+        img.src = '';
+      }
+    }
+
+    function clearImage(inputId, containerId) {
+      document.getElementById(inputId).value = '';
+      document.getElementById(containerId).style.display = 'none';
+    }
+
+    async function handleFileUpload(inputEl, targetInputId, previewImgId, previewContainerId) {
+      const file = inputEl.files[0];
+      if (!file) return;
+
+      if (file.size > 25 * 1024 * 1024) {
+        showToast('Dimensione massima 25MB.', true);
+        inputEl.value = '';
+        return;
+      }
+
+      showToast('Caricamento in corso...');
+
+      const reader = new FileReader();
+      reader.onload = async (e) => {
+        const base64Data = e.target.result;
+        const img = document.getElementById(previewImgId);
+        const container = document.getElementById(previewContainerId);
+        if (img && container) {
+          img.src = base64Data;
+          container.style.display = 'block';
+        }
+
+        try {
+          const res = await fetch('/api/eventodashboard/upload', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ image: base64Data, filename: file.name })
+          });
+          const data = await res.json();
+          if (data.success) {
+            document.getElementById(targetInputId).value = data.url;
+            showToast('Immagine caricata');
+          } else {
+            showToast(data.message || 'Errore upload', true);
+          }
+        } catch (err) {
+          showToast('Errore di connessione', true);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function openAddModal() {
+      document.getElementById('modalTitle').textContent = 'Nuovo Server';
+      document.getElementById('modalSubmitBtn').textContent = 'Aggiungi Server';
+      document.getElementById('modal_srv_id').value = '';
+      document.getElementById('modal_srv_name').value = '';
+      document.getElementById('modal_srv_banner').value = '';
+      document.getElementById('modal_srv_icon').value = '';
+      document.getElementById('modal_srv_invite').value = '';
+      document.getElementById('modal_srv_desc').value = '';
+
+      clearImage('modal_srv_banner', 'preview_modal_banner');
+      clearImage('modal_srv_icon', 'preview_modal_icon');
+
+      document.getElementById('serverModal').style.display = 'flex';
+    }
+
+    function openEditModal(server) {
+      document.getElementById('modalTitle').textContent = 'Modifica Server';
+      document.getElementById('modalSubmitBtn').textContent = 'Salva Modifiche';
+      document.getElementById('modal_srv_id').value = server.id;
+      document.getElementById('modal_srv_name').value = server.name || '';
+      document.getElementById('modal_srv_banner').value = server.banner || '';
+      document.getElementById('modal_srv_icon').value = server.icon || '';
+      document.getElementById('modal_srv_invite').value = server.inviteUrl || '';
+      document.getElementById('modal_srv_desc').value = server.description || '';
+
+      updatePreview('modal_srv_banner', 'preview_modal_banner_img', 'preview_modal_banner');
+      updatePreview('modal_srv_icon', 'preview_modal_icon_img', 'preview_modal_icon');
+
+      document.getElementById('serverModal').style.display = 'flex';
+    }
+
+    function closeServerModal() {
+      document.getElementById('serverModal').style.display = 'none';
+    }
+
+    async function handleServerSubmit(e) {
+      e.preventDefault();
+      const id = document.getElementById('modal_srv_id').value;
+      const isEdit = Boolean(id);
+
+      const payload = {
+        name: document.getElementById('modal_srv_name').value,
+        banner: document.getElementById('modal_srv_banner').value,
+        icon: document.getElementById('modal_srv_icon').value,
+        description: document.getElementById('modal_srv_desc').value,
+        inviteUrl: document.getElementById('modal_srv_invite').value
+      };
+      if (isEdit) payload.id = id;
+
+      const endpoint = isEdit ? '/api/eventodashboard/server/update' : '/api/eventodashboard/server';
+
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(isEdit ? 'Server aggiornato' : 'Server aggiunto');
+          closeServerModal();
+          setTimeout(() => location.reload(), 700);
+        } else {
+          showToast(data.message || 'Errore operazione', true);
+        }
+      } catch (err) {
+        showToast('Errore di connessione', true);
+      }
+    }
+
+    async function saveSettings(e) {
+      e.preventDefault();
+      const payload = {
+        title: document.getElementById('ev_title').value,
+        description: document.getElementById('ev_desc').value,
+        prize: document.getElementById('ev_prize').value,
+        status: document.getElementById('ev_status').value,
+        cooldownHours: document.getElementById('ev_cooldown').value,
+        endDate: document.getElementById('ev_endDate').value
+      };
+
+      try {
+        const res = await fetch('/api/eventodashboard/settings', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast('Impostazioni salvate');
+          const pill = document.getElementById('statusPill');
+          const text = document.getElementById('statusPillText');
+          if (pill && text) {
+            pill.className = 'status-tag ' + (payload.status === 'active' ? 'tag-active' : (payload.status === 'paused' ? 'tag-paused' : 'tag-ended'));
+            text.textContent = payload.status === 'active' ? 'Attivo' : (payload.status === 'paused' ? 'In Pausa' : 'Concluso');
+          }
+        } else {
+          showToast(data.message || 'Errore salvataggio', true);
+        }
+      } catch (err) {
+        showToast('Errore di connessione', true);
+      }
+    }
+
+    async function saveVotes(serverId) {
+      const votes = document.getElementById(`input-votes-${serverId}`).value;
+      try {
+        const res = await fetch('/api/eventodashboard/server/update', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: serverId, votes })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast('Voti aggiornati');
+          setTimeout(() => location.reload(), 600);
+        } else {
+          showToast(data.message || 'Errore', true);
+        }
+      } catch (err) {
+        showToast('Errore connessione', true);
+      }
+    }
+
+    async function deleteServer(serverId, serverName) {
+      if (!confirm(`Rimuovere "${serverName}" dall'evento?`)) return;
+
+      try {
+        const res = await fetch('/api/eventodashboard/server/delete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: serverId })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast('Server rimosso');
+          document.getElementById(`row-${serverId}`)?.remove();
+        } else {
+          showToast(data.message || 'Errore', true);
+        }
+      } catch (err) {
+        showToast('Errore connessione', true);
+      }
+    }
+
+    async function resetAllVotes() {
+      if (!confirm('Azzerare tutti i voti di tutti i server? L\'azione è irreversibile.')) return;
+
+      try {
+        const res = await fetch('/api/eventodashboard/reset-votes', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast('Voti azzerati');
+          setTimeout(() => location.reload(), 600);
+        } else {
+          showToast(data.message || 'Errore', true);
+        }
+      } catch (err) {
+        showToast('Errore connessione', true);
+      }
+    }
+  </script>
+</body>
+</html>

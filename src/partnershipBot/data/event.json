@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "title": "Evento Primavera 2026",
+    "description": "Vota per il tuo server preferito! Ogni account Discord puo votare un solo server. I voti vengono calcolati in base al tuo Voting Power (presenza nei server e boost attivi).",
+    "prize": "Nitro Boost 1 Mese + Ruolo Esclusivo e Pubblicita",
+    "status": "ended",
+    "cooldownHours": 0,
+    "endDate": "2026-09-21T00:00:00+02:00"
+  },
+  "servers": [
+    {
+      "id": "srv_roomup",
+      "discordGuildId": "1429445691452948524",
+      "name": "RoomUp!",
+      "icon": "https://cdn.discordapp.com/icons/1429445691452948524/a_6c12368c5b058c4021235b3e2a05cf65.png",
+      "banner": "https://cdn.discordapp.com/banners/1429445691452948524/a_banner.png",
+      "description": "Community ufficiale RoomUp! Gaming, bot development e supporto.",
+      "inviteUrl": "https://discord.gg/Ks8KP5BZBH",
+      "votes": 29
+    },
+    {
+      "id": "srv_strange",
+      "discordGuildId": "1154934504042025053",
+      "name": "Strange Place",
+      "icon": "https://cdn.discordapp.com/icons/1154934504042025053/a_icon.png",
+      "banner": "",
+      "description": "Community social, chat e ritrovo.",
+      "inviteUrl": "https://discord.gg/hDQwa4bdnV",
+      "votes": 14
+    },
+    {
+      "id": "srv_groove",
+      "discordGuildId": "708344468973027330",
+      "name": "🌿𝐆𝐫𝐨𝐨𝐯𝐞 𝐒𝐭𝐫𝐞𝐞𝐭𝐬・𝕤.𝕀𝕀𝕀",
+      "icon": "https://cdn.discordapp.com/icons/708344468973027330/a_icon.png",
+      "banner": "",
+      "description": "Community gaming e intrattenimento.",
+      "inviteUrl": "https://discord.gg/TUnn2m8GUk",
+      "votes": 8
+    }
+  ],
+  "votes": []
+}

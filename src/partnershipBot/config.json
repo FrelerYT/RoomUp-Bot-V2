@@ -1,0 +1,90 @@
+{
+  "auth": {
+    "username": "43AS2!|(9s0dow",
+    "password": "43AS2!|(9s0dow"
+  },
+  "servers": {
+    "1154934504042025053": {
+      "staffRoleIds": [
+        "1540482490320424990"
+      ],
+      "partnerChannelId": "1540860997907120200",
+      "guildName": "Strange Place",
+      "logChannelId": "",
+      "ping": "<@&1546619094210707557>",
+      "guildId": "1154934504042025053",
+      "partnerChannelName": "╰ㆍ❀partner"
+    },
+    "708344468973027330": {
+      "staffRoleIds": [],
+      "partnerChannelId": "1548790033094541393",
+      "guildName": "🌿𝐆𝐫𝐨𝐨𝐯𝐞 𝐒𝐭𝐫𝐞𝐞𝐭𝐬・𝕤.𝕀𝕀𝕀",
+      "logChannelId": "",
+      "ping": ""
+    },
+    "1540661437821620235": {
+      "guildName": "RoomUp! TEST",
+      "partnerChannelId": "",
+      "logChannelId": "",
+      "staffRoleIds": [],
+      "ping": ""
+    },
+    "965378975675322438": {
+      "guildId": "965378975675322438",
+      "guildName": "RoomUp!",
+      "partnerChannelId": "1554969756614926488",
+      "partnerChannelName": "🤝・partnership",
+      "logChannelId": "1554969797022846986",
+      "ping": "<@&1554969619964362794>",
+      "staffRoleIds": [
+        "1554969536841646140",
+        "1554969539249315883",
+        "1554969557071040542",
+        "1554969558618611778",
+        "1554969563358306304",
+        "1554969565761634505",
+        "1554969581011996682"
+      ]
+    }
+  },
+  "partnerChannels": [
+    {
+      "guildId": "1154934504042025053",
+      "guildName": "Strange Place",
+      "channelId": "1540860997907120200",
+      "channelName": "╰ㆍ❀partner",
+      "ping": "<@&1546619094210707557>"
+    },
+    {
+      "guildId": "708344468973027330",
+      "guildName": "🌿𝐆𝐫𝐨𝐨𝐯𝐞 𝐒𝐭𝐫𝐞𝐞𝐭𝐬・𝕤.𝕀𝕀𝕀",
+      "channelId": "1548790033094541393",
+      "channelName": "",
+      "ping": ""
+    },
+    {
+      "guildId": "965378975675322438",
+      "guildName": "RoomUp!",
+      "channelId": "1554969756614926488",
+      "channelName": "🤝・partnership",
+      "ping": "<@&1554969619964362794>"
+    }
+  ],
+  "logChannels": [
+    {
+      "guildId": "965378975675322438",
+      "guildName": "RoomUp!",
+      "channelId": "1554969797022846986",
+      "channelName": "🫂・info-partnership"
+    }
+  ],
+  "messages": {
+    "accessDenied": "Permesso negato. Ruoli richiesti: {roles}",
+    "noChannels": "Nessun canale partnership configurato.",
+    "partnerSuccess": "Partnership #{number} pubblicata in {count} server. ID: {messageId}",
+    "deleteSuccess": "Partnership #{number} eliminata con successo.",
+    "notFound": "Nessuna partnership trovata con ID: {id}",
+    "alreadyDeleted": "La partnership #{number} è già stata eliminata.",
+    "collaboratorLeftAlert": "Collaboratore {user} uscito da {server}. Partnership revocate: {numbers}."
+  }
+}

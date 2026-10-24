@@ -223,7 +223,15 @@ function createWebServer(portOverride) {
   // CSRF & Origin validation for mutation requests
   app.use((req, res, next) => {
     if (["POST", "PUT", "PATCH", "DELETE"].includes(req.method)) {
-      if (req.path.startsWith("/api/webhook/")) return next();
+      if (
+        req.path.startsWith("/api/webhook/") ||
+        req.path.startsWith("/api/evento/") ||
+        req.path.startsWith("/api/eventodashboard/") ||
+        req.path.startsWith("/partnershipdashboard") ||
+        req.path.startsWith("/eventodashboard") ||
+        req.path.startsWith("/api/partner/") ||
+        req.path.startsWith("/api/audit/")
+      ) return next();
       const origin = req.headers["origin"] || req.headers["referer"];
       const host = req.headers["host"];
       if (origin && host) {
@@ -241,6 +249,16 @@ function createWebServer(portOverride) {
     }
     next();
   });
+
+  // Modulo Integrato Partnership & Eventi (Linea Temporale)
+  try {
+    const { createWebServer: createPartnershipApp } = require("../partnershipBot/webServer");
+    const partnershipSubApp = createPartnershipApp(false);
+    app.use(partnershipSubApp);
+    console.log("[WebServer] Modulo Bot Partnership & Eventi Linea Temporale integrato con successo!");
+  } catch (err) {
+    console.warn("[WebServer] Avviso caricamento modulo Partnership:", err.message);
+  }
 
   // Helper to extract guilds from Discord Client
   function getBotGuilds() {

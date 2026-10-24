@@ -58,11 +58,27 @@ if (!token) {
   process.exit(1);
 }
 
-// 1. Inizializza Client Discord
+// 1. Inizializza Client Discord RoomUp V2
 console.log("[Init] Avvio Bot Discord RoomUp! V2...");
 const client = createDiscordClient(token, clientId);
 
-// 2. Inizializza Web Server Express
+// 2. Inizializza Client Discord Bot Partnership (Linea Temporale)
+console.log("[Init] Avvio Bot Discord Linea Temporale (Partnership & Eventi)...");
+let partnershipClient = null;
+try {
+  const { createDiscordClient: createPartnershipClient } = require("./partnershipBot/discordBot");
+  const partnerToken = process.env.PARTNERSHIP_BOT_TOKEN;
+  const partnerClientId = process.env.PARTNERSHIP_CLIENT_ID || "1546192386546470963";
+  if (partnerToken) {
+    partnershipClient = createPartnershipClient(partnerToken, partnerClientId);
+  } else {
+    console.warn("[Init] PARTNERSHIP_BOT_TOKEN non impostato. Bot Discord Partnership disattivato in questo ambiente.");
+  }
+} catch (err) {
+  console.error("[Init] Avviso avvio Bot Partnership:", err.message);
+}
+
+// 3. Inizializza Web Server Express
 console.log(`[Init] Avvio Web Server Dashboard su porta ${port}...`);
 const app = createWebServer();
 
