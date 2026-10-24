@@ -256,9 +256,29 @@ function createWebServer(portOverride) {
 
   const CLIENT_ID = process.env.DISCORD_CLIENT_ID || "1543608170327445634";
   const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET || "";
+
+  // Dynamic Base URL resolver: seamlessly supports roomup.space, custom domains, Render and local
+  function getBaseUrl(req) {
+    if (process.env.CUSTOM_DOMAIN) {
+      return `https://${process.env.CUSTOM_DOMAIN.replace(/^https?:\/\//, "")}`;
+    }
+    if (req) {
+      const host = req.headers["x-forwarded-host"] || req.headers["host"];
+      if (host) {
+        const proto = req.headers["x-forwarded-proto"] || (req.secure ? "https" : (host.includes("localhost") || host.includes("127.0.0.1") ? "http" : "https"));
+        return `${proto}://${host}`;
+      }
+    }
+    return (
+      process.env.BASE_URL ||
+      process.env.RENDER_EXTERNAL_URL ||
+      "http://localhost:3002"
+    );
+  }
+
   const BASE_URL =
-    process.env.RENDER_EXTERNAL_URL ||
     process.env.BASE_URL ||
+    process.env.RENDER_EXTERNAL_URL ||
     "http://localhost:3002";
 
   const BOT_OWNER_ID = "1020343046539325480"; // Founder Frè
@@ -348,7 +368,8 @@ function createWebServer(portOverride) {
     }
     const state = crypto.randomBytes(24).toString("hex");
     req.session.oauthState = state;
-    const redirectUri = encodeURIComponent(`${BASE_URL}/auth/callback`);
+    const currentBase = getBaseUrl(req);
+    const redirectUri = encodeURIComponent(`${currentBase}/auth/callback`);
     const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20guilds&state=${state}&prompt=consent`;
     res.redirect(authUrl);
   });
@@ -373,7 +394,8 @@ function createWebServer(portOverride) {
     delete req.session.oauthState;
 
     try {
-      const redirectUri = `${BASE_URL}/auth/callback`;
+      const currentBase = getBaseUrl(req);
+      const redirectUri = `${currentBase}/auth/callback`;
       const tokenRes = await fetch("https://discord.com/api/oauth2/token", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
