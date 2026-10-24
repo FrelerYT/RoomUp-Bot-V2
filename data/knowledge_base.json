@@ -107,6 +107,132 @@
         "test",
         "guida"
       ]
+    },
+    {
+      "id": "kb_concept",
+      "category": "Concept & Identità",
+      "title": "Cos'è RoomUp! × YouTuberMC?",
+      "keywords": [
+        "server",
+        "smp",
+        "roomup",
+        "youtubermc",
+        "concept",
+        "stile",
+        "colori"
+      ],
+      "content": "RoomUp! × YouTuberMC è un server SMP (Survival MultiPlayer) di nuova generazione basato su Minecraft 1.21.x. Unisce l'identità moderna ed elegante di RoomUp! (rosa e viola) con quella energica e dinamica dei creator di YouTuberMC (rosso e bianco). La filosofia è: design pulito, zero disordine e totale coerenza visiva e funzionale."
+    },
+    {
+      "id": "kb_menu",
+      "category": "Gameplay & Guida",
+      "title": "Navigazione Centrale Unificata (/menu)",
+      "keywords": [
+        "menu",
+        "comandi",
+        "gui",
+        "navigazione",
+        "home",
+        "indietro"
+      ],
+      "content": "Tutte le funzioni del server sono accessibili da un unico hub centrale digitando **/menu**. Non ci sono inventari pieni di vetri decorativi inutili: ogni slot ha una funzione precisa, con pulsanti 'Home' e 'Indietro' sempre coerenti."
+    },
+    {
+      "id": "kb_economy",
+      "category": "Economia & Mercato",
+      "title": "Economia Dinamica, /shop e Auction House (/ah)",
+      "keywords": [
+        "shop",
+        "economia",
+        "ah",
+        "auction",
+        "sell",
+        "worth",
+        "mercato",
+        "soldi"
+      ],
+      "content": "Il server include:\n• **/shop**: suddiviso in Blocchi, Agricoltura, Minerali, Equipaggiamento, Spawner con prezzi calibrati anti-inflazione.\n• **/ah (Auction House)**: compravendita tra giocatori con 0% tassa di inserzione e solo il 2% di tassa sul venduto.\n• **Order Book / Smart Market**: ordini di acquisto automatici con gestione di escrow e riscatto immediato.\n• **/sell** e **/worth**: vendita rapida e valutazione istantanea del valore degli oggetti."
+    },
+    {
+      "id": "kb_spawners",
+      "category": "Spawners & Farm",
+      "title": "Spawners Avanzati & Registro Raccolte",
+      "keywords": [
+        "spawner",
+        "pig",
+        "zombie",
+        "skeleton",
+        "blaze",
+        "iron golem",
+        "raccolte",
+        "chiavi spawner"
+      ],
+      "content": "Gli spawner (Pig, Zombie, Skeleton, Blaze, Iron Golem, ecc.) dispongono di un'interfaccia dedicata per gestire livello di efficienza, velocità di spawn e un **Registro Raccolte interattivo** per tracciare il bottino generato. Le Chiavi Spawner permettono di sbloccare o potenziare gli spawner."
+    },
+    {
+      "id": "kb_crates",
+      "category": "Casse & Progressioni",
+      "title": "Ecosistema Casse (Crates) a 6 Tier",
+      "keywords": [
+        "casse",
+        "crate",
+        "leggendaria",
+        "mitica",
+        "chiavi",
+        "magic bucket",
+        "secchio magico",
+        "razzo stellare"
+      ],
+      "content": "Il server offre 6 Tier di Casse: Comune, Non Comune, Rara, Epica, Leggendaria, Mitica.\n• **Crate Leggendaria**: armature e armi Netherite con incantamenti massimi (Sharpness V, Looting III, Sweeping Edge III, Efficiency V, Fortune III, Protection IV, Respiration III, Feather Falling IV).\n• **Crate Mitica**: contiene utility leggendarie come il **Secchio Magico (Magic Bucket)** con fonte d'acqua infinita senza consumo, e il **Razzo Stellare Infinito** (boost per elitre infinito valido 14 giorni con particelle stellari e suoni esclusivi)."
+    },
+    {
+      "id": "kb_teams_claims",
+      "category": "Fazioni & Protezione",
+      "title": "Gang/Team, Claim Terreni & Teletrasporti",
+      "keywords": [
+        "claim",
+        "team",
+        "gang",
+        "terreni",
+        "fazioni",
+        "rtp",
+        "tpa",
+        "home",
+        "griefing"
+      ],
+      "content": "• **Gang / Team**: crea la tua fazione con banca condivisa, chat privata, alleanze, rivalità e toggle per il fuoco amico.\n• **Claim Terreni**: proteggi la tua base e le farm con protezione chunk anti-griefing e anti-furto.\n• **Teletrasporti**: /home personali bilanciate, **/rtp** (Random Teleport) con verifica di sicurezza del terreno e **/tpa** con pulsanti interattivi cliccabili."
+    },
+    {
+      "id": "kb_pvp",
+      "category": "PvP & Minigiochi",
+      "title": "PvP Moderno 1.9+, Combat Tag e Coinflip",
+      "keywords": [
+        "pvp",
+        "combat",
+        "combat tag",
+        "combattimento",
+        "taglie",
+        "bounty",
+        "coinflip"
+      ],
+      "content": "• **PvP Moderno 1.9+**: hit-detection calibrata e patch su exploit di scudi e lunge.\n• **Combat Tag**: blocco comandi durante il combattimento e morte istantanea in caso di combat-log (disconnessione volontaria).\n• **/bounty**: piazza taglie sulla testa dei rivali.\n• **/coinflip**: scommesse testa o croce con il 5% trattenuto dal server per stabilizzare l'economia."
+    },
+    {
+      "id": "kb_tech",
+      "category": "Tecnica & Prestazioni",
+      "title": "Stack Tecnico, Simple Voice Chat & Texture Oraxen",
+      "keywords": [
+        "versione",
+        "ip",
+        "paper",
+        "leaf",
+        "tps",
+        "voice chat",
+        "oraxen",
+        "texture",
+        "lag"
+      ],
+      "content": "• **Core**: Paper / Leaf 1.21.x (Java 21) ottimizzato per garantire 20.0 TPS stabili anche sotto carico.\n• **Plugin**: Plugin proprietario *RoomUpSpigot* con database SQLite/MySQL e 39 test integrati.\n• **Voice Chat**: Supporto a Simple Voice Chat per parlare a voce con gli altri giocatori vicini (prossimità vocale).\n• **Texture & Modelli**: Oraxen con glifi, icone e texture custom per rank e menu.\n• **Spawn**: FancyNpcs e DecentHolograms per un'accoglienza immersiva."
     }
   ]
 }
