@@ -51,6 +51,7 @@ const { SimulationSuite, defaultSimulationSuite } = require("./simulation/Simula
 const { ModelRouter, defaultModelRouter, DEFAULT_MODELS } = require("./ai/ModelRouter");
 const { TicketConcurrencyManager, defaultTicketConcurrencyManager } = require("./concurrency/TicketConcurrencyManager");
 const { CommandIntentDetector, defaultCommandIntentDetector, INTENT_TYPES } = require("./ticket-engine/CommandIntentDetector");
+const { StaffCandidateEngine, defaultStaffCandidateEngine, SS_FORENSICS_KNOWLEDGE, ROOMUP_SMP_KNOWLEDGE, DISCORD_MOD_KNOWLEDGE, EXAM_QUESTIONS } = require("./staff-engine/StaffCandidateEngine");
 
 function initSentinel(client) {
   defaultSentinelCore.setDiscordClient(client);
@@ -124,5 +125,11 @@ module.exports = {
   defaultTicketConcurrencyManager,
   CommandIntentDetector,
   defaultCommandIntentDetector,
-  INTENT_TYPES
+  INTENT_TYPES,
+  StaffCandidateEngine,
+  defaultStaffCandidateEngine,
+  SS_FORENSICS_KNOWLEDGE,
+  ROOMUP_SMP_KNOWLEDGE,
+  DISCORD_MOD_KNOWLEDGE,
+  EXAM_QUESTIONS
 };

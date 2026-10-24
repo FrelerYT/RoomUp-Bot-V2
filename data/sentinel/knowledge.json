@@ -44,6 +44,24 @@
       "content": "Le Casse hanno 6 Tier: Comune, Non Comune, Rara, Epica, Leggendaria, Mitica. La Leggendaria offre equipaggiamento Netherite con enchant massimi. La Mitica contiene il Magic Bucket (fonte d'acqua infinita senza consumo) e il Razzo Stellare Infinito (14 giorni di boost elitre illimitato con particelle e suoni custom).",
       "confidence": 1,
       "verified": true
+    },
+    {
+      "id": "skb_ss_full_guide",
+      "category": "STAFF_GUIDELINES",
+      "title": "Manuale Operativo ScreenShare (SS) & Anti-Cheat",
+      "topic": "screenshare ss protocollo controlli cheat",
+      "content": "Manuale per lo Staff: /ss player, 180s per vocale Discord, AnyDesk/TeamViewer. Controllo RShift, LShift, Insert, comandi chat nascosti (.unload, .bind). Forensics Windows: Prefetch C:\\Windows\\Prefetch per .pf recenti, Registro BAM SYSTEM\\CurrentControlSet\\Services\\bam\\State\\UserSettings per tracciare tutti gli eseguibili, UserAssist ROT13, Process Hacker strings javaw.exe (Vape, Drip, Raven, Whiteout, Slinky), USN Journal per file eliminati. Tool: Echo, Paladin, Bamboo. Rispetto privacy e no falsi positivi.",
+      "confidence": 1,
+      "verified": true
+    },
+    {
+      "id": "skb_staff_exam_rubric",
+      "category": "STAFF_GUIDELINES",
+      "title": "Criteri di Valutazione Candidati Staff (Scoring Rubric)",
+      "topic": "candidatura staff esame provino rubric",
+      "content": "Sentinel AI valuta i candidati su 4 dimensioni: 1) Conoscenza SS (BAM, Prefetch, javaw strings, AnyDesk, regole freeze); 2) Conoscenza SMP RoomUp! (Paper 1.21.x, /menu, shop, crates, claims, spawners); 3) Moderazione Discord & De-escalation; 4) Maturita e tono. Punteggio: >= 7.5 Idoneo per provino vocale / Helper; 5.5 - 7.4 In Riserva / Trainee; < 5.5 Non Idoneo.",
+      "confidence": 1,
+      "verified": true
     }
   ],
   "111111111111111111": [],

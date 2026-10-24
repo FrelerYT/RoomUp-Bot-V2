@@ -1960,7 +1960,117 @@ Rispondi in modo naturale, cortese e conciso (massimo 2 frasi, zero emoji), rico
 
   async handleStaffAppTicketMessage({ message, session, channel }) {
     const content = (message.content || "").trim();
+    if (!content || content.length < 2) return { handled: false };
     await channel.sendTyping().catch(() => null);
+
+    try {
+      const { defaultStaffCandidateEngine, EXAM_QUESTIONS } = require("../staff-engine/StaffCandidateEngine");
+      const candidateSession = defaultStaffCandidateEngine.getOrCreateSession(channel.id, message.author.id);
+
+      // STEP 0: Benvenuto e prima domanda (ScreenShare & Anti-Cheat)
+      if (candidateSession.currentStep === 0) {
+        candidateSession.currentStep = 1;
+        const q1 = EXAM_QUESTIONS[0];
+        candidateSession.activeQuestion = q1;
+
+        const reply = `👋 Ciao <@${message.author.id}>! Sono **Sentinel AI**, l'esaminatore automatico dello Staff di **RoomUp! × YouTuberMC**.\nHo acquisito la tua candidatura. Per valutare la tua preparazione tecnica, ti sottoporrò a un breve colloquio di **3 domande pratiche**.\n\n📌 **Domanda 1/3 (ScreenShare & Anti-Cheat Forensics):**\n> *${q1.question}*\n\n*(Rispondi direttamente qui in chat descrivendo i passaggi che effettueresti).*`;
+        await this.sendTicketReply(channel, session, reply);
+        return { handled: true, action: "STAFF_EXAM_QUESTION_1" };
+      }
+
+      // STEP 1: Valutazione Domanda 1 -> Invio Domanda 2 (Gameplay RoomUp SMP)
+      if (candidateSession.currentStep === 1) {
+        const q1 = EXAM_QUESTIONS[0];
+        const eval1 = defaultStaffCandidateEngine.evaluateAnswer(q1, content);
+        candidateSession.answers.push({
+          questionId: q1.id,
+          category: q1.category,
+          question: q1.question,
+          answer: content,
+          score: eval1.score,
+          feedback: eval1.feedback
+        });
+
+        candidateSession.currentStep = 2;
+        const q2 = EXAM_QUESTIONS[4]; // Domanda Gameplay /menu & avvio
+        candidateSession.activeQuestion = q2;
+
+        const reply = `Risposta registrata. Passiamo alla domanda successiva.\n\n📌 **Domanda 2/3 (Gameplay & Ecosistema RoomUp! × YouTuberMC):**\n> *${q2.question}*\n\n*(Spiega le caratteristiche principali del server SMP per accogliere il giocatore).*`;
+        await this.sendTicketReply(channel, session, reply);
+        return { handled: true, action: "STAFF_EXAM_QUESTION_2" };
+      }
+
+      // STEP 2: Valutazione Domanda 2 -> Invio Domanda 3 (Moderazione & De-escalation)
+      if (candidateSession.currentStep === 2) {
+        const q2 = EXAM_QUESTIONS[4];
+        const eval2 = defaultStaffCandidateEngine.evaluateAnswer(q2, content);
+        candidateSession.answers.push({
+          questionId: q2.id,
+          category: q2.category,
+          question: q2.question,
+          answer: content,
+          score: eval2.score,
+          feedback: eval2.feedback
+        });
+
+        candidateSession.currentStep = 3;
+        const q3 = EXAM_QUESTIONS[6]; // Situazionale utente tossico
+        candidateSession.activeQuestion = q3;
+
+        const reply = `Perfetto, risposta acquisita.\n\n📌 **Domanda 3/3 (Moderazione & Gestione Conflitti):**\n> *${q3.question}*\n\n*(Descrivi come ti comporteresti nel ticket con l'utente).*`;
+        await this.sendTicketReply(channel, session, reply);
+        return { handled: true, action: "STAFF_EXAM_QUESTION_3" };
+      }
+
+      // STEP 3: Valutazione Domanda 3 -> Calcolo Score Finale ed Emissione Report Diagnostico
+      if (candidateSession.currentStep === 3) {
+        const q3 = EXAM_QUESTIONS[6];
+        const eval3 = defaultStaffCandidateEngine.evaluateAnswer(q3, content);
+        candidateSession.answers.push({
+          questionId: q3.id,
+          category: q3.category,
+          question: q3.question,
+          answer: content,
+          score: eval3.score,
+          feedback: eval3.feedback
+        });
+
+        candidateSession.currentStep = 4;
+        defaultStaffCandidateEngine.calculateFinalScore(candidateSession);
+
+        const closingMsg = `✅ **Colloquio tecnico preliminare completato con successo!**\nGrazie <@${message.author.id}>, ho analizzato le tue risposte sui protocolli ScreenShare, sulla conoscenza dell'SMP RoomUp! e sulla moderazione.\nHo elaborato e trasmesso il tuo **Report Diagnostico** all'Amministrazione e ai Founder per la valutazione finale. Ti risponderemo a breve!`;
+        await this.sendTicketReply(channel, session, closingMsg);
+
+        // Genera Embed Diagnostico per lo Staff
+        const diagnosticEmbed = defaultStaffCandidateEngine.createStaffDiagnosticEmbed(candidateSession, message.member);
+        await channel.send({ embeds: [diagnosticEmbed] }).catch(() => null);
+
+        // Inoltra copia nel canale staff chat-mc (1558826636709990430)
+        try {
+          const client = channel.client || this.client;
+          const staffChannel = client?.channels?.cache?.get("1558826636709990430") || (await client?.channels?.fetch("1558826636709990430").catch(() => null));
+          if (staffChannel) {
+            await staffChannel.send({
+              content: `🔔 **Nuova Valutazione Candidato Staff Disponibile** (Canale: <#${channel.id}>)`,
+              embeds: [diagnosticEmbed]
+            }).catch(() => null);
+          }
+        } catch (err) {
+          console.warn("[SentinelTicketEngine] Avviso inoltro report staff in chat-mc:", err.message);
+        }
+
+        return { handled: true, action: "STAFF_EXAM_COMPLETED" };
+      }
+
+      // STEP 4+: Colloquio già completato
+      if (candidateSession.currentStep >= 4) {
+        const reply = "Ho già memorizzato e inoltrato i risultati del tuo colloquio allo Staff. Un amministratore prenderà in carico il ticket non appena disponibile.";
+        await this.sendTicketReply(channel, session, reply);
+        return { handled: true, action: "STAFF_EXAM_ALREADY_COMPLETED" };
+      }
+    } catch (err) {
+      console.error("[SentinelTicketEngine] Errore gestione colloquio staff:", err);
+    }
 
     if (content.length > 5) {
       const reply = "Candidatura registrata con successo. I manager dello staff esamineranno la tua richiesta e ti contatteranno direttamente qui se risulterai idoneo per il colloquio.";

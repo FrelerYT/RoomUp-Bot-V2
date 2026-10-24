@@ -233,6 +233,55 @@
         "lag"
       ],
       "content": "• **Core**: Paper / Leaf 1.21.x (Java 21) ottimizzato per garantire 20.0 TPS stabili anche sotto carico.\n• **Plugin**: Plugin proprietario *RoomUpSpigot* con database SQLite/MySQL e 39 test integrati.\n• **Voice Chat**: Supporto a Simple Voice Chat per parlare a voce con gli altri giocatori vicini (prossimità vocale).\n• **Texture & Modelli**: Oraxen con glifi, icone e texture custom per rank e menu.\n• **Spawn**: FancyNpcs e DecentHolograms per un'accoglienza immersiva."
+    },
+    {
+      "id": "kb_ss_protocol",
+      "category": "ScreenShare & Moderazione",
+      "title": "Protocollo Ufficiale ScreenShare (SS) Minecraft",
+      "keywords": [
+        "ss",
+        "screenshare",
+        "controllo",
+        "freeze",
+        "anydesk",
+        "slog",
+        "hack",
+        "cheat"
+      ],
+      "content": "Procedura ufficiale ScreenShare: 1) Freeze in-game (/ss o /freeze) con timer di 3 minuti per entrare nel vocale 🎧 〢 Supporto. Slog/disconnessione o crash non provato = Ban per Rifiuto Controllo. 2) Connessione remota AnyDesk o TeamViewer. Privacy garantita: vietato aprire chat private, foto o file non attinenti a Minecraft. 3) Controlli in-game: Right Shift (RShift), LShift, Insert, comandi chat nascosti (.unload, .bind) con T e Freccia Su, cartella mods e resource packs."
+    },
+    {
+      "id": "kb_ss_forensics",
+      "category": "ScreenShare & Moderazione",
+      "title": "Tecniche Forensi Avanzate SS: BAM, Prefetch, javaw.exe e USN",
+      "keywords": [
+        "bam",
+        "prefetch",
+        "javaw",
+        "process hacker",
+        "stringhe",
+        "vape",
+        "drip",
+        "usn journal",
+        "echo",
+        "paladin"
+      ],
+      "content": "Analisi forense Windows durante SS: • Prefetch (C:\\Windows\\Prefetch): file .pf ordinati per LastModified per loader recenti. • Registro BAM (SYSTEM\\CurrentControlSet\\Services\\bam\\State\\UserSettings): traccia irrevocabile degli eseguibili avviati con timestamp esatto. • UserAssist: decodifica ROT13 programmi da Explorer. • Process Hacker su javaw.exe: ricerca stringhe ghost client (Vape V4/Lite, Drip Lite, Raven B+, Whiteout, Slinky, Entropy, Kura). • USN Journal: verifica cancellazioni file recenti. • Scanner autorizzati: Echo, Paladin, Bamboo, Everything."
+    },
+    {
+      "id": "kb_staff_app",
+      "category": "Staff & Candidature",
+      "title": "Candidature Staff e Requisiti per RoomUp! × YouTuberMC",
+      "keywords": [
+        "candidatura",
+        "candidature",
+        "staff",
+        "helper",
+        "mod",
+        "provino",
+        "colloquio"
+      ],
+      "content": "Requisiti per candidarsi come Staff: età minima 14 anni, microfono funzionante per assistenza vocale, conoscenza approfondita del regolamento e delle meccaniche SMP RoomUp! x YouTuberMC (/menu, shop, ah, crates, claim). Per i ruoli Helper e Mod Minecraft è richiesta competenza pratica nelle procedure di ScreenShare (SS). Le candidature si aprono tramite ticket in #❓・apri-un-ticket dove Sentinel AI somministra il colloquio tecnico preliminare."
     }
   ]
 }

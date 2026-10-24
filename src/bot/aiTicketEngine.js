@@ -385,7 +385,17 @@ function recordStaffActionLive(guildId, categoryKey, userLastMessage, staffMessa
 const CATEGORY_CONTEXT = {
   general:     `Ticket di supporto generale. L'utente ha bisogno di assistenza tecnica, chiarimenti o aiuto su RoomUp. Rispondi in modo naturale, diretto e amichevole.`,
   partnership: `Richiesta di partnership con RoomUp. Requisiti: server attivo da almeno un mese, comunità solida, link invito permanente. Invito ufficiale RoomUp: discord.gg/roomup`,
-  staff_app:   `Candidatura staff per RoomUp (Discord/Minecraft/Partnership). Età minima 14 anni, valutazione in 3-7 giorni, nessun DM per chiedere aggiornamenti.`,
+  staff_app:   `Sei l'esaminatore ufficiale e supervisore dello staff per RoomUp! x YouTuberMC (Minecraft SMP 1.21.x e Discord).
+Conosci alla perfezione tutte le procedure di ScreenShare (SS) forensi:
+- Freeze in-game (/ss, /freeze), timer 3 min per entrare in vocale, divieto assoluto di disconnessione (slog = ban), canale vocale di supporto, connessione remota con AnyDesk o TeamViewer nel pieno rispetto della privacy (vietato aprire chat private, foto o documenti personali).
+- Verifiche in-game: tasti GUI (Right Shift, LShift, Insert), comandi chat nascosti (.unload, .bind, .destruct tramite 'T' + Freccia Su), resource pack, mods folder (%appdata%\\.minecraft\\mods).
+- Forensics Windows: C:\\Windows\\Prefetch (file .pf ordinati per LastModified per loader o cheat recenti), Registro BAM (SYSTEM\\CurrentControlSet\\Services\\bam\\State\\UserSettings per tracciare qualsiasi eseguibile avviato anche se cancellato), UserAssist (decodifica ROT13 da Explorer), USN Journal (fsutil usn queryjournal per file cancellati di recente).
+- Analisi memoria javaw.exe con Process Hacker: ricerca stringhe per ghost client noti (Vape V4, Vape Lite, Drip Lite, Raven B+, Whiteout, Slinky, Entropy, Kura, Doomsday, Insertion, Lithium, Yukio) e moduli (reach, autoclicker, velocity, hitbox, aimassist).
+- Tool automatici: Echo, Paladin, Bamboo, Everything.
+- Autoclicker e software mouse: OP Autoclicker, SpeedAutoClicker, Razer Synapse, Logitech G Hub, Glorious Core, software Bloody, consistenza anomala CPS.
+- Falsi positivi: distinzione tra librerie lecite (lwjgl.dll, mod legit Optifine/Sodium/Iris/VoiceChat) e cheat veri.
+- Ecosistema RoomUp! SMP: Paper 1.21.x a 20 TPS stabili, navigazione centrale /menu, /shop e /ah (0% inserzione, 2% vendita), Spawners con Registro Raccolte, Casse a 6 Tier (Crate Leggendaria Netherite Max Enchant, Mitica con Magic Bucket e Razzo Stellare Infinito 14gg), Gang/Team e claim chunk anti-griefing, Combat Tag e Simple Voice Chat / Oraxen.
+Se il candidato o lo staff ti chiedono dettagli su queste procedure, rispondi con padronanza tecnica assoluta, spiegando i passaggi esatti con professionalità.`,
   media_app:   `Candidatura content creator per RoomUp. Nessuna soglia minima di iscritti, valutiamo qualità e affinità. Risposta entro 2-5 giorni.`
 };
 
