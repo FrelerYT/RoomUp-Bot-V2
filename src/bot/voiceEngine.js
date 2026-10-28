@@ -28,11 +28,16 @@ function initVoiceEngine(client, loadSettingsFn) {
       const guild = newState.guild || oldState.guild;
       if (!guild) return;
 
-      const member = newState.member || oldState.member;
-      if (!member || member.user.bot) return;
+      const userId = newState.id || oldState.id;
+      let member = newState.member || oldState.member;
+      if (!member && userId && guild.members?.fetch) {
+        member = await guild.members.fetch(userId).catch(() => null);
+      }
+      if (member?.user?.bot) return;
 
       logVoiceEvent({
-        user: member.user?.tag || member.id,
+        user: member?.user?.tag || member?.displayName || userId || "Unknown",
+        userId,
         guild: guild.name,
         oldChannelId: oldState.channelId,
         oldChannelName: oldState.channel?.name || null,
@@ -51,15 +56,15 @@ function initVoiceEngine(client, loadSettingsFn) {
 
       // 1. Utente entra o si sposta in un canale evento
       if (newState.channelId && newState.channelId !== oldState.channelId) {
-        const targetChannel = newState.channel;
-        if (isEventVoiceChannel(targetChannel)) {
+        const targetChannel = newState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(newState.channelId) : null);
+        if (isEventVoiceChannel(targetChannel) && member) {
           // Verifica se è Staff / Moderatore / Founder (non devono essere auto-mutati)
           const isStaff =
             guild.ownerId === member.id ||
-            member.permissions.has(PermissionFlagsBits.Administrator) ||
-            member.permissions.has(PermissionFlagsBits.ManageChannels) ||
-            member.permissions.has(PermissionFlagsBits.MuteMembers) ||
-            member.permissions.has(PermissionFlagsBits.MoveMembers);
+            member.permissions?.has(PermissionFlagsBits.Administrator) ||
+            member.permissions?.has(PermissionFlagsBits.ManageChannels) ||
+            member.permissions?.has(PermissionFlagsBits.MuteMembers) ||
+            member.permissions?.has(PermissionFlagsBits.MoveMembers);
 
           if (!isStaff) {
             await newState.setMute(true, "Auto-mute ingresso evento: solo ascolto").catch((err) => {
@@ -72,9 +77,9 @@ function initVoiceEngine(client, loadSettingsFn) {
       // 2. Utente esce dal canale evento per andare in una stanza vocale normale:
       // Se era mutato sul server e si sposta in un canale ordinario, lo smutiamo automaticamente
       if (oldState.channelId && oldState.channelId !== newState.channelId) {
-        const oldChannel = oldState.channel;
+        const oldChannel = oldState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(oldState.channelId) : null);
         if (isEventVoiceChannel(oldChannel) && newState.channelId) {
-          const newChannel = newState.channel;
+          const newChannel = newState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(newState.channelId) : null);
           if (!isEventVoiceChannel(newChannel) && newState.serverMute) {
             await newState.setMute(false, "Unmute uscita canale evento").catch(() => null);
           }
@@ -90,17 +95,16 @@ function initVoiceEngine(client, loadSettingsFn) {
         if (config?.hubChannelId && channelId === config.hubChannelId) return true;
         if (config?.generatorChannelId && channelId === config.generatorChannelId) return true;
         if (Array.isArray(config?.generatorChannelIds) && config.generatorChannelIds.includes(channelId)) return true;
-        if (!channel) return false;
-        const norm = (channel.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        if (norm.includes("stanza di") || (channel.name && channel.name.includes("🔒・Stanza"))) {
+        const norm = (channel?.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        if (norm.includes("stanza di") || (channel?.name && channel.name.includes("🔒・Stanza"))) {
           return false;
         }
         if (
           norm.includes("crea") ||
           norm.includes("join to create") ||
           norm.includes("privat") ||
-          (channel.name && channel.name.includes("🏗️")) ||
-          (channel.name && channel.name.includes("➕"))
+          (channel?.name && channel.name.includes("🏗️")) ||
+          (channel?.name && channel.name.includes("➕"))
         ) {
           return true;
         }
@@ -108,8 +112,12 @@ function initVoiceEngine(client, loadSettingsFn) {
       };
 
       // 1. User enters or switches to the generator / hub channel
-      if (newState.channelId && newState.channelId !== oldState.channelId) {
-        const targetChannel = newState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(newState.channelId) : null);
+      if (newState.channelId) {
+        let targetChannel = newState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(newState.channelId) : null);
+        if (!targetChannel && guild.channels?.fetch) {
+          targetChannel = await guild.channels.fetch(newState.channelId).catch(() => null);
+        }
+
         const matchesGenerator = isGeneratorChannel(newState.channelId, targetChannel, voiceConfig);
 
         // If channel explicitly matches a generator, ensure voice is treated as enabled
@@ -123,8 +131,11 @@ function initVoiceEngine(client, loadSettingsFn) {
           };
         }
 
-        if (matchesGenerator && voiceConfig && voiceConfig.enabled !== false) {
-          console.log(`[VoiceEngine] Ingresso rilevato in canale generatore "${targetChannel?.name || newState.channelId}" (${newState.channelId}) da ${member.user?.tag || member.id} in ${guild.name}`);
+        const isTransition = newState.channelId !== oldState.channelId;
+        const isStayingInHub = newState.channelId === oldState.channelId && !activeRooms.has(newState.channelId);
+
+        if (matchesGenerator && voiceConfig && voiceConfig.enabled !== false && (isTransition || isStayingInHub)) {
+          console.log(`[VoiceEngine] Ingresso rilevato in canale generatore "${targetChannel?.name || newState.channelId}" (${newState.channelId}) da ${member?.user?.tag || userId} in ${guild.name}`);
 
           // Resolve parent category safely
           let targetCategory = null;
@@ -145,12 +156,14 @@ function initVoiceEngine(client, loadSettingsFn) {
 
           const categoryId = targetCategory ? targetCategory.id : (voiceConfig?.categoryId || targetChannel?.parentId || undefined);
           const template = voiceConfig?.channelNameTemplate || "🔒・Stanza di {username}";
-          const roomName = template.replace("{username}", member.user?.username || "Utente");
+          const username = member?.user?.username || member?.displayName || "Utente";
+          const roomName = template.replace("{username}", username);
 
           // Build permission overwrites for everyone, the room owner, and the bot
+          const everyoneRoleId = guild.roles?.everyone?.id || guild.id;
           const permissionOverwrites = [
             {
-              id: guild.roles.everyone.id,
+              id: everyoneRoleId,
               allow: [
                 PermissionFlagsBits.ViewChannel,
                 PermissionFlagsBits.Connect,
@@ -158,8 +171,11 @@ function initVoiceEngine(client, loadSettingsFn) {
                 PermissionFlagsBits.ReadMessageHistory,
                 PermissionFlagsBits.SendMessages
               ]
-            },
-            {
+            }
+          ];
+
+          if (member?.id) {
+            permissionOverwrites.push({
               id: member.id,
               allow: [
                 PermissionFlagsBits.ViewChannel,
@@ -172,8 +188,8 @@ function initVoiceEngine(client, loadSettingsFn) {
                 PermissionFlagsBits.ReadMessageHistory,
                 PermissionFlagsBits.SendMessages
               ]
-            }
-          ];
+            });
+          }
 
           if (client.user?.id) {
             permissionOverwrites.push({
@@ -220,7 +236,7 @@ function initVoiceEngine(client, loadSettingsFn) {
           }
 
           activeRooms.set(roomChannel.id, {
-            ownerId: member.id,
+            ownerId: member?.id || userId,
             guildId: guild.id,
             createdAt: Date.now(),
             locked: false,
@@ -229,14 +245,18 @@ function initVoiceEngine(client, loadSettingsFn) {
 
           // Move member to the newly created room
           try {
-            if (member.voice && member.voice.channelId) {
-              await member.voice.setChannel(roomChannel);
-              console.log(`[VoiceEngine] Spostato con successo ${member.user.tag} in ${roomChannel.name}`);
-            } else if (typeof newState.setChannel === "function") {
+            if (typeof newState.setChannel === "function") {
               await newState.setChannel(roomChannel);
-              console.log(`[VoiceEngine] Spostato newState ${member.user.tag} in ${roomChannel.name}`);
+              console.log(`[VoiceEngine] Spostato newState in ${roomChannel.name}`);
+            } else if (member?.voice?.setChannel) {
+              await member.voice.setChannel(roomChannel);
+              console.log(`[VoiceEngine] Spostato member.voice in ${roomChannel.name}`);
             } else {
-              console.warn(`[VoiceEngine] Membro ${member.user.tag} non più connesso alla voce.`);
+              console.warn(`[VoiceEngine] Spostamento fallito, provo fetch membro fresco...`);
+              const fresh = await guild.members.fetch(userId).catch(() => null);
+              if (fresh?.voice?.setChannel) {
+                await fresh.voice.setChannel(roomChannel);
+              }
             }
           } catch (moveErr) {
             console.error(`[VoiceEngine] Impossibile spostare membro nella stanza:`, moveErr.message);
