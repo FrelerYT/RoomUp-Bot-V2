@@ -502,6 +502,50 @@ function createWebServer(portOverride) {
     }
   });
 
+  app.get("/api/test-ws", async (req, res) => {
+    const WebSocket = require("ws");
+    try {
+      const ws = new WebSocket("wss://gateway.discord.gg/?v=10&encoding=json");
+      let messageReceived = null;
+      let errorOccurred = null;
+
+      const timeout = setTimeout(() => {
+        try { ws.close(); } catch(e) {}
+        res.json({
+          success: false,
+          result: "timeout",
+          messageReceived,
+          error: errorOccurred
+        });
+      }, 5000);
+
+      ws.on("open", () => {
+        console.log("[Test WS] WebSocket connected to Discord Gateway!");
+      });
+
+      ws.on("message", (data) => {
+        clearTimeout(timeout);
+        try {
+          messageReceived = JSON.parse(data.toString());
+        } catch(e) {
+          messageReceived = data.toString();
+        }
+        try { ws.close(); } catch(e) {}
+        res.json({
+          success: true,
+          result: "connected",
+          data: messageReceived
+        });
+      });
+
+      ws.on("error", (err) => {
+        errorOccurred = err.message;
+      });
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
   // 0b. Live Voice Telemetry & Event Stream Endpoint
   app.get("/api/voice-logs", (req, res) => {
     const events = global.recentVoiceEvents || [];

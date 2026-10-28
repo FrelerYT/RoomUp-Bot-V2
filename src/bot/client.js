@@ -301,7 +301,7 @@ function createDiscordClient(token, clientId) {
 
     // Register slash commands globally in background non-blocking task
     (async () => {
-      const rest = new REST({ version: "10" }).setToken(token);
+      const rest = new REST({ version: "10" }).setToken(sanitizedToken);
       try {
         await rest.put(Routes.applicationCommands(client.user.id), { body: commands });
         console.log(`[Bot V2] ✅ ${commands.length} Comandi slash registrati a livello globale!`);
@@ -582,7 +582,7 @@ function createDiscordClient(token, clientId) {
   });
 
   // Resilient sanitized login matching LineaTemporale lifecycle
-  const sanitizedToken = (token || "").trim().replace(/^["']|["']$/g, "");
+  const sanitizedToken = (token || process.env.DISCORD_BOT_TOKEN || "").trim().replace(/^["']|["']$/g, "");
   let loginAttempt = 0;
 
   function attemptGatewayLogin() {
