@@ -277,7 +277,8 @@ function createDiscordClient(token, clientId) {
       } catch (e) {}
     }, 60000).unref();
 
-    const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_BOT_TOKEN);
+    const sanitizedBotToken = (botToken || "").trim().replace(/^["']|["']$/g, "");
+    const rest = new REST({ version: '10' }).setToken(sanitizedBotToken);
     try {
       console.log('[PartnerBot] Registrazione slash commands globali...');
       await rest.put(
@@ -293,25 +294,28 @@ function createDiscordClient(token, clientId) {
       }
       console.log('[PartnerBot] Comandi globali registrati e duplicati dei server rimossi!');
     } catch (err) {
-      console.error('[PartnerBot] Errore registrazione slash commands:', err);
+      console.error('[PartnerBot] Errore registrazione slash commands:', err?.message || err);
     }
   });
 
-  // 40-Second Gateway Disconnect Watchdog: Prevents zombie reconnection loops
+  // 180-Second Gateway Disconnect Watchdog: Prevents zombie reconnection loops without killing normal handshakes
   let disconnectTimer = null;
+  let hasEverConnected = false;
+
   function markDisconnected(reason) {
-    if (!disconnectTimer) {
+    if (!disconnectTimer && hasEverConnected) {
       disconnectTimer = setTimeout(() => {
         if (!client.isReady() || (client.ws && client.ws.status !== 0)) {
-          console.error(`[CRITICAL GATEWAY WATCHDOG - LineaTemporale] Gateway disconnected for > 40s (${reason}). Exiting for clean supervisor restart...`);
+          console.error(`[CRITICAL GATEWAY WATCHDOG - LineaTemporale] Gateway disconnected for > 180s (${reason}). Exiting for clean supervisor restart...`);
           process.exit(1);
         }
-      }, 40000);
+      }, 180000);
       if (disconnectTimer.unref) disconnectTimer.unref();
     }
   }
 
   function markConnected() {
+    hasEverConnected = true;
     if (disconnectTimer) {
       clearTimeout(disconnectTimer);
       disconnectTimer = null;
@@ -855,10 +859,11 @@ async function executePublishPartner(interaction, client, { collaborator, desc, 
   });
 
   if (botToken) {
-    client.login(botToken).then(() => {
+    const cleanBotToken = (botToken || "").trim().replace(/^["']|["']$/g, "");
+    client.login(cleanBotToken).then(() => {
       console.log(`[PartnerBot] ✅ Bot Discord connesso con successo come ${client.user.tag}`);
     }).catch(err => {
-      console.error('[PartnerBot] ❌ Errore login Discord:', err.message);
+      console.error('[PartnerBot] ❌ Errore login Discord:', err?.message || err);
     });
   }
 

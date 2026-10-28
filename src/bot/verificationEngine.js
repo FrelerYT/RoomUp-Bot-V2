@@ -833,12 +833,7 @@ function initVerificationEngine(client, loadSettingsFn, saveSettingsFn) {
         if (gConfig?.verification?.enabled && gConfig.verification.channelId) {
           const guild = client.guilds?.cache?.get(guildId) || (typeof client.guilds?.fetch === 'function' ? await client.guilds.fetch(guildId).catch(() => null) : null);
           if (guild) {
-            await ensureVerificationChannelHidden(guild, gConfig.verification);
-            if (gConfig.verification.hideAllChannelsUntilVerified && gConfig.verification.verifiedRoleId) {
-              await applyChannelIsolation(guild, gConfig.verification).catch(err => {
-                console.error(`[Verification] Errore auto-isolamento per ${guild.name}:`, err.message);
-              });
-            }
+            await ensureVerificationChannelHidden(guild, gConfig.verification).catch(() => null);
           }
         }
       }

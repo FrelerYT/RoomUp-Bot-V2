@@ -105,9 +105,9 @@ setInterval(() => {
   const isHealthy = client && client.isReady() && client.ws && client.ws.status === 0;
   if (!isHealthy) {
     consecutiveDeadlockChecks++;
-    console.warn(`[Gateway Watchdog] Discord Gateway non risponde o disconnesso (check ${consecutiveDeadlockChecks}/4)...`);
-    if (consecutiveDeadlockChecks >= 4) { // 4 controlli = 4 minuti consecutivi di deadlock
-      console.error("[Gateway Watchdog] Rilevato socket zombie/deadlock persistente (>4 min). Riavvio del processo per ripristino automatico su Render...");
+    console.warn(`[Gateway Watchdog] Discord Gateway non risponde o disconnesso (check ${consecutiveDeadlockChecks}/8)...`);
+    if (consecutiveDeadlockChecks >= 8) { // 8 controlli = 8 minuti consecutivi di deadlock
+      console.error("[Gateway Watchdog] Rilevato socket zombie/deadlock persistente (>8 min). Riavvio del processo per ripristino automatico su Render...");
       cleanupPid();
       process.exit(1);
     }
@@ -115,7 +115,7 @@ setInterval(() => {
     consecutiveDeadlockChecks = 0;
   }
 }, 60000);
-console.log("[Gateway Watchdog] Monitoraggio socket zombie attivo (check ogni 60s, timeout 4 min).");
+console.log("[Gateway Watchdog] Monitoraggio socket zombie attivo (check ogni 60s, timeout 8 min).");
 
 console.log("=============================================================");
 console.log("✅ Sistema Master V2 Inizializzato con Successo!");

@@ -357,51 +357,82 @@ function createDiscordClient(token, clientId) {
     console.log("[Bot V2] 🚀 Tutte le suite dell'architettura All-In-One Platform operative e connesse!");
   });
 
+  // Gateway Diagnostics & Resilience Tracker
+  client.loginHistory = [];
+  client.lastLoginError = null;
+  client.lastLoginAttempt = null;
+  client.gatewayEvents = [];
+  let hasEverConnected = false;
+
+  function recordGatewayEvent(type, detail = null) {
+    const entry = { type, detail, timestamp: new Date().toISOString() };
+    client.gatewayEvents.unshift(entry);
+    if (client.gatewayEvents.length > 25) client.gatewayEvents.pop();
+  }
+
   // Discord Gateway Resilience & Error Listeners
   client.on("error", (err) => {
+    recordGatewayEvent("error", err?.message || String(err));
     console.error("[Discord Client Error]:", err?.message || err);
   });
 
-  // 40-Second Gateway Disconnect Watchdog: Prevents zombie reconnection loops (e.g. ENOTFOUND on lock/sleep)
+  client.on("warn", (warnMsg) => {
+    recordGatewayEvent("warn", warnMsg);
+  });
+
+  // 180-Second Gateway Disconnect Watchdog:
+  // Only arms IF the client previously connected, allowing natural gateway retries and preventing rapid restart death loops
   let disconnectTimer = null;
   function markDisconnected(reason) {
-    if (!disconnectTimer) {
+    recordGatewayEvent("disconnected", reason);
+    if (!disconnectTimer && hasEverConnected) {
       disconnectTimer = setTimeout(() => {
         if (!client.isReady() || (client.ws && client.ws.status !== 0)) {
-          console.error(`[CRITICAL GATEWAY WATCHDOG] Gateway disconnected for > 40s (${reason}). Exiting process for clean supervisor restart...`);
+          console.error(`[CRITICAL GATEWAY WATCHDOG] Gateway disconnected for > 180s (${reason}). Exiting process for clean supervisor restart...`);
           process.exit(1);
         }
-      }, 40000);
+      }, 180000);
       if (disconnectTimer.unref) disconnectTimer.unref();
     }
   }
 
   function markConnected() {
+    hasEverConnected = true;
     if (disconnectTimer) {
       clearTimeout(disconnectTimer);
       disconnectTimer = null;
     }
+    recordGatewayEvent("connected", { tag: client.user?.tag, wsStatus: client.ws?.status });
   }
 
-  client.on("shardReady", () => markConnected());
-  client.on("ready", () => markConnected());
+  client.on("shardReady", (shardId) => {
+    recordGatewayEvent("shardReady", { shardId });
+    markConnected();
+  });
+  client.on("ready", () => {
+    markConnected();
+  });
 
   client.on("shardError", (err, shardId) => {
+    recordGatewayEvent("shardError", { shardId, error: err?.message || String(err) });
     markDisconnected(`shardError: ${err?.message}`);
     console.error(`[Discord Shard ${shardId} Error]:`, err?.message || err);
   });
 
   client.on("shardDisconnect", (event, shardId) => {
+    recordGatewayEvent("shardDisconnect", { shardId, code: event?.code, reason: event?.reason });
     markDisconnected(`shardDisconnect code=${event?.code}`);
     console.warn(`[Discord Shard ${shardId}] Connessione interrotta (${event?.code || "N/A"}). Il gestore WebSocket di Discord.js ripristinerà la sessione automaticamente.`);
   });
 
   client.on("shardReconnecting", (shardId) => {
+    recordGatewayEvent("shardReconnecting", { shardId });
     markDisconnected(`shardReconnecting`);
     console.log(`[Discord Shard ${shardId}] Riconnessione in corso...`);
   });
 
   client.on("shardResume", (shardId, replayedEvents) => {
+    recordGatewayEvent("shardResume", { shardId, replayedEvents });
     markConnected();
     console.log(`[Discord Shard ${shardId}] Sessione ripristinata con successo (${replayedEvents} eventi sincronizzati).`);
     try {
@@ -546,9 +577,41 @@ function createDiscordClient(token, clientId) {
 
   });
 
-  client.login(token).catch(err => {
-    console.error("[Bot V2] ❌ Errore login gateway Discord:", err.message);
-  });
+  // Resilient sanitized login with automatic retry and backoff
+  const sanitizedToken = (token || "").trim().replace(/^["']|["']$/g, "");
+  let loginAttempt = 0;
+
+  async function attemptGatewayLogin() {
+    loginAttempt++;
+    client.lastLoginAttempt = new Date().toISOString();
+    console.log(`[Bot V2] Tentativo connessione Discord Gateway (#${loginAttempt})... (token len: ${sanitizedToken.length})`);
+    try {
+      await client.login(sanitizedToken);
+      console.log(`[Bot V2] ✅ Chiamata client.login completata con successo al tentativo #${loginAttempt}!`);
+      client.lastLoginError = null;
+      client.loginHistory.push({ attempt: loginAttempt, success: true, timestamp: new Date().toISOString() });
+    } catch (err) {
+      console.error(`[Bot V2] ❌ Errore login gateway Discord (tentativo #${loginAttempt}):`, err?.message || err);
+      client.lastLoginError = {
+        message: err?.message,
+        code: err?.code,
+        status: err?.status,
+        timestamp: new Date().toISOString(),
+        attempt: loginAttempt
+      };
+      client.loginHistory.push({ attempt: loginAttempt, success: false, error: err?.message, timestamp: new Date().toISOString() });
+      recordGatewayEvent("loginError", { attempt: loginAttempt, error: err?.message, code: err?.code });
+
+      // Automatically retry if not ready, with exponential backoff up to 25s
+      if (!client.isReady()) {
+        const delay = Math.min(loginAttempt * 5000, 25000);
+        console.log(`[Bot V2] Riprogrammato nuovo tentativo di login tra ${delay / 1000}s...`);
+        setTimeout(attemptGatewayLogin, delay);
+      }
+    }
+  }
+
+  attemptGatewayLogin();
 
   return client;
 }
