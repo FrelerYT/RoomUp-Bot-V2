@@ -255,25 +255,61 @@ function createDiscordClient(token, clientId) {
       .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
   ].map(c => c.toJSON());
 
+  // ─── Initialize all foundational engines & event listeners SYNCHRONOUSLY before login ───
+  console.log("[Init] Registrazione listener dei moduli e delle suite platform...");
+  initLoggerEngine(client, loadSettings);
+  initTicketEngine(client, loadSettings, saveSettings);
+  initVerificationEngine(client, loadSettings, saveSettings);
+  initPartnershipEngine(client, loadSettings);
+  initWelcomeEngine(client, loadSettings);
+  initAutomodEngine(client, loadSettings);
+  initVoiceEngine(client, loadSettings);
+  initAiModeratorEngine(client, loadSettings, saveSettings);
+  initGiveawayEngine(client, loadSettings);
+  initSuggestionEngine(client, loadSettings);
+  initLevelsEngine(client, loadSettings);
+  initReactionRolesEngine(client);
+  initCustomCommandsEngine(client, loadSettings);
+  initCountingEngine(client, loadSettings, saveSettings);
+  initStarboardEngine(client, loadSettings);
+  initServerStatsEngine(client, loadSettings);
+  initAntiNukeEngine(client, loadSettings);
+  initWarnEngine(client, loadSettings);
+  initAntiRaidEngine(client, loadSettings);
+  initEntertainmentEngine(client, loadSettings);
+  initUtilitiesEngine(client);
+  initIntegrationsEngine(client);
+  initAiAgentEngine(client);
+  initAiTicketEngine(client);
+  initMusicEngine(client, loadSettings);
+  initTtsEngine(client, loadSettings);
+  initUnbanAppealEngine(client, loadSettings);
+  initBoosterEngine(client);
+  initSocialNotifierEngine(client);
+  initSentinel(client);
+  console.log("[Init] ✅ Tutti i listener registrati con successo prima del login!");
+
   client.once("ready", async () => {
     console.log(`[Bot V2] ✅ Connesso a Discord come ${client.user.tag} (${client.user.id})`);
     console.log(`[Bot V2] 🌐 Server presenti: ${client.guilds.cache.size}`);
 
-    // Register slash commands globally and ensure no duplicate guild-scoped commands exist
-    const rest = new REST({ version: "10" }).setToken(token);
-    try {
-      await rest.put(Routes.applicationCommands(client.user.id), { body: commands });
-      console.log(`[Bot V2] ✅ ${commands.length} Comandi slash registrati a livello globale!`);
+    // Register slash commands globally in background non-blocking task
+    (async () => {
+      const rest = new REST({ version: "10" }).setToken(token);
+      try {
+        await rest.put(Routes.applicationCommands(client.user.id), { body: commands });
+        console.log(`[Bot V2] ✅ ${commands.length} Comandi slash registrati a livello globale!`);
 
-      // Pulisci eventuali vecchi comandi guild-level che causavano la duplicazione visiva in Discord
-      for (const [guildId] of client.guilds.cache) {
-        try {
-          await rest.put(Routes.applicationGuildCommands(client.user.id, guildId), { body: [] });
-        } catch (e) {}
+        // Pulisci eventuali vecchi comandi guild-level che causavano la duplicazione visiva in Discord
+        for (const [guildId] of client.guilds.cache) {
+          try {
+            await rest.put(Routes.applicationGuildCommands(client.user.id, guildId), { body: [] });
+          } catch (e) {}
+        }
+      } catch (err) {
+        console.error("[Bot V2] Errore registrazione comandi slash:", err.message);
       }
-    } catch (err) {
-      console.error("[Bot V2] Errore registrazione comandi slash:", err.message);
-    }
+    })().catch(() => {});
 
     // Initialize Persistent Scheduler
     initScheduler(client, async (task) => {
@@ -283,42 +319,6 @@ function createDiscordClient(token, clientId) {
         console.error("[Scheduler Execution Error]:", err.message);
       }
     });
-
-    // Initialize all foundational engines
-    initLoggerEngine(client, loadSettings);
-    initTicketEngine(client, loadSettings, saveSettings);
-    initVerificationEngine(client, loadSettings, saveSettings);
-    initPartnershipEngine(client, loadSettings);
-    initWelcomeEngine(client, loadSettings);
-    initAutomodEngine(client, loadSettings);
-    initVoiceEngine(client, loadSettings);
-
-    // All-In-One Power Suite
-    initAiModeratorEngine(client, loadSettings, saveSettings);
-    initGiveawayEngine(client, loadSettings);
-    initSuggestionEngine(client, loadSettings);
-    initLevelsEngine(client, loadSettings);
-    initReactionRolesEngine(client);
-    initCustomCommandsEngine(client, loadSettings);
-    initCountingEngine(client, loadSettings, saveSettings);
-    initStarboardEngine(client, loadSettings);
-    initServerStatsEngine(client, loadSettings);
-    initAntiNukeEngine(client, loadSettings);
-
-    // Omnipresent Master Suite Engines (Areas 1-12)
-    initWarnEngine(client, loadSettings);
-    initAntiRaidEngine(client, loadSettings);
-    initEntertainmentEngine(client, loadSettings);
-    initUtilitiesEngine(client);
-    initIntegrationsEngine(client);
-    initAiAgentEngine(client);
-    initAiTicketEngine(client);
-    initMusicEngine(client, loadSettings);
-    initTtsEngine(client, loadSettings);
-    initUnbanAppealEngine(client, loadSettings);
-    initBoosterEngine(client);
-    initSocialNotifierEngine(client);
-    initSentinel(client);
 
     // Set explicit Discord presence (Always Online & Active)
     try {

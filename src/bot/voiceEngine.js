@@ -13,7 +13,8 @@ const {
 } = require("discord.js");
 
 const activeRooms = new Map(); // channelId -> { ownerId, guildId, createdAt, locked, hidden }
-const recentVoiceEvents = [];
+const recentVoiceEvents = global.recentVoiceEvents || [];
+global.recentVoiceEvents = recentVoiceEvents;
 
 function logVoiceEvent(entry) {
   recentVoiceEvents.unshift({ timestamp: new Date().toISOString(), ...entry });
@@ -21,29 +22,42 @@ function logVoiceEvent(entry) {
 }
 
 function initVoiceEngine(client, loadSettingsFn) {
+  console.log("[VoiceEngine] 🎙️ Inizializzazione modulo VoiceEngine & listener VoiceStateUpdate...");
   
   // Voice State Listener for temporary channels and Auto-Mute Event channels
   client.on(Events.VoiceStateUpdate, async (oldState, newState) => {
     try {
-      const guild = newState.guild || oldState.guild;
-      if (!guild) return;
+      const guildId = newState.guild?.id || oldState.guild?.id || newState.guildId || oldState.guildId;
+      const guild = newState.guild || oldState.guild || (guildId ? client.guilds.cache.get(guildId) : null);
+      if (!guild) {
+        console.warn(`[VoiceEngine] VoiceStateUpdate ricevuto ma server non trovato in cache (guildId: ${guildId})`);
+        return;
+      }
 
       const userId = newState.id || oldState.id;
-      let member = newState.member || oldState.member;
-      if (!member && userId && guild.members?.fetch) {
-        member = await guild.members.fetch(userId).catch(() => null);
-      }
-      if (member?.user?.bot) return;
+      const oldChName = oldState.channel?.name || null;
+      const newChName = newState.channel?.name || null;
+
+      // Log immediato visibile in console su Render
+      console.log(`[VoiceStateUpdate] 🔊 Utente ${userId} in "${guild.name}": ${oldState.channelId || 'none'} (${oldChName}) ➔ ${newState.channelId || 'none'} (${newChName})`);
 
       logVoiceEvent({
-        user: member?.user?.tag || member?.displayName || userId || "Unknown",
         userId,
         guild: guild.name,
+        guildId: guild.id,
         oldChannelId: oldState.channelId,
-        oldChannelName: oldState.channel?.name || null,
+        oldChannelName: oldChName,
         newChannelId: newState.channelId,
-        newChannelName: newState.channel?.name || null
+        newChannelName: newChName
       });
+
+      let member = newState.member || oldState.member;
+      if (!member && userId && guild.members?.cache?.has(userId)) {
+        member = guild.members.cache.get(userId);
+      }
+      if (member?.user?.bot) {
+        return;
+      }
 
       // ─── Auto-Mute Canali Evento / Palco Vocale (Solo Ascolto) ───────────────
       // Quando un utente entra in un canale evento, viene mutato sul server ("muta con la bocca").
@@ -134,8 +148,10 @@ function initVoiceEngine(client, loadSettingsFn) {
         const isTransition = newState.channelId !== oldState.channelId;
         const isStayingInHub = newState.channelId === oldState.channelId && !activeRooms.has(newState.channelId);
 
+        console.log(`[VoiceEngine:Check] User ${userId} Channel: "${targetChannel?.name}" (${newState.channelId}) | MatchesGen: ${matchesGenerator} | isTransition: ${isTransition} | isStayingInHub: ${isStayingInHub} | Enabled: ${voiceConfig?.enabled}`);
+
         if (matchesGenerator && voiceConfig && voiceConfig.enabled !== false && (isTransition || isStayingInHub)) {
-          console.log(`[VoiceEngine] Ingresso rilevato in canale generatore "${targetChannel?.name || newState.channelId}" (${newState.channelId}) da ${member?.user?.tag || userId} in ${guild.name}`);
+          console.log(`[VoiceEngine] 🚀 Ingresso confermato in canale generatore "${targetChannel?.name || newState.channelId}" da ${userId} in ${guild.name}`);
 
           // Resolve parent category safely
           let targetCategory = null;
@@ -245,21 +261,22 @@ function initVoiceEngine(client, loadSettingsFn) {
 
           // Move member to the newly created room
           try {
+            console.log(`[VoiceEngine] 🚚 Sposto utente ${userId} nella stanza "${roomChannel.name}" (${roomChannel.id})...`);
             if (typeof newState.setChannel === "function") {
               await newState.setChannel(roomChannel);
-              console.log(`[VoiceEngine] Spostato newState in ${roomChannel.name}`);
-            } else if (member?.voice?.setChannel) {
-              await member.voice.setChannel(roomChannel);
-              console.log(`[VoiceEngine] Spostato member.voice in ${roomChannel.name}`);
+              console.log(`[VoiceEngine] ✅ Utente spostato con successo via newState.setChannel!`);
             } else {
-              console.warn(`[VoiceEngine] Spostamento fallito, provo fetch membro fresco...`);
-              const fresh = await guild.members.fetch(userId).catch(() => null);
-              if (fresh?.voice?.setChannel) {
-                await fresh.voice.setChannel(roomChannel);
-              }
+              await guild.members.edit(userId, { channel: roomChannel.id });
+              console.log(`[VoiceEngine] ✅ Utente spostato con successo via guild.members.edit!`);
             }
           } catch (moveErr) {
-            console.error(`[VoiceEngine] Impossibile spostare membro nella stanza:`, moveErr.message);
+            console.warn(`[VoiceEngine] setChannel fallito (${moveErr.message}), provo fallback via guild.members.edit...`);
+            try {
+              await guild.members.edit(userId, { channel: roomChannel.id });
+              console.log(`[VoiceEngine] ✅ Utente spostato con successo via fallback guild.members.edit!`);
+            } catch (fallbackMoveErr) {
+              console.error(`[VoiceEngine] ❌ Fallimento spostamento utente:`, fallbackMoveErr.message);
+            }
           }
 
           // Send customization control panel in the voice channel's chat

@@ -430,11 +430,7 @@ function createWebServer(portOverride) {
       voiceDiagnostics.push({ error: vdErr.message });
     }
 
-    let recentVoiceEvents = [];
-    try {
-      const { recentVoiceEvents: rve } = require("../bot/voiceEngine");
-      recentVoiceEvents = rve || [];
-    } catch (e) {}
+    const recentVoiceEvents = global.recentVoiceEvents || [];
 
     const wsStatusNames = ["Ready", "Connecting", "Reconnecting", "Idle", "Nearly", "Disconnected", "WaitingForGuilds", "Identifying", "Resuming"];
     const rawToken = process.env.DISCORD_BOT_TOKEN || "";
@@ -462,6 +458,16 @@ function createWebServer(portOverride) {
       partnershipBot: partnerInfo,
       recentVoiceEvents,
       voiceDiagnostics
+    });
+  });
+
+  // 0b. Live Voice Telemetry & Event Stream Endpoint
+  app.get("/api/voice-logs", (req, res) => {
+    const events = global.recentVoiceEvents || [];
+    res.json({
+      status: "ok",
+      count: events.length,
+      events
     });
   });
 
