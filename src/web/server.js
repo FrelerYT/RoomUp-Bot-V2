@@ -476,13 +476,18 @@ function createWebServer(portOverride) {
     const token = (process.env.DISCORD_BOT_TOKEN || "").trim().replace(/^["']|["']$/g, "");
     if (!token) return res.status(500).json({ error: "DISCORD_BOT_TOKEN mancante" });
     try {
+      const helper = async (url) => {
+        const r = await fetch(url, { headers: { Authorization: `Bot ${token}` } });
+        const text = await r.text().catch(e => e.message);
+        const headers = {};
+        for (const [k, v] of r.headers.entries()) {
+          headers[k] = v;
+        }
+        return { status: r.status, statusText: r.statusText, headers, body: text.slice(0, 1000) };
+      };
       const [gwRes, meRes] = await Promise.all([
-        fetch("https://discord.com/api/v10/gateway/bot", {
-          headers: { Authorization: `Bot ${token}` }
-        }).then(async r => ({ status: r.status, statusText: r.statusText, json: await r.json().catch(() => null) })),
-        fetch("https://discord.com/api/v10/users/@me", {
-          headers: { Authorization: `Bot ${token}` }
-        }).then(async r => ({ status: r.status, statusText: r.statusText, json: await r.json().catch(() => null) }))
+        helper("https://discord.com/api/v10/gateway/bot"),
+        helper("https://discord.com/api/v10/users/@me")
       ]);
 
       res.json({
