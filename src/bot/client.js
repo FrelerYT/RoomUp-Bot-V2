@@ -255,43 +255,44 @@ function createDiscordClient(token, clientId) {
       .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
   ].map(c => c.toJSON());
 
-  // ─── Initialize all foundational engines & event listeners SYNCHRONOUSLY before login ───
-  console.log("[Init] Registrazione listener dei moduli e delle suite platform...");
-  initLoggerEngine(client, loadSettings);
-  initTicketEngine(client, loadSettings, saveSettings);
-  initVerificationEngine(client, loadSettings, saveSettings);
-  initPartnershipEngine(client, loadSettings);
-  initWelcomeEngine(client, loadSettings);
-  initAutomodEngine(client, loadSettings);
-  initVoiceEngine(client, loadSettings);
-  initAiModeratorEngine(client, loadSettings, saveSettings);
-  initGiveawayEngine(client, loadSettings);
-  initSuggestionEngine(client, loadSettings);
-  initLevelsEngine(client, loadSettings);
-  initReactionRolesEngine(client);
-  initCustomCommandsEngine(client, loadSettings);
-  initCountingEngine(client, loadSettings, saveSettings);
-  initStarboardEngine(client, loadSettings);
-  initServerStatsEngine(client, loadSettings);
-  initAntiNukeEngine(client, loadSettings);
-  initWarnEngine(client, loadSettings);
-  initAntiRaidEngine(client, loadSettings);
-  initEntertainmentEngine(client, loadSettings);
-  initUtilitiesEngine(client);
-  initIntegrationsEngine(client);
-  initAiAgentEngine(client);
-  initAiTicketEngine(client);
-  initMusicEngine(client, loadSettings);
-  initTtsEngine(client, loadSettings);
-  initUnbanAppealEngine(client, loadSettings);
-  initBoosterEngine(client);
-  initSocialNotifierEngine(client);
-  initSentinel(client);
-  console.log("[Init] ✅ Tutti i listener registrati con successo prima del login!");
-
+  // Ready Event Handler: Initialize all foundational engines and platform suites
   client.once("ready", async () => {
     console.log(`[Bot V2] ✅ Connesso a Discord come ${client.user.tag} (${client.user.id})`);
     console.log(`[Bot V2] 🌐 Server presenti: ${client.guilds.cache.size}`);
+
+    // Initialize all foundational engines synchronously on ready
+    console.log("[Init] Registrazione listener dei moduli e delle suite platform...");
+    initLoggerEngine(client, loadSettings);
+    initTicketEngine(client, loadSettings, saveSettings);
+    initVerificationEngine(client, loadSettings, saveSettings);
+    initPartnershipEngine(client, loadSettings);
+    initWelcomeEngine(client, loadSettings);
+    initAutomodEngine(client, loadSettings);
+    initVoiceEngine(client, loadSettings);
+    initAiModeratorEngine(client, loadSettings, saveSettings);
+    initGiveawayEngine(client, loadSettings);
+    initSuggestionEngine(client, loadSettings);
+    initLevelsEngine(client, loadSettings);
+    initReactionRolesEngine(client);
+    initCustomCommandsEngine(client, loadSettings);
+    initCountingEngine(client, loadSettings, saveSettings);
+    initStarboardEngine(client, loadSettings);
+    initServerStatsEngine(client, loadSettings);
+    initAntiNukeEngine(client, loadSettings);
+    initWarnEngine(client, loadSettings);
+    initAntiRaidEngine(client, loadSettings);
+    initEntertainmentEngine(client, loadSettings);
+    initUtilitiesEngine(client);
+    initIntegrationsEngine(client);
+    initAiAgentEngine(client);
+    initAiTicketEngine(client);
+    initMusicEngine(client, loadSettings);
+    initTtsEngine(client, loadSettings);
+    initUnbanAppealEngine(client, loadSettings);
+    initBoosterEngine(client);
+    initSocialNotifierEngine(client);
+    initSentinel(client);
+    console.log("[Init] ✅ Tutte le suite dell'architettura All-In-One Platform operative e connesse!");
 
     // Register slash commands globally in background non-blocking task
     (async () => {
@@ -353,8 +354,6 @@ function createDiscordClient(token, clientId) {
         }
       } catch (e) {}
     }, 60000).unref();
-
-    console.log("[Bot V2] 🚀 Tutte le suite dell'architettura All-In-One Platform operative e connesse!");
   });
 
   // Gateway Diagnostics & Resilience Tracker
@@ -577,38 +576,49 @@ function createDiscordClient(token, clientId) {
 
   });
 
-  // Resilient sanitized login with automatic retry and backoff
+  // Resilient sanitized login with automatic retry, timeout protection and backoff
   const sanitizedToken = (token || "").trim().replace(/^["']|["']$/g, "");
   let loginAttempt = 0;
 
-  async function attemptGatewayLogin() {
+  function attemptGatewayLogin() {
     loginAttempt++;
     client.lastLoginAttempt = new Date().toISOString();
     console.log(`[Bot V2] Tentativo connessione Discord Gateway (#${loginAttempt})... (token len: ${sanitizedToken.length})`);
-    try {
-      await client.login(sanitizedToken);
-      console.log(`[Bot V2] ✅ Chiamata client.login completata con successo al tentativo #${loginAttempt}!`);
-      client.lastLoginError = null;
-      client.loginHistory.push({ attempt: loginAttempt, success: true, timestamp: new Date().toISOString() });
-    } catch (err) {
-      console.error(`[Bot V2] ❌ Errore login gateway Discord (tentativo #${loginAttempt}):`, err?.message || err);
-      client.lastLoginError = {
-        message: err?.message,
-        code: err?.code,
-        status: err?.status,
-        timestamp: new Date().toISOString(),
-        attempt: loginAttempt
-      };
-      client.loginHistory.push({ attempt: loginAttempt, success: false, error: err?.message, timestamp: new Date().toISOString() });
-      recordGatewayEvent("loginError", { attempt: loginAttempt, error: err?.message, code: err?.code });
 
-      // Automatically retry if not ready, with exponential backoff up to 25s
-      if (!client.isReady()) {
-        const delay = Math.min(loginAttempt * 5000, 25000);
-        console.log(`[Bot V2] Riprogrammato nuovo tentativo di login tra ${delay / 1000}s...`);
-        setTimeout(attemptGatewayLogin, delay);
-      }
-    }
+    const loginPromise = client.login(sanitizedToken);
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Timeout connessione gateway Discord (35s)")), 35000)
+    );
+
+    Promise.race([loginPromise, timeoutPromise])
+      .then(() => {
+        console.log(`[Bot V2] ✅ Chiamata client.login completata con successo al tentativo #${loginAttempt}!`);
+        client.lastLoginError = null;
+        client.loginHistory.push({ attempt: loginAttempt, success: true, timestamp: new Date().toISOString() });
+      })
+      .catch(err => {
+        console.error(`[Bot V2] ❌ Errore login gateway Discord (tentativo #${loginAttempt}):`, err?.message || err);
+        client.lastLoginError = {
+          message: err?.message,
+          code: err?.code,
+          status: err?.status,
+          timestamp: new Date().toISOString(),
+          attempt: loginAttempt
+        };
+        client.loginHistory.push({ attempt: loginAttempt, success: false, error: err?.message, timestamp: new Date().toISOString() });
+        recordGatewayEvent("loginError", { attempt: loginAttempt, error: err?.message, code: err?.code });
+
+        try {
+          client.destroy().catch(() => {});
+        } catch (e) {}
+
+        // Automatically retry if not ready, with exponential backoff up to 20s
+        if (!client.isReady()) {
+          const delay = Math.min(loginAttempt * 4000, 20000);
+          console.log(`[Bot V2] Riprogrammato nuovo tentativo di login tra ${delay / 1000}s...`);
+          setTimeout(attemptGatewayLogin, delay);
+        }
+      });
   }
 
   attemptGatewayLogin();
