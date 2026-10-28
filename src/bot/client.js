@@ -585,6 +585,24 @@ function createDiscordClient(token, clientId) {
   const sanitizedToken = (token || process.env.DISCORD_BOT_TOKEN || "").trim().replace(/^["']|["']$/g, "");
   let loginAttempt = 0;
 
+  // Pre-seed Gateway Information to completely bypass Cloudflare 429 rate limit stalls on Routes.gatewayBot()
+  if (client.ws) {
+    client.ws.gatewayInformation = {
+      data: {
+        url: "wss://gateway.discord.gg",
+        shards: 1,
+        session_start_limit: {
+          total: 1000,
+          remaining: 990,
+          reset_after: 86400000,
+          max_concurrency: 1
+        }
+      },
+      expiresAt: Date.now() + 86400000 // 24 hours
+    };
+    console.log("[Bot V2] Pre-seeded WebSocket Gateway URL (wss://gateway.discord.gg) per bypass Cloudflare REST stalls.");
+  }
+
   function attemptGatewayLogin() {
     loginAttempt++;
     client.lastLoginAttempt = new Date().toISOString();

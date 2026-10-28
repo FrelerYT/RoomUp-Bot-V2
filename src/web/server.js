@@ -546,6 +546,14 @@ function createWebServer(portOverride) {
     }
   });
 
+  app.get("/api/reboot", (req, res) => {
+    res.json({ status: "ok", message: "Process restart initiated. Render container will reboot automatically in 1 second." });
+    setTimeout(() => {
+      console.log("[Reboot] Riavvio del processo richiesto via API.");
+      process.exit(0);
+    }, 1000);
+  });
+
   // 0b. Live Voice Telemetry & Event Stream Endpoint
   app.get("/api/voice-logs", (req, res) => {
     const events = global.recentVoiceEvents || [];
