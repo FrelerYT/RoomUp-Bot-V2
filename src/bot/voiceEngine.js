@@ -13,6 +13,12 @@ const {
 } = require("discord.js");
 
 const activeRooms = new Map(); // channelId -> { ownerId, guildId, createdAt, locked, hidden }
+const recentVoiceEvents = [];
+
+function logVoiceEvent(entry) {
+  recentVoiceEvents.unshift({ timestamp: new Date().toISOString(), ...entry });
+  if (recentVoiceEvents.length > 50) recentVoiceEvents.pop();
+}
 
 function initVoiceEngine(client, loadSettingsFn) {
   
@@ -24,6 +30,15 @@ function initVoiceEngine(client, loadSettingsFn) {
 
       const member = newState.member || oldState.member;
       if (!member || member.user.bot) return;
+
+      logVoiceEvent({
+        user: member.user?.tag || member.id,
+        guild: guild.name,
+        oldChannelId: oldState.channelId,
+        oldChannelName: oldState.channel?.name || null,
+        newChannelId: newState.channelId,
+        newChannelName: newState.channel?.name || null
+      });
 
       // ─── Auto-Mute Canali Evento / Palco Vocale (Solo Ascolto) ───────────────
       // Quando un utente entra in un canale evento, viene mutato sul server ("muta con la bocca").
@@ -77,14 +92,15 @@ function initVoiceEngine(client, loadSettingsFn) {
         if (Array.isArray(config?.generatorChannelIds) && config.generatorChannelIds.includes(channelId)) return true;
         if (!channel) return false;
         const norm = (channel.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        if (norm.includes("stanza di") || (channel.name && channel.name.includes("🔒・Stanza"))) {
+          return false;
+        }
         if (
-          norm.includes("crea privata") ||
-          norm.includes("crea stanza") ||
-          norm.includes("crea vocale") ||
+          norm.includes("crea") ||
           norm.includes("join to create") ||
-          norm.includes("crea-privata") ||
-          (norm.includes("crea") && norm.includes("privat")) ||
-          (channel.name && channel.name.includes("🏗️") && (norm.includes("crea") || norm.includes("privat")))
+          norm.includes("privat") ||
+          (channel.name && channel.name.includes("🏗️")) ||
+          (channel.name && channel.name.includes("➕"))
         ) {
           return true;
         }
@@ -626,5 +642,5 @@ function initVoiceEngine(client, loadSettingsFn) {
   console.log("[VoiceEngine] Sistema Stanze Vocali Temporanee attivo!");
 }
 
-module.exports = { initVoiceEngine, activeRooms };
+module.exports = { initVoiceEngine, activeRooms, recentVoiceEvents };
 

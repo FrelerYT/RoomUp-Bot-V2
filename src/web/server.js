@@ -400,7 +400,14 @@ function createWebServer(portOverride) {
             botCanMove: botMember ? c.permissionsFor(botMember)?.has("MoveMembers") : false
           }));
 
-          const categories = channels.filter(c => c && c.type === 4 && (c.name.toLowerCase().includes("privat") || c.name.toLowerCase().includes("voc") || c.id === vConfig?.categoryId)).map(c => ({
+          const allVcs = channels.filter(c => c && (c.type === 2 || (c.isVoiceBased && c.isVoiceBased()))).map(c => ({
+            id: c.id,
+            name: c.name,
+            parentId: c.parentId,
+            members: c.members ? c.members.map(m => m.user?.tag || m.id) : []
+          }));
+
+          const categories = channels.filter(c => c && c.type === 4).map(c => ({
             id: c.id,
             name: c.name,
             botCanManage: botMember ? c.permissionsFor(botMember)?.has("ManageChannels") : false
@@ -414,6 +421,7 @@ function createWebServer(portOverride) {
             botGuildMoveMembers: botMember?.permissions?.has("MoveMembers") || false,
             botGuildAdmin: botMember?.permissions?.has("Administrator") || false,
             generatorChannels: creaChannels,
+            allVoiceChannels: allVcs,
             categories
           });
         }
@@ -421,6 +429,12 @@ function createWebServer(portOverride) {
     } catch (vdErr) {
       voiceDiagnostics.push({ error: vdErr.message });
     }
+
+    let recentVoiceEvents = [];
+    try {
+      const { recentVoiceEvents: rve } = require("../bot/voiceEngine");
+      recentVoiceEvents = rve || [];
+    } catch (e) {}
 
     res.json({
       status: isDiscordReady ? "ok" : "degraded",
@@ -430,6 +444,8 @@ function createWebServer(portOverride) {
       uptime: process.uptime(),
       ping: client?.ws ? client.ws.ping : -1,
       partnershipBot: partnerInfo,
+      recentVoiceEvents,
+      voiceDiagnostics
       voiceDiagnostics
     });
   });
