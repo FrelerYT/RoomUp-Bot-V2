@@ -461,6 +461,16 @@ function createWebServer(portOverride) {
     });
   });
 
+  // 0a. Live Real-Time Console Buffer & Debug Feed
+  app.get("/api/debug-logs", (req, res) => {
+    const logs = global.recentConsoleLogs || [];
+    res.json({
+      status: "ok",
+      count: logs.length,
+      logs
+    });
+  });
+
   // 0b. Live Voice Telemetry & Event Stream Endpoint
   app.get("/api/voice-logs", (req, res) => {
     const events = global.recentVoiceEvents || [];

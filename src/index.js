@@ -1,4 +1,23 @@
 require("dotenv").config();
+
+// Global Live Console Telemetry Buffer (for /api/debug-logs)
+const recentConsoleLogs = [];
+global.recentConsoleLogs = recentConsoleLogs;
+const origStdout = process.stdout.write.bind(process.stdout);
+const origStderr = process.stderr.write.bind(process.stderr);
+process.stdout.write = (chunk, encoding, callback) => {
+  const str = String(chunk);
+  recentConsoleLogs.push({ time: new Date().toISOString(), type: "stdout", text: str.trim() });
+  if (recentConsoleLogs.length > 300) recentConsoleLogs.shift();
+  return origStdout(chunk, encoding, callback);
+};
+process.stderr.write = (chunk, encoding, callback) => {
+  const str = String(chunk);
+  recentConsoleLogs.push({ time: new Date().toISOString(), type: "stderr", text: str.trim() });
+  if (recentConsoleLogs.length > 300) recentConsoleLogs.shift();
+  return origStderr(chunk, encoding, callback);
+};
+
 const { createDiscordClient } = require("./bot/client");
 const { createWebServer } = require("./web/server");
 

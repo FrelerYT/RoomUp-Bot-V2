@@ -122,6 +122,13 @@ function createDiscordClient(token, clientId) {
   clientInstance = client;
   client.setMaxListeners(80);
 
+  // Gateway Connection Debug Logger
+  client.on("debug", (info) => {
+    if (info.includes("Heartbeat") || info.includes("Connecting") || info.includes("Identif") || info.includes("Ready") || info.includes("Session") || info.includes("Rate limit") || info.includes("429")) {
+      console.log(`[Gateway Debug] ${info}`);
+    }
+  });
+
   // Slash commands definitions (Essential & Requested Commands)
   const commands = [
     // 1. Levels / XP - Community Commands
@@ -576,7 +583,7 @@ function createDiscordClient(token, clientId) {
 
   });
 
-  // Resilient sanitized login with automatic retry, timeout protection and backoff
+  // Resilient sanitized login matching LineaTemporale lifecycle
   const sanitizedToken = (token || "").trim().replace(/^["']|["']$/g, "");
   let loginAttempt = 0;
 
@@ -585,12 +592,7 @@ function createDiscordClient(token, clientId) {
     client.lastLoginAttempt = new Date().toISOString();
     console.log(`[Bot V2] Tentativo connessione Discord Gateway (#${loginAttempt})... (token len: ${sanitizedToken.length})`);
 
-    const loginPromise = client.login(sanitizedToken);
-    const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("Timeout connessione gateway Discord (35s)")), 35000)
-    );
-
-    Promise.race([loginPromise, timeoutPromise])
+    client.login(sanitizedToken)
       .then(() => {
         console.log(`[Bot V2] ✅ Chiamata client.login completata con successo al tentativo #${loginAttempt}!`);
         client.lastLoginError = null;
@@ -608,13 +610,9 @@ function createDiscordClient(token, clientId) {
         client.loginHistory.push({ attempt: loginAttempt, success: false, error: err?.message, timestamp: new Date().toISOString() });
         recordGatewayEvent("loginError", { attempt: loginAttempt, error: err?.message, code: err?.code });
 
-        try {
-          client.destroy().catch(() => {});
-        } catch (e) {}
-
-        // Automatically retry if not ready, with exponential backoff up to 20s
+        // Automatically retry if not ready, with exponential backoff up to 25s
         if (!client.isReady()) {
-          const delay = Math.min(loginAttempt * 4000, 20000);
+          const delay = Math.min(loginAttempt * 5000, 25000);
           console.log(`[Bot V2] Riprogrammato nuovo tentativo di login tra ${delay / 1000}s...`);
           setTimeout(attemptGatewayLogin, delay);
         }
