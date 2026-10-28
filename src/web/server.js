@@ -381,6 +381,47 @@ function createWebServer(portOverride) {
       }
     } catch (e) {}
 
+    // Live Voice Channel Diagnostics
+    const voiceDiagnostics = [];
+    try {
+      if (client && client.isReady()) {
+        const { loadSettings } = require("../config/settingsManager");
+        const settings = loadSettings();
+        for (const [gid, guild] of client.guilds.cache) {
+          const vConfig = settings[gid]?.voice;
+          const botMember = guild.members.me;
+          const channels = guild.channels.cache;
+          const creaChannels = channels.filter(c => c && (c.type === 2 || (c.isVoiceBased && c.isVoiceBased())) && (c.name.toLowerCase().includes("crea") || c.name.toLowerCase().includes("privat") || c.id === vConfig?.hubChannelId || c.id === vConfig?.generatorChannelId)).map(c => ({
+            id: c.id,
+            name: c.name,
+            parentId: c.parentId,
+            botCanManage: botMember ? c.permissionsFor(botMember)?.has("ManageChannels") : false,
+            botCanConnect: botMember ? c.permissionsFor(botMember)?.has("Connect") : false,
+            botCanMove: botMember ? c.permissionsFor(botMember)?.has("MoveMembers") : false
+          }));
+
+          const categories = channels.filter(c => c && c.type === 4 && (c.name.toLowerCase().includes("privat") || c.name.toLowerCase().includes("voc") || c.id === vConfig?.categoryId)).map(c => ({
+            id: c.id,
+            name: c.name,
+            botCanManage: botMember ? c.permissionsFor(botMember)?.has("ManageChannels") : false
+          }));
+
+          voiceDiagnostics.push({
+            guildId: gid,
+            guildName: guild.name,
+            voiceConfig: vConfig,
+            botGuildManageChannels: botMember?.permissions?.has("ManageChannels") || false,
+            botGuildMoveMembers: botMember?.permissions?.has("MoveMembers") || false,
+            botGuildAdmin: botMember?.permissions?.has("Administrator") || false,
+            generatorChannels: creaChannels,
+            categories
+          });
+        }
+      }
+    } catch (vdErr) {
+      voiceDiagnostics.push({ error: vdErr.message });
+    }
+
     res.json({
       status: isDiscordReady ? "ok" : "degraded",
       bot: "RoomUp-Bot-V2",
@@ -388,7 +429,8 @@ function createWebServer(portOverride) {
       wsStatus,
       uptime: process.uptime(),
       ping: client?.ws ? client.ws.ping : -1,
-      partnershipBot: partnerInfo
+      partnershipBot: partnerInfo,
+      voiceDiagnostics
     });
   });
 

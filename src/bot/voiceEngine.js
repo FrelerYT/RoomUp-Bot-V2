@@ -68,23 +68,71 @@ function initVoiceEngine(client, loadSettingsFn) {
       // ──────────────────────────────────────────────────────────────────────────
 
       const settings = typeof loadSettingsFn === "function" ? loadSettingsFn() : {};
-      const voiceConfig = settings[guild.id]?.voice;
-      const hubId = voiceConfig?.hubChannelId || voiceConfig?.generatorChannelId || "1550847041243054100";
-      if (!voiceConfig || voiceConfig.enabled === false || !hubId) return;
+      let voiceConfig = settings[guild.id]?.voice;
+      
+      const isGeneratorChannel = (channelId, channel, config) => {
+        if (!channelId) return false;
+        if (config?.hubChannelId && channelId === config.hubChannelId) return true;
+        if (config?.generatorChannelId && channelId === config.generatorChannelId) return true;
+        if (Array.isArray(config?.generatorChannelIds) && config.generatorChannelIds.includes(channelId)) return true;
+        if (!channel) return false;
+        const norm = (channel.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        if (
+          norm.includes("crea privata") ||
+          norm.includes("crea stanza") ||
+          norm.includes("crea vocale") ||
+          norm.includes("join to create") ||
+          norm.includes("crea-privata") ||
+          (norm.includes("crea") && norm.includes("privat")) ||
+          (channel.name && channel.name.includes("🏗️") && (norm.includes("crea") || norm.includes("privat")))
+        ) {
+          return true;
+        }
+        return false;
+      };
 
-      // 1. User enters the generator / hub channel
-      if (newState.channelId && newState.channelId === hubId) {
-        const categoryId = voiceConfig.categoryId || newState.channel?.parentId || "1550847018094698657";
-        const template = voiceConfig.channelNameTemplate || "🔒・Stanza di {username}";
-        const roomName = template.replace("{username}", member.user.username);
+      // 1. User enters or switches to the generator / hub channel
+      if (newState.channelId && newState.channelId !== oldState.channelId) {
+        const targetChannel = newState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(newState.channelId) : null);
+        const matchesGenerator = isGeneratorChannel(newState.channelId, targetChannel, voiceConfig);
 
-        // Create the private voice channel
-        const roomChannel = await guild.channels.create({
-          name: roomName,
-          type: ChannelType.GuildVoice,
-          parent: categoryId || undefined,
-          userLimit: voiceConfig.userLimit || voiceConfig.defaultLimit || 0,
-          permissionOverwrites: [
+        // If channel explicitly matches a generator, ensure voice is treated as enabled
+        if (matchesGenerator && (!voiceConfig || voiceConfig.enabled === false)) {
+          voiceConfig = {
+            ...(voiceConfig || {}),
+            enabled: true,
+            hubChannelId: newState.channelId,
+            generatorChannelId: newState.channelId,
+            categoryId: targetChannel?.parentId || voiceConfig?.categoryId || ""
+          };
+        }
+
+        if (matchesGenerator && voiceConfig && voiceConfig.enabled !== false) {
+          console.log(`[VoiceEngine] Ingresso rilevato in canale generatore "${targetChannel?.name || newState.channelId}" (${newState.channelId}) da ${member.user?.tag || member.id} in ${guild.name}`);
+
+          // Resolve parent category safely
+          let targetCategory = null;
+          if (voiceConfig?.categoryId && guild.channels?.cache?.has?.(voiceConfig.categoryId)) {
+            const cat = guild.channels.cache.get(voiceConfig.categoryId);
+            if (cat && cat.type === ChannelType.GuildCategory) targetCategory = cat;
+          }
+          if (!targetCategory && targetChannel?.parentId && guild.channels?.cache?.has?.(targetChannel.parentId)) {
+            const cat = guild.channels.cache.get(targetChannel.parentId);
+            if (cat && cat.type === ChannelType.GuildCategory) targetCategory = cat;
+          }
+          if (!targetCategory && guild.channels?.cache?.find) {
+            targetCategory = guild.channels.cache.find(c =>
+              c && c.type === ChannelType.GuildCategory &&
+              (c.name.toLowerCase().includes("privat") || c.name.toLowerCase().includes("voc"))
+            ) || null;
+          }
+
+          const categoryId = targetCategory ? targetCategory.id : (voiceConfig?.categoryId || targetChannel?.parentId || undefined);
+          const template = voiceConfig?.channelNameTemplate || "🔒・Stanza di {username}";
+          const roomName = template.replace("{username}", member.user?.username || "Utente");
+
+          // Build permission overwrites for everyone, the room owner, and the bot
+          const permissionOverwrites = [
             {
               id: guild.roles.everyone.id,
               allow: [
@@ -109,101 +157,157 @@ function initVoiceEngine(client, loadSettingsFn) {
                 PermissionFlagsBits.SendMessages
               ]
             }
-          ]
-        });
+          ];
 
-        activeRooms.set(roomChannel.id, {
-          ownerId: member.id,
-          guildId: guild.id,
-          createdAt: Date.now(),
-          locked: false,
-          hidden: false
-        });
+          if (client.user?.id) {
+            permissionOverwrites.push({
+              id: client.user.id,
+              allow: [
+                PermissionFlagsBits.ViewChannel,
+                PermissionFlagsBits.Connect,
+                PermissionFlagsBits.Speak,
+                PermissionFlagsBits.ManageChannels,
+                PermissionFlagsBits.MuteMembers,
+                PermissionFlagsBits.DeafenMembers,
+                PermissionFlagsBits.MoveMembers,
+                PermissionFlagsBits.ReadMessageHistory,
+                PermissionFlagsBits.SendMessages
+              ]
+            });
+          }
 
-        // Move member to the newly created room
-        await newState.setChannel(roomChannel).catch((err) => {
-          console.error("[VoiceEngine] Impossibile spostare membro nella stanza creata:", err.message);
-        });
+          // Create the private voice channel with automatic fallback if category fails
+          let roomChannel = null;
+          try {
+            roomChannel = await guild.channels.create({
+              name: roomName,
+              type: ChannelType.GuildVoice,
+              parent: categoryId,
+              userLimit: voiceConfig?.userLimit || voiceConfig?.defaultLimit || 0,
+              permissionOverwrites
+            });
+            console.log(`[VoiceEngine] Creata stanza: "${roomChannel.name}" (${roomChannel.id}) in ${guild.name}`);
+          } catch (createErr) {
+            console.error(`[VoiceEngine] Errore creazione stanza con categoria (${createErr.message}). Tentativo fallback senza parent...`);
+            try {
+              roomChannel = await guild.channels.create({
+                name: roomName,
+                type: ChannelType.GuildVoice,
+                userLimit: voiceConfig?.userLimit || voiceConfig?.defaultLimit || 0,
+                permissionOverwrites
+              });
+              console.log(`[VoiceEngine] Creata stanza (fallback senza parent): "${roomChannel.name}" (${roomChannel.id})`);
+            } catch (fallbackErr) {
+              console.error(`[VoiceEngine] Fallimento critico creazione stanza vocale:`, fallbackErr.message);
+              return;
+            }
+          }
 
-        // Send customization control panel in the voice channel's chat
-        try {
-          const controlEmbed = new EmbedBuilder()
-            .setTitle("🎙️ Pannello di Controllo Vocale Privata")
-            .setColor("#8A5CF6")
-            .setDescription(
-              `Benvenuto <@${member.id}> nella tua stanza privata!\n\n` +
-              `Questa stanza è sotto il tuo controllo. Usa i pulsanti sottostanti per personalizzarla in qualsiasi momento.`
-            )
-            .addFields(
-              { name: "👑 Proprietario", value: `<@${member.id}>`, inline: true },
-              { name: "👥 Limite", value: voiceConfig.userLimit ? `${voiceConfig.userLimit} Utenti` : "Illimitato", inline: true },
-              { name: "🔒 Stato", value: "🔓 Aperta a tutti", inline: true }
-            )
-            .setFooter({ text: "La stanza verrà eliminata automaticamente quando tutti usciranno." });
+          activeRooms.set(roomChannel.id, {
+            ownerId: member.id,
+            guildId: guild.id,
+            createdAt: Date.now(),
+            locked: false,
+            hidden: false
+          });
 
-          const row1 = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-              .setCustomId("v2room_name")
-              .setLabel("Rinomina")
-              .setEmoji("✏️")
-              .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-              .setCustomId("v2room_limit")
-              .setLabel("Limite")
-              .setEmoji("👥")
-              .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-              .setCustomId("v2room_lock")
-              .setLabel("Blocca")
-              .setEmoji("🔒")
-              .setStyle(ButtonStyle.Primary),
-            new ButtonBuilder()
-              .setCustomId("v2room_unlock")
-              .setLabel("Sblocca")
-              .setEmoji("🔓")
-              .setStyle(ButtonStyle.Success)
-          );
+          // Move member to the newly created room
+          try {
+            if (member.voice && member.voice.channelId) {
+              await member.voice.setChannel(roomChannel);
+              console.log(`[VoiceEngine] Spostato con successo ${member.user.tag} in ${roomChannel.name}`);
+            } else if (typeof newState.setChannel === "function") {
+              await newState.setChannel(roomChannel);
+              console.log(`[VoiceEngine] Spostato newState ${member.user.tag} in ${roomChannel.name}`);
+            } else {
+              console.warn(`[VoiceEngine] Membro ${member.user.tag} non più connesso alla voce.`);
+            }
+          } catch (moveErr) {
+            console.error(`[VoiceEngine] Impossibile spostare membro nella stanza:`, moveErr.message);
+          }
 
-          const row2 = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-              .setCustomId("v2room_hide")
-              .setLabel("Nascondi")
-              .setEmoji("👁️")
-              .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-              .setCustomId("v2room_show")
-              .setLabel("Mostra")
-              .setEmoji("🌐")
-              .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-              .setCustomId("v2room_kick")
-              .setLabel("Espelli")
-              .setEmoji("🚫")
-              .setStyle(ButtonStyle.Danger),
-            new ButtonBuilder()
-              .setCustomId("v2room_claim")
-              .setLabel("Reclama")
-              .setEmoji("👑")
-              .setStyle(ButtonStyle.Success)
-          );
+          // Send customization control panel in the voice channel's chat
+          try {
+            const controlEmbed = new EmbedBuilder()
+              .setTitle("🎙️ Pannello di Controllo Vocale Privata")
+              .setColor("#8A5CF6")
+              .setDescription(
+                `Benvenuto <@${member.id}> nella tua stanza privata!\n\n` +
+                `Questa stanza è sotto il tuo controllo. Usa i pulsanti sottostanti per personalizzarla in qualsiasi momento.`
+              )
+              .addFields(
+                { name: "👑 Proprietario", value: `<@${member.id}>`, inline: true },
+                { name: "👥 Limite", value: voiceConfig?.userLimit ? `${voiceConfig.userLimit} Utenti` : "Illimitato", inline: true },
+                { name: "🔒 Stato", value: "🔓 Aperta a tutti", inline: true }
+              )
+              .setFooter({ text: "La stanza verrà eliminata automaticamente quando tutti usciranno." });
 
-          await roomChannel.send({
-            content: `👋 <@${member.id}> ecco il pannello di gestione della tua stanza:`,
-            embeds: [controlEmbed],
-            components: [row1, row2]
-          }).catch(() => null);
-        } catch (msgErr) {
-          console.error("[VoiceEngine] Errore invio pannello controlli nella stanza:", msgErr.message);
+            const row1 = new ActionRowBuilder().addComponents(
+              new ButtonBuilder()
+                .setCustomId("v2room_name")
+                .setLabel("Rinomina")
+                .setEmoji("✏️")
+                .setStyle(ButtonStyle.Secondary),
+              new ButtonBuilder()
+                .setCustomId("v2room_limit")
+                .setLabel("Limite")
+                .setEmoji("👥")
+                .setStyle(ButtonStyle.Secondary),
+              new ButtonBuilder()
+                .setCustomId("v2room_lock")
+                .setLabel("Blocca")
+                .setEmoji("🔒")
+                .setStyle(ButtonStyle.Primary),
+              new ButtonBuilder()
+                .setCustomId("v2room_unlock")
+                .setLabel("Sblocca")
+                .setEmoji("🔓")
+                .setStyle(ButtonStyle.Success)
+            );
+
+            const row2 = new ActionRowBuilder().addComponents(
+              new ButtonBuilder()
+                .setCustomId("v2room_hide")
+                .setLabel("Nascondi")
+                .setEmoji("👁️")
+                .setStyle(ButtonStyle.Secondary),
+              new ButtonBuilder()
+                .setCustomId("v2room_show")
+                .setLabel("Mostra")
+                .setEmoji("🌐")
+                .setStyle(ButtonStyle.Secondary),
+              new ButtonBuilder()
+                .setCustomId("v2room_kick")
+                .setLabel("Espelli")
+                .setEmoji("🚫")
+                .setStyle(ButtonStyle.Danger),
+              new ButtonBuilder()
+                .setCustomId("v2room_claim")
+                .setLabel("Reclama")
+                .setEmoji("👑")
+                .setStyle(ButtonStyle.Success)
+            );
+
+            await roomChannel.send({
+              content: `👋 <@${member.id}> ecco il pannello di gestione della tua stanza:`,
+              embeds: [controlEmbed],
+              components: [row1, row2]
+            }).catch(() => null);
+          } catch (msgErr) {
+            console.error("[VoiceEngine] Errore invio pannello controlli nella stanza:", msgErr.message);
+          }
         }
       }
 
-      // 2. User leaves or changes channel
-      if (oldState.channelId && oldState.channelId !== hubId) {
+      // 2. User leaves or changes channel -> cleanup temporary rooms when empty
+      if (oldState.channelId && oldState.channelId !== newState.channelId) {
         const oldChannel = oldState.channel;
-        if (oldChannel && activeRooms.has(oldChannel.id)) {
+        const isManagedRoom = oldChannel && (activeRooms.has(oldChannel.id) || (oldChannel.name && oldChannel.name.includes("Stanza di")));
+        if (isManagedRoom) {
           if (oldChannel.members.size === 0) {
             activeRooms.delete(oldChannel.id);
             await oldChannel.delete("Stanza temporanea vuota").catch(() => null);
+            console.log(`[VoiceEngine] Eliminata stanza temporanea vuota: ${oldChannel.name} (${oldChannel.id})`);
           } else {
             const roomData = activeRooms.get(oldChannel.id);
             if (roomData && roomData.ownerId === oldState.id) {

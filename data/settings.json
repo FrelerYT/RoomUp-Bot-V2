@@ -889,7 +889,7 @@
       "logEmbedColor": "#f23f43"
     },
     "voice": {
-      "enabled": false,
+      "enabled": true,
       "generatorChannelId": "1550847041243054100",
       "categoryId": "1550847018094698657",
       "channelNameTemplate": "🔒・Stanza di {username}",
@@ -1969,7 +1969,7 @@
       "logEmbedColor": "#f23f43"
     },
     "voice": {
-      "enabled": false,
+      "enabled": true,
       "hubChannelId": "",
       "categoryId": "",
       "controlPanelChannelId": "",
