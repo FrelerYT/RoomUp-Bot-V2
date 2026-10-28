@@ -264,15 +264,16 @@ function initVoiceEngine(client, loadSettingsFn) {
 
           // Send customization control panel in the voice channel's chat
           try {
+            const targetMemberId = member?.id || userId;
             const controlEmbed = new EmbedBuilder()
               .setTitle("🎙️ Pannello di Controllo Vocale Privata")
               .setColor("#8A5CF6")
               .setDescription(
-                `Benvenuto <@${member.id}> nella tua stanza privata!\n\n` +
+                `Benvenuto <@${targetMemberId}> nella tua stanza privata!\n\n` +
                 `Questa stanza è sotto il tuo controllo. Usa i pulsanti sottostanti per personalizzarla in qualsiasi momento.`
               )
               .addFields(
-                { name: "👑 Proprietario", value: `<@${member.id}>`, inline: true },
+                { name: "👑 Proprietario", value: `<@${targetMemberId}>`, inline: true },
                 { name: "👥 Limite", value: voiceConfig?.userLimit ? `${voiceConfig.userLimit} Utenti` : "Illimitato", inline: true },
                 { name: "🔒 Stato", value: "🔓 Aperta a tutti", inline: true }
               )
@@ -325,7 +326,7 @@ function initVoiceEngine(client, loadSettingsFn) {
             );
 
             await roomChannel.send({
-              content: `👋 <@${member.id}> ecco il pannello di gestione della tua stanza:`,
+              content: `👋 <@${targetMemberId}> ecco il pannello di gestione della tua stanza:`,
               embeds: [controlEmbed],
               components: [row1, row2]
             }).catch(() => null);
@@ -370,6 +371,22 @@ function initVoiceEngine(client, loadSettingsFn) {
 
       const member = interaction.member;
       const voiceChannel = member?.voice?.channel;
+
+      // Auto-recover room after bot restart/redeploy if user is inside a managed room
+      if (voiceChannel && !activeRooms.has(voiceChannel.id)) {
+        const isDynamicRoom = voiceChannel.name.includes("Stanza di") || voiceChannel.name.includes("🔒");
+        if (isDynamicRoom) {
+          const firstNonBot = voiceChannel.members?.filter ? voiceChannel.members.filter(m => !m.user?.bot).first() : null;
+          activeRooms.set(voiceChannel.id, {
+            ownerId: firstNonBot ? firstNonBot.id : interaction.user.id,
+            guildId: interaction.guild?.id,
+            createdAt: Date.now(),
+            locked: false,
+            hidden: false
+          });
+          console.log(`[VoiceEngine] Auto-ripristinata stanza "${voiceChannel.name}" in memoria dopo riavvio`);
+        }
+      }
 
       if (!voiceChannel || !activeRooms.has(voiceChannel.id)) {
         return interaction.reply({
