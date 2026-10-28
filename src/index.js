@@ -99,6 +99,24 @@ if (renderUrl) {
   console.log(`[KeepAlive] Self-ping Render attivo ogni 13 minuti su ${renderUrl}/api/health`);
 }
 
+// 4. Discord Gateway Watchdog: rileva e riavvia automaticamente il processo se il WebSocket entra in deadlock / socket zombie
+let consecutiveDeadlockChecks = 0;
+setInterval(() => {
+  const isHealthy = client && client.isReady() && client.ws && client.ws.status === 0;
+  if (!isHealthy) {
+    consecutiveDeadlockChecks++;
+    console.warn(`[Gateway Watchdog] Discord Gateway non risponde o disconnesso (check ${consecutiveDeadlockChecks}/4)...`);
+    if (consecutiveDeadlockChecks >= 4) { // 4 controlli = 4 minuti consecutivi di deadlock
+      console.error("[Gateway Watchdog] Rilevato socket zombie/deadlock persistente (>4 min). Riavvio del processo per ripristino automatico su Render...");
+      cleanupPid();
+      process.exit(1);
+    }
+  } else {
+    consecutiveDeadlockChecks = 0;
+  }
+}, 60000);
+console.log("[Gateway Watchdog] Monitoraggio socket zombie attivo (check ogni 60s, timeout 4 min).");
+
 console.log("=============================================================");
 console.log("✅ Sistema Master V2 Inizializzato con Successo!");
 console.log(`👉 Web Dashboard attiva su: http://localhost:${port}`);

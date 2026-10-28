@@ -250,8 +250,8 @@ function createWebServer(listen = true) {
     })
   );
 
-  // Health & Liveness API for Watchdogs & Supervisor
-  app.get('/api/health', (req, res) => {
+  // Health & Liveness API for Partnership Bot Watchdog
+  app.get(['/api/partnership/health', '/api/evento/health'], (req, res) => {
     const client = getClient();
     const isDiscordReady = Boolean(client && client.isReady());
     const wsStatus = client?.ws ? client.ws.status : -1;

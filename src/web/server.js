@@ -368,13 +368,27 @@ function createWebServer(portOverride) {
     const client = getClient();
     const isDiscordReady = Boolean(client && client.isReady());
     const wsStatus = client?.ws ? client.ws.status : -1;
+    let partnerInfo = null;
+    try {
+      const { getClient: getPartnerClient } = require("../partnershipBot/discordBot");
+      const pClient = getPartnerClient();
+      if (pClient) {
+        partnerInfo = {
+          ready: Boolean(pClient && pClient.isReady()),
+          wsStatus: pClient?.ws ? pClient.ws.status : -1,
+          ping: pClient?.ws ? pClient.ws.ping : -1
+        };
+      }
+    } catch (e) {}
+
     res.json({
       status: isDiscordReady ? "ok" : "degraded",
       bot: "RoomUp-Bot-V2",
       discordReady: isDiscordReady,
       wsStatus,
       uptime: process.uptime(),
-      ping: client?.ws ? client.ws.ping : -1
+      ping: client?.ws ? client.ws.ping : -1,
+      partnershipBot: partnerInfo
     });
   });
 
