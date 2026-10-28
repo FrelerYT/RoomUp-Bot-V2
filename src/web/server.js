@@ -471,6 +471,218 @@ function createWebServer(portOverride) {
     });
   });
 
+  // 0c. Live Voice Status & Diagnostics Monitor UI
+  app.get("/voice-status", (req, res) => {
+    const html = `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoomUp! Voice Engine Live Monitor</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card: #1E293B;
+      --border: #334155;
+      --primary: #8A5CF6;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --success: #10B981;
+      --danger: #EF4444;
+      --accent: #A78BFA;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .header {
+      max-width: 900px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    .title { font-size: 24px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--success);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .badge.connecting {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--danger);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: currentColor;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .stat-label { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .stat-value { font-size: 20px; font-weight: 700; color: #fff; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .instructions {
+      background: rgba(138, 92, 246, 0.1);
+      border: 1px solid rgba(138, 92, 246, 0.3);
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    td { padding: 12px; border-bottom: 1px solid rgba(51, 65, 85, 0.5); }
+    tr:last-child td { border-bottom: none; }
+    .channel-tag {
+      background: #0F172A;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-family: monospace;
+      font-size: 12px;
+    }
+    .empty-state { text-align: center; color: var(--muted); padding: 30px; font-style: italic; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">🎙️ RoomUp! Voice Engine Monitor</div>
+    <div id="statusBadge" class="badge"><span class="pulse-dot"></span> In Connessione...</div>
+  </div>
+
+  <div class="container">
+    <div class="instructions">
+      👉 <strong>Come testare la stanza:</strong> entra nel canale vocale <strong>🏗️〢Crea Privata</strong> su Discord. Il bot rileverà istantaneamente il passaggio, creerà una stanza <strong>🔒・Stanza di {username}</strong> e ti sposterà al suo interno con il pannello di controllo.
+    </div>
+
+    <div class="grid">
+      <div class="stat-card">
+        <div class="stat-label">Discord Gateway</div>
+        <div class="stat-value" id="gwStatus">In verifica...</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Ping Gateway</div>
+        <div class="stat-value" id="gwPing">-- ms</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Uptime Processo</div>
+        <div class="stat-value" id="uptime">-- s</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Eventi Vocali Tracciati</div>
+        <div class="stat-value" id="eventCount">0</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">📡 Live Feed Transizioni Vocali (Aggiornamento ogni 2s)</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>Server</th>
+            <th>Utente ID</th>
+            <th>Da Canale</th>
+            <th>A Canale</th>
+          </tr>
+        </thead>
+        <tbody id="eventsBody">
+          <tr><td colspan="5" class="empty-state">In attesa di eventi vocali...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    async function updateTelemetry() {
+      try {
+        const [healthRes, voiceRes] = await Promise.all([
+          fetch('/api/health').then(r => r.json()).catch(() => null),
+          fetch('/api/voice-logs').then(r => r.json()).catch(() => null)
+        ]);
+
+        if (healthRes) {
+          const badge = document.getElementById('statusBadge');
+          const isReady = healthRes.discordReady && healthRes.wsStatus === 0;
+          badge.className = isReady ? 'badge' : 'badge connecting';
+          badge.innerHTML = '<span class="pulse-dot"></span> ' + (isReady ? 'Gateway Online & Pronto' : 'Gateway: ' + healthRes.wsStatusName);
+
+          document.getElementById('gwStatus').textContent = healthRes.wsStatusName || 'N/A';
+          document.getElementById('gwPing').textContent = (healthRes.ping >= 0 ? healthRes.ping + ' ms' : '--');
+          const up = Math.floor(healthRes.uptime || 0);
+          document.getElementById('uptime').textContent = Math.floor(up / 60) + 'm ' + (up % 60) + 's';
+        }
+
+        if (voiceRes && Array.isArray(voiceRes.events)) {
+          document.getElementById('eventCount').textContent = voiceRes.events.length;
+          const tbody = document.getElementById('eventsBody');
+          if (voiceRes.events.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" class="empty-state">Nessuna transizione registrata dall\\'avvio del bot.</td></tr>';
+          } else {
+            tbody.innerHTML = voiceRes.events.map(ev => {
+              const d = new Date(ev.timestamp);
+              const timeStr = d.toLocaleTimeString('it-IT');
+              return '<tr>' +
+                '<td>' + timeStr + '</td>' +
+                '<td>' + (ev.guild || 'RoomUp!') + '</td>' +
+                '<td><code>' + ev.userId + '</code></td>' +
+                '<td>' + (ev.oldChannelName ? '<span class="channel-tag">' + ev.oldChannelName + '</span>' : '<span style="color:var(--muted)">Disconnesso</span>') + '</td>' +
+                '<td>' + (ev.newChannelName ? '<span class="channel-tag" style="border-color:var(--primary);color:#c4b5fd">' + ev.newChannelName + '</span>' : '<span style="color:var(--muted)">Uscito</span>') + '</td>' +
+              '</tr>';
+            }).join('');
+          }
+        }
+      } catch (e) {
+        console.error("Monitor poll error:", e);
+      }
+    }
+
+    updateTelemetry();
+    setInterval(updateTelemetry, 2000);
+  </script>
+</body>
+</html>`;
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.send(html);
+  });
+
   // 1. Strict OAuth2 Login Route (No dev bypasses, CSRF state secured)
   app.get("/login", rateLimiter({ windowMs: 60000, maxRequests: 20, message: "Troppi tentativi di accesso. Riprova tra un minuto." }), (req, res) => {
     if (!CLIENT_SECRET) {

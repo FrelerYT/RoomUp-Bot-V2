@@ -55,6 +55,9 @@ function initVoiceEngine(client, loadSettingsFn) {
       if (!member && userId && guild.members?.cache?.has(userId)) {
         member = guild.members.cache.get(userId);
       }
+      if (!member && userId && guild.members?.fetch) {
+        member = await guild.members.fetch(userId).catch(() => null);
+      }
       if (member?.user?.bot) {
         return;
       }
@@ -190,9 +193,10 @@ function initVoiceEngine(client, loadSettingsFn) {
             }
           ];
 
-          if (member?.id) {
+          const targetMemberId = member?.id || userId;
+          if (targetMemberId) {
             permissionOverwrites.push({
-              id: member.id,
+              id: targetMemberId,
               allow: [
                 PermissionFlagsBits.ViewChannel,
                 PermissionFlagsBits.Connect,
@@ -355,7 +359,7 @@ function initVoiceEngine(client, loadSettingsFn) {
 
       // 2. User leaves or changes channel -> cleanup temporary rooms when empty
       if (oldState.channelId && oldState.channelId !== newState.channelId) {
-        const oldChannel = oldState.channel;
+        const oldChannel = oldState.channel || (guild.channels?.cache?.get ? guild.channels.cache.get(oldState.channelId) : null);
         const isManagedRoom = oldChannel && (activeRooms.has(oldChannel.id) || (oldChannel.name && oldChannel.name.includes("Stanza di")));
         if (isManagedRoom) {
           if (oldChannel.members.size === 0) {
