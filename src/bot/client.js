@@ -124,9 +124,7 @@ function createDiscordClient(token, clientId) {
 
   // Gateway Connection Debug Logger
   client.on("debug", (info) => {
-    if (info.includes("Heartbeat") || info.includes("Connecting") || info.includes("Identif") || info.includes("Ready") || info.includes("Session") || info.includes("Rate limit") || info.includes("429")) {
-      console.log(`[Gateway Debug] ${info}`);
-    }
+    console.log(`[Gateway Debug] ${info}`);
   });
 
   // Slash commands definitions (Essential & Requested Commands)

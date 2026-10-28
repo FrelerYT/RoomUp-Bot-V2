@@ -471,6 +471,32 @@ function createWebServer(portOverride) {
     });
   });
 
+  // 0a2. Direct Discord API & Gateway Session Limit Diagnostic
+  app.get("/api/gateway-info", async (req, res) => {
+    const token = (process.env.DISCORD_BOT_TOKEN || "").trim().replace(/^["']|["']$/g, "");
+    if (!token) return res.status(500).json({ error: "DISCORD_BOT_TOKEN mancante" });
+    try {
+      const [gwRes, meRes] = await Promise.all([
+        fetch("https://discord.com/api/v10/gateway/bot", {
+          headers: { Authorization: `Bot ${token}` }
+        }).then(async r => ({ status: r.status, statusText: r.statusText, json: await r.json().catch(() => null) })),
+        fetch("https://discord.com/api/v10/users/@me", {
+          headers: { Authorization: `Bot ${token}` }
+        }).then(async r => ({ status: r.status, statusText: r.statusText, json: await r.json().catch(() => null) }))
+      ]);
+
+      res.json({
+        status: "ok",
+        tokenLength: token.length,
+        tokenPrefix: token.substring(0, 10) + "...",
+        gatewayBot: gwRes,
+        userMe: meRes
+      });
+    } catch (err) {
+      res.status(500).json({ error: err.message, stack: err.stack });
+    }
+  });
+
   // 0b. Live Voice Telemetry & Event Stream Endpoint
   app.get("/api/voice-logs", (req, res) => {
     const events = global.recentVoiceEvents || [];
