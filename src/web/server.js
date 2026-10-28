@@ -446,7 +446,6 @@ function createWebServer(portOverride) {
       partnershipBot: partnerInfo,
       recentVoiceEvents,
       voiceDiagnostics
-      voiceDiagnostics
     });
   });
 
