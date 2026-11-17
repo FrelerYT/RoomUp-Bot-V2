@@ -433,7 +433,6 @@ function createWebServer(portOverride) {
     const recentVoiceEvents = global.recentVoiceEvents || [];
 
     const wsStatusNames = ["Ready", "Connecting", "Reconnecting", "Idle", "Nearly", "Disconnected", "WaitingForGuilds", "Identifying", "Resuming"];
-    const rawToken = process.env.DISCORD_BOT_TOKEN || "";
 
     res.json({
       status: isDiscordReady ? "ok" : "degraded",
@@ -443,17 +442,9 @@ function createWebServer(portOverride) {
       wsStatusName: wsStatusNames[wsStatus] || "Unknown",
       uptime: process.uptime(),
       ping: client?.ws ? client.ws.ping : -1,
-      loginError: client?.lastLoginError || null,
-      lastLoginAttempt: client?.lastLoginAttempt || null,
       loginHistory: client?.loginHistory || [],
       gatewayEvents: client?.gatewayEvents || [],
-      tokenInfo: {
-        present: Boolean(rawToken),
-        length: rawToken.trim().length,
-        prefix: rawToken.trim() ? rawToken.trim().substring(0, 10) + "..." : null,
-        hasQuotes: Boolean(rawToken && /^["'].*["']$/.test(rawToken.trim())),
-        hasWhitespace: Boolean(rawToken && /\s/.test(rawToken))
-      },
+      tokenConfigured: Boolean(process.env.DISCORD_BOT_TOKEN),
       guilds: isDiscordReady ? client.guilds.cache.map(g => ({ id: g.id, name: g.name, memberCount: g.memberCount })) : [],
       partnershipBot: partnerInfo,
       recentVoiceEvents,
