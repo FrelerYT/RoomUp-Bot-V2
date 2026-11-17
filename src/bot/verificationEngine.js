@@ -16,6 +16,7 @@ const { isUserBanned, applyBanIsolation, getBannedUserInfo } = require("./unbanA
 const activePuzzles = new Map(); // `${guildId}:${userId}` -> { type, answer, expiresAt, startedAt }
 const unverifiedTimers = new Map(); // `${guildId}:${userId}` -> timeoutHandle
 const failedAttempts = new Map(); // `${guildId}:${userId}` -> count
+const activeVerificationLocks = new Set(); // `${guildId}:${userId}` -> lock to prevent click race conditions
 
 const EMOJI_OPTIONS = [
   { name: "Mela", symbol: "🍎" },
@@ -547,10 +548,19 @@ async function handleVerificationInteraction(interaction, client, loadSettingsFn
 
     // Mode: 1-Click
     if (mode === "button") {
-      await interaction.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
-      const res = await completeVerification(interaction.member, config, guild, "Verifica 1-Click", loadSettingsFn, saveSettingsFn);
-      const msg = formatSuccessMessage(config.successMessage, interaction.member, guild, res.rolesAdded);
-      return interaction.editReply({ content: msg }).catch(() => {});
+      const lockKey = `${guild.id}:${interaction.user.id}`;
+      if (activeVerificationLocks.has(lockKey)) {
+        return interaction.reply({ content: "⏳ Verifica in corso, attendi qualche istante...", flags: MessageFlags.Ephemeral }).catch(() => {});
+      }
+      activeVerificationLocks.add(lockKey);
+      try {
+        await interaction.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
+        const res = await completeVerification(interaction.member, config, guild, "Verifica 1-Click", loadSettingsFn, saveSettingsFn);
+        const msg = formatSuccessMessage(config.successMessage, interaction.member, guild, res.rolesAdded);
+        return await interaction.editReply({ content: msg }).catch(() => {});
+      } finally {
+        activeVerificationLocks.delete(lockKey);
+      }
     }
 
     // Mode: Code Modal
@@ -664,52 +674,69 @@ async function handleVerificationInteraction(interaction, client, loadSettingsFn
 
   // 2. MODAL SUBMIT (CODE OR MATH)
   if (customId === "roomup_verify_modal_code" || customId === "roomup_verify_modal_math") {
-    await interaction.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
-
     const key = `${guild.id}:${interaction.user.id}`;
-    const puzzle = activePuzzles.get(key);
-
-    const userInput = (interaction.fields.getTextInputValue(customId === "roomup_verify_modal_code" ? "verify_input_code" : "verify_input_math") || "").trim();
-
-    if (puzzle && userInput.toUpperCase() !== puzzle.answer.toUpperCase()) {
-      const failMsg = await handleVerificationFailure(interaction.member, config, guild, puzzle.type, "Codice o calcolo errato", loadSettingsFn, saveSettingsFn);
-      return interaction.editReply({ content: failMsg }).catch(() => {});
+    if (activeVerificationLocks.has(key)) {
+      return interaction.reply({ content: "⏳ Verifica in corso, attendi...", flags: MessageFlags.Ephemeral }).catch(() => {});
     }
+    activeVerificationLocks.add(key);
 
-    activePuzzles.delete(key);
-    const res = await completeVerification(interaction.member, config, guild, puzzle ? `Superato Captcha ${puzzle.type}` : "Verifica completata", loadSettingsFn, saveSettingsFn);
-    const msg = formatSuccessMessage(config.successMessage, interaction.member, guild, res.rolesAdded);
-    return interaction.editReply({ content: msg }).catch(() => {});
+    try {
+      await interaction.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
+
+      const puzzle = activePuzzles.get(key);
+      const userInput = (interaction.fields.getTextInputValue(customId === "roomup_verify_modal_code" ? "verify_input_code" : "verify_input_math") || "").trim();
+
+      if (puzzle && userInput.toUpperCase() !== puzzle.answer.toUpperCase()) {
+        const failMsg = await handleVerificationFailure(interaction.member, config, guild, puzzle.type, "Codice o calcolo errato", loadSettingsFn, saveSettingsFn);
+        return await interaction.editReply({ content: failMsg }).catch(() => {});
+      }
+
+      activePuzzles.delete(key);
+      const res = await completeVerification(interaction.member, config, guild, puzzle ? `Superato Captcha ${puzzle.type}` : "Verifica completata", loadSettingsFn, saveSettingsFn);
+      const msg = formatSuccessMessage(config.successMessage, interaction.member, guild, res.rolesAdded);
+      return await interaction.editReply({ content: msg }).catch(() => {});
+    } finally {
+      activeVerificationLocks.delete(key);
+    }
   }
 
   // 3. EMOJI BUTTON CLICK
   if (customId.startsWith("roomup_verify_emoji_")) {
-    await interaction.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
-
     const key = `${guild.id}:${interaction.user.id}`;
-    const puzzle = activePuzzles.get(key);
-
-    if (!puzzle || Date.now() > puzzle.expiresAt) {
-      const defaultExpired = "La sessione di verifica è scaduta. Riprova cliccando nuovamente sul pulsante.";
-      const expiredMsg = formatPlaceholders(config.sessionExpiredMessage || defaultExpired, {
-        user: `<@${interaction.user.id}>`,
-        guild: guild.name
-      });
-      return interaction.editReply({ content: expiredMsg }).catch(() => {});
+    if (activeVerificationLocks.has(key)) {
+      return interaction.reply({ content: "⏳ Verifica in corso, attendi...", flags: MessageFlags.Ephemeral }).catch(() => {});
     }
+    activeVerificationLocks.add(key);
 
-    const clickedEmoji = customId.split("_").pop();
+    try {
+      await interaction.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
 
-    if (clickedEmoji !== puzzle.answer) {
+      const puzzle = activePuzzles.get(key);
+
+      if (!puzzle || Date.now() > puzzle.expiresAt) {
+        const defaultExpired = "La sessione di verifica è scaduta. Riprova cliccando nuovamente sul pulsante.";
+        const expiredMsg = formatPlaceholders(config.sessionExpiredMessage || defaultExpired, {
+          user: `<@${interaction.user.id}>`,
+          guild: guild.name
+        });
+        return await interaction.editReply({ content: expiredMsg }).catch(() => {});
+      }
+
+      const clickedEmoji = customId.split("_").pop();
+
+      if (clickedEmoji !== puzzle.answer) {
+        activePuzzles.delete(key);
+        const failMsg = await handleVerificationFailure(interaction.member, config, guild, "emoji", "Emoji errata", loadSettingsFn, saveSettingsFn);
+        return await interaction.editReply({ content: failMsg }).catch(() => {});
+      }
+
       activePuzzles.delete(key);
-      const failMsg = await handleVerificationFailure(interaction.member, config, guild, "emoji", "Emoji errata", loadSettingsFn, saveSettingsFn);
-      return interaction.editReply({ content: failMsg }).catch(() => {});
+      const res = await completeVerification(interaction.member, config, guild, "Superato Captcha Emoji", loadSettingsFn, saveSettingsFn);
+      const msg = formatSuccessMessage(config.successMessage, interaction.member, guild, res.rolesAdded);
+      return await interaction.editReply({ content: msg }).catch(() => {});
+    } finally {
+      activeVerificationLocks.delete(key);
     }
-
-    activePuzzles.delete(key);
-    const res = await completeVerification(interaction.member, config, guild, "Superato Captcha Emoji", loadSettingsFn, saveSettingsFn);
-    const msg = formatSuccessMessage(config.successMessage, interaction.member, guild, res.rolesAdded);
-    return interaction.editReply({ content: msg }).catch(() => {});
   }
 }
 

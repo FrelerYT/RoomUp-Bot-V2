@@ -384,20 +384,13 @@ function recordStaffActionLive(guildId, categoryKey, userLastMessage, staffMessa
 // ─── CONTESTI CATEGORIE ─────────────────────────────────────
 const CATEGORY_CONTEXT = {
   general:     `Ticket di supporto generale. L'utente ha bisogno di assistenza tecnica, chiarimenti o aiuto su RoomUp o Discord. Rispondi in modo naturale, diretto e amichevole.`,
-  smp:         `Ticket di assistenza generale per il server Minecraft RoomUp! x YouTuberMC (SMP 1.21.x su Paper a 20 TPS, in pieno stile DonutSMP). Il server è hardcore in stile DonutSMP: griefing, furti tra basi e raiding fanno parte del normale gameplay di sopravvivenza consentito dal regolamento. Lo staff NON interviene e non rimborsa per basi raidate o item rubati nel gioco. Il supporto SMP è dedicato esclusivamente ad assistenza generale, problemi tecnici, bug di sistema, comandi (/menu, /shop, /ah, /sell, /worth), Spawners o Casse Crate. Rispondi in modo naturale, diretto e amichevole.`,
-  account:     `Ticket di supporto account, recupero nick, donazioni Patreon, VIP o store. L'utente ha problemi con il cambio nickname, il recupero credenziali o pacchetti VIP/Crate keys acquistati. Rispondi con massima serietà e riservatezza.`,
+  smp:         `Ticket di supporto generale per i servizi della community RoomUp!. Assisti gli utenti con problemi tecnici generali, domande sul regolamento e funzionalità del server Discord. Rispondi in modo naturale, diretto e amichevole.`,
+  account:     `Ticket di supporto account, recupero credenziali, donazioni, ruoli VIP o store. Rispondi con massima serietà e riservatezza.`,
   partnership: `Richiesta di partnership con RoomUp. Requisiti: server attivo da almeno un mese, comunità solida, link invito permanente. Invito ufficiale RoomUp: discord.gg/roomup`,
-  staff_app:   `Sei l'esaminatore ufficiale e supervisore dello staff per RoomUp! x YouTuberMC (Minecraft SMP 1.21.x e Discord).
-Conosci alla perfezione tutte le procedure di ScreenShare (SS) forensi:
-- Freeze in-game (/ss, /freeze), timer 3 min per entrare in vocale, divieto assoluto di disconnessione (slog = ban), canale vocale di supporto, connessione remota con AnyDesk o TeamViewer nel pieno rispetto della privacy (vietato aprire chat private, foto o documenti personali).
-- Verifiche in-game: tasti GUI (Right Shift, LShift, Insert), comandi chat nascosti (.unload, .bind, .destruct tramite 'T' + Freccia Su), resource pack, mods folder (%appdata%\\.minecraft\\mods).
-- Forensics Windows: C:\\Windows\\Prefetch (file .pf ordinati per LastModified per loader o cheat recenti), Registro BAM (SYSTEM\\CurrentControlSet\\Services\\bam\\State\\UserSettings per tracciare qualsiasi eseguibile avviato anche se cancellato), UserAssist (decodifica ROT13 da Explorer), USN Journal (fsutil usn queryjournal per file cancellati di recente).
-- Analisi memoria javaw.exe con Process Hacker: ricerca stringhe per ghost client noti (Vape V4, Vape Lite, Drip Lite, Raven B+, Whiteout, Slinky, Entropy, Kura, Doomsday, Insertion, Lithium, Yukio) e moduli (reach, autoclicker, velocity, hitbox, aimassist).
-- Tool automatici: Echo, Paladin, Bamboo, Everything.
-- Autoclicker e software mouse: OP Autoclicker, SpeedAutoClicker, Razer Synapse, Logitech G Hub, Glorious Core, software Bloody, consistenza anomala CPS.
-- Falsi positivi: distinzione tra librerie lecite (lwjgl.dll, mod legit Optifine/Sodium/Iris/VoiceChat) e cheat veri.
-- Ecosistema RoomUp! SMP: Paper 1.21.x a 20 TPS stabili, navigazione centrale /menu, /shop e /ah (0% inserzione, 2% vendita), Spawners con Registro Raccolte, Casse a 6 Tier (Crate Leggendaria Netherite Max Enchant, Mitica con Magic Bucket e Razzo Stellare Infinito 14gg), Gang/Team e claim chunk anti-griefing, Combat Tag e Simple Voice Chat / Oraxen.
-Se il candidato o lo staff ti chiedono dettagli su queste procedure, rispondi con padronanza tecnica assoluta, spiegando i passaggi esatti con professionalità.`,
+  staff_app:   `Sei l'esaminatore ufficiale e supervisore dello staff per RoomUp!.
+Valuta le candidature dello staff per la moderazione del server Discord e dei canali di community.
+Verifica la padronanza delle linee guida di moderazione Discord (termini di servizio, gestione raid, warn/timeout/kick/ban, risoluzione conflitti, discrezione e rispetto degli utenti).
+Se il candidato o lo staff ti chiedono informazioni sulle procedure, rispondi con padronanza tecnica e professionalità senza fare riferimento a giochi esterni.`,
   media_app:   `Candidatura content creator per RoomUp. Nessuna soglia minima di iscritti, valutiamo qualità e affinità. Risposta entro 2-5 giorni.`
 };
 

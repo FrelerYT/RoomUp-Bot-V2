@@ -4,10 +4,14 @@ const path = require('path');
 const configPath = path.join(__dirname, 'config.json');
 const partnersPath = path.join(__dirname, 'data', 'partners.json');
 
-const FIXED_AUTH = {
-  username: "43AS2!|(9s0dow",
-  password: "43AS2!|(9s0dow"
-};
+function getAdminCredentials() {
+  return {
+    username: process.env.ADMIN_USERNAME || "admin",
+    password: process.env.ADMIN_PASSWORD || "RoomUp2026!SecureAdminKey#"
+  };
+}
+
+const FIXED_AUTH = getAdminCredentials();
 
 const DEFAULT_MESSAGES = {
   accessDenied: "Permesso negato. Ruoli richiesti: {roles}",
@@ -21,9 +25,9 @@ const DEFAULT_MESSAGES = {
 
 function loadConfig() {
   try {
+    const currentAuth = getAdminCredentials();
     if (!fs.existsSync(configPath)) {
       fs.writeFileSync(configPath, JSON.stringify({
-        auth: FIXED_AUTH,
         servers: {},
         partnerChannels: [],
         logChannels: [],
@@ -31,20 +35,21 @@ function loadConfig() {
       }, null, 2), 'utf8');
     }
     const cfg = JSON.parse(fs.readFileSync(configPath, 'utf8'));
-    cfg.auth = FIXED_AUTH;
+    cfg.auth = currentAuth;
     if (!cfg.servers) cfg.servers = {};
     if (!cfg.messages) cfg.messages = { ...DEFAULT_MESSAGES };
     return cfg;
   } catch (err) {
     console.error('[DataManager] Errore caricamento config.json:', err.message);
-    return { auth: FIXED_AUTH, servers: {}, partnerChannels: [], logChannels: [], messages: { ...DEFAULT_MESSAGES } };
+    return { auth: getAdminCredentials(), servers: {}, partnerChannels: [], logChannels: [], messages: { ...DEFAULT_MESSAGES } };
   }
 }
 
 function saveConfig(config) {
   try {
-    config.auth = FIXED_AUTH;
-    fs.writeFileSync(configPath, JSON.stringify(config, null, 2), 'utf8');
+    const toSave = { ...config };
+    delete toSave.auth;
+    fs.writeFileSync(configPath, JSON.stringify(toSave, null, 2), 'utf8');
     return true;
   } catch (err) {
     console.error('[DataManager] Errore salvataggio config.json:', err.message);

@@ -293,9 +293,10 @@ function createWebServer(listen = true) {
   router.post('/login', (req, res, next) => {
     if (req.baseUrl === BASE_PATH || req.originalUrl?.startsWith(BASE_PATH)) {
       const { username, password } = req.body;
-      
-      const validPassword = FIXED_AUTH.password;
-      const isUserValid = (username === FIXED_AUTH.username || username === 'staff' || username === 'admin');
+      const currentAuth = (typeof loadConfig === 'function' ? loadConfig().auth : null) || FIXED_AUTH;
+      const validPassword = currentAuth.password;
+      const validUsername = currentAuth.username;
+      const isUserValid = (username === validUsername || username === 'staff' || username === 'admin');
 
       if (isUserValid && password === validPassword) {
         req.session.isAuthenticated = true;
